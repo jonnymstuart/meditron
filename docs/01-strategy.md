@@ -3,7 +3,7 @@
 ## Thesis
 meditron.ch has authority (154 referring domains, 30 years, official Samsung distributor) but the Framer relaunch threw away every ranking URL and the site has no language versions. The fastest path to "rank for Samsung ultrasound in CH in 4 languages" is: **(1) stop the bleeding with redirects, (2) build one strong localised Samsung‑ultrasound hub + model pages, (3) publish a small amount of genuinely useful Swiss B2B content per language, (4) win 10–20 relevant Swiss links.** Everything is scripted so the weekly cadence costs the owner ~1 h; the client's in-house DE/FR speaker translates and copy-checks (~1–2 h per page).
 
-Success metrics (reported weekly): positions for the tracked set in 4 languages (Semrush Position Tracking, `ch`), GSC clicks/impressions per locale folder, indexed pages per locale, referring domains, and contact‑form/quote enquiries attributed to organic (GA4 or Framer form → Airtable).
+Success metrics (reported weekly): positions for the tracked set in 4 languages (Semrush Position Tracking, `ch`), GSC clicks/impressions per locale folder, indexed pages per locale, referring domains, and contact‑form/quote enquiries attributed to organic (GA4 events on the contact/quote forms).
 
 Targets by end of Jan 2027 (conservative, based on KD ≤ 35 and current AS 14): top‑3 for all Tier 3 brand/model terms in DE/FR/EN; top‑10 for `ultraschallgerät kaufen`, `échographe portable`, `ecografo portatile`, `samsung ultraschall/ultrasound`; top‑20 for `ultraschallgerät`, `échographe`; brand SERP owned.
 
@@ -34,7 +34,7 @@ Every page: localised title/meta/H1/slug, `Product`/`Article`/`LocalBusiness`/`F
 
 ## Weekly cadence (automated by Claude Code Routines — scheduled sessions in this environment)
 - **Mon 07:00** `/weekly-report`: Semrush Position Tracking + GSC pull → `reports/YYYY-WW.md/.html` → commit → email to client (Gmail MCP) with a 5‑line summary + link. Owner reads it, replies if anything.
-- **Tue** `/content-brief` for next 2 topics from `data/keywords` gaps → assistant approves in Airtable.
+- **Tue** `/content-brief` for next 2 topics from `data/keywords` gaps → client approves (48 h silent approval) via the Monday email.
 - **Wed–Thu** Claude drafts EN + `/localize` draft → client reviewer translates/copy-checks, sets `review: approved` → `/framer-sync` publish.
 - **Fri** `/redirect-audit` + `/seo technical` delta; new 404s/hreflang errors auto‑fixed or filed.
 - Monthly: `/seo audit` full, backlink prospect list refresh, budget check.

@@ -1,6 +1,6 @@
 ---
 name: localize
-description: Localise an EN master page in content/en/<slug>.md into content/de, fr, it with Swiss variants, keyword‑verified titles/slugs, and a review checklist for the assistant.
+description: Localise an EN master page in content/en/<slug>.md into content/de, fr, it with Swiss variants, keyword‑verified titles/slugs, and a review checklist for the client's in-house reviewer.
 ---
 # Localize
 
