@@ -1,7 +1,27 @@
 from,to,status,reason,added
-/ultrasound/,/ultrasound/,301,legacy section root (404 in Framer),2026-09-03
-/ultrasound/index.php/application/handheld,/ultrasound/pocus/,301,legacy Joomla,2026-09-03
-/ultrasound/index.php/application/applications/9270,/ultrasound/,301,legacy Joomla,2026-09-03
-/ultrasound/index.php/posts/all-posts/advanced-musculoskeletal-ultrasound-course,/services/training/,301,legacy course post with backlink,2026-09-03
-/medical-physics/index.php/phantoms/product/481-bf-1500,/medical-physics/,301,legacy product w/ backlink,2026-09-03
-/index.php/home-2/management,/about/,301,legacy,2026-09-03
+# --- Priority 1: URLs that still carry external backlinks (Semrush backlinks_pages, 2026-09-03). Explicit rows, checked first. ---
+/ultrasound/,/medical-imaging/,301,legacy ultrasound section root (404 in Framer; 1 ref domain),2026-09-03
+/ultrasound/index.php,/medical-imaging/,301,legacy Joomla ultrasound home,2026-09-03
+/ultrasound/index.php/application/handheld,/medical-imaging/,301,legacy handheld/POCUS page with backlink (re-point to /ultrasound/pocus/ when live),2026-09-03
+/ultrasound/index.php/application/applications/9270,/medical-imaging/,301,legacy applications listing,2026-09-03
+/ultrasound/index.php/application/applications/27970,/medical-imaging/,301,legacy applications listing,2026-09-03
+/ultrasound/index.php/application/applications/13670,/medical-imaging/,301,legacy article "efficiency in daily scanning",2026-09-03
+/ultrasound/index.php/posts/all-posts/advanced-musculoskeletal-ultrasound-course,/medical-imaging/,301,legacy MSK course post with 2 backlinks (re-point to /services/training/ when live),2026-09-03
+/ultrasound-imaging/index.php/imaging-field/general-imaging,/medical-imaging/,301,legacy general-imaging page,2026-09-03
+/ultrasound-imaging/index.php/imaging-field/11-all-category/english-content,/medical-imaging/,301,legacy EN content listing,2026-09-03
+/ultrasound-imaging/images/catalog/pdffiles/catalog_ultrasound.pdf,/medical-imaging/,301,legacy catalogue PDF (indexed; replace with new brochure URL if one exists),2026-09-03
+/ultrasound-imaging/administrator/cache/com_modules/thisx.php,/,410,Joomla admin cache path linked from spam; return 410 or leave 404,2026-09-03
+/medical-physics/index.php/phantoms/product/481-bf-1500,/medical-physics/,301,legacy product with backlink,2026-09-03
+/medical-physics/index.php/dosimetry/tld-dosimetry/tld-materials/product/382-tld-100™-thermoluminescent-dosimetry-material,/medical-physics/,301,legacy product with backlink (404),2026-09-03
+/quality-assurance/index.php/radiation-safety/spectroscopy/product/425-radeye-sprd-spectroscopic-personal-radiation-detector,/medical-physics/,301,legacy QA product with 4 backlinks (404),2026-09-03
+/++INDUSTRIAL++/index.php/biomedical-testers/product/83-fetal-neonatal-test-equipment,/medical-physics/,301,legacy industrial product with backlink (404),2026-09-03
+/index.php/home-2/management,/,301,legacy management page with backlink (404) — point to /about/ when live,2026-09-03
+/privacy-policy,/privacy-policy,200,already live — no redirect needed (listed for completeness),2026-09-03
+# --- Priority 2: section-level catch-all rules for every other legacy Joomla path (thousands of ++INDUSTRIAL++ product/contact URLs with 0 backlinks). Framer wildcard syntax to be confirmed on day 1 (see docs/04-redirect-plan.md). ---
+/ultrasound/*,/medical-imaging/,301,catch-all legacy ultrasound section,2026-09-03
+/ultrasound-imaging/*,/medical-imaging/,301,catch-all legacy ultrasound-imaging section,2026-09-03
+/medical-physics/index.php/*,/medical-physics/,301,catch-all legacy medical-physics Joomla paths (live /medical-physics/ hub exists),2026-09-03
+/quality-assurance/*,/medical-physics/,301,catch-all legacy QA section,2026-09-03
+/++INDUSTRIAL++/*,/medical-physics/,301,catch-all legacy industrial/dosimetry section,2026-09-03
+/index.php/*,/,301,catch-all legacy Joomla root paths,2026-09-03
+/index.php,/,301,legacy Joomla root,2026-09-03

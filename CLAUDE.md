@@ -4,7 +4,7 @@ Client: Meditron SA (meditron.ch), official Samsung Healthcare ultrasound distri
 
 Programme: Sept 2026 → Jan 2027 (5 months), budget CHF 5,000 all‑in (tools + assistant time). Weekly client report every Monday.
 
-Goal: rank in Switzerland for the Samsung‑ultrasound cluster in EN (primary), DE, FR, IT. See `docs/01-strategy.md` for the keyword tiers; never optimise only for the literal phrase "samsung ultrasound switzerland" — Swiss volume is ~0, the category terms (ultraschallgerät, échographe, ecografo, ultraschall…) carry the traffic and the brand phrase comes with them.
+Goal (client brief): rank in Swiss Google for **"Samsung ultrasound"** in each language — `samsung ultrasound` (EN), `samsung ultraschall` (DE), `échographe samsung` (FR), `ecografo samsung` (IT) — plus the model and price/used terms around them. Full cluster and SERP analysis: `docs/05-samsung-ultrasound-cluster.md`. The generic category terms (ultraschallgerät, échographe, ecografo, ultraschall…) are secondary targets that the brand hub and model pages rank for as a by-product (`docs/01-strategy.md`). Priority 1 before any content: the redirect map (`docs/04-redirect-plan.md`).
 
 ## Rules of the road
 - Site is **Framer**. Never hand‑edit in the Framer UI when a script exists: use `scripts/framer` (official `framer-api` Server API). The Framer MCP plugin is unreliable — don't depend on it.

@@ -3,8 +3,10 @@ import { readFileSync } from "node:fs";
 import { withFramer, dryRun } from "./lib.mjs";
 
 const rows = readFileSync(new URL("../../data/redirects.csv", import.meta.url), "utf8")
-  .trim().split("\n").slice(1).filter(Boolean)
-  .map((l) => { const [from, to, status] = l.split(","); return { from: from.trim(), to: to.trim(), status: Number(status || 301) }; });
+  .trim().split("\n").slice(1)
+  .filter((l) => l.trim() && !l.startsWith("#"))
+  .map((l) => { const [from, to, status] = l.split(","); return { from: from.trim(), to: to.trim(), status: Number(status || 301) }; })
+  .filter((r) => r.status === 301 || r.status === 308);
 
 await withFramer(async (framer) => {
   const existing = await framer.getRedirects();
