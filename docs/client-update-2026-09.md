@@ -33,11 +33,11 @@ Rank in Swiss Google for **"Samsung ultrasound"** in all four languages — *sam
 
 ## How we work
 - Weekly report every Monday morning by email: rankings by language, search traffic, what was published, links gained, issues fixed, next week.
-- Content is drafted with AI from Samsung's published material, reviewed by a native‑speaking assistant, and published to Framer by script — no manual editing in the site builder.
+- We produce the strategy, briefs and English copy plus draft translations; your in‑house DE/FR speaker translates/copy‑checks each page, and approved pages are published to Framer by script — no manual editing in the site builder.
 - No clinical claims beyond Samsung's own wording; no prices unless you supply them; no paid links.
 
 ## What we need from you
 - Framer: confirm we can add three languages (Pro plan) and create an API key for the project.
 - Access to Google Search Console / Analytics (or let us create them).
-- One contact for sign‑off on medical wording, and a 48‑hour "no reply = approved" rule so pages don't stall.
+- One in‑house reviewer for translation and medical wording (we'll send pages as review links each Monday), and a 48‑hour "no reply = approved" rule on briefs so work doesn't stall.
 - Any existing brochures/spec sheets, price positioning, and one or two customers willing to be a short case study.

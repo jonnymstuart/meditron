@@ -8,7 +8,7 @@
 | Keyword/rank/backlink data | **Semrush MCP** (already connected): `keyword_research`, `position_tracking`, `backlinks_research`, `organic_research`, `site_audit` | no API plan needed (Semrush API = Business tier); MCP works from Claude Code |
 | Search performance | **Google Search Console API** (service account) — via claude‑seo's `/seo google` or a small script | ground truth per locale folder |
 | Audits | **claude-seo plugin** (AgriciDaniel) — `/seo audit, technical, hreflang, schema, content-brief, cluster, backlinks, plan` | 16k★, MIT, PSI/CrUX/GSC native, hreflang checker |
-| Content ops board | **Airtable** (connected): Content Calendar + Outreach CRM bases | assistant works there; Claude reads/writes via MCP |
+| Content ops board | the repo: `content/_briefs/README.md` calendar, front-matter `review:` states, `data/outreach.csv` | no assistant, no extra tool; client reviews via GitHub links in the Monday email |
 | Reporting delivery | `reports/*.html` → Google Drive (connected) + Gmail (connected) to client | zero manual steps |
 | Scheduling | **Claude Code Routines** (cron triggers in this cloud environment) for Mon/Tue/Fri jobs | runs without a laptop open |
 | Crawling | claude‑seo (Lighthouse/PSI) + Semrush Site Audit; optional Firecrawl | sandbox can't fetch meditron.ch directly — audits run through Semrush/PSI or on the owner's machine |

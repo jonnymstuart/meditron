@@ -23,7 +23,7 @@ Start with `docs/01-strategy.md`. Research that backs it: `docs/00-research-find
 
 - `/weekly-report` – pulls Semrush position tracking + GSC, writes `reports/YYYY-WW.*`, emails the client.
 - `/content-brief` – keyword‑cluster → 4‑language brief with SERP intent, headings, entities, internal links.
-- `/localize` – EN master → DE/FR/IT localisation (Swiss variants, terminology glossary), flags for human review.
+- `/localize` – EN master → DE/FR/IT draft localisation (Swiss variants, glossary) for the client's in-house reviewer, who sets `review: approved`.
 - `/framer-sync` – pushes `content/**` into the Framer CMS, sets localisation data, publishes.
 - `/redirect-audit` – diffs indexed legacy URLs against the live site, maintains `data/redirects.csv`, pushes redirects.
 

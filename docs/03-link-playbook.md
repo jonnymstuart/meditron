@@ -11,7 +11,7 @@ Reality check: no reputable tool builds backlinks automatically. What automates 
 6. **Digital PR (light)** — new‑model launch (HERA/V‑series) press note in DE/FR to Swiss medtech media; RIMED 5×V8 delivery is exactly this.
 
 ## Workflow
-Semrush `backlinks_refdomains` on smdmedical.ch, praxisdienst.com, and 3 EU Samsung distributors → Claude scores/dedups → Airtable "Outreach" base → Claude drafts DE/FR/EN emails from templates → assistant sends from her/his own mailbox (or Postaga in months 3–4) → weekly status in report.
+Semrush `backlinks_refdomains` on smdmedical.ch, praxisdienst.com, and 3 EU Samsung distributors → Claude scores/dedups → `data/outreach.csv` (prospect, contact, status, date) → Claude drafts DE/FR/EN emails from templates (`/cold-email`, `/public-relations`) → you or the client's contact sends → weekly status in report.
 
 ## Never
 Paid links, link exchanges pages, PBNs, mass directory submission tools, comment/forum spam, "guaranteed DA 50 backlinks" sellers.
