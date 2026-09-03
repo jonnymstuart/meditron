@@ -1,0 +1,46 @@
+keyword,lang,tier,volume_ch,kd_ch,cpc_chf,intent,proxy_db,proxy_volume,notes
+samsung ultrasound,en,3,20,0,1.43,commercial,,,
+samsung ultraschall,de,3,20,0,1.53,commercial,de,140,
+échographe samsung,fr,3,10,0,,commercial,fr,30,
+samsung ecografo,it,3,0,0,,commercial,it,20,
+ecografo samsung,it,3,0,0,,commercial,it,110,
+samsung hera w10,all,3,0,0,,commercial,de,20,model
+samsung v8,all,3,10,0,,commercial,,,model
+samsung medison,all,3,0,0,,navigational,de,20,
+samsung healthcare,all,3,10,0,,navigational,,,
+ultraschall,de,1,2400,27,1.13,mixed,,,SMD #4
+ultraschallgerät,de,1,590,17,1.48,commercial,de,8100,consumer-polluted SERP
+ultraschallgerät kaufen,de,1,140,8,1.46,transactional,de,1000,SMD #23
+ultraschall gerät,de,2,40,0,1.58,commercial,,,
+sonographie gerät,de,2,30,0,1.54,commercial,,,
+ultraschallgerät preis,de,2,20,0,0.41,commercial,,,
+ultraschallgerät kaufen schweiz,de,2,20,0,1.56,transactional,,,
+mobiles ultraschallgerät,de,2,20,0,1.31,commercial,,,
+tragbares ultraschallgerät,de,2,20,0,1.55,commercial,,,
+ultraschallgerät gynäkologie,de,2,20,0,1.73,commercial,,,
+ultraschallgerät physiotherapie,de,2,70,7,1.26,commercial,,,
+ultraschallgerät occasion,de,2,20,0,0.91,commercial,,,
+ultraschallgerät gebraucht,de,2,20,0,1.55,commercial,,,
+ultraschallgerät leasing,de,2,20,0,,commercial,,,
+point of care ultraschall,de,2,10,0,,informational,,,
+medizintechnik schweiz,de,1,720,34,0.84,commercial,,,company-level
+ultraschall kurs,de,4,30,0,1.59,informational,,,
+sonographie kurs,de,4,20,0,1.95,informational,,,
+échographe,fr,1,1000,32,2.85,commercial,fr,1000,
+échographie,fr,1,1000,32,2.85,mixed,,,patient intent share
+échographie 3d,fr,1,170,7,,commercial,,,OB/GYN
+échographe portable,fr,2,20,0,0.96,commercial,fr,210,
+appareil échographie,fr,2,20,0,,commercial,,,
+échographe prix,fr,2,20,0,,commercial,,,
+échographe occasion,fr,2,20,0,,commercial,,,
+cours échographie,fr,4,0,0,,informational,,,
+ecografia,it,1,390,16,,mixed,,,
+ecografo,it,1,20,0,,commercial,it,1900,
+ecografo portatile,it,2,30,0,0.8,commercial,it,2400,IT skews portable
+ecografo prezzo,it,2,10,0,,commercial,,,
+corso ecografia,it,4,0,0,,informational,,,
+ultrasound machine,en,2,20,0,1.43,commercial,,,
+portable ultrasound,en,2,20,0,1.48,commercial,,,
+handheld ultrasound,en,2,30,0,1.68,commercial,,,
+ultrasound switzerland,en,2,0,0,,commercial,,,
+meditron,brand,0,260,48,1.7,navigational,,,Medtronic confusion
