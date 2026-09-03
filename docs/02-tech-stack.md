@@ -23,3 +23,11 @@
 ## Framer Server API — capabilities we rely on (verified from `framer-api@0.1.30` types)
 `getCollections/getCollection → getItems/addItems/removeItems/setFields` · `getLocales/createLocale/setLocalizationData/listLocalizationGroups` · `getRedirects/addRedirects/removeRedirects` · `createWebPage` · `getCustomCode/setCustomCode` · `getPublishInfo/publish/getDeploymentIssues` · `createBranch` (use a branch for bulk changes, then merge/publish).
 Unknowns to confirm on day 1: rate limits, whether `publish()` is allowed on the plan, whether localisation values for CMS fields are settable per locale through `setLocalizationData` (docs indicate yes via localization groups).
+
+## Moonrank (moonrank.ai) — evaluated 3 Sept 2026
+What it is: an "AI CMO" — daily auto‑written blog articles (with FAQ/Article schema) auto‑published to the CMS via a Framer marketplace plugin (also WordPress/Webflow/Shopify/Ghost), plus a GEO agent that tracks whether ChatGPT/Perplexity/AI Overviews cite the brand, site scans and a Reddit assistant. $99/mo (≈£80), one plan, 3‑day trial, solo founder (Antoine Carre). Public reviews: one G2 review; no independent case studies found.
+
+Fit for Meditron:
+- **Not a replacement for the programme.** The KPI is brand + model *product pages* in four Swiss languages plus redirects and links; Moonrank's core output is generic daily blog posts. Daily AI articles about ultrasound on a Swiss medical‑device site are a risk (thin/duplicated content, clinical‑claim wording we can't review at that volume, and localisation quality across DE‑CH/FR‑CH/IT‑CH unverified).
+- **Where it could earn its keep:** the GEO/AI‑citation tracking line in the weekly report (same job we'd otherwise give Searchable at $29–139), and possibly the Framer CMS sync if it handles locales — that's the question to ask the founder.
+- **Recommendation:** trial it in month 3–4, article auto‑publish **off** (or capped at 1/week into a "review" CMS state, never straight to live), use it for AI‑visibility tracking; keep our own content pipeline for the money pages. Ask before buying: does it write to a localised Framer collection (de/fr/it fields + translated slugs)? Can articles land unpublished/draft? Does it respect a glossary and a "no clinical claims" rule?
