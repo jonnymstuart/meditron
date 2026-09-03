@@ -27,7 +27,7 @@ Start with `docs/01-strategy.md`. Research that backs it: `docs/00-research-find
 - `/framer-sync` – pushes `content/**` into the Framer CMS, sets localisation data, publishes.
 - `/redirect-audit` – diffs indexed legacy URLs against the live site, maintains `data/redirects.csv`, pushes redirects.
 
-Third‑party skills are installed by `scripts/setup.sh` (see `docs/02-tech-stack.md`).
+Third‑party skills are **vendored in this repo** (no install step): [claude‑seo](https://github.com/AgriciDaniel/claude-seo) v2.2.5 → `/seo audit|technical|hreflang|schema|content-brief|cluster|backlinks|google|plan…` (`.claude/skills/seo*`, agents in `.claude/agents/`), plus OpenClaudia's `/schema-markup` and `/serp-analyzer`. Python deps for the `/seo` scripts: `bash scripts/setup.sh`.
 
 ## One‑time setup (human)
 
