@@ -53,3 +53,6 @@ Day‑1 check inside `info.mjs` output: confirm the wildcard syntax Framer expec
 - **Site-wide `noindex`.** Every live page except `/old-home` and `/jobs/*` carries `<meta name="robots" content="noindex">` (home, `/products`, `/solutions/*`, `/team`, `/contact`, `/news-events/*`). The sitemap lists only 4 URLs. Nothing we redirect to can rank until this is lifted — raise with the client before any content work.
 - **Locales.** Only `gsw-CH` (Swiss German, `/gsw`) is configured, and it is not published (`/gsw` → 404). `de`/`fr`/`it` do not exist yet; checklist #10 is **not** done.
 - **Host.** `http://www.meditron.ch` → 308 → `https://www.meditron.ch` (one hop, good). Apex `meditron.ch` (http and https) could not be reached from the sandbox (proxy policy) — the owner should confirm `meditron.ch` → `https://www.meditron.ch/` in one hop, in Framer Site Settings → Domains.
+
+## Published (2026-09-08)
+Branch merged into main and deployed to production by the client. Verified from the sandbox against `https://www.meditron.ch`: all 13 probed legacy URLs (explicit rows plus three wildcard probes) return `308` to the intended target, and the targets return `200` in one hop. Staging host could not be reached from the sandbox (proxy). Still open: site-wide `noindex` on the target pages, `legacy.meditron.ch`, apex-domain hop check, GSC 404 export.
