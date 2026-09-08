@@ -4,7 +4,7 @@ description: Push approved content/**/*.md into the Framer CMS via the Server AP
 ---
 # Framer sync
 
-Pre‑req: `.env` with `FRAMER_API_KEY` + `FRAMER_PROJECT_URL`; `npm ci` in `scripts/framer`.
+Pre‑req: `bash scripts/setup.sh` (installs `/framer`), a connected session (`npx @framer/agent@latest session new <project url>` — authorise in the browser once), and `FRAMER_PROJECT_URL` in `.env`. Prefer the `/framer` skill's `framer.agent.applyChanges` for page/CMS edits; use the scripts below for bulk CSV/Markdown pushes. Every change lands on a Framer branch; merge + publish only after the client reviewer's `review: approved`.
 
 1. `node scripts/framer/sync-content.mjs --dry-run` → prints the diff (new/updated items per collection & locale). Only files with `review: approved` (or EN masters) are included.
 2. If the diff looks right: `node scripts/framer/sync-content.mjs` (writes items, sets `setLocalizationData` for each locale's fields incl. slug/title/meta, sets custom code JSON‑LD for the page).

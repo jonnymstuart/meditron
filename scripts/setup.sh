@@ -3,6 +3,9 @@
 set -euo pipefail
 cd "$(dirname "$0")/.."
 
+echo "→ Framer External Agents skills (/framer) — installs to ~/.claude/skills"
+npx -y @framer/agent@latest setup
+
 echo "→ Node deps for Framer scripts"
 (cd scripts/framer && npm install --no-audit --no-fund)
 

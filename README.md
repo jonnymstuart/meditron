@@ -24,7 +24,8 @@ Start with `docs/01-strategy.md`. Research that backs it: `docs/00-research-find
 - `/weekly-report` – pulls Semrush position tracking + GSC, writes `reports/YYYY-WW.*`, emails the client.
 - `/content-brief` – keyword‑cluster → 4‑language brief with SERP intent, headings, entities, internal links.
 - `/localize` – EN master → DE/FR/IT draft localisation (Swiss variants, glossary) for the client's in-house reviewer, who sets `review: approved`.
-- `/framer-sync` – pushes `content/**` into the Framer CMS, sets localisation data, publishes.
+- `/framer` – Framer's own External Agents skill (installed by `scripts/setup.sh`): edit pages, CMS, localisation, redirects, publish on a branch. Connect with the project URL once per session.
+- `/framer-sync` – bulk push of `content/**` into the Framer CMS + redirects CSV, then publish (uses the same Server API).
 - `/redirect-audit` – diffs indexed legacy URLs against the live site, maintains `data/redirects.csv`, pushes redirects.
 
 Third‑party skills are **vendored in this repo** (no install step): [claude‑seo](https://github.com/AgriciDaniel/claude-seo) v2.2.5 → `/seo audit|technical|hreflang|schema|content-brief|cluster|backlinks|google|plan…` (`.claude/skills/seo*`, agents in `.claude/agents/`), plus OpenClaudia's `/schema-markup` and `/serp-analyzer`, and Corey Haines' [marketingskills](https://github.com/coreyhaines31/marketingskills) v2.11.0 (50 skills: `/copywriting`, `/cro`, `/content-strategy`, `/ai-seo`, `/schema`, `/site-architecture`, `/competitors`, `/public-relations`, `/directory-submissions`, `/marketing-plan`…; its `seo-audit` is renamed `/marketing-seo-audit` to avoid clashing with claude‑seo's). Those skills read `.agents/product-marketing.md` first — keep it current. Python deps for the `/seo` scripts: `bash scripts/setup.sh`.

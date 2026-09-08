@@ -4,7 +4,7 @@
 | Layer | Choice | Why |
 |---|---|---|
 | Source of truth | this GitHub repo (Markdown content, CSV keywords, reports) | versioned, agent‑friendly, reviewable |
-| Site write access | **Framer Server API** (`framer-api` npm, official) via `scripts/framer` | headless, scriptable, covers CMS + locales + redirects + custom code + publish; Framer MCP plugin is flaky and needs the Designer open |
+| Site write access | **Framer External Agents** (`npx @framer/agent` → `/framer` skill) for interactive edits + `scripts/framer` (`framer-api`) for bulk jobs | official, no MCP server, auto‑branches every change, covers canvas + CMS + localisation + redirects + publish; the MCP plugin is retired |
 | Keyword/rank/backlink data | **Semrush MCP** (already connected): `keyword_research`, `position_tracking`, `backlinks_research`, `organic_research`, `site_audit` | no API plan needed (Semrush API = Business tier); MCP works from Claude Code |
 | Search performance | **Google Search Console API** (service account) — via claude‑seo's `/seo google` or a small script | ground truth per locale folder |
 | Audits | **claude-seo plugin** (AgriciDaniel) — `/seo audit, technical, hreflang, schema, content-brief, cluster, backlinks, plan` | 16k★, MIT, PSI/CrUX/GSC native, hreflang checker |
