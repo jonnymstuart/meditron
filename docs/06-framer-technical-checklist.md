@@ -53,3 +53,9 @@ Owner column: **script** = done via `scripts/framer` (Server API) · **Framer UI
 | 30 | Brand SERP: homepage title "Meditron – Official Samsung Ultrasound Distributor Switzerland", `Organization` schema with `sameAs` (LinkedIn, GBP), two Google Business Profiles | Framer UI + you/client |
 
 Verification after each publish: `/seo page <url>` on the changed pages, `/seo hreflang`, sitemap check, GSC coverage the following Monday.
+
+## Status 2026-09-08
+- #1 done: 22 redirect rules live on production, verified (see `docs/04-redirect-plan.md`).
+- #7 in progress: the live site had **"Exclude from search engines" on every page** except `/old-home`, `/privacy-policy`, `/jobs/*` (page metadata `noIndex` + `noIndexSite` = true). Framer branch "SEO: allow indexing (remove noindex)" clears it on `/`, `/purpose`, `/team`, `/contact`, `/products`, `/products/:slug`, `/solutions/:slug`, `/news-events`, `/news-events/:slug`. Kept excluded on purpose: `/search`, `/case-studies` and detail (placeholder lorem items). Awaiting client merge + publish.
+- Follow-ups surfaced: `/old-home` is the only indexed page and duplicates the home — exclude it (or redirect to `/`) once the home is indexable. `/`, `/purpose`, `/team`, `/contact`, `/news-events` have no page title set and fall back to the site default; fix under #19.
+- #10 not done: only `gsw-CH` exists; `de-CH`/`fr-CH`/`it-CH` must be created.
