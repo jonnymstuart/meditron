@@ -31,3 +31,15 @@ Fit for Meditron:
 - **Not a replacement for the programme.** The KPI is brand + model *product pages* in four Swiss languages plus redirects and links; Moonrank's core output is generic daily blog posts. Daily AI articles about ultrasound on a Swiss medical‑device site are a risk (thin/duplicated content, clinical‑claim wording we can't review at that volume, and localisation quality across DE‑CH/FR‑CH/IT‑CH unverified).
 - **Where it could earn its keep:** the GEO/AI‑citation tracking line in the weekly report (same job we'd otherwise give Searchable at $29–139), and possibly the Framer CMS sync if it handles locales — that's the question to ask the founder.
 - **Recommendation:** trial it in month 3–4, article auto‑publish **off** (or capped at 1/week into a "review" CMS state, never straight to live), use it for AI‑visibility tracking; keep our own content pipeline for the money pages. Ask before buying: does it write to a localised Framer collection (de/fr/it fields + translated slugs)? Can articles land unpublished/draft? Does it respect a glossary and a "no clinical claims" rule?
+
+## Cloud environment requirements (Claude Code on the web)
+Scheduled and interactive cloud sessions run inside an egress‑restricted sandbox. For the Framer agent and the audits to work, the environment's **network policy** (Environment settings → Network access, see https://code.claude.com/docs/en/claude-code-on-the-web) must allow:
+
+| Host | Needed for |
+|---|---|
+| `api.framer.com` (HTTPS + WebSocket) | Framer Server API / `/framer` agent — **required**, blocked by default (`CONNECT 403`, verified 2026‑09‑08) |
+| `framer.com`, `www.framer.com`, `events.framer.com` | project URL resolution, docs, CLI telemetry (telemetry optional) |
+| `www.meditron.ch`, `legacy.meditron.ch` | crawling, redirect verification, sitemap/hreflang checks |
+| `registry.npmjs.org` | already allowed (npx @framer/agent) |
+
+Secrets go in the environment's variables, never in git: `FRAMER_API_KEY` (the CLI also caches it in `~/.config/framer/projects.json` per project), `GSC_SERVICE_ACCOUNT_JSON`, `CLIENT_REPORT_TO`.
