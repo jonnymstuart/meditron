@@ -45,3 +45,11 @@ Day‑1 check inside `info.mjs` output: confirm the wildcard syntax Framer expec
 - From your laptop: `curl -sI https://www.meditron.ch/ultrasound/index.php/application/handheld | head -3` → `301` → `/medical-imaging/`.
 - GSC → URL inspection on the 5 highest‑value legacy URLs.
 - Next Monday's report: "404s with backlinks" count should be 0; referring domains should hold or rise.
+
+## Day-1 findings (2026-09-08, Framer Server API inventory)
+- **Targets re-pointed.** `/medical-imaging/` and `/medical-physics/` do not exist on the live site (404). Live hubs: `/solutions/ultrasound`, `/solutions/radiology`, `/solutions/biomedical-testing`, `/solutions/industrial-solutions`, product pages under `/products/<slug>`. The CSV now targets those.
+- **Framer redirect facts.** Fields: `from`, `to`, `expandToAllLocales` (we use `false`; legacy URLs have no locale prefix). Every redirect is served as **308**; 301 and 410 are not selectable. Wildcards: `*` in `from`, captured as `:1`, `:2` in `to`. Slug segments `:name` also work. Max 2,500 rules. Order set with `setRedirectOrder` (explicit rows first).
+- **Pushed** on Framer branch "SEO: legacy Joomla redirect map (P1)" — 22 rules (16 explicit + 6 catch-alls). Not published. The 410 row is not pushed (stays 404); the `/privacy-policy` 200 row is informational.
+- **Site-wide `noindex`.** Every live page except `/old-home` and `/jobs/*` carries `<meta name="robots" content="noindex">` (home, `/products`, `/solutions/*`, `/team`, `/contact`, `/news-events/*`). The sitemap lists only 4 URLs. Nothing we redirect to can rank until this is lifted — raise with the client before any content work.
+- **Locales.** Only `gsw-CH` (Swiss German, `/gsw`) is configured, and it is not published (`/gsw` → 404). `de`/`fr`/`it` do not exist yet; checklist #10 is **not** done.
+- **Host.** `http://www.meditron.ch` → 308 → `https://www.meditron.ch` (one hop, good). Apex `meditron.ch` (http and https) could not be reached from the sandbox (proxy policy) — the owner should confirm `meditron.ch` → `https://www.meditron.ch/` in one hop, in Framer Site Settings → Domains.
