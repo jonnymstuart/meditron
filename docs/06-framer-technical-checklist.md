@@ -59,3 +59,11 @@ Verification after each publish: `/seo page <url>` on the changed pages, `/seo h
 - #7 in progress: the live site had **"Exclude from search engines" on every page** except `/old-home`, `/privacy-policy`, `/jobs/*` (page metadata `noIndex` + `noIndexSite` = true). Framer branch "SEO: allow indexing (remove noindex)" clears it on `/`, `/purpose`, `/team`, `/contact`, `/products`, `/products/:slug`, `/solutions/:slug`, `/news-events`, `/news-events/:slug`. Kept excluded on purpose: `/search`, `/case-studies` and detail (placeholder lorem items). Awaiting client merge + publish.
 - Follow-ups surfaced: `/old-home` is the only indexed page and duplicates the home — exclude it (or redirect to `/`) once the home is indexable. `/`, `/purpose`, `/team`, `/contact`, `/news-events` have no page title set and fall back to the site default; fix under #19.
 - #10 not done: only `gsw-CH` exists; `de-CH`/`fr-CH`/`it-CH` must be created.
+
+## Status 2026-09-10
+- Locales de/fr/it live (no region, `hreflang="de"` etc.). Swiss German removed. Sitemap: 4 files × 238 URLs.
+- Framer branch "SEO: clean product URLs + page titles": 31 product slugs cleaned (™ and `-copy` removed) with 31 redirects (all locales), product detail title template fixed per locale, Solutions title template reworded, one `ß` fix. Awaiting client merge + publish.
+- DE drafts written: `content/de/samsung-ultraschall.md` (hub), `samsung-hera-z20.md`, `samsung-v8.md`, `samsung-r20.md`, `samsung-v7.md` — `review: draft`, for Jean. V4/V5/V6 next.
+- Hub needs new CMS fields on Solutions (intro, FAQ, model table) or a dedicated page; decide before syncing.
+- Content plan: `docs/07-content-plan.md`.
+- Still open (client): Search Console access + sitemap submission, Clarity snippet, `legacy.meditron.ch`, apex-domain hop check. Reminder set for 11 Sep.

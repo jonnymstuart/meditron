@@ -19,6 +19,38 @@ from,to,status,reason,added
 /++INDUSTRIAL++/index.php/biomedical-testers/product/83-fetal-neonatal-test-equipment,/solutions/biomedical-testing,301,legacy industrial product with backlink (404),2026-09-03
 /index.php/home-2/management,/team,301,legacy management page with backlink (404),2026-09-03
 /privacy-policy,/privacy-policy,200,already live — no redirect needed (listed for completeness),2026-09-03
+# --- Product slug clean-up 2026-09-10 (™ and '-copy' removed). Pushed with expandToAllLocales=true so /de /fr /it paths redirect too. Explicit rows, ordered before catch-alls. ---
+/products/qa-stereochecker™,/products/qa-stereochecker,301,clean product slug (was qa-stereochecker™),2026-09-10
+/products/qa-crosschecker™,/products/qa-crosschecker,301,clean product slug (was qa-crosschecker™),2026-09-10
+/products/qa-beamchecker™-pro,/products/qa-beamchecker-pro,301,clean product slug (was qa-beamchecker™-pro),2026-09-10
+/products/qa-beamchecker™-plus,/products/qa-beamchecker-plus,301,clean product slug (was qa-beamchecker™-plus),2026-09-10
+/products/esaote-mylab™-panther-vet,/products/esaote-mylab-panther-vet,301,clean product slug (was esaote-mylab™-panther-vet),2026-09-10
+/products/esaote-mylab™-wolf-vet,/products/esaote-mylab-wolf-vet,301,clean product slug (was esaote-mylab™-wolf-vet),2026-09-10
+/products/esaote-mylab™-fox-vet,/products/esaote-mylab-fox-vet,301,clean product slug (was esaote-mylab™-fox-vet),2026-09-10
+/products/esaote-mylab™falcon-vet,/products/esaote-mylab-falcon-vet,301,clean product slug (was esaote-mylab™falcon-vet),2026-09-10
+/products/esaote-mylab™heron-vet,/products/esaote-mylab-heron-vet,301,clean product slug (was esaote-mylab™heron-vet),2026-09-10
+/products/filmqa-pro™-software,/products/filmqa-pro-software,301,clean product slug (was filmqa-pro™-software),2026-09-10
+/products/harshaw-tld™-model-8800-plus-automatic-card-reader-instruments,/products/harshaw-tld-8800-plus-card-reader,301,clean product slug (was harshaw-tld™-model-8800-plus-automatic-card-reader-instruments),2026-09-10
+/products/harshaw-tld™-model-6600-plus-automated-reader-instrument,/products/harshaw-tld-6600-plus-reader,301,clean product slug (was harshaw-tld™-model-6600-plus-automated-reader-instrument),2026-09-10
+/products/harshaw-tld™-model-3500-manual-readers,/products/harshaw-tld-3500-manual-reader,301,clean product slug (was harshaw-tld™-model-3500-manual-readers),2026-09-10
+/products/radhalo™-rdp-and-fm-spectroscopic-area-monitors,/products/radhalo-spectroscopic-area-monitors,301,clean product slug (was radhalo™-rdp-and-fm-spectroscopic-area-monitors),2026-09-10
+/products/radeye™-nl-personal-highly-sensitive-neutron-radiation-detectors,/products/radeye-nl-neutron-detector,301,clean product slug (was radeye™-nl-personal-highly-sensitive-neutron-radiation-detectors),2026-09-10
+/products/radeye™-g20-10-and-g20-er10-x-ray-and-gamma-survey-meters,/products/radeye-g20-survey-meters,301,clean product slug (was radeye™-g20-10-and-g20-er10-x-ray-and-gamma-survey-meters),2026-09-10
+/products/radeye™-nbr-high-sensitivity-gamma-radiation-monitor,/products/radeye-nbr-gamma-monitor,301,clean product slug (was radeye™-nbr-high-sensitivity-gamma-radiation-monitor),2026-09-10
+/products/radeye™-sprd-gn-spectroscopic-personal-radiation-detector,/products/radeye-sprd-gn-personal-radiation-detector,301,clean product slug (was radeye™-sprd-gn-spectroscopic-personal-radiation-detector),2026-09-10
+/products/radeye™-gn-gamma-neutron-pager,/products/radeye-gn-gamma-neutron-pager,301,clean product slug (was radeye™-gn-gamma-neutron-pager),2026-09-10
+/products/riideye™-x-m-series-handheld-radiation-isotope-identifiers,/products/riideye-x-m-isotope-identifiers,301,clean product slug (was riideye™-x-m-series-handheld-radiation-isotope-identifiers),2026-09-10
+/products/radeye™-x-series-survey-meters,/products/radeye-x-series-survey-meters,301,clean product slug (was radeye™-x-series-survey-meters),2026-09-10
+/products/radeye™-ab100-alpha-beta-contamination-monitor,/products/radeye-ab100-contamination-monitor,301,clean product slug (was radeye™-ab100-alpha-beta-contamination-monitor),2026-09-10
+/products/radeye™-g-series-personal-dose-rate-meters,/products/radeye-g-series-dose-rate-meters,301,clean product slug (was radeye™-g-series-personal-dose-rate-meters),2026-09-10
+/products/radeye™-b20-survey-meters,/products/radeye-b20-survey-meters,301,clean product slug (was radeye™-b20-survey-meters),2026-09-10
+/products/gafchromic™-hd-v2-films,/products/gafchromic-hd-v2-films,301,clean product slug (was gafchromic™-hd-v2-films),2026-09-10
+/products/gafchromic™-md-v3-films,/products/gafchromic-md-v3-films,301,clean product slug (was gafchromic™-md-v3-films),2026-09-10
+/products/gafchromic™-ebt-xd-radiotherapy-films,/products/gafchromic-ebt-xd-radiotherapy-films,301,clean product slug (was gafchromic™-ebt-xd-radiotherapy-films),2026-09-10
+/products/gafchromic™-ebt4-radiotherapy-films,/products/gafchromic-ebt4-radiotherapy-films,301,clean product slug (was gafchromic™-ebt4-radiotherapy-films),2026-09-10
+/products/gafchromic™-rtqa2-radiotherapy-films,/products/gafchromic-rtqa2-radiotherapy-films,301,clean product slug (was gafchromic™-rtqa2-radiotherapy-films),2026-09-10
+/products/gafchromic™-films-for-cyberknife,/products/gafchromic-films-for-cyberknife,301,clean product slug (was gafchromic™-films-for-cyberknife),2026-09-10
+/products/clarius-l15-hd3-copy,/products/clarius-l15-hd3,301,clean product slug (was clarius-l15-hd3-copy),2026-09-10
 # --- Priority 2: section-level catch-all rules for every other legacy Joomla path. Framer wildcard syntax confirmed 2026-09-08: `*` in from, optional `:1` in to. Ordered after the explicit rows via setRedirectOrder. ---
 /ultrasound/*,/solutions/ultrasound,301,catch-all legacy ultrasound section,2026-09-03
 /ultrasound-imaging/*,/solutions/ultrasound,301,catch-all legacy ultrasound-imaging section,2026-09-03
