@@ -67,3 +67,10 @@ Verification after each publish: `/seo page <url>` on the changed pages, `/seo h
 - Hub needs new CMS fields on Solutions (intro, FAQ, model table) or a dedicated page; decide before syncing.
 - Content plan: `docs/07-content-plan.md`.
 - Still open (client): Search Console access + sitemap submission, Clarity snippet, `legacy.meditron.ch`, apex-domain hop check. Reminder set for 11 Sep.
+
+## Status 2026-09-11
+- Framer branch "SEO: Samsung hub content (intro, FAQ, meta, slugs)" (`p2e1ptntb`): Solutions collection gets four fields (SEO Intro, FAQ, Meta Title, Meta Description). Ultrasound item filled in EN + DE (from `content/de/samsung-ultraschall.md`); meta title/description in EN/DE/FR/IT; the other four solutions get EN meta titles. Solutions detail page: two new sections (intro after hero, FAQ after products) bound to the fields; page title/description now come from the fields. Not published. FR/IT intro and FAQ fall back to EN until translated.
+- Lesson: CMS fields added through `collection.addFields` are invisible to `applyChanges`; create them with `+Variable … scope="<collectionId>"` instead.
+- Localised slugs for the hub (`/de/solutions/samsung-ultraschall` etc.) could not be set through the API ("Source not found for variable Jpw7HmsAR" = Slug). Set them in the Localization panel → Solutions › Ultrasound → Slug, then add the three redirects from `/xx/solutions/ultrasound`.
+- Pre-existing lint error on the Solutions page: Desktop breakpoint has no opaque background fill. Not ours; harmless.
+- Two branches now await merge: "SEO: clean product URLs + page titles" then this one.
