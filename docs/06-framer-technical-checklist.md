@@ -74,3 +74,11 @@ Verification after each publish: `/seo page <url>` on the changed pages, `/seo h
 - Localised slugs for the hub (`/de/solutions/samsung-ultraschall` etc.) could not be set through the API ("Source not found for variable Jpw7HmsAR" = Slug). Set them in the Localization panel → Solutions › Ultrasound → Slug, then add the three redirects from `/xx/solutions/ultrasound`.
 - Pre-existing lint error on the Solutions page: Desktop breakpoint has no opaque background fill. Not ours; harmless.
 - Two branches now await merge: "SEO: clean product URLs + page titles" then this one.
+
+## Status 2026-09-15
+- Decision: English stays the default locale. Recommend Framer "Automatic Locale" (browser language) instead of location rules.
+- Search Console: domain property verified by the client, sitemap submitted, hub URLs indexing requested.
+- Framer branch "SEO: H1 headings + FAQs" (`ex22zgd94`): Solutions get an `H1` field ("Samsung Ultrasound/Ultraschall/…") bound to the hub hero; product name is now h1 on product pages; h1 set on /products, /team, /news-events, /purpose ("Powered by innovation"); the "14+ / 35+" stats are no longer h1. FAQ collection: 22 new rows (6 home, 4 per other solution) EN + DE, "Show on Home" flag; home page gets an FAQ section with the accordion before "Let's Talk". Not published.
+- Home hero H1 is "Treat With Precision" (no keyword). Copy decision for Jean, not changed.
+- Product title template is set in the editor; the live fallback title is just the unpublished state.
+- Branch "Fix DE/FR/IT hub title template" and the accordion are merged, still unpublished.
