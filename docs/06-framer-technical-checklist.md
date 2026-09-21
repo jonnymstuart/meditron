@@ -82,3 +82,7 @@ Verification after each publish: `/seo page <url>` on the changed pages, `/seo h
 - Home hero H1 is "Treat With Precision" (no keyword). Copy decision for Jean, not changed.
 - Product title template is set in the editor; the live fallback title is just the unpublished state.
 - Branch "Fix DE/FR/IT hub title template" and the accordion are merged, still unpublished.
+
+## Status 2026-09-21
+- Framer branch "SEO: structured data" (`j6m3l79zc`): site-wide JSON-LD (Organization + LocalBusiness Rolle/Frauenfeld) via Site Settings custom code (headEnd); `SchemaJsonLd` code component on the Products and Solutions detail pages emitting Product + BreadcrumbList / BreadcrumbList per item. No company LinkedIn page found for `sameAs` – ask client. FAQPage schema deliberately skipped (Google no longer shows FAQ rich results for commercial sites).
+- Article 1 German draft: `content/de/welches-samsung-ultraschallgeraet-praxis.md`, Google Doc for Jean. Needs author + Henri's leasing/pre-owned confirmation.
