@@ -99,3 +99,7 @@ Verification after each publish: `/seo page <url>` on the changed pages, `/seo h
 - FAQ: new single-reference field `Article` (`l059MJo6U`) on the FAQ collection → News & Events. Under the body: `FAQ Title List` (collection list, limit 1, shows the heading only when rows exist) + `FAQ List` (collection list filtered Article = current item, sorted by Order) repeating `FAQItem` with group = article id, so one row open at a time. 20 rows added for the three articles (`<slug>-1…7`). Headings localised (Inhalt/Sommaire/Indice, Häufige Fragen/Questions fréquentes/Domande frequenti).
 - Article bodies no longer contain the TOC, the "Back to contents" links or the FAQ block; `content/en/*.md` keeps the full text as the canonical copy.
 - Note: absolute links and tables survive in CMS rich text; heading ids and `#` links do not.
+
+## Status 2026-09-29
+- All articles are published under the **Insights** category (Types item `BV_nqtp0t`, labels Insights / Erkenntnisse / Analyses / Approfondimenti), not News or Events. The three draft articles on branch `rb52a2qgm` now reference it. New articles: set `Type` = Insights and `Type 3` = Thought pieces.
+- URLs stay under `/news-events/<slug>` (the collection's path); the category is a filter on the list page.

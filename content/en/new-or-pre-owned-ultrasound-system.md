@@ -1,6 +1,7 @@
 ---
 lang: en
 type: article
+category: insights
 slug: new-or-pre-owned-ultrasound-system
 collection: News & Events (Type 3: Thought pieces)
 title: New or pre-owned ultrasound system: what to check before buying | Meditron

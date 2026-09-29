@@ -1,6 +1,7 @@
 ---
 lang: en
 type: article
+category: insights
 slug: which-samsung-ultrasound-system-for-my-practice
 collection: News & Events (Type 3: Thought pieces)
 title: Which Samsung ultrasound system is right for my practice? | Meditron

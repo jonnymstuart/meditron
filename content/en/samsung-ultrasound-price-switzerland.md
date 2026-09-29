@@ -1,6 +1,7 @@
 ---
 lang: en
 type: article
+category: insights
 slug: samsung-ultrasound-price-switzerland
 collection: News & Events (Type 3: Thought pieces)
 title: How much does a Samsung ultrasound system cost in Switzerland? | Meditron
