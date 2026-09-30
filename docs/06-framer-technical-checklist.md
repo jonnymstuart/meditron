@@ -109,3 +109,9 @@ Verification after each publish: `/seo page <url>` on the changed pages, `/seo h
 - Authors set in Framer: 1 Nikita Müller (reviewed by Henri), 2 Dr. Henri Hagenmüller (reviewed by Nikita), 3 Christelle Sam-Hine (reviewed by Henri). Bylines localised in DE/FR.
 - Hero images: generated typographic images (1600×900 JPEG, site gradient palette) via `scripts/framer/hero-images.mjs` (headless Chromium), uploaded with `framer.uploadImage`, stored in `content/images/`. Replace with product photography when Meditron supplies it; same field, same alt text.
 - Gotcha: `addItems` with `valueByLocale` needs `{ action: "set", value }` per locale; `uploadImage` takes `{ image: { bytes, mimeType }, name, altText }`.
+
+## Status 2026-09-30 (later) – Insights labels and image ratio
+- Nav (`New Navigation` Q6QxmZWoF) and footer (`New Footer` oY3QwAzZI): "Latest" → "Insights" in all four languages (Link component `$control__text` on F9FW9kWLm, pi1MyyNzu, KAcsaSE_i, Kj0yhCspj; localisation sources set to "Insights").
+- Home section heading: "News & Events" → "News and Insights" (EN), "News und Insights" (DE), "Actualités et Insights" (FR), "Notizie e Insights" (IT). The /news-events page heading is unchanged.
+- Article images: list card frame (EuCgXuDmA + breakpoint replicas) and article hero (pvpvOm4RW + replicas) both set to aspectRatio 1.5 (3:2) so the same image shows uncropped everywhere. Hero images regenerated at 1500×1000 with 110px safe margins (`scripts/framer/hero-images.mjs`). Any future article image should be supplied at 3:2.
+- Published to production, version 089630422.
