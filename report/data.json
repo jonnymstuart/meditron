@@ -1,0 +1,80 @@
+{
+  "client": "Meditron SA",
+  "programme": "Samsung ultrasound · search & AI visibility",
+  "period": "September 2026 – January 2027",
+  "updated": "2026-09-30",
+  "week": 4,
+  "goal": "Be the answer for “Samsung ultrasound” in Swiss Google and in AI assistants (ChatGPT, Gemini, Google AI Overviews) in German, French, Italian and English.",
+  "headline": {
+    "status": "First three Insights articles live on meditron.ch. Baseline measured. Site groundwork done.",
+    "tiles": [
+      { "label": "Articles live", "value": "3", "note": "of 6 drafted · EN + DE + FR" },
+      { "label": "Keywords in Google top 100 (CH)", "value": "4", "note": "baseline, Semrush 29 Sep" },
+      { "label": "Keywords on page 1–2", "value": "0", "note": "baseline · target: 10+ by January" },
+      { "label": "AI Overviews citing Meditron", "value": "0 / 4", "note": "baseline · target: cited on core terms" }
+    ]
+  },
+  "baseline": {
+    "source": "Semrush Domain Overview, Switzerland database, 29 Sep 2026",
+    "rows": [
+      { "measure": "Semrush rank (Switzerland)", "value": "499,314", "meaning": "Position among all Swiss sites by organic traffic. Lower is better; a niche B2B site that ranks well sits under 100,000." },
+      { "measure": "Keywords in Google top 100", "value": "4", "meaning": "Swiss searches where meditron.ch appears anywhere in the first 10 pages." },
+      { "measure": "Keywords in positions 1–10", "value": "0", "meaning": "Nothing on page one yet." },
+      { "measure": "Keywords in positions 11–20", "value": "0", "meaning": "Nothing on page two yet." },
+      { "measure": "Estimated organic visits / month", "value": "16", "meaning": "Semrush estimate of Google visitors. Essentially zero." },
+      { "measure": "Keywords with an AI Overview", "value": "4", "meaning": "All four searches show Google's AI answer at the top." },
+      { "measure": "AI Overviews that cite meditron.ch", "value": "0", "meaning": "The number the programme should move first." },
+      { "measure": "Search intent", "value": "4 informational, 0 commercial", "meaning": "People researching, not buying yet. Articles 2 and 3 target the buying searches." }
+    ],
+    "caveat": "Semrush lags Google by two to four weeks, so the September site changes are not in these numbers yet. Keyword-level detail needs Semrush API units topped up."
+  },
+  "ai": {
+    "summary": "Manual checks in ChatGPT and Gemini on 29 Sep: Meditron is already named for direct brand-plus-country questions (“Samsung ultrasound Switzerland”). The harder, brand-less questions are the next test.",
+    "links": [
+      { "label": "ChatGPT results", "url": "https://chatgpt.com/share/6abb6552-a130-83eb-a7fb-5b074f9eb968" },
+      { "label": "Gemini results", "url": "https://share.gemini.google/R4VgqUyLhliQ" }
+    ],
+    "tiers": [
+      { "name": "Tier 1 · generic, no brand, no country", "difficulty": "hardest", "status": "to test", "examples": ["best ultrasound machine for a gynaecology practice", "Ultraschallgerät für Praxis kaufen – welches?", "échographe pour cabinet médical, lequel choisir", "ecografo per studio medico, quale scegliere"] },
+      { "name": "Tier 2 · brand, no country", "difficulty": "hard", "status": "to test", "examples": ["Samsung HERA Z20 vs V8", "Samsung Ultraschallgerät Erfahrungen", "échographe Samsung avis", "ecografo Samsung prezzo"] },
+      { "name": "Tier 3 · brand + Switzerland (core targets)", "difficulty": "medium", "status": "mentioned", "examples": ["Samsung ultrasound Switzerland", "Samsung Ultraschall Schweiz", "échographe Samsung Suisse", "ecografo Samsung Svizzera"] },
+      { "name": "Tier 4 · “official distributor” wording", "difficulty": "medium", "status": "to test", "examples": ["official Samsung ultrasound distributor Switzerland", "offizieller Samsung Ultraschall Distributor Schweiz", "distributeur officiel échographes Samsung Suisse", "distributore ufficiale ecografi Samsung Svizzera"] },
+      { "name": "Tier 5 · service, used, leasing", "difficulty": "easier", "status": "to test", "examples": ["used Samsung ultrasound machine Switzerland", "Samsung Ultraschallgerät Occasion Schweiz", "Ultraschallgerät leasen Schweiz", "échographe Samsung occasion Suisse"] },
+      { "name": "Tier 6 · Meditron named", "difficulty": "easiest", "status": "mentioned", "examples": ["Is Meditron the official Samsung ultrasound distributor in Switzerland?", "Was macht Meditron in Frauenfeld?"] }
+    ]
+  },
+  "articles": [
+    { "n": 1, "title": "Which Samsung ultrasound system is right for my practice?", "status": "live", "author": "Nikita Müller", "url": "https://www.meditron.ch/news-events/which-samsung-ultrasound-system-for-my-practice", "why": "The question every buyer asks first; links to all seven model pages; the piece AI answers are most likely to quote." },
+    { "n": 2, "title": "How much does a Samsung ultrasound system cost in Switzerland?", "status": "live", "author": "Dr. Henri Hagenmüller", "url": "https://www.meditron.ch/news-events/samsung-ultrasound-price-switzerland", "why": "Most-searched term after the brand; nobody in Switzerland answers it; ranks without publishing prices." },
+    { "n": 3, "title": "New or pre-owned ultrasound system: what to check before buying", "status": "live", "author": "Christelle Sam-Hine", "url": "https://www.meditron.ch/news-events/new-or-pre-owned-ultrasound-system", "why": "“Used” searches land on foreign marketplaces today; captures them and positions certified pre-owned and service." },
+    { "n": 4, "title": "Samsung HERA Z20 or V8 for gynaecology?", "status": "draft · EN + DE", "author": "tbd", "url": "", "why": "Model names out-search the brand term in German; one comparison ranks for both and feeds the product pages." },
+    { "n": 5, "title": "Portable or stationary ultrasound system?", "status": "draft · EN + DE", "author": "tbd", "url": "", "why": "The old site had a handheld page with backlinks; gives that traffic a landing page and introduces Clarius." },
+    { "n": 6, "title": "The first 90 days with your new ultrasound system", "status": "draft · EN + DE", "author": "tbd", "url": "", "why": "Training and applications support is where Meditron beats the competition; supports retention." }
+  ],
+  "timeline": [
+    { "date": "2026-09-08", "text": "Programme plan agreed. German confirmed as master language; English stays the default locale." },
+    { "date": "2026-09-11", "text": "Technical audit of the new Framer site: broken German title, no H1s, no structured data, /old-home indexed." },
+    { "date": "2026-09-16", "text": "Live: 53 redirects from old URLs, sitemap with 238 pages per language, Search Console verified, hub page intro and FAQ in EN and DE." },
+    { "date": "2026-09-21", "text": "H1 headings site-wide. Structured data (Organization, two LocalBusiness, Product, Breadcrumb, Article). Titles and descriptions in four languages. Alt text on 219 product images." },
+    { "date": "2026-09-29", "text": "Semrush baseline taken. Six articles drafted in English and German. Article template: contents list, FAQ accordion, author byline." },
+    { "date": "2026-09-30", "text": "Articles 1–3 published. “Latest” renamed to “Insights” in the navigation and footer. Home section renamed “News and Insights”. Article images standardised at 3:2 with the Meditron mark on brand colours." }
+  ],
+  "next": [
+    "Run the Tier 1–6 checks in ChatGPT, Gemini and Google AI Overviews from Switzerland; log results here.",
+    "Jean reviews the German versions of articles 4–6; publish when approved.",
+    "Model page copy for HERA Z20, V8, R20 and V7 from the existing briefs.",
+    "Semrush Position Tracking on the full target list (needs API units).",
+    "Google Business Profiles for Rolle and Frauenfeld with “Samsung ultrasound” in the description."
+  ],
+  "asks": [
+    "Top up Semrush API units so keyword-level tracking can start.",
+    "Confirm the German job titles used in the article bylines (Kundenberater Ultraschall, Geschäftsführer, Applikationsspezialistin Ultraschall).",
+    "Product photography for articles, if preferred over the brand-colour placeholders."
+  ],
+  "log": [
+    { "week": "Week 1 · 8 Sep", "text": "Kick-off, strategy, keyword cluster, redirect map." },
+    { "week": "Week 2 · 15 Sep", "text": "Redirects, indexing, four locales, hub content live on 16 Sep." },
+    { "week": "Week 3 · 22 Sep", "text": "H1s, structured data, site hygiene, three English article drafts." },
+    { "week": "Week 4 · 29 Sep", "text": "Baseline measured, six articles in EN and DE, three published, Insights category, image system." }
+  ]
+}
