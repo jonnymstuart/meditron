@@ -115,3 +115,8 @@ Verification after each publish: `/seo page <url>` on the changed pages, `/seo h
 - Home section heading: "News & Events" → "News and Insights" (EN), "News und Insights" (DE), "Actualités et Insights" (FR), "Notizie e Insights" (IT). The /news-events page heading is unchanged.
 - Article images: list card frame (EuCgXuDmA + breakpoint replicas) and article hero (pvpvOm4RW + replicas) both set to aspectRatio 1.5 (3:2) so the same image shows uncropped everywhere. Hero images regenerated at 1500×1000 with 110px safe margins (`scripts/framer/hero-images.mjs`). Any future article image should be supplied at 3:2.
 - Published to production, version 089630422.
+
+## Article image system (2026-09-30)
+- Insights articles use a flat brand colour with the Meditron mark centred, 3:2, no text (`content/images/flat-N-<hex>.jpg`, generator `scripts/framer/hero-images.mjs`, mark `content/images/meditron-mark.svg`, navy #12304B).
+- Seven colours, cycle in order per article: D9E7D1, EFDCDF, F8F6EA, FDD682, ECDBDB, EFE8D1, D8C8C8. Live: article 1 = D9E7D1, article 2 = FDD682, article 3 = EFDCDF. Published to production, version 05e5d3b3f.
+- English pages are edge-cached by Framer for a while after a publish; German pages showed the change first. Check /de if EN looks stale.
