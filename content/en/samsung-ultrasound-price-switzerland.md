@@ -9,8 +9,8 @@ description: What drives the price of a Samsung ultrasound system in Switzerland
 h1: How much does a Samsung ultrasound system cost in Switzerland?
 target_keyword: samsung ultrasound price
 secondary: ultrasound machine price switzerland, samsung ultrasound cost, ultrasound leasing
-author: TBD (Framer draft uses Nikita Müller as placeholder; confirm)
-review: draft
+author: Dr. Henri Hagenmüller, Managing Director (reviewed by Nikita Müller)
+review: published
 reviewer: Jean (language), Henri (leasing / pre-owned / SGUM wording)
 framer: draft item on branch "Content: three EN article drafts" (rb52a2qgm), not published
 google_doc: https://docs.google.com/document/d/11ZAefa71_FoXjwtZEDMKa1QJ7Aa2z3K6q3DCm-7X99s/edit
@@ -29,7 +29,7 @@ sources: Samsung Healthcare product descriptions (Framer CMS), meditron.ch, SGUM
 - A Swiss quote includes delivery, installation, DICOM connection and applications training; a marketplace listing does not.
 - Prepare your specialty, exam volume, probe wishes and practice software before asking for a quote.
 
-*Last reviewed: September 2026. Author: [Meditron ultrasound specialist, name and role].*
+*Last reviewed: September 2026. Author: see front matter.*
 
 ## Contents {#contents}
 
@@ -170,4 +170,4 @@ Meditron SA is the official distributor of Samsung Healthcare ultrasound in Swit
 
 ---
 
-*Author: [name, role at Meditron, 2-sentence bio, photo]. Reviewed by: [name]. Last updated: September 2026.*
+*Author: see front matter. Last updated: September 2026.*

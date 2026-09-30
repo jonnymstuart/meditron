@@ -9,8 +9,8 @@ description: New or pre-owned Samsung ultrasound system? A checklist for Swiss p
 h1: New or pre-owned ultrasound system: what to check before buying
 target_keyword: used samsung ultrasound
 secondary: pre-owned ultrasound machine, refurbished ultrasound switzerland, samsung ultrasound used
-author: TBD (Framer draft uses Nikita Müller as placeholder; confirm)
-review: draft
+author: Christelle Sam-Hine, Application Specialist Ultrasound (reviewed by Dr. Henri Hagenmüller)
+review: published
 reviewer: Jean (language), Henri (leasing / pre-owned / SGUM wording)
 framer: draft item on branch "Content: three EN article drafts" (rb52a2qgm), not published
 google_doc: https://docs.google.com/document/d/1yY14b24YYdK_VZAHXWT3vKhhSLaFsfXdgZKyopA6yQw/edit
@@ -29,7 +29,7 @@ sources: Samsung Healthcare product descriptions (Framer CMS), meditron.ch, SGUM
 - Check nine things on any pre-owned system: age, probes, service history, software, operating hours, regulatory status, warranty, installation and data wipe.
 - A marketplace price rarely includes delivery to Switzerland, installation, DICOM, training or an enforceable warranty.
 
-*Last reviewed: September 2026. Author: [Meditron ultrasound specialist, name and role].*
+*Last reviewed: September 2026. Author: see front matter.*
 
 ## Contents {#contents}
 
@@ -158,4 +158,4 @@ Meditron SA is the official distributor of Samsung Healthcare ultrasound in Swit
 
 ---
 
-*Author: [name, role at Meditron, 2-sentence bio, photo]. Reviewed by: [name]. Last updated: September 2026.*
+*Author: see front matter. Last updated: September 2026.*

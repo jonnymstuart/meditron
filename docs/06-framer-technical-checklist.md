@@ -103,3 +103,9 @@ Verification after each publish: `/seo page <url>` on the changed pages, `/seo h
 ## Status 2026-09-29
 - All articles are published under the **Insights** category (Types item `BV_nqtp0t`, labels Insights / Erkenntnisse / Analyses / Approfondimenti), not News or Events. The three draft articles on branch `rb52a2qgm` now reference it. New articles: set `Type` = Insights and `Type 3` = Thought pieces.
 - URLs stay under `/news-events/<slug>` (the collection's path); the category is a filter on the list page.
+
+## Status 2026-09-30 – first three articles published
+- Published to production (deployment `7e5c14ac0`): articles 1–3 in EN with DE/FR localisations, category Insights, no placeholder text, hero image on each.
+- Authors set in Framer: 1 Nikita Müller (reviewed by Henri), 2 Dr. Henri Hagenmüller (reviewed by Nikita), 3 Christelle Sam-Hine (reviewed by Henri). Bylines localised in DE/FR.
+- Hero images: generated typographic images (1600×900 JPEG, site gradient palette) via `scripts/framer/hero-images.mjs` (headless Chromium), uploaded with `framer.uploadImage`, stored in `content/images/`. Replace with product photography when Meditron supplies it; same field, same alt text.
+- Gotcha: `addItems` with `valueByLocale` needs `{ action: "set", value }` per locale; `uploadImage` takes `{ image: { bytes, mimeType }, name, altText }`.

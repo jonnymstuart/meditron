@@ -9,8 +9,8 @@ description: HERA Z20, R20, V8, V7, V6, V5 or V4? How to choose a Samsung ultras
 h1: Which Samsung ultrasound system is right for my practice?
 target_keyword: samsung ultrasound
 secondary: samsung ultrasound machine, samsung ultrasound system, hera z20, samsung v8
-author: TBD (Framer draft uses Nikita Müller as placeholder; confirm)
-review: draft
+author: Nikita Müller, Customer Consultant Ultrasound (reviewed by Dr. Henri Hagenmüller)
+review: published
 reviewer: Jean (language), Henri (leasing / pre-owned / SGUM wording)
 framer: draft item on branch "Content: three EN article drafts" (rb52a2qgm), not published
 google_doc: https://docs.google.com/document/d/1WBOBqWm6oNQgfaCgTzWwUy_LUwRlOmL9YkW6ZJfPFvI/edit
@@ -29,7 +29,7 @@ sources: Samsung Healthcare product descriptions (Framer CMS), meditron.ch, SGUM
 - In Switzerland, check the SGUM certificate you need to bill ultrasound exams before you choose a system.
 - There is no list price. Meditron configures the system to your exams and quotes within a few working days.
 
-*Last reviewed: September 2026. Author: [Meditron ultrasound specialist, name and role].*
+*Last reviewed: September 2026. Author: see front matter.*
 
 ## Contents {#contents}
 
@@ -158,4 +158,4 @@ Meditron SA is the official distributor of Samsung Healthcare ultrasound in Swit
 
 ---
 
-*Author: [name, role at Meditron, 2-sentence bio, photo]. Reviewed by: [name]. Last updated: September 2026.*
+*Author: see front matter. Last updated: September 2026.*
