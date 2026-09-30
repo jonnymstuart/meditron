@@ -122,3 +122,9 @@ Verification after each publish: `/seo page <url>` on the changed pages, `/seo h
 - English pages are edge-cached by Framer for a while after a publish; German pages showed the change first. Check /de if EN looks stale.
 - 2026-09-30: enum case "Thought pieces" (Type 3 field EYfJm_pqU, case VbiNulsKs) renamed to "Insights"; no DE/FR/IT overrides, shows "Insights" in all languages like the nav.
 - Report page: source in `report/` (index.html + data.json, passcode gate). Live at https://mtrn-visibility-7k2q.vercel.app (Vercel project `mtrn-visibility-7k2q`, team Rise, Vercel Auth off). Deploy via the Vercel MCP `create_deployment` with `project` set to the project id and no `teamId`, or `npx vercel deploy report --prod --scope useriseco`.
+
+## Status 2026-09-30 (evening)
+- Article body headings: new text styles `Heading 2 Article` (KTQIeIvRq, 42/34/28/24px) and `Heading 3 Article` (Aj2ugLM0l) bound as the H2/H3 presets of the article Body node (FUCOvBnTG + breakpoint replicas). Semantic tags stay h2/h3; only the size changed (half of Heading 2).
+- Article links: site custom code (head end) adds `<style id="mtr-article-links">` so links inside the article Body inherit colour at 90 % opacity, no underline (underline on hover). Framer's Link style API has no server-side access, hence CSS.
+- Category label "Insights": localised as Erkenntnisse / Perspectives / Approfondimenti on the News & Events enum case, the Types item, and the nav/footer links (someone had already set FR "Perspectives", kept).
+- Article 3 DE/FR bodies had been flattened to a single bold paragraph (no headings, no tables). Rebuilt from `content/_drafts/a3-de.html` / `a3-fr.html` (contents list, FAQ section and back-links stripped, bylines filled) and re-uploaded. Published, version 4239b351a.
