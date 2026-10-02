@@ -59,3 +59,10 @@ from,to,status,reason,added
 /++INDUSTRIAL++/*,/solutions/industrial-solutions,301,catch-all legacy industrial/dosimetry section,2026-09-03
 /index.php/*,/,301,catch-all legacy Joomla root paths,2026-09-03
 /index.php,/,301,legacy Joomla root,2026-09-03
+# --- Localised article slugs (2026-10-02): old locale URLs carried the English slug for two days. ---
+/de/news-events/which-samsung-ultrasound-system-for-my-practice,/de/news-events/welches-samsung-ultraschallgeraet-fuer-meine-praxis,301,localised slug,2026-10-02
+/fr/news-events/which-samsung-ultrasound-system-for-my-practice,/fr/news-events/quel-echographe-samsung-pour-mon-cabinet,301,localised slug,2026-10-02
+/de/news-events/samsung-ultrasound-price-switzerland,/de/news-events/samsung-ultraschallgeraet-preis-schweiz,301,localised slug,2026-10-02
+/fr/news-events/samsung-ultrasound-price-switzerland,/fr/news-events/prix-echographe-samsung-suisse,301,localised slug,2026-10-02
+/de/news-events/new-or-pre-owned-ultrasound-system,/de/news-events/ultraschallgeraet-neu-oder-occasion,301,localised slug,2026-10-02
+/fr/news-events/new-or-pre-owned-ultrasound-system,/fr/news-events/echographe-neuf-ou-occasion,301,localised slug,2026-10-02

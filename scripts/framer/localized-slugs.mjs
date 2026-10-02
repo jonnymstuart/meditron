@@ -6,6 +6,9 @@ import { withFramer, dryRun } from "./lib.mjs";
 const DE = "C9aJRu34X", FR = "rRxiWhpq8", IT = "D9HoCmqY1";
 const COLLECTION = "WUGvbtwAI";
 
+// Staggered publish dates (one a week, so the list reads like a running series).
+export const DATES = { SjIM3r3PY: "2026-09-21", Mlm7TYpkh: "2026-09-25", l2qkNy6T8: "2026-09-30" };
+
 export const SLUGS = {
   SjIM3r3PY: { en: "which-samsung-ultrasound-system-for-my-practice",
     [DE]: "welches-samsung-ultraschallgeraet-fuer-meine-praxis",
@@ -29,9 +32,10 @@ await withFramer(async (framer) => {
     const slugByLocale = {};
     for (const loc of [DE, FR, IT]) if (s[loc]) slugByLocale[loc] = { action: "set", value: s[loc] };
     console.log(id, item.slug, "→", JSON.stringify(slugByLocale));
-    updates.push({ id, slug: item.slug, slugByLocale });
+    updates.push({ id, slug: item.slug, slugByLocale,
+      fieldData: { VGodevXNq: { type: "date", value: DATES[id] } } });
   }
   if (dryRun) return;
   await col.addItems(updates);
-  for (const it of await col.getItems()) if (SLUGS[it.id]) console.log("now:", it.id, JSON.stringify(it.slugByLocale));
+  for (const it of await col.getItems()) if (SLUGS[it.id]) console.log("now:", it.id, JSON.stringify(it.slugByLocale), it.fieldData.VGodevXNq?.value);
 });

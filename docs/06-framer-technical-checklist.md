@@ -128,3 +128,11 @@ Verification after each publish: `/seo page <url>` on the changed pages, `/seo h
 - Article links: site custom code (head end) adds `<style id="mtr-article-links">` so links inside the article Body inherit colour at 90 % opacity, no underline (underline on hover). Framer's Link style API has no server-side access, hence CSS.
 - Category label "Insights": localised as Erkenntnisse / Perspectives / Approfondimenti on the News & Events enum case, the Types item, and the nav/footer links (someone had already set FR "Perspectives", kept).
 - Article 3 DE/FR bodies had been flattened to a single bold paragraph (no headings, no tables). Rebuilt from `content/_drafts/a3-de.html` / `a3-fr.html` (contents list, FAQ section and back-links stripped, bylines filled) and re-uploaded. Published, version 4239b351a.
+
+## Status 2026-10-02 – localised article slugs
+- Jonny switched on "Translate Page Paths" (Localization view → Settings) on main. Before that, CMS slugs reported `notLocalizable` and the API refused `slugByLocale` ("Source not found for variable GzMunCO_x"). Slug sources now exist for every collection item (type `slug`); page paths are untouched and stay English (decision: articles yes, section paths no).
+- DE/FR slugs set via `scripts/framer/localized-slugs.mjs` (`addItems` with `slugByLocale: { <locale>: { action: "set", value } }`): article 1 `welches-samsung-ultraschallgeraet-fuer-meine-praxis` / `quel-echographe-samsung-pour-mon-cabinet`; article 2 `samsung-ultraschallgeraet-preis-schweiz` / `prix-echographe-samsung-suisse`; article 3 `ultraschallgeraet-neu-oder-occasion` / `echographe-neuf-ou-occasion`. IT keeps the English slug until Italian copy exists. ASCII only (ae/oe/ue/ss, no accents).
+- Published dates staggered: 21 Sep, 25 Sep, 30 Sep 2026 (field VGodevXNq).
+- Six 308 redirects from the old `/de|fr/news-events/<english-slug>` URLs (data/redirects.csv, pushed with redirects.mjs; 59 rows live).
+- Production version 9b3532a94. Verified: new URLs 200, old locale URLs 308 to the new ones, hreflang on EN/DE/FR pages points at the new URLs, sitemap_de/fr list them, Article JSON-LD carries the new dates.
+- Indexing: no Search Console API access from here. Ask in GSC → URL inspection → "Request indexing" for the 6 new URLs (EN URLs unchanged). Sitemaps are already submitted, so Google will pick them up within days regardless.
