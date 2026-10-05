@@ -1000,6 +1000,41 @@
           "topic": "Home page weight",
           "why": "The home page is 1.4 MB with 194 images, heavy for phones and crawlers. Worth trimming sections?"
         }
+      ],
+      "gaps": {
+        "working": [
+          "Core question answered: when someone asks an AI assistant who sells Samsung ultrasound in Switzerland, Meditron is named first in all four languages on all three engines (12 of 12).",
+          "Page 1 for 11 of 20 tracked Swiss searches four weeks after the rebuild; French terms sit at position 3.",
+          "Foundations done: redirects, four languages, structured data, H1s, six Insights articles with FAQ and author markup."
+        ],
+        "gaps": [
+          "German buying searches: not visible for 'ultraschallgerät kaufen' (140 searches a month) or 'ultraschallgerät occasion'. Shops and marketplaces hold those results.",
+          "The price question: no AI engine names Meditron when asked what a Samsung ultrasound costs (0 of 12 answers). Nobody answers it with a Swiss source yet.",
+          "Model names: 'samsung hera z20' ranks 13 to 16, behind SMD Medical and Samsung's own pages. Model pages still carry thin copy.",
+          "Italian: not named in 3 of 4 generic Italian prompts. The Italian site was only completed this week.",
+          "Google AI Overviews cite meditron.ch in 1 of 5 cases where one appears.",
+          "No click or impression data yet: Search Console access is still outstanding.",
+          "No links earned yet: Samsung's distributor listing and the two Google Business Profiles are unconfirmed."
+        ],
+        "opportunities": [
+          "A live pre-owned stock page would own the 'Occasion' searches, the strongest buying intent in German.",
+          "Publishing 'from CHF' price ranges per class would make Meditron the only Swiss source for the price question, in Google and in AI answers.",
+          "Full copy on the HERA Z20, V8, R20 and V7 pages: model searches are the one place a dealer can outrank Samsung.",
+          "A link from Samsung Healthcare's 'where to buy' page and two Google Business Profiles (Rolle, Frauenfeld) are the cheapest authority gains available.",
+          "Generic medical terms (medizinisches Ultraschallgerät, mobiles Ultraschallgerät, échographe portable) are small but clean; the hub and article 5 already target them."
+        ],
+        "risks": [
+          "SMD Medical, Lysis and MHZ are the names AI assistants give instead of Meditron in German and Italian. They are gaining the generic ground while Meditron holds the brand ground.",
+          "Search volume for this category is small (a few hundred searches a month across all terms). Ranking alone will not fill the pipeline; demos, referrals and congresses still do most of the work.",
+          "Site weight: the home page is 1.4 MB with 194 images, and the About page animates its text letter by letter. Both slow crawlers and readers.",
+          "Articles go live on a fixed schedule without a Meditron read-through. A factual slip on a medical page costs more than a late article; spot checks are welcome."
+        ]
+      },
+      "focus": [
+        "Model page copy for HERA Z20, V8, R20 and V7.",
+        "Decide on price ranges and a pre-owned page (both need Meditron input).",
+        "Confirm the Samsung distributor listing and claim the two Google Business Profiles.",
+        "Grant Search Console access so clicks and impressions appear on this page."
       ]
     }
   ],

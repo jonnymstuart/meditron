@@ -64,6 +64,11 @@
   td.v { font-family: var(--serif); font-size: 21px; white-space: nowrap; font-variant-numeric: tabular-nums; }
   .tablewrap { overflow-x: auto; border-radius: 14px; }
   .caveat { font-size: 13px; color: var(--ink-2); margin: 12px 0 0; }
+  .gaps { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+  .gap h3 { padding-bottom: 8px; margin-bottom: 10px; border-bottom: 2px solid var(--line); }
+  .gap.ok h3 { border-color: var(--green); } .gap.bad h3 { border-color: var(--pink); } .gap.opp h3 { border-color: var(--yellow); } .gap.risk h3 { border-color: var(--mauve); }
+  .gap ul.plain { padding-left: 18px; } .gap ul.plain li { font-size: 14px; color: var(--ink-2); margin: 8px 0; }
+  ol.focus { margin: 0; padding-left: 22px; max-width: 72ch; } ol.focus li { margin: 6px 0; }
   .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
   .card { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
   .card h3 { margin: 0 0 6px; font-size: 15.5px; }
@@ -180,6 +185,8 @@ function overview() {
   h += `<section><h2>Scorecard</h2><p class="sub">${esc(D.method)}</p>`;
   for (const g of groups) { const ks = D.kpis.filter(k => k.group === g); if (!ks.length) continue; h += `<h3 class="g">${esc(g)}</h3><div class="tiles">${groupTiles(ks, cur, prev)}</div>`; }
   h += `</section>`;
+  if (cur.gaps) { const col = (t, items, cls) => `<div class="card gap ${cls}"><h3>${esc(t)}</h3><ul class="plain">${items.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>`;
+    h += `<section><h2>Where the gaps are</h2><p class="sub">What is working, what is not, and where the next gains sit. Based on the ${esc(cur.label)} measurement.</p><div class="gaps">${col("Working", cur.gaps.working, "ok")}${col("Gaps", cur.gaps.gaps, "bad")}${col("Opportunities", cur.gaps.opportunities, "opp")}${col("Risks", cur.gaps.risks, "risk")}</div>${cur.focus ? `<h3 class="g">Focus next</h3><ol class="focus">${cur.focus.map(x => `<li>${esc(x)}</li>`).join("")}</ol>` : ""}</section>`; }
   h += `<section><h2>Month by month</h2><p class="sub">One line per measure. A hollow dot is the September baseline, measured differently; the trend from October onwards is like for like.</p><div class="charts">${D.kpis.filter(k => ms.some(m => num(m.values[k.id]) != null)).map(k => chart(k, ms)).join("")}</div></section>`;
   h += `<section><h2>Insights articles</h2><p class="sub">Each answers a question buyers ask, links to the model pages and carries FAQ and author markup so Google and AI assistants can quote it.</p><div class="arts">${D.articles.map((a, i) => `<div class="art"><div class="img" style="background:${colours[i % colours.length]}">${mark}</div><div class="body"><span class="pill ${a.status === "live" ? "live" : "draft"}">${esc(a.status)}</span><h3>${a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a>` : esc(a.title)}</h3><div class="by">Author: ${esc(a.author)}</div><p>${esc(a.why)}</p></div></div>`).join("")}</div></section>`;
   if (cur.discuss) h += `<section><h2>To discuss</h2><p class="sub">Not tasks. Questions for the next meeting where a Meditron decision would move the numbers.</p><div class="cards">${cur.discuss.map(x => `<div class="card"><h3>${esc(x.topic)}</h3><p>${esc(x.why)}</p></div>`).join("")}</div></section>`;
