@@ -87,7 +87,8 @@
   .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
   .ex { font-size: 13px; color: var(--ink-2); margin: 8px 0 0; padding-left: 18px; }
   .ex li { margin: 2px 0; }
-  .tr { cursor: help; text-decoration: underline dotted var(--ink-3); text-underline-offset: 3px; }
+  #tip { position: fixed; z-index: 50; background: var(--ink); color: var(--paper); font-size: 12.5px; font-weight: 500; line-height: 1.35; padding: 5px 9px; border-radius: 7px; max-width: 320px; box-shadow: 0 4px 14px rgba(18,48,75,.18); pointer-events: none; opacity: 0; transition: opacity .12s; }
+  #tip.on { opacity: 1; }
   footer { padding: 32px 0 60px; color: var(--ink-2); font-size: 13px; border-top: 1px solid var(--line); margin-top: 40px; }
   [hidden] { display: none !important; }
   /* gate */
@@ -134,7 +135,7 @@ const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "
 const colours = ["#D9E7D1", "#FDD682", "#EFDCDF", "#F8F6EA", "#ECDBDB", "#EFE8D1", "#D8C8C8"];
 const mark = '<svg viewBox="0 0 48 30"><use href="#mark"/></svg>';
 let D = null, TAB = "overview";
-const tr = (text, lang) => { const g = D.glossary?.[text]; return (lang === "en" || !g) ? esc(text) : `<span class="tr" title="${esc(g)}">${esc(text)}</span>`; };
+const tr = (text, lang) => { const g = D.glossary?.[text]; return (lang === "en" || !g) ? esc(text) : `<span class="tr" data-en="${esc(g)}">${esc(text)}</span>`; };
 
 // value helpers: a KPI value is a number, null, or "a / b" (ratio, plotted as a)
 const num = v => v == null ? null : typeof v === "number" ? v : Number(String(v).split("/")[0]);
@@ -212,6 +213,25 @@ async function unlock(pw) {
 }
 $("gateForm").addEventListener("submit", async e => { e.preventDefault(); if (!(await unlock($("pass").value.trim()))) $("err").textContent = "That passcode is not right."; });
 try { if (sessionStorage.getItem("mtr-ok") === "1") { $("gate").remove(); $("app").hidden = false; load(); } } catch {}
+</script>
+<div id="tip" aria-hidden="true"></div>
+<script>
+(() => {
+  const tip = document.getElementById("tip");
+  if (!matchMedia("(hover: hover)").matches) return;
+  document.addEventListener("mouseover", e => {
+    const el = e.target.closest(".tr"); if (!el) return;
+    tip.textContent = el.dataset.en; tip.classList.add("on");
+    const r = el.getBoundingClientRect(); tip.style.left = "0px"; tip.style.top = "0px";
+    const w = tip.offsetWidth, h = tip.offsetHeight;
+    let x = r.left, y = r.top - h - 6;
+    if (x + w > innerWidth - 8) x = innerWidth - 8 - w;
+    if (y < 8) y = r.bottom + 6;
+    tip.style.left = x + "px"; tip.style.top = y + "px";
+  });
+  document.addEventListener("mouseout", e => { if (e.target.closest(".tr")) tip.classList.remove("on"); });
+  addEventListener("scroll", () => tip.classList.remove("on"), { passive: true });
+})();
 </script>
 </body>
 </html>
