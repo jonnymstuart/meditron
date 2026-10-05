@@ -77,14 +77,18 @@
     "caveat": "Semrush snapshot of 29 Sep, kept as the starting point. From 5 Oct the tracked terms are measured directly in Swiss Google and the AI engines via DataForSEO; see the two tables below."
   },
   "ai": {
-    "summary": "Manual checks in ChatGPT and Gemini on 29 Sep: Meditron is already named for direct brand-plus-country questions (“Samsung ultrasound Switzerland”). The harder, brand-less questions are the next test.",
+    "summary": "Measured 5 Oct via the ChatGPT, Gemini and Perplexity APIs on the 20 tracked prompts (full table further down). Meditron owns the direct question in every language. The gaps are price, model comparison and the brand-less German and Italian practice questions.",
     "links": [
       {
-        "label": "ChatGPT results",
+        "label": "Full table of the 20 prompts",
+        "url": "#s-aiprompts"
+      },
+      {
+        "label": "Manual ChatGPT check, 29 Sep",
         "url": "https://chatgpt.com/share/6abb6552-a130-83eb-a7fb-5b074f9eb968"
       },
       {
-        "label": "Gemini results",
+        "label": "Manual Gemini check, 29 Sep",
         "url": "https://share.gemini.google/R4VgqUyLhliQ"
       }
     ],
@@ -92,66 +96,72 @@
       {
         "name": "Tier 1 · generic, no brand, no country",
         "difficulty": "hardest",
-        "status": "to test",
+        "status": "7 of 12 named",
         "examples": [
           "best ultrasound machine for a gynaecology practice",
           "Ultraschallgerät für Praxis kaufen – welches?",
           "échographe pour cabinet médical, lequel choisir",
           "ecografo per studio medico, quale scegliere"
-        ]
+        ],
+        "result": "Closest tracked prompts (no brand, Switzerland named): Meditron named in 7 of 12 answers, site cited in 5. Named in EN and FR, absent in DE and IT where Lysis, MHZ and SMD Medical are named instead."
       },
       {
         "name": "Tier 2 · brand, no country",
         "difficulty": "hard",
-        "status": "to test",
+        "status": "0 of 24 named",
         "examples": [
           "Samsung HERA Z20 vs V8",
           "Samsung Ultraschallgerät Erfahrungen",
           "échographe Samsung avis",
           "ecografo Samsung prezzo"
-        ]
+        ],
+        "result": "Model and price prompts: Meditron named in 0 of 24 answers, site cited in 1. Nobody answers the price question with a Swiss source; the model comparison names Lysis. Articles 2, 4 and 5 target exactly these."
       },
       {
         "name": "Tier 3 · brand + Switzerland (core targets)",
         "difficulty": "medium",
-        "status": "mentioned",
+        "status": "12 of 12 named",
         "examples": [
           "Samsung ultrasound Switzerland",
           "Samsung Ultraschall Schweiz",
           "échographe Samsung Suisse",
           "ecografo Samsung Svizzera"
-        ]
+        ],
+        "result": "Core prompts: Meditron named in 12 of 12 answers, site cited in 8. Meditron is named first in all four languages on all three engines."
       },
       {
         "name": "Tier 4 · “official distributor” wording",
         "difficulty": "medium",
-        "status": "to test",
+        "status": "not tracked yet",
         "examples": [
           "official Samsung ultrasound distributor Switzerland",
           "offizieller Samsung Ultraschall Distributor Schweiz",
           "distributeur officiel échographes Samsung Suisse",
           "distributore ufficiale ecografi Samsung Svizzera"
-        ]
+        ],
+        "result": "No prompt in the tracking list uses the 'official distributor' wording. The core answers already call Meditron the official distributor; four prompts can be added next week."
       },
       {
         "name": "Tier 5 · service, used, leasing",
         "difficulty": "easier",
-        "status": "to test",
+        "status": "1 of 12 named",
         "examples": [
           "used Samsung ultrasound machine Switzerland",
           "Samsung Ultraschallgerät Occasion Schweiz",
           "Ultraschallgerät leasen Schweiz",
           "échographe Samsung occasion Suisse"
-        ]
+        ],
+        "result": "New-or-used prompts: Meditron named in 1 of 12 answers, site cited in 1. Only ChatGPT in German names Meditron (citing article 3). French and Italian answers name MHZ."
       },
       {
         "name": "Tier 6 · Meditron named",
         "difficulty": "easiest",
-        "status": "mentioned",
+        "status": "not tracked yet",
         "examples": [
           "Is Meditron the official Samsung ultrasound distributor in Switzerland?",
           "Was macht Meditron in Frauenfeld?"
-        ]
+        ],
+        "result": "Prompts that name Meditron are the easiest case and were left out of the list to save budget. Add two if you want them on the page."
       }
     ]
   },

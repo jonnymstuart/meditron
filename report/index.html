@@ -183,8 +183,8 @@ async function render() {
   $("baseline").innerHTML = d.baseline.rows.map(r => `<tr><td>${esc(r.measure)}</td><td class="v">${esc(r.value)}</td><td>${esc(r.meaning)}</td></tr>`).join("");
   $("baselineCaveat").textContent = d.baseline.caveat;
   $("aiSummary").textContent = d.ai.summary;
-  $("aiLinks").innerHTML = d.ai.links.map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join(" · ");
-  $("tiers").innerHTML = d.ai.tiers.map(t => `<div class="card"><span class="pill ${t.status === "mentioned" ? "mentioned" : "totest"}">${esc(t.status)} · ${esc(t.difficulty)}</span><h3>${esc(t.name)}</h3><ul class="ex">${t.examples.map(e => `<li>${esc(e)}</li>`).join("")}</ul></div>`).join("");
+  $("aiLinks").innerHTML = d.ai.links.map(l => l.url.startsWith("#") ? `<a href="${esc(l.url)}">${esc(l.label)} ↓</a>` : `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join(" · ");
+  $("tiers").innerHTML = d.ai.tiers.map(t => `<div class="card"><span class="pill ${/^[1-9]/.test(t.status) ? "mentioned" : "totest"}">${esc(t.status)} · ${esc(t.difficulty)}</span><h3>${esc(t.name)}</h3>${t.result ? `<p>${esc(t.result)}</p>` : ""}<ul class="ex">${t.examples.map(e => `<li>${esc(e)}</li>`).join("")}</ul></div>`).join("");
   if (d.google) { $("s-google").hidden = false; $("googleSrc").textContent = "Source: " + d.google.source;
     $("google").innerHTML = d.google.rows.map(r => `<tr><td>${esc(r.lang.toUpperCase())}</td><td>${esc(r.keyword)}</td><td class="v">${r.volume ?? ""}</td><td class="v">${r.position ?? "–"}</td><td>${esc(r.seen ?? "")}</td><td>${esc((r.top3||[]).map(x=>x.replace(/^www\./,"")).join(", "))}</td><td>${r.ai_overview ? (r.ai_overview_cites_meditron ? "cites Meditron" : "yes, not cited") : "none"}</td></tr>`).join(""); }
   if (d.aiPrompts) { $("s-aiprompts").hidden = false; $("aiSrc").textContent = "Source: " + d.aiPrompts.source;
