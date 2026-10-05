@@ -20,7 +20,7 @@ Ordered. Status: live / staging / next. Keywords from docs/05-samsung-ultrasound
 
 | # | Title (DE working title) | Target searches | Status |
 |---|---|---|---|
-| 1 | Welches Samsung Ultraschallgerät passt zu meiner Praxis? | samsung ultraschall, ultraschallgerät kaufen | live 21 Sep |
+| 1 | Welches Samsung Ultraschallgerät passt zu meiner Praxis? | samsung ultraschall, ultraschallgerät kaufen | live 21 Sep (EN DE FR IT) |
 | 2 | Was kostet ein Samsung Ultraschallgerät in der Schweiz? | samsung ultraschall preis | live 25 Sep |
 | 3 | Ultraschallgerät neu oder Occasion | ultraschallgerät occasion | live 30 Sep |
 | 4 | Samsung HERA Z20 oder V8 für die Gynäkologie | samsung hera z20, samsung v8 | live 5 Oct |
