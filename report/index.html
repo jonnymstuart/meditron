@@ -87,6 +87,10 @@
   .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
   .ex { font-size: 13px; color: var(--ink-2); margin: 8px 0 0; padding-left: 18px; }
   .ex li { margin: 2px 0; }
+  .tile { position: relative; }
+  .tile .eye { position: absolute; top: 12px; right: 12px; width: 18px; height: 18px; color: var(--ink-3); opacity: .35; }
+  .tile .eye:hover { opacity: .8; }
+  .tile .eye svg { width: 100%; height: 100%; display: block; }
   #tip { position: fixed; z-index: 50; background: var(--ink); color: var(--paper); font-size: 12.5px; font-weight: 500; line-height: 1.35; padding: 5px 9px; border-radius: 7px; max-width: 320px; box-shadow: 0 4px 14px rgba(18,48,75,.18); pointer-events: none; opacity: 0; transition: opacity .12s; }
   #tip.on { opacity: 1; }
   footer { padding: 32px 0 60px; color: var(--ink-2); font-size: 13px; border-top: 1px solid var(--line); margin-top: 40px; }
@@ -148,7 +152,7 @@ function delta(k, cur, prev) {
 }
 function tile(k, m, prev) {
   const v = m.values[k.id];
-  return `<div class="tile"><div class="l">${esc(k.label)}</div><div class="v">${v == null ? `<small style="margin:0">${k.group === "Search Console" ? "not connected" : "not measured"}</small>` : esc(fmt(v)) + (k.unit ? `<small>${esc(k.unit)}</small>` : "")}</div>${prev ? delta(k, v, prev.values[k.id]) : ""}<div class="n">${esc(k.note)}${m.baseline ? " · baseline, different method" : ""}</div></div>`;
+  return `<div class="tile">${k.help ? `<span class="tr eye" data-en="${esc(k.help)}" aria-label="${esc(k.help)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>` : ""}<div class="l">${esc(k.label)}</div><div class="v">${v == null ? `<small style="margin:0">${k.group === "Search Console" ? "not connected" : "not measured"}</small>` : esc(fmt(v)) + (k.unit ? `<small>${esc(k.unit)}</small>` : "")}</div>${prev ? delta(k, v, prev.values[k.id]) : ""}<div class="n">${esc(k.note)}${m.baseline ? " · baseline, different method" : ""}</div></div>`;
 }
 function chart(k, months) {
   const pts = months.map((m, i) => ({ i, m, v: num(m.values[k.id]) }));
@@ -224,7 +228,8 @@ try { if (sessionStorage.getItem("mtr-ok") === "1") { $("gate").remove(); $("app
     tip.textContent = el.dataset.en; tip.classList.add("on");
     const r = el.getBoundingClientRect(); tip.style.left = "0px"; tip.style.top = "0px";
     const w = tip.offsetWidth, h = tip.offsetHeight;
-    let x = r.left, y = r.top - h - 6;
+    let x = el.classList.contains("eye") ? r.right - w : r.left, y = r.top - h - 6;
+    if (x < 8) x = 8;
     if (x + w > innerWidth - 8) x = innerWidth - 8 - w;
     if (y < 8) y = r.bottom + 6;
     tip.style.left = x + "px"; tip.style.top = y + "px";

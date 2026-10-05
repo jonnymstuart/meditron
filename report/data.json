@@ -15,7 +15,8 @@
       "label": "Tracked searches on page 1",
       "unit": "of 20",
       "better": "up",
-      "note": "Swiss Google, best of 3 queries"
+      "note": "Swiss Google, best of 3 queries",
+      "help": "How many of the 20 tracked Swiss Google searches show meditron.ch in the top 10 results (page 1). Each term is queried three times; the best position counts."
     },
     {
       "id": "top20",
@@ -23,7 +24,8 @@
       "label": "Tracked searches in top 20",
       "unit": "of 20",
       "better": "up",
-      "note": "pages 1 and 2"
+      "note": "pages 1 and 2",
+      "help": "How many of the 20 tracked searches show meditron.ch anywhere in the top 20 results (pages 1 and 2). Same three-query method."
     },
     {
       "id": "avgpos",
@@ -31,7 +33,8 @@
       "label": "Average position where ranking",
       "unit": "",
       "better": "down",
-      "note": "lower is better"
+      "note": "lower is better",
+      "help": "The average ranking position across the tracked searches where meditron.ch appears at all. Position 1 is the top result, so lower is better."
     },
     {
       "id": "aio",
@@ -39,7 +42,8 @@
       "label": "AI Overviews citing Meditron",
       "unit": "of shown",
       "better": "up",
-      "note": "Google's AI answer, when it appears"
+      "note": "Google's AI answer, when it appears",
+      "help": "Of the tracked searches where Google shows its AI Overview answer, how many list meditron.ch as one of the sources. Shown as cited / shown."
     },
     {
       "id": "named",
@@ -47,7 +51,8 @@
       "label": "AI answers naming Meditron",
       "unit": "of 60",
       "better": "up",
-      "note": "20 prompts × 3 engines"
+      "note": "20 prompts × 3 engines",
+      "help": "Each of the 20 prompts is sent to ChatGPT, Gemini and Perplexity (60 answers). This counts the answers that mention Meditron by name."
     },
     {
       "id": "cited",
@@ -55,7 +60,8 @@
       "label": "AI answers citing meditron.ch",
       "unit": "of 60",
       "better": "up",
-      "note": "site used as a source"
+      "note": "site used as a source",
+      "help": "Of the same 60 AI answers, how many list meditron.ch among the sources they link to."
     },
     {
       "id": "first",
@@ -63,7 +69,8 @@
       "label": "Prompts where Meditron is named first",
       "unit": "of 20",
       "better": "up",
-      "note": "ahead of any competitor"
+      "note": "ahead of any competitor",
+      "help": "Of the 20 prompts, how many where Meditron is the first company named in the answer, ahead of any competitor, across the three engines."
     },
     {
       "id": "articles",
@@ -71,7 +78,8 @@
       "label": "Insights articles live",
       "unit": "",
       "better": "up",
-      "note": "EN + DE + FR + IT"
+      "note": "EN + DE + FR + IT",
+      "help": "Insights articles published on meditron.ch, each counted once, with English, German, French and Italian versions."
     },
     {
       "id": "clicks",
@@ -79,7 +87,8 @@
       "label": "Google clicks, month",
       "unit": "",
       "better": "up",
-      "note": "needs Search Console access"
+      "note": "needs Search Console access",
+      "help": "Visits from Google search to meditron.ch in the month, from Google Search Console. Needs Meditron to grant access."
     },
     {
       "id": "impressions",
@@ -87,7 +96,8 @@
       "label": "Google impressions, month",
       "unit": "",
       "better": "up",
-      "note": "needs Search Console access"
+      "note": "needs Search Console access",
+      "help": "How often meditron.ch appeared in Google results in the month, from Google Search Console. Needs Meditron to grant access."
     }
   ],
   "months": [
