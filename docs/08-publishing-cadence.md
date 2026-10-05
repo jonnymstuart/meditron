@@ -1,20 +1,19 @@
 # Insights publishing cadence
 
-Decided 2026-10-05 (Jonny): three articles a week, published Monday, Wednesday and Friday, staggered so the Insights list always shows fresh dates. Two routines run this; nothing goes live without Meditron's approval of the German text.
+Decided 2026-10-05 (Jonny): three articles a week, published Monday, Wednesday and Friday, staggered so the Insights list always shows fresh dates. Two routines run this. Decision 2026-10-05 (Jonny): Meditron does not proofread the articles, so they publish on schedule without approval. Anyone can stop one by adding it under "Holds" below.
 
 ## How it runs
 
 | When (Europe/Zurich) | Routine | What it does |
 |---|---|---|
 | Monday 06:50 | Draft 3 articles | Takes the next three backlog topics, writes EN + DE + FR, pushes them to Framer **staging as drafts**, adds them with staging links and a comments box to the status Google Doc, messages Jonny. |
-| Mon / Wed / Fri 08:50 | Publish approved | Reads the status Google Doc. If an article's comments box contains **APPROVED**, sets its date to today, un-drafts it, deploys to production, verifies the URLs, updates the doc and the report page. If nothing is approved, it only sends a one-line note. |
+| Mon / Wed / Fri 08:50 | Publish next | Takes the earliest-dated staged draft that is not on hold, sets its date to today, un-drafts it, deploys to production, verifies the URLs, updates the backlog, the report page and the status doc. If the queue is empty, it only sends a one-line note. |
 
-Approval: Meditron (Jean for language, Henri for commercial wording) writes **APPROVED** in the article's comments box in the Google Doc. Jonny can also approve by adding the article number under "Approved by Jonny" below.
+Quality gate: the drafting routine is the reviewer. Facts only from meditron.ch and Samsung's published material, no prices, no clinical claims, German read once as a sceptical Swiss doctor. Meditron can still comment in the status Google Doc; comments are applied to the live article afterwards.
 
-Reality check: three a week means Jean reviews three German texts a week. If approvals lag, the publish routine simply skips days; the backlog keeps building on staging. The drafting routine should be paused (disable the Monday trigger) if more than six articles are waiting unreviewed.
-
-## Approved by Jonny
-(none yet)
+## Holds
+Add an article number here to stop it publishing (e.g. `7 HOLD, Henri checking leasing wording`).
+(none)
 
 ## Backlog
 Ordered. Status: live / staging / next. Keywords from docs/05-samsung-ultrasound-cluster.md.
@@ -24,7 +23,7 @@ Ordered. Status: live / staging / next. Keywords from docs/05-samsung-ultrasound
 | 1 | Welches Samsung Ultraschallgerät passt zu meiner Praxis? | samsung ultraschall, ultraschallgerät kaufen | live 21 Sep |
 | 2 | Was kostet ein Samsung Ultraschallgerät in der Schweiz? | samsung ultraschall preis | live 25 Sep |
 | 3 | Ultraschallgerät neu oder Occasion | ultraschallgerät occasion | live 30 Sep |
-| 4 | Samsung HERA Z20 oder V8 für die Gynäkologie | samsung hera z20, samsung v8 | staging, planned 5 Oct |
+| 4 | Samsung HERA Z20 oder V8 für die Gynäkologie | samsung hera z20, samsung v8 | live 5 Oct |
 | 5 | Ultraschallgerät tragbar oder stationär | ultraschallgerät tragbar, échographe portable | staging, planned 7 Oct |
 | 6 | Die ersten 90 Tage mit dem neuen Ultraschallgerät | brand, retention | staging, planned 9 Oct |
 | 7 | Samsung Ultraschall in der Schweiz: Service, Schulung, Garantie | samsung healthcare schweiz | next |
