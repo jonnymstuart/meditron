@@ -6,7 +6,7 @@
   "week": 5,
   "goal": "Be the answer for “Samsung ultrasound” in Swiss Google and in AI assistants (ChatGPT, Gemini, Google AI Overviews) in German, French, Italian and English.",
   "headline": {
-    "status": "Three articles live with German and French URLs. Three more on staging for review. Tracking list agreed; keyword data source being set up.",
+    "status": "First real rankings measured on 2026-10-05: Meditron is on page 1 for 11 of 20 tracked Swiss searches and is named in 20 of 60 AI answers. Three articles live, three on staging.",
     "tiles": [
       {
         "label": "Articles live",
@@ -14,19 +14,19 @@
         "note": "3 more on staging · EN + DE + FR"
       },
       {
-        "label": "Keywords in Google top 100 (CH)",
-        "value": "4",
-        "note": "baseline, Semrush 29 Sep"
+        "label": "Tracked terms on page 1 (CH)",
+        "value": "11",
+        "note": "of 20 · 13 on pages 1–2 · DataForSEO 2026-10-05"
       },
       {
-        "label": "Keywords on page 1–2",
-        "value": "0",
-        "note": "baseline · target: 10+ by January"
+        "label": "AI answers naming Meditron",
+        "value": "20 / 60",
+        "note": "15 cite meditron.ch · 20 prompts × ChatGPT, Gemini, Perplexity · 2026-10-05"
       },
       {
         "label": "AI Overviews citing Meditron",
-        "value": "0 / 4",
-        "note": "baseline · target: cited on core terms"
+        "value": "1 / 5",
+        "note": "AI Overview shown on 5 of 20 terms · 2026-10-05"
       }
     ]
   },
@@ -74,7 +74,7 @@
         "meaning": "People researching, not buying yet. Articles 2 and 3 target the buying searches."
       }
     ],
-    "caveat": "Semrush lags Google by two to four weeks, so the September site changes are not in these numbers yet. Keyword-level detail needs Semrush API units topped up."
+    "caveat": "Semrush snapshot of 29 Sep, kept as the starting point. From 5 Oct the tracked terms are measured directly in Swiss Google and the AI engines via DataForSEO; see the two tables below."
   },
   "ai": {
     "summary": "Manual checks in ChatGPT and Gemini on 29 Sep: Meditron is already named for direct brand-plus-country questions (“Samsung ultrasound Switzerland”). The harder, brand-less questions are the next test.",
@@ -237,6 +237,10 @@
     {
       "date": "2026-10-05",
       "text": "Articles 4 to 6 on staging in EN, DE and FR with images and FAQ. Tracking list of 24 Google terms and 20 AI prompts agreed. Article tables fixed for narrow screens."
+    },
+    {
+      "date": "2026-10-05",
+      "text": "DataForSEO connected. First direct measurement of the 24 tracked Swiss searches and 20 AI prompts across ChatGPT, Gemini and Perplexity. Tables added to this report."
     }
   ],
   "next": [
@@ -313,5 +317,631 @@
       "topic": "Home page weight",
       "why": "The home page is 1.4 MB of HTML with 194 images, heavy for phones and crawlers. Worth a design pass to trim sections?"
     }
-  ]
+  ],
+  "google": {
+    "source": "DataForSEO SERP + Google Ads volume, Switzerland, 2026-10-05",
+    "rows": [
+      {
+        "lang": "en",
+        "keyword": "samsung ultrasound",
+        "volume": 10,
+        "position": 8,
+        "seen": "2/3",
+        "top3": [
+          "previous.samsunghealthcare.com",
+          "www.youtube.com",
+          "www.facebook.com"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "de",
+        "keyword": "samsung ultraschall",
+        "volume": 30,
+        "position": 4,
+        "seen": "1/3",
+        "top3": [
+          "primus-ultraschall.de",
+          "www.bms-ultraschall.de",
+          "de.linkedin.com"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "fr",
+        "keyword": "échographe samsung",
+        "volume": 10,
+        "position": 3,
+        "seen": "2/3",
+        "top3": [
+          "fr.bimedis.com",
+          "fr.ifixit.com",
+          "fr.scribd.com"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "it",
+        "keyword": "ecografo samsung",
+        "volume": 10,
+        "position": 10,
+        "seen": "1/3",
+        "top3": [
+          "www.flexomedical.it",
+          "www.biomecsrl.it",
+          "news.samsung.com"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "en",
+        "keyword": "samsung ultrasound price",
+        "volume": 10,
+        "position": 3,
+        "seen": "1/3",
+        "top3": [
+          "lbnmedical.com",
+          "remma.fr",
+          "bimedis.com"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "de",
+        "keyword": "samsung ultraschallgerät preis",
+        "volume": null,
+        "position": 5,
+        "seen": "2/3",
+        "top3": [
+          "de.bimedis.com",
+          "www.ultra-medical.de",
+          "www.meditron.ch"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "fr",
+        "keyword": "échographe samsung prix",
+        "volume": 10,
+        "position": 3,
+        "seen": "1/3",
+        "top3": [
+          "www.artmedicalsuisse.ch",
+          "fr.bimedis.com",
+          "ma.bimedis.com"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "it",
+        "keyword": "ecografo samsung prezzo",
+        "volume": 0,
+        "position": 46,
+        "seen": "1/3",
+        "top3": [
+          "www.biomecsrl.it",
+          "best-medical.it",
+          "www.flexomedical.it"
+        ],
+        "ai_overview": true,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "en",
+        "keyword": "used ultrasound machine switzerland",
+        "volume": null,
+        "position": 4,
+        "seen": "1/3",
+        "top3": [
+          "codeo-medical.com",
+          "www.praxisdienst.com",
+          "www.acumax.ch"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "de",
+        "keyword": "ultraschallgerät occasion",
+        "volume": 10,
+        "position": null,
+        "seen": "0/3",
+        "top3": [
+          "www.praxisdienst.com",
+          "www.medizinoccasionen.ch",
+          "www.sansotech.ch"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "fr",
+        "keyword": "échographe occasion suisse",
+        "volume": null,
+        "position": 3,
+        "seen": "2/3",
+        "top3": [
+          "www.artmedicalsuisse.ch",
+          "www.artmedicalsuisse.ch",
+          "www.artmedicalsuisse.ch"
+        ],
+        "ai_overview": true,
+        "ai_overview_cites_meditron": true
+      },
+      {
+        "lang": "it",
+        "keyword": "ecografo usato svizzera",
+        "volume": null,
+        "position": null,
+        "seen": "0/3",
+        "top3": [],
+        "ai_overview": true,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "en",
+        "keyword": "samsung hera z20",
+        "volume": null,
+        "position": 13,
+        "seen": "2/3",
+        "top3": [
+          "www.samsung.com",
+          "smdmedical.ch",
+          "www.instagram.com"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "de",
+        "keyword": "samsung hera z20",
+        "volume": null,
+        "position": 16,
+        "seen": "2/3",
+        "top3": [
+          "www.facebook.com",
+          "smdmedical.ch",
+          "smdmedical.ch"
+        ],
+        "ai_overview": true,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "de",
+        "keyword": "samsung v8 ultraschall",
+        "volume": null,
+        "position": 3,
+        "seen": "3/3",
+        "top3": [
+          "smdmedical.ch",
+          "smdmedical.ch",
+          "www.meditron.ch"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "fr",
+        "keyword": "samsung hera w10",
+        "volume": 10,
+        "position": null,
+        "seen": "0/3",
+        "top3": [
+          "news.samsung.com",
+          "www.samsung.com",
+          "biomedic.nl"
+        ],
+        "ai_overview": true,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "en",
+        "keyword": "ultrasound machine switzerland",
+        "volume": null,
+        "position": 2,
+        "seen": "3/3",
+        "top3": [
+          "www.artmedicalsuisse.ch",
+          "www.artmedicalsuisse.ch",
+          "www.artmedicalsuisse.ch"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "de",
+        "keyword": "ultraschallgerät kaufen",
+        "volume": 140,
+        "position": null,
+        "seen": "0/3",
+        "top3": [
+          "www.doccheckshop.ch",
+          "www.frei-swiss.ch",
+          "www.ultraschallbad.ch"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "fr",
+        "keyword": "échographe cabinet médical",
+        "volume": null,
+        "position": 54,
+        "seen": "2/3",
+        "top3": [
+          "cimgeneve.ch",
+          "www.swissmedical.net",
+          "www.medimagesa.ch"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      },
+      {
+        "lang": "it",
+        "keyword": "ecografo studio medico",
+        "volume": null,
+        "position": null,
+        "seen": "0/3",
+        "top3": [
+          "www.medicalexpo.it",
+          "www.swissmedical.net",
+          "www.medicalexpo.it"
+        ],
+        "ai_overview": false,
+        "ai_overview_cites_meditron": false
+      }
+    ]
+  },
+  "aiPrompts": {
+    "source": "DataForSEO AI Optimization API (ChatGPT gpt-5.5, Gemini 3.5 Flash, Perplexity sonar-pro), web search on, 2026-10-05",
+    "rows": [
+      {
+        "lang": "en",
+        "prompt": "Who sells Samsung ultrasound systems in Switzerland?",
+        "chatgpt": {
+          "named": true,
+          "cited": true
+        },
+        "gemini": {
+          "named": true,
+          "cited": false
+        },
+        "perplexity": {
+          "named": true,
+          "cited": true
+        },
+        "first_named": "Meditron"
+      },
+      {
+        "lang": "de",
+        "prompt": "Wer verkauft Samsung Ultraschallgeräte in der Schweiz?",
+        "chatgpt": {
+          "named": true,
+          "cited": true
+        },
+        "gemini": {
+          "named": true,
+          "cited": false
+        },
+        "perplexity": {
+          "named": true,
+          "cited": true
+        },
+        "first_named": "Meditron"
+      },
+      {
+        "lang": "fr",
+        "prompt": "Qui vend les échographes Samsung en Suisse ?",
+        "chatgpt": {
+          "named": true,
+          "cited": true
+        },
+        "gemini": {
+          "named": true,
+          "cited": false
+        },
+        "perplexity": {
+          "named": true,
+          "cited": true
+        },
+        "first_named": "Meditron"
+      },
+      {
+        "lang": "it",
+        "prompt": "Chi vende gli ecografi Samsung in Svizzera?",
+        "chatgpt": {
+          "named": true,
+          "cited": true
+        },
+        "gemini": {
+          "named": true,
+          "cited": false
+        },
+        "perplexity": {
+          "named": true,
+          "cited": true
+        },
+        "first_named": "Meditron"
+      },
+      {
+        "lang": "en",
+        "prompt": "How much does a Samsung ultrasound machine cost?",
+        "chatgpt": {
+          "named": false,
+          "cited": false
+        },
+        "gemini": {
+          "named": false,
+          "cited": false
+        },
+        "perplexity": {
+          "named": false,
+          "cited": false
+        },
+        "first_named": null
+      },
+      {
+        "lang": "de",
+        "prompt": "Was kostet ein Samsung Ultraschallgerät?",
+        "chatgpt": {
+          "named": false,
+          "cited": false
+        },
+        "gemini": {
+          "named": false,
+          "cited": false
+        },
+        "perplexity": {
+          "named": false,
+          "cited": false
+        },
+        "first_named": null
+      },
+      {
+        "lang": "fr",
+        "prompt": "Combien coûte un échographe Samsung ?",
+        "chatgpt": {
+          "named": false,
+          "cited": false
+        },
+        "gemini": {
+          "named": false,
+          "cited": false
+        },
+        "perplexity": {
+          "named": false,
+          "cited": false
+        },
+        "first_named": null
+      },
+      {
+        "lang": "it",
+        "prompt": "Quanto costa un ecografo Samsung?",
+        "chatgpt": {
+          "named": false,
+          "cited": false
+        },
+        "gemini": {
+          "named": false,
+          "cited": false
+        },
+        "perplexity": {
+          "named": false,
+          "cited": false
+        },
+        "first_named": null
+      },
+      {
+        "lang": "en",
+        "prompt": "Should I buy a new or a used ultrasound machine for my practice?",
+        "chatgpt": {
+          "named": false,
+          "cited": false
+        },
+        "gemini": {
+          "named": false,
+          "cited": false
+        },
+        "perplexity": {
+          "named": false,
+          "cited": false
+        },
+        "first_named": null
+      },
+      {
+        "lang": "de",
+        "prompt": "Ultraschallgerät neu oder Occasion kaufen, worauf achten?",
+        "chatgpt": {
+          "named": true,
+          "cited": true
+        },
+        "gemini": {
+          "named": false,
+          "cited": false
+        },
+        "perplexity": {
+          "named": false,
+          "cited": false
+        },
+        "first_named": "Meditron"
+      },
+      {
+        "lang": "fr",
+        "prompt": "Échographe neuf ou d'occasion pour un cabinet, que vérifier ?",
+        "chatgpt": {
+          "named": false,
+          "cited": false
+        },
+        "gemini": {
+          "named": false,
+          "cited": false
+        },
+        "perplexity": {
+          "named": false,
+          "cited": false
+        },
+        "first_named": "MHZ"
+      },
+      {
+        "lang": "it",
+        "prompt": "Ecografo nuovo o usato per uno studio medico, cosa controllare?",
+        "chatgpt": {
+          "named": false,
+          "cited": false
+        },
+        "gemini": {
+          "named": false,
+          "cited": false
+        },
+        "perplexity": {
+          "named": false,
+          "cited": false
+        },
+        "first_named": "MHZ"
+      },
+      {
+        "lang": "en",
+        "prompt": "Samsung HERA Z20 or V8 for a gynaecology practice?",
+        "chatgpt": {
+          "named": false,
+          "cited": false
+        },
+        "gemini": {
+          "named": false,
+          "cited": false
+        },
+        "perplexity": {
+          "named": false,
+          "cited": true
+        },
+        "first_named": "Lysis"
+      },
+      {
+        "lang": "de",
+        "prompt": "Samsung HERA Z20 oder V8 für die Gynäkologie?",
+        "chatgpt": {
+          "named": false,
+          "cited": false
+        },
+        "gemini": {
+          "named": false,
+          "cited": false
+        },
+        "perplexity": {
+          "named": false,
+          "cited": false
+        },
+        "first_named": null
+      },
+      {
+        "lang": "de",
+        "prompt": "Welches Samsung Ultraschallgerät für eine Praxis?",
+        "chatgpt": {
+          "named": false,
+          "cited": false
+        },
+        "gemini": {
+          "named": false,
+          "cited": false
+        },
+        "perplexity": {
+          "named": false,
+          "cited": false
+        },
+        "first_named": null
+      },
+      {
+        "lang": "fr",
+        "prompt": "Quel échographe Samsung pour un cabinet de gynécologie ?",
+        "chatgpt": {
+          "named": false,
+          "cited": false
+        },
+        "gemini": {
+          "named": false,
+          "cited": false
+        },
+        "perplexity": {
+          "named": false,
+          "cited": false
+        },
+        "first_named": null
+      },
+      {
+        "lang": "en",
+        "prompt": "Best ultrasound machine for a private practice in Switzerland?",
+        "chatgpt": {
+          "named": true,
+          "cited": true
+        },
+        "gemini": {
+          "named": true,
+          "cited": false
+        },
+        "perplexity": {
+          "named": true,
+          "cited": true
+        },
+        "first_named": "Meditron"
+      },
+      {
+        "lang": "de",
+        "prompt": "Welches Ultraschallgerät für eine Praxis in der Schweiz?",
+        "chatgpt": {
+          "named": false,
+          "cited": false
+        },
+        "gemini": {
+          "named": false,
+          "cited": false
+        },
+        "perplexity": {
+          "named": false,
+          "cited": false
+        },
+        "first_named": "Lysis"
+      },
+      {
+        "lang": "fr",
+        "prompt": "Quel échographe pour un cabinet médical en Suisse ?",
+        "chatgpt": {
+          "named": true,
+          "cited": true
+        },
+        "gemini": {
+          "named": true,
+          "cited": false
+        },
+        "perplexity": {
+          "named": true,
+          "cited": true
+        },
+        "first_named": "Meditron"
+      },
+      {
+        "lang": "it",
+        "prompt": "Quale ecografo per uno studio medico in Svizzera?",
+        "chatgpt": {
+          "named": false,
+          "cited": false
+        },
+        "gemini": {
+          "named": false,
+          "cited": false
+        },
+        "perplexity": {
+          "named": true,
+          "cited": true
+        },
+        "first_named": "SMD Medical"
+      }
+    ]
+  }
 }
