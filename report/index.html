@@ -4,82 +4,106 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="robots" content="noindex, nofollow">
-<title>Meditron · Search & AI visibility report</title>
+<title>Rise × Meditron · SEO / GEO report</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Inter:wght@400;500;600&display=swap">
 <style>
   :root {
-    --bg: #F4F2EC; --paper: #FFFFFF; --ink: #12304B; --ink-2: #4B5A6B; --line: #E1DDD2;
+    --bg: #F4F2EC; --paper: #FFFFFF; --ink: #12304B; --ink-2: #4B5A6B; --ink-3: #8A95A3; --line: #E1DDD2;
     --green: #D9E7D1; --pink: #EFDCDF; --cream: #F8F6EA; --yellow: #FDD682; --sand: #EFE8D1; --mauve: #D8C8C8;
+    --good: #2F7D4F; --bad: #A33A3A;
     --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
     --sans: "Inter", "Helvetica Neue", Arial, sans-serif;
   }
   * { box-sizing: border-box; }
   html, body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); font-size: 16px; line-height: 1.55; }
   a { color: inherit; }
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
-  header.top { display: flex; justify-content: space-between; align-items: center; padding: 22px 0; border-bottom: 1px solid var(--line); gap: 16px; flex-wrap: wrap; }
-  .brand { display: flex; align-items: center; gap: 12px; font-weight: 600; letter-spacing: .02em; }
-  .brand svg { width: 34px; height: 22px; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  header.top { display: flex; justify-content: space-between; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--line); gap: 16px; flex-wrap: wrap; }
+  .brand { display: flex; align-items: center; gap: 14px; font-weight: 600; letter-spacing: .01em; font-size: 15px; }
+  .brand .rise { font-family: var(--serif); font-size: 22px; letter-spacing: .02em; }
+  .brand .x { color: var(--ink-3); font-weight: 400; }
+  .brand svg { width: 30px; height: 19px; }
+  .brand .t { color: var(--ink-2); font-weight: 500; }
   .meta { font-size: 13px; color: var(--ink-2); text-align: right; }
-  .hero { padding: 56px 0 28px; }
+  nav.tabs { display: flex; gap: 6px; padding: 16px 0 0; flex-wrap: wrap; border-bottom: 1px solid var(--line); }
+  nav.tabs button { font: inherit; font-size: 14px; font-weight: 500; padding: 10px 14px; border: 0; background: transparent; color: var(--ink-2); cursor: pointer; border-bottom: 2px solid transparent; margin-bottom: -1px; }
+  nav.tabs button.on { color: var(--ink); border-bottom-color: var(--ink); }
+  .hero { padding: 40px 0 20px; }
   .kicker { font-size: 12px; letter-spacing: .18em; text-transform: uppercase; color: var(--ink-2); font-weight: 600; }
-  h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(38px, 6vw, 64px); line-height: 1.02; margin: 12px 0 18px; letter-spacing: -.01em; text-wrap: balance; }
+  h1 { font-family: var(--serif); font-weight: 400; font-size: clamp(36px, 5.5vw, 58px); line-height: 1.02; margin: 10px 0 14px; letter-spacing: -.01em; text-wrap: balance; }
   h1 em { font-style: italic; }
-  .lede { max-width: 62ch; font-size: 18px; color: var(--ink-2); }
-  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 14px; margin: 28px 0 8px; }
-  .tile { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 18px 18px 16px; }
-  .tile .v { font-family: var(--serif); font-size: 48px; line-height: 1; margin: 4px 0 6px; font-variant-numeric: tabular-nums; }
-  .tile .l { font-size: 13px; font-weight: 600; }
-  .tile .n { font-size: 12px; color: var(--ink-2); margin-top: 6px; }
-  section { padding: 40px 0 8px; border-top: 1px solid var(--line); }
-  h2 { font-family: var(--serif); font-weight: 400; font-size: 34px; margin: 0 0 6px; letter-spacing: -.01em; }
-  .sub { color: var(--ink-2); max-width: 70ch; margin: 0 0 20px; }
-  table { width: 100%; border-collapse: collapse; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; font-size: 14.5px; }
-  th, td { text-align: left; padding: 12px 14px; vertical-align: top; border-top: 1px solid var(--line); }
-  thead th { background: var(--cream); border-top: 0; font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
-  td.v { font-family: var(--serif); font-size: 22px; white-space: nowrap; font-variant-numeric: tabular-nums; }
+  .lede { max-width: 66ch; font-size: 17px; color: var(--ink-2); margin: 0; }
+  section { padding: 36px 0 8px; border-top: 1px solid var(--line); }
+  section:first-of-type { border-top: 0; }
+  h2 { font-family: var(--serif); font-weight: 400; font-size: 32px; margin: 0 0 6px; letter-spacing: -.01em; }
+  h3.g { font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--ink-2); margin: 22px 0 10px; }
+  .sub { color: var(--ink-2); max-width: 72ch; margin: 0 0 18px; }
+  .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  .tile { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 16px 16px 14px; min-width: 0; }
+  .tile .l { font-size: 13px; font-weight: 600; line-height: 1.3; }
+  .tile .v { font-family: var(--serif); font-size: 44px; line-height: 1; margin: 8px 0 4px; font-variant-numeric: tabular-nums; }
+  .tile .v small { font-size: 16px; color: var(--ink-2); font-family: var(--sans); margin-left: 6px; }
+  .tile .d { font-size: 12.5px; color: var(--ink-2); }
+  .tile .d.up { color: var(--good); } .tile .d.down { color: var(--bad); }
+  .tile .n { font-size: 12px; color: var(--ink-3); margin-top: 4px; }
+  .charts { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; }
+  .chart { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 14px 14px 8px; min-width: 0; }
+  .chart .l { font-size: 13px; font-weight: 600; }
+  .chart .n { font-size: 12px; color: var(--ink-3); margin-bottom: 6px; }
+  .chart svg { width: 100%; height: auto; display: block; overflow: visible; }
+  .chart .ax { font-size: 11px; fill: var(--ink-3); }
+  .chart .val { font-size: 12px; fill: var(--ink); font-weight: 600; }
+  .chart .grid { stroke: var(--line); stroke-width: 1; }
+  .chart .ln { fill: none; stroke: var(--ink); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
+  .chart .pt { fill: var(--ink); stroke: var(--paper); stroke-width: 2; }
+  .chart .pt.base { fill: var(--paper); stroke: var(--ink); }
+  table { width: 100%; border-collapse: collapse; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; font-size: 14px; }
+  th, td { text-align: left; padding: 10px 12px; vertical-align: top; border-top: 1px solid var(--line); }
+  thead th { background: var(--cream); border-top: 0; font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
+  td.v { font-family: var(--serif); font-size: 21px; white-space: nowrap; font-variant-numeric: tabular-nums; }
   .tablewrap { overflow-x: auto; border-radius: 14px; }
   .caveat { font-size: 13px; color: var(--ink-2); margin: 12px 0 0; }
-  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 14px; }
-  .card { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; padding: 18px; }
-  .card h3 { margin: 0 0 6px; font-size: 16px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+  .card { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 16px; }
+  .card h3 { margin: 0 0 6px; font-size: 15.5px; }
   .card p { margin: 0; color: var(--ink-2); font-size: 14px; }
   .pill { display: inline-block; font-size: 11px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 4px 9px; border-radius: 999px; background: var(--sand); margin-bottom: 10px; }
-  .pill.live { background: var(--green); } .pill.draft { background: var(--pink); } .pill.mentioned { background: var(--green); } .pill.totest { background: var(--yellow); }
-  .arts { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 14px; }
-  .art { background: var(--paper); border: 1px solid var(--line); border-radius: 16px; overflow: hidden; }
+  .pill.live, .pill.good { background: var(--green); } .pill.draft { background: var(--pink); } .pill.totest { background: var(--yellow); }
+  .arts { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+  .art { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; }
   .art .img { aspect-ratio: 3 / 2; display: grid; place-items: center; }
-  .art .img svg { width: 28%; }
-  .art .body { padding: 16px 18px 18px; }
-  .art h3 { margin: 0 0 6px; font-size: 17px; line-height: 1.3; }
+  .art .img svg { width: 26%; }
+  .art .body { padding: 14px 16px 16px; }
+  .art h3 { margin: 0 0 6px; font-size: 16px; line-height: 1.3; }
   .art h3 a { text-decoration: none; }
-  .art .by { font-size: 12.5px; color: var(--ink-2); margin-bottom: 8px; }
-  .art p { margin: 0; font-size: 14px; color: var(--ink-2); }
+  .art .by { font-size: 12.5px; color: var(--ink-2); margin-bottom: 6px; }
+  .art p { margin: 0; font-size: 13.5px; color: var(--ink-2); }
   .tl { list-style: none; padding: 0; margin: 0; border-left: 2px solid var(--line); }
-  .tl li { position: relative; padding: 0 0 18px 22px; }
+  .tl li { position: relative; padding: 0 0 16px 20px; }
   .tl li::before { content: ""; position: absolute; left: -7px; top: 7px; width: 12px; height: 12px; border-radius: 50%; background: var(--ink); }
   .tl .d { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); font-weight: 600; }
   ul.plain { padding-left: 20px; margin: 0; } ul.plain li { margin: 6px 0; }
   .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 28px; }
   .ex { font-size: 13px; color: var(--ink-2); margin: 8px 0 0; padding-left: 18px; }
-  footer { padding: 36px 0 60px; color: var(--ink-2); font-size: 13px; border-top: 1px solid var(--line); margin-top: 40px; }
+  .ex li { margin: 2px 0; }
+  footer { padding: 32px 0 60px; color: var(--ink-2); font-size: 13px; border-top: 1px solid var(--line); margin-top: 40px; }
+  [hidden] { display: none !important; }
   /* gate */
   #gate { position: fixed; inset: 0; background: var(--bg); display: grid; place-items: center; z-index: 10; padding: 20px; }
   #gate form { width: min(380px, 100%); background: var(--paper); border: 1px solid var(--line); border-radius: 18px; padding: 28px; }
-  #gate h1 { font-size: 34px; margin: 10px 0 6px; }
+  #gate h1 { font-size: 32px; margin: 12px 0 6px; }
   #gate p { color: var(--ink-2); font-size: 14px; margin: 0 0 16px; }
   #gate input { width: 100%; font: inherit; padding: 12px 14px; border: 1px solid var(--line); border-radius: 10px; margin-bottom: 10px; background: var(--cream); }
   #gate button { width: 100%; font: inherit; font-weight: 600; padding: 12px; border: 0; border-radius: 10px; background: var(--ink); color: #fff; cursor: pointer; }
-  #gate .err { color: #9b2c2c; font-size: 13px; min-height: 18px; margin-top: 8px; }
-  #app[hidden] { display: none; }
+  #gate .err { color: var(--bad); font-size: 13px; min-height: 18px; margin-top: 8px; }
 </style>
 </head>
 <body>
 <div id="gate">
   <form id="gateForm" autocomplete="off">
-    <div class="brand"><svg viewBox="0 0 48 30"><use href="#mark"/></svg> Meditron</div>
-    <h1>Programme <em>report</em></h1>
+    <div class="brand"><span class="rise">Rise</span><span class="x">×</span><svg viewBox="0 0 48 30"><use href="#mark"/></svg> Meditron</div>
+    <h1>SEO / GEO <em>report</em></h1>
     <p>Enter the passcode to view the report.</p>
     <input id="pass" type="password" placeholder="Passcode" autofocus>
     <button type="submit">Open report</button>
@@ -92,74 +116,12 @@
 <main id="app" hidden>
   <div class="wrap">
     <header class="top">
-      <div class="brand"><svg viewBox="0 0 48 30"><use href="#mark"/></svg> Meditron · Search & AI visibility</div>
+      <div class="brand"><span class="rise">Rise</span><span class="x">×</span><svg viewBox="0 0 48 30"><use href="#mark"/></svg> Meditron <span class="x">·</span> <span class="t" id="brandTitle"></span></div>
       <div class="meta" id="meta"></div>
     </header>
-
-    <div class="hero">
-      <div class="kicker" id="kicker"></div>
-      <h1 id="h1"></h1>
-      <p class="lede" id="goal"></p>
-      <div class="tiles" id="tiles"></div>
-      <p class="caveat" id="status"></p>
-    </div>
-
-    <section id="s-baseline">
-      <h2>Where we started</h2>
-      <p class="sub" id="baselineSrc"></p>
-      <div class="tablewrap"><table><thead><tr><th>Measure</th><th>Value</th><th>What it means</th></tr></thead><tbody id="baseline"></tbody></table></div>
-      <p class="caveat" id="baselineCaveat"></p>
-    </section>
-
-    <section id="s-ai">
-      <h2>AI assistants</h2>
-      <p class="sub" id="aiSummary"></p>
-      <p class="sub" id="aiLinks"></p>
-      <div class="cards" id="tiers"></div>
-    </section>
-
-    <section id="s-google" hidden>
-      <h2>Google rankings, tracked terms</h2>
-      <p class="sub" id="googleSrc"></p>
-      <div class="tablewrap"><table><thead><tr><th>Lang</th><th>Term</th><th>Searches / month (CH)</th><th>Meditron position</th><th>Seen</th><th>Who ranks top 3</th><th>AI Overview</th></tr></thead><tbody id="google"></tbody></table></div>
-      <p class="caveat">Best position seen in three live Swiss Google queries on the day; "seen" says how many of the three showed meditron.ch, since Google serves varying result sets. "–" means not in the top 50 in any of them. Volumes are Google Ads estimates; blank means too few searches for Google to report.</p>
-    </section>
-
-    <section id="s-aiprompts" hidden>
-      <h2>AI answers, tracked prompts</h2>
-      <p class="sub" id="aiSrc"></p>
-      <div class="tablewrap"><table><thead><tr><th>Lang</th><th>Prompt</th><th>ChatGPT</th><th>Gemini</th><th>Perplexity</th><th>Named first</th></tr></thead><tbody id="aiprompts"></tbody></table></div>
-      <p class="caveat">"Named" = Meditron appears in the answer. "Cited" = meditron.ch is one of the answer's sources. Answers come from the engines' APIs with web search on, from a neutral location, so they are a trend line rather than what one Swiss user sees.</p>
-    </section>
-
-    <section id="s-articles">
-      <h2>Insights articles</h2>
-      <p class="sub">Six planned. Each answers a question buyers ask, links to the model pages and carries FAQ and author markup so Google and AI assistants can quote it.</p>
-      <div class="arts" id="articles"></div>
-    </section>
-
-    <section id="s-timeline">
-      <div class="two">
-        <div><h2>What has been done</h2><ul class="tl" id="timeline"></ul></div>
-        <div>
-          <h2>Next</h2><ul class="plain" id="next"></ul>
-          
-        </div>
-      </div>
-    </section>
-
-    <section id="s-discuss">
-      <h2>To discuss</h2>
-      <p class="sub">Not tasks. Questions for the next meeting where a Meditron decision would move the ranking.</p>
-      <div class="cards" id="discuss"></div>
-    </section>
-
-    <section id="s-log">
-      <h2>Weekly log</h2>
-      <div class="cards" id="log"></div>
-    </section>
-
-    <footer>Prepared by Userise for Meditron SA. Sources: DataForSEO (Swiss Google and AI engines), Semrush (Switzerland database), Google Search Console, Framer publish history. Dates are stated on each figure. This page is private; do not share the passcode outside Meditron.</footer>
+    <nav class="tabs" id="tabs"></nav>
+    <div id="view"></div>
+    <footer id="foot"></footer>
   </div>
 </main>
 
@@ -170,39 +132,84 @@ const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const colours = ["#D9E7D1", "#FDD682", "#EFDCDF", "#F8F6EA", "#ECDBDB", "#EFE8D1", "#D8C8C8"];
 const mark = '<svg viewBox="0 0 48 30"><use href="#mark"/></svg>';
+let D = null, TAB = "overview";
 
-async function render() {
-  const d = await (await fetch("data.json?v=" + Date.now())).json();
-  $("meta").innerHTML = `${esc(d.client)}<br>Week ${d.week} · updated ${esc(d.updated)}`;
-  $("kicker").textContent = `${d.programme} · ${d.period}`;
-  $("h1").innerHTML = `Week ${d.week}: <em>where things stand</em>`;
-  $("goal").textContent = d.goal;
-  $("status").textContent = d.headline.status;
-  $("tiles").innerHTML = d.headline.tiles.map(t => `<div class="tile"><div class="l">${esc(t.label)}</div><div class="v">${esc(t.value)}</div><div class="n">${esc(t.note)}</div></div>`).join("");
-  $("baselineSrc").textContent = "Source: " + d.baseline.source;
-  $("baseline").innerHTML = d.baseline.rows.map(r => `<tr><td>${esc(r.measure)}</td><td class="v">${esc(r.value)}</td><td>${esc(r.meaning)}</td></tr>`).join("");
-  $("baselineCaveat").textContent = d.baseline.caveat;
-  $("aiSummary").textContent = d.ai.summary;
-  $("aiLinks").innerHTML = d.ai.links.map(l => l.url.startsWith("#") ? `<a href="${esc(l.url)}">${esc(l.label)} ↓</a>` : `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join(" · ");
-  $("tiers").innerHTML = d.ai.tiers.map(t => `<div class="card"><span class="pill ${/^[1-9]/.test(t.status) ? "mentioned" : "totest"}">${esc(t.status)} · ${esc(t.difficulty)}</span><h3>${esc(t.name)}</h3>${t.result ? `<p>${esc(t.result)}</p>` : ""}<ul class="ex">${t.examples.map(e => `<li>${esc(e)}</li>`).join("")}</ul></div>`).join("");
-  if (d.google) { $("s-google").hidden = false; $("googleSrc").textContent = "Source: " + d.google.source;
-    $("google").innerHTML = d.google.rows.map(r => `<tr><td>${esc(r.lang.toUpperCase())}</td><td>${esc(r.keyword)}</td><td class="v">${r.volume ?? ""}</td><td class="v">${r.position ?? "–"}</td><td>${esc(r.seen ?? "")}</td><td>${esc((r.top3||[]).map(x=>x.replace(/^www\./,"")).join(", "))}</td><td>${r.ai_overview ? (r.ai_overview_cites_meditron ? "cites Meditron" : "yes, not cited") : "none"}</td></tr>`).join(""); }
-  if (d.aiPrompts) { $("s-aiprompts").hidden = false; $("aiSrc").textContent = "Source: " + d.aiPrompts.source;
-    const cell = x => !x ? "" : x.named ? (x.cited ? "named + cited" : "named") : "no";
-    $("aiprompts").innerHTML = d.aiPrompts.rows.map(r => `<tr><td>${esc(r.lang.toUpperCase())}</td><td>${esc(r.prompt)}</td><td>${cell(r.chatgpt)}</td><td>${cell(r.gemini)}</td><td>${cell(r.perplexity)}</td><td>${esc(r.first_named ?? "")}</td></tr>`).join(""); }
-  $("articles").innerHTML = d.articles.map((a, i) => `<div class="art"><div class="img" style="background:${colours[i % colours.length]}">${mark}</div><div class="body"><span class="pill ${a.status === "live" ? "live" : "draft"}">${esc(a.status)}</span><h3>${a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a>` : esc(a.title)}</h3><div class="by">Author: ${esc(a.author)}</div><p>${esc(a.why)}</p></div></div>`).join("");
-  $("timeline").innerHTML = d.timeline.map(t => `<li><div class="d">${esc(t.date)}</div><div>${esc(t.text)}</div></li>`).join("");
-  $("next").innerHTML = d.next.map(x => `<li>${esc(x)}</li>`).join("");
-  $("discuss").innerHTML = d.discuss.map(x => `<div class="card"><h3>${esc(x.topic)}</h3><p>${esc(x.why)}</p></div>`).join("");
-  $("log").innerHTML = d.log.map(l => `<div class="card"><h3>${esc(l.week)}</h3><p>${esc(l.text)}</p></div>`).join("");
+// value helpers: a KPI value is a number, null, or "a / b" (ratio, plotted as a)
+const num = v => v == null ? null : typeof v === "number" ? v : Number(String(v).split("/")[0]);
+const fmt = v => v == null ? "–" : String(v);
+function delta(k, cur, prev) {
+  const a = num(cur), b = num(prev); if (a == null || b == null) return "";
+  const diff = Math.round((a - b) * 10) / 10; if (diff === 0) return `<div class="d">no change</div>`;
+  const good = k.better === "down" ? diff < 0 : diff > 0;
+  return `<div class="d ${good ? "up" : "down"}">${diff > 0 ? "+" : ""}${diff} vs previous month</div>`;
 }
+function tile(k, m, prev) {
+  const v = m.values[k.id];
+  return `<div class="tile"><div class="l">${esc(k.label)}</div><div class="v">${v == null ? `<small style="margin:0">${k.group === "Search Console" ? "not connected" : "not measured"}</small>` : esc(fmt(v)) + (k.unit ? `<small>${esc(k.unit)}</small>` : "")}</div>${prev ? delta(k, v, prev.values[k.id]) : ""}<div class="n">${esc(k.note)}${m.baseline ? " · baseline, different method" : ""}</div></div>`;
+}
+function chart(k, months) {
+  const pts = months.map((m, i) => ({ i, m, v: num(m.values[k.id]) }));
+  const have = pts.filter(p => p.v != null);
+  const W = 300, H = 120, L = 28, R = 12, T = 14, B = 26;
+  if (have.length === 0) return `<div class="chart"><div class="l">${esc(k.label)}</div><div class="n">${esc(k.note)}</div><p class="caveat" style="margin:8px 0 10px">No data yet.</p></div>`;
+  const max = Math.max(...have.map(p => p.v), k.id.startsWith("page") || k.id === "top20" || k.id === "first" ? 20 : k.id === "named" || k.id === "cited" ? 60 : 1);
+  const min = 0;
+  const x = i => L + (months.length === 1 ? (W - L - R) / 2 : (W - L - R) * i / (months.length - 1));
+  const y = v => T + (H - T - B) * (1 - (v - min) / (max - min || 1));
+  const path = have.map((p, j) => `${j ? "L" : "M"}${x(p.i).toFixed(1)},${y(p.v).toFixed(1)}`).join(" ");
+  const grid = [0, 0.5, 1].map(f => { const v = min + (max - min) * f; return `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"/><text class="ax" x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${Math.round(v * 10) / 10}</text>`; }).join("");
+  const labels = pts.map(p => `<text class="ax" x="${x(p.i)}" y="${H - 8}" text-anchor="middle">${esc(p.m.short)}</text>`).join("");
+  const dots = have.map(p => `<circle class="pt ${p.m.baseline ? "base" : ""}" cx="${x(p.i)}" cy="${y(p.v)}" r="4.5"><title>${esc(p.m.label)}: ${esc(fmt(p.m.values[k.id]))}</title></circle>`).join("");
+  const last = have[have.length - 1];
+  const lab = `<text class="val" x="${x(last.i)}" y="${y(last.v) - 9}" text-anchor="${last.i === months.length - 1 ? "end" : "middle"}">${esc(fmt(last.m.values[k.id]))}</text>`;
+  return `<div class="chart"><div class="l">${esc(k.label)}</div><div class="n">${esc(k.unit || k.note)}</div><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(k.label)} by month">${grid}<path class="ln" d="${path}"/>${dots}${lab}${labels}</svg></div>`;
+}
+function groupTiles(k, m, prev) { return k.map(x => tile(x, m, prev)).join(""); }
+const groups = ["SEO", "GEO", "Content", "Search Console"];
+
+function overview() {
+  const ms = D.months, cur = ms[ms.length - 1], prev = ms.length > 1 ? ms[ms.length - 2] : null;
+  let h = `<div class="hero"><div class="kicker">Overview · ${esc(D.brand.sub)}</div><h1>Where things stand, <em>${esc(cur.label)}</em></h1><p class="lede">${esc(cur.status)}</p></div>`;
+  h += `<section><h2>Scorecard</h2><p class="sub">${esc(D.method)}</p>`;
+  for (const g of groups) { const ks = D.kpis.filter(k => k.group === g); if (!ks.length) continue; h += `<h3 class="g">${esc(g)}</h3><div class="tiles">${groupTiles(ks, cur, prev)}</div>`; }
+  h += `</section>`;
+  h += `<section><h2>Month by month</h2><p class="sub">One line per measure. A hollow dot is the September baseline, measured differently; the trend from October onwards is like for like.</p><div class="charts">${D.kpis.filter(k => ms.some(m => num(m.values[k.id]) != null)).map(k => chart(k, ms)).join("")}</div></section>`;
+  h += `<section><h2>Insights articles</h2><p class="sub">Each answers a question buyers ask, links to the model pages and carries FAQ and author markup so Google and AI assistants can quote it.</p><div class="arts">${D.articles.map((a, i) => `<div class="art"><div class="img" style="background:${colours[i % colours.length]}">${mark}</div><div class="body"><span class="pill ${a.status === "live" ? "live" : "draft"}">${esc(a.status)}</span><h3>${a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a>` : esc(a.title)}</h3><div class="by">Author: ${esc(a.author)}</div><p>${esc(a.why)}</p></div></div>`).join("")}</div></section>`;
+  if (cur.discuss) h += `<section><h2>To discuss</h2><p class="sub">Not tasks. Questions for the next meeting where a Meditron decision would move the numbers.</p><div class="cards">${cur.discuss.map(x => `<div class="card"><h3>${esc(x.topic)}</h3><p>${esc(x.why)}</p></div>`).join("")}</div></section>`;
+  return h;
+}
+function month(m) {
+  const ms = D.months, i = ms.indexOf(m), prev = i > 0 ? ms[i - 1] : null;
+  let h = `<div class="hero"><div class="kicker">${esc(m.label)}${m.baseline ? " · baseline" : ""}</div><h1>${esc(m.label)}</h1><p class="lede">${esc(m.status)}</p></div>`;
+  h += `<section><h2>Scorecard</h2><p class="sub">Source: ${esc(m.source)}</p>`;
+  for (const g of groups) { const ks = D.kpis.filter(k => k.group === g); if (!ks.length) continue; h += `<h3 class="g">${esc(g)}</h3><div class="tiles">${groupTiles(ks, m, prev)}</div>`; }
+  h += `</section>`;
+  if (m.baselineRows) h += `<section><h2>Semrush snapshot</h2><p class="sub">Domain-level view before the programme. Kept as the starting point; not comparable with the tracked-term numbers from October.</p><div class="tablewrap"><table><thead><tr><th>Measure</th><th>Value</th><th>What it means</th></tr></thead><tbody>${m.baselineRows.map(r => `<tr><td>${esc(r.measure)}</td><td class="v">${esc(r.value)}</td><td>${esc(r.meaning)}</td></tr>`).join("")}</tbody></table></div></section>`;
+  if (m.google) h += `<section><h2>Google rankings, tracked searches</h2><p class="sub">Source: ${esc(m.google.source)}</p><div class="tablewrap"><table><thead><tr><th>Lang</th><th>Term</th><th>Searches / month (CH)</th><th>Meditron position</th><th>Seen</th><th>Who ranks top 3</th><th>AI Overview</th></tr></thead><tbody>${m.google.rows.map(r => `<tr><td>${esc(r.lang.toUpperCase())}</td><td>${esc(r.keyword)}</td><td class="v">${r.volume ?? ""}</td><td class="v">${r.position ?? "–"}</td><td>${esc(r.seen ?? "")}</td><td>${esc((r.top3 || []).map(x => x.replace(/^www\./, "")).join(", "))}</td><td>${r.ai_overview ? (r.ai_overview_cites_meditron ? "cites Meditron" : "yes, not cited") : "none"}</td></tr>`).join("")}</tbody></table></div><p class="caveat">Best position seen in three live Swiss Google queries; "seen" says how many of the three showed meditron.ch, since Google serves varying result sets. "–" means not in the top 50 in any of them. Volumes are Google Ads estimates; blank means too few searches for Google to report.</p></section>`;
+  if (m.aiPrompts) { const cell = x => !x ? "" : x.named ? (x.cited ? "named + cited" : "named") : "no";
+    h += `<section><h2>AI answers, tracked prompts</h2><p class="sub">Source: ${esc(m.aiPrompts.source)}</p><div class="tablewrap"><table><thead><tr><th>Lang</th><th>Prompt</th><th>ChatGPT</th><th>Gemini</th><th>Perplexity</th><th>Named first</th></tr></thead><tbody>${m.aiPrompts.rows.map(r => `<tr><td>${esc(r.lang.toUpperCase())}</td><td>${esc(r.prompt)}</td><td>${cell(r.chatgpt)}</td><td>${cell(r.gemini)}</td><td>${cell(r.perplexity)}</td><td>${esc(r.first_named ?? "")}</td></tr>`).join("")}</tbody></table></div><p class="caveat">"Named" = Meditron appears in the answer. "Cited" = meditron.ch is one of the answer's sources. Answers come from the engines' APIs with web search on, from a neutral location, so they are a trend line rather than what one Swiss user sees.</p></section>`; }
+  if (m.tiers) h += `<section><h2>AI answers by difficulty</h2><div class="cards">${m.tiers.map(t => `<div class="card"><span class="pill ${/^[1-9]/.test(t.status) ? "good" : "totest"}">${esc(t.status)} · ${esc(t.difficulty)}</span><h3>${esc(t.name)}</h3>${t.result ? `<p>${esc(t.result)}</p>` : ""}<ul class="ex">${t.examples.map(e => `<li>${esc(e)}</li>`).join("")}</ul></div>`).join("")}</div></section>`;
+  h += `<section><div class="two"><div><h2>What was done</h2><ul class="tl">${(m.done || []).map(t => `<li><div class="d">${esc(t.date)}</div><div>${esc(t.text)}</div></li>`).join("")}</ul></div><div>${m.next ? `<h2>Next</h2><ul class="plain">${m.next.map(x => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}${m.log ? `<h2 style="margin-top:24px">Weekly log</h2><ul class="plain">${m.log.map(l => `<li><strong>${esc(l.week)}</strong> ${esc(l.text)}</li>`).join("")}</ul>` : ""}</div></div></section>`;
+  return h;
+}
+function render() {
+  $("brandTitle").textContent = D.brand.title;
+  $("meta").innerHTML = `${esc(D.brand.client)} SA<br>Updated ${esc(D.updated)}`;
+  const tabs = [{ id: "overview", label: "Overview" }, ...D.months.map(m => ({ id: m.id, label: m.label }))];
+  $("tabs").innerHTML = tabs.map(t => `<button class="${t.id === TAB ? "on" : ""}" data-tab="${t.id}">${esc(t.label)}</button>`).join("");
+  $("tabs").querySelectorAll("button").forEach(b => b.onclick = () => { TAB = b.dataset.tab; location.hash = TAB; render(); window.scrollTo({ top: 0 }); });
+  const m = D.months.find(x => x.id === TAB);
+  $("view").innerHTML = m ? month(m) : overview();
+  $("foot").textContent = `Prepared by Rise (Userise) for Meditron SA. Sources: DataForSEO (Swiss Google and AI engines), Semrush, Google Search Console, Framer publish history. Dates are stated on each figure. This page is private; do not share the passcode outside Meditron.`;
+}
+async function load() { D = await (await fetch("data.json?v=" + Date.now())).json(); const h = location.hash.replace("#", ""); if (h && (h === "overview" || D.months.some(m => m.id === h))) TAB = h; render(); }
 async function unlock(pw) {
   if (await sha256(pw) !== HASH) return false;
   try { sessionStorage.setItem("mtr-ok", "1"); } catch {}
-  $("gate").remove(); $("app").hidden = false; render(); return true;
+  $("gate").remove(); $("app").hidden = false; load(); return true;
 }
 $("gateForm").addEventListener("submit", async e => { e.preventDefault(); if (!(await unlock($("pass").value.trim()))) $("err").textContent = "That passcode is not right."; });
-try { if (sessionStorage.getItem("mtr-ok") === "1") { $("gate").remove(); $("app").hidden = false; render(); } } catch {}
+try { if (sessionStorage.getItem("mtr-ok") === "1") { $("gate").remove(); $("app").hidden = false; load(); } } catch {}
 </script>
 </body>
 </html>
