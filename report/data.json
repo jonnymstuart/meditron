@@ -202,7 +202,7 @@
       "label": "October 2026",
       "short": "Oct",
       "baseline": false,
-      "status": "First measured month. Meditron is on page 1 for 11 of 20 tracked Swiss searches and is named in 20 of 60 AI answers. Three articles live, three on staging.",
+      "status": "First measured month. Meditron is on page 1 for 11 of 20 tracked Swiss searches and is named in 20 of 60 AI answers. Four articles live, two more this week, then three a week.",
       "source": "DataForSEO, Switzerland, 2026-10-05. Google: 3 live queries per term. AI: ChatGPT gpt-5.5, Gemini 3.5 Flash, Perplexity sonar-pro, web search on.",
       "values": {
         "page1": 11,
@@ -212,7 +212,7 @@
         "named": 20,
         "cited": 15,
         "first": 7,
-        "articles": 3,
+        "articles": 4,
         "clicks": null,
         "impressions": null
       },
@@ -926,6 +926,10 @@
         {
           "date": "2026-10-05",
           "text": "DataForSEO connected. First direct measurement of the 24 tracked Swiss searches and 20 AI prompts across ChatGPT, Gemini and Perplexity. Tables added to this report."
+        },
+        {
+          "date": "2026-10-05",
+          "text": "Article 4 (HERA Z20 or V8 for gynaecology) live in EN, DE and FR. Publishing cadence agreed: three articles a week, Mon/Wed/Fri, run by two routines; articles 5 and 6 follow on 7 and 9 Oct."
         }
       ],
       "log": [
@@ -1017,9 +1021,9 @@
     {
       "n": 4,
       "title": "Samsung HERA Z20 or V8 for gynaecology?",
-      "status": "on staging · EN + DE + FR",
+      "status": "live",
       "author": "Nikita Müller",
-      "url": "",
+      "url": "https://www.meditron.ch/news-events/samsung-hera-z20-or-v8-gynaecology",
       "why": "Model names out-search the brand term in German; one comparison ranks for both and feeds the product pages."
     },
     {
