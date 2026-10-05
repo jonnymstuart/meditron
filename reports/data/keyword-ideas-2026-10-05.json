@@ -1,0 +1,562 @@
+{
+  "de": [
+    {
+      "k": "ultraschall",
+      "v": 1900,
+      "cpc": 2.21,
+      "comp": "MEDIUM"
+    },
+    {
+      "k": "ultraschallgerät",
+      "v": 590,
+      "cpc": 2.04,
+      "comp": "HIGH"
+    },
+    {
+      "k": "brillenreiniger ultraschall",
+      "v": 390,
+      "cpc": 0.75,
+      "comp": "HIGH"
+    },
+    {
+      "k": "reinigungsgerät ultraschall",
+      "v": 390,
+      "cpc": 1.67,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallreinigungs gerät",
+      "v": 390,
+      "cpc": 1.67,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallbad",
+      "v": 320,
+      "cpc": 2.06,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallgerät kaufen",
+      "v": 140,
+      "cpc": 2.35,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallgeräte kaufen",
+      "v": 140,
+      "cpc": 2.35,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschall gerät",
+      "v": 90,
+      "cpc": 0.76,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallreinigung",
+      "v": 90,
+      "cpc": 2.43,
+      "comp": "HIGH"
+    },
+    {
+      "k": "grundig ultraschallreiniger",
+      "v": 70,
+      "cpc": 0.43,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallgerät für zuhause",
+      "v": 50,
+      "cpc": 1.07,
+      "comp": "HIGH"
+    },
+    {
+      "k": "emag ultraschallreiniger",
+      "v": 50,
+      "cpc": 0.52,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallgerät medizin",
+      "v": 50,
+      "cpc": 0.76,
+      "comp": "HIGH"
+    },
+    {
+      "k": "medizinisches ultraschallgerät",
+      "v": 50,
+      "cpc": 0.76,
+      "comp": "HIGH"
+    },
+    {
+      "k": "medizinische ultraschallgeräte",
+      "v": 50,
+      "cpc": 0.76,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallgerät zu hause",
+      "v": 50,
+      "cpc": 1.07,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallgerät zuhause",
+      "v": 50,
+      "cpc": 1.07,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallgeraet fuer zuhause",
+      "v": 50,
+      "cpc": 1.07,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ge ultraschall",
+      "v": 40,
+      "cpc": 0.42,
+      "comp": "HIGH"
+    },
+    {
+      "k": "schmuckreinigung ultraschall",
+      "v": 40,
+      "cpc": 0.86,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschall ge",
+      "v": 40,
+      "cpc": 0.42,
+      "comp": "HIGH"
+    },
+    {
+      "k": "samsung ultraschall",
+      "v": 30,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "ultraschall schmerztherapie zuhause",
+      "v": 30,
+      "cpc": 0.89,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallgeräte für zu hause",
+      "v": 30,
+      "cpc": 0.73,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschall samsung",
+      "v": 30,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "sonographie gerät",
+      "v": 20,
+      "cpc": null,
+      "comp": "MEDIUM"
+    },
+    {
+      "k": "clarius ultraschall",
+      "v": 20,
+      "cpc": 5.79,
+      "comp": "HIGH"
+    },
+    {
+      "k": "mobiles ultraschallgerät",
+      "v": 20,
+      "cpc": 3.26,
+      "comp": "HIGH"
+    },
+    {
+      "k": "mindray ultraschall",
+      "v": 20,
+      "cpc": 5.1,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallgerät gebraucht",
+      "v": 20,
+      "cpc": 0.5,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallgerät zur schmerzbehandlung zu hause",
+      "v": 20,
+      "cpc": 1.18,
+      "comp": "HIGH"
+    },
+    {
+      "k": "philips ultraschall",
+      "v": 20,
+      "cpc": 2,
+      "comp": "HIGH"
+    },
+    {
+      "k": "gebrauchte ultraschallgeräte",
+      "v": 20,
+      "cpc": 0.5,
+      "comp": "HIGH"
+    },
+    {
+      "k": "portables ultraschallgerät",
+      "v": 20,
+      "cpc": 1.37,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallreiniger für zahnprothesen",
+      "v": 20,
+      "cpc": 1.5,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallgerät physiotherapie testsieger",
+      "v": 20,
+      "cpc": 0.75,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschallgerät physiotherapie für zuhause",
+      "v": 20,
+      "cpc": 1.3,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultraschall philips",
+      "v": 20,
+      "cpc": 2,
+      "comp": "HIGH"
+    },
+    {
+      "k": "mindray ultraschallgerät",
+      "v": 20,
+      "cpc": 5.1,
+      "comp": "HIGH"
+    }
+  ],
+  "fr": [
+    {
+      "k": "échographe",
+      "v": 1000,
+      "cpc": 2.96,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie",
+      "v": 1000,
+      "cpc": 2.96,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographies",
+      "v": 1000,
+      "cpc": 2.96,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographe doppler",
+      "v": 170,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie 3d",
+      "v": 140,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "échographie 3d",
+      "v": 140,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "3d echographie",
+      "v": 140,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie en 3d",
+      "v": 140,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie abdominale",
+      "v": 110,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie cardiaque",
+      "v": 70,
+      "cpc": 6.88,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie morphologique",
+      "v": 70,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie bebe",
+      "v": 50,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie vagin",
+      "v": 50,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "échographie bebe",
+      "v": 50,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie transoesophagienne",
+      "v": 40,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "échographie doppler",
+      "v": 40,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "doppler échographie",
+      "v": 40,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie 3 d bebe",
+      "v": 40,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie 3d bebe",
+      "v": 40,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "échographie cœur",
+      "v": 40,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographe portable",
+      "v": 30,
+      "cpc": 1.12,
+      "comp": "HIGH"
+    },
+    {
+      "k": "echographe",
+      "v": 30,
+      "cpc": 0.58,
+      "comp": "MEDIUM"
+    },
+    {
+      "k": "echographie 4d",
+      "v": 30,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "échographie 4d",
+      "v": 30,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "4d echographie",
+      "v": 30,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie thyroïdienne",
+      "v": 30,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "échographie en 4d",
+      "v": 30,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "appareil échographie",
+      "v": 20,
+      "cpc": 1.43,
+      "comp": "HIGH"
+    },
+    {
+      "k": "echographie portable",
+      "v": 20,
+      "cpc": 3.07,
+      "comp": "HIGH"
+    },
+    {
+      "k": "machine echographie",
+      "v": 20,
+      "cpc": 0.03,
+      "comp": "HIGH"
+    },
+    {
+      "k": "sonde echographie",
+      "v": 20,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie prostate",
+      "v": 20,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie appareil",
+      "v": 20,
+      "cpc": 1.43,
+      "comp": "HIGH"
+    },
+    {
+      "k": "appareil pour échographie",
+      "v": 20,
+      "cpc": 1.43,
+      "comp": "HIGH"
+    },
+    {
+      "k": "machine échographie",
+      "v": 20,
+      "cpc": 0.03,
+      "comp": "HIGH"
+    },
+    {
+      "k": "echographes portables",
+      "v": 20,
+      "cpc": 3.07,
+      "comp": "HIGH"
+    },
+    {
+      "k": "echographes",
+      "v": 20,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie chat",
+      "v": 20,
+      "cpc": 7.47,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie ovaires",
+      "v": 20,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "echographie sonde",
+      "v": 20,
+      "cpc": null,
+      "comp": "LOW"
+    }
+  ],
+  "it": [
+    {
+      "k": "ecografo",
+      "v": 30,
+      "cpc": 0.62,
+      "comp": "MEDIUM"
+    },
+    {
+      "k": "ecografo portatile",
+      "v": 20,
+      "cpc": 0.54,
+      "comp": "HIGH"
+    }
+  ],
+  "en": [
+    {
+      "k": "ultrasound machine",
+      "v": 70,
+      "cpc": 1.32,
+      "comp": "HIGH"
+    },
+    {
+      "k": "sonogram machine",
+      "v": 70,
+      "cpc": 1.32,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultrasonography machine",
+      "v": 70,
+      "cpc": 1.32,
+      "comp": "HIGH"
+    },
+    {
+      "k": "machine ultrasound",
+      "v": 70,
+      "cpc": 1.32,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ge vscan",
+      "v": 40,
+      "cpc": 0.9,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ge vscan air",
+      "v": 30,
+      "cpc": 2.09,
+      "comp": "HIGH"
+    },
+    {
+      "k": "ultrasound scanner",
+      "v": 30,
+      "cpc": null,
+      "comp": "LOW"
+    },
+    {
+      "k": "portable ultrasound",
+      "v": 20,
+      "cpc": 1.64,
+      "comp": "HIGH"
+    },
+    {
+      "k": "portable sonogram",
+      "v": 20,
+      "cpc": 1.64,
+      "comp": "HIGH"
+    },
+    {
+      "k": "portable usg",
+      "v": 20,
+      "cpc": 1.64,
+      "comp": "HIGH"
+    }
+  ]
+}

@@ -7,7 +7,7 @@
   },
   "updated": "2026-10-05",
   "goal": "Be the answer for “Samsung ultrasound” in Swiss Google and in AI assistants (ChatGPT, Gemini, Google AI Overviews) in German, French, Italian and English.",
-  "method": "Every month the same 20 Swiss Google searches and 20 AI prompts (see data/tracking-list.csv) are measured the same way: three live Swiss Google queries per term via DataForSEO, best position kept; each prompt sent once to ChatGPT, Gemini and Perplexity with web search on. Numbers are comparable from October 2026 onwards. September is the pre-programme baseline from Semrush and manual checks, shown for context only.",
+  "method": "Every month the same 20 Swiss Google searches and 20 AI prompts are measured the same way: three live Swiss Google queries per term via DataForSEO, best position kept; each prompt sent once to ChatGPT, Gemini and Perplexity with web search on. Numbers are comparable from October 2026 onwards. September is the pre-programme baseline from Semrush and manual checks, shown for context only.",
   "kpis": [
     {
       "id": "page1",
@@ -939,11 +939,11 @@
         },
         {
           "date": "2026-10-05",
-          "text": "Article 4 (HERA Z20 or V8 for gynaecology) live in EN, DE and FR. Publishing cadence agreed: three articles a week, Mon/Wed/Fri, run by two routines; articles 5 and 6 follow on 7 and 9 Oct."
+          "text": "Article 4 (HERA Z20 or V8 for gynaecology) live in EN, DE and FR. Publishing cadence agreed: three articles a week, Mon/Wed/Fri; articles 5 and 6 follow on 7 and 9 Oct."
         },
         {
           "date": "2026-10-05",
-          "text": "Italian versions of all six articles added by hand (Framer's AI translation credits ran out): titles, intros, bodies, FAQ and Italian URLs, with redirects from the old Italian URLs."
+          "text": "Italian versions of all six articles added: titles, intros, bodies, FAQ and Italian URLs, with redirects from the old Italian URLs."
         }
       ],
       "log": [
@@ -962,27 +962,27 @@
       "discuss": [
         {
           "topic": "Page headlines (H1s)",
-          "why": "The hub and model pages now carry 'Samsung Ultraschall' in the headline. The home page and About page headlines are brand phrases ('Auf Erfahrung gebaut'). Do we want the home headline to say what Meditron is, in one line, for Google and AI assistants?"
+          "why": "Hub and model pages now lead with 'Samsung Ultraschall'. Home and About still use brand lines. Should the home headline say what Meditron is?"
         },
         {
           "topic": "About page text animation",
-          "why": "The 'Our why' paragraph animates letter by letter. Browser translation, screen readers and AI readers get scrambled text. Keep the animation or switch to plain text?"
+          "why": "The 'Our why' text animates letter by letter, which scrambles it for translation tools, screen readers and AI. Keep it, or switch to plain text?"
         },
         {
           "topic": "Pre-owned stock page",
-          "why": "'Ultraschallgerät Occasion' is one of the strongest buying searches. A live list of certified pre-owned systems would rank for it. Is there stock to show, and who keeps it current?"
+          "why": "'Ultraschallgerät Occasion' is a strong buying search. A live pre-owned list would rank for it. Is there stock, and who keeps it current?"
         },
         {
           "topic": "Price ranges",
-          "why": "The price article ranks without numbers. Competitors publish none either. Would Meditron publish 'from CHF' ranges per class, or stay with quote only?"
+          "why": "The price article ranks without numbers. Publish 'from CHF' ranges per class, or stay quote-only?"
         },
         {
           "topic": "Samsung's distributor listing",
-          "why": "A link from Samsung Healthcare's own 'where to buy' page is the single strongest backlink available. Is Meditron listed with a link, and who at Samsung can confirm it?"
+          "why": "A link from Samsung Healthcare's 'where to buy' page is the strongest backlink available. Is Meditron listed, and who at Samsung can confirm?"
         },
         {
           "topic": "Google Business Profiles",
-          "why": "Rolle and Frauenfeld profiles with 'Samsung Ultraschall' in the description feed the map results and AI answers. Who owns the Google account?"
+          "why": "Rolle and Frauenfeld profiles feed map results and AI answers. Who owns the Google account?"
         },
         {
           "topic": "Legacy news posts",
@@ -990,15 +990,15 @@
         },
         {
           "topic": "Events",
-          "why": "The Events tab is hidden. Congress and trade-fair pages earn links and local searches. Any 2026 or 2027 dates to list?"
+          "why": "The Events tab is hidden. Congress pages earn links and local searches. Any 2026 or 2027 dates to list?"
         },
         {
           "topic": "Imagery",
-          "why": "Articles use brand-colour placeholders with the Meditron mark. Product or practice photography would lift click-through from Google and LinkedIn. Is there a photo library?"
+          "why": "Articles use brand-colour placeholders. Real product or practice photos would lift click-through. Is there a photo library?"
         },
         {
           "topic": "Home page weight",
-          "why": "The home page is 1.4 MB of HTML with 194 images, heavy for phones and crawlers. Worth a design pass to trim sections?"
+          "why": "The home page is 1.4 MB with 194 images, heavy for phones and crawlers. Worth trimming sections?"
         }
       ]
     }
@@ -1056,27 +1056,27 @@
   "discuss": [
     {
       "topic": "Page headlines (H1s)",
-      "why": "The hub and model pages now carry 'Samsung Ultraschall' in the headline. The home page and About page headlines are brand phrases ('Auf Erfahrung gebaut'). Do we want the home headline to say what Meditron is, in one line, for Google and AI assistants?"
+      "why": "Hub and model pages now lead with 'Samsung Ultraschall'. Home and About still use brand lines. Should the home headline say what Meditron is?"
     },
     {
       "topic": "About page text animation",
-      "why": "The 'Our why' paragraph animates letter by letter. Browser translation, screen readers and AI readers get scrambled text. Keep the animation or switch to plain text?"
+      "why": "The 'Our why' text animates letter by letter, which scrambles it for translation tools, screen readers and AI. Keep it, or switch to plain text?"
     },
     {
       "topic": "Pre-owned stock page",
-      "why": "'Ultraschallgerät Occasion' is one of the strongest buying searches. A live list of certified pre-owned systems would rank for it. Is there stock to show, and who keeps it current?"
+      "why": "'Ultraschallgerät Occasion' is a strong buying search. A live pre-owned list would rank for it. Is there stock, and who keeps it current?"
     },
     {
       "topic": "Price ranges",
-      "why": "The price article ranks without numbers. Competitors publish none either. Would Meditron publish 'from CHF' ranges per class, or stay with quote only?"
+      "why": "The price article ranks without numbers. Publish 'from CHF' ranges per class, or stay quote-only?"
     },
     {
       "topic": "Samsung's distributor listing",
-      "why": "A link from Samsung Healthcare's own 'where to buy' page is the single strongest backlink available. Is Meditron listed with a link, and who at Samsung can confirm it?"
+      "why": "A link from Samsung Healthcare's 'where to buy' page is the strongest backlink available. Is Meditron listed, and who at Samsung can confirm?"
     },
     {
       "topic": "Google Business Profiles",
-      "why": "Rolle and Frauenfeld profiles with 'Samsung Ultraschall' in the description feed the map results and AI answers. Who owns the Google account?"
+      "why": "Rolle and Frauenfeld profiles feed map results and AI answers. Who owns the Google account?"
     },
     {
       "topic": "Legacy news posts",
@@ -1084,15 +1084,15 @@
     },
     {
       "topic": "Events",
-      "why": "The Events tab is hidden. Congress and trade-fair pages earn links and local searches. Any 2026 or 2027 dates to list?"
+      "why": "The Events tab is hidden. Congress pages earn links and local searches. Any 2026 or 2027 dates to list?"
     },
     {
       "topic": "Imagery",
-      "why": "Articles use brand-colour placeholders with the Meditron mark. Product or practice photography would lift click-through from Google and LinkedIn. Is there a photo library?"
+      "why": "Articles use brand-colour placeholders. Real product or practice photos would lift click-through. Is there a photo library?"
     },
     {
       "topic": "Home page weight",
-      "why": "The home page is 1.4 MB of HTML with 194 images, heavy for phones and crawlers. Worth a design pass to trim sections?"
+      "why": "The home page is 1.4 MB with 194 images, heavy for phones and crawlers. Worth trimming sections?"
     }
   ],
   "glossary": {
