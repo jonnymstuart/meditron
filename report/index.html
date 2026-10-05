@@ -129,9 +129,15 @@
         <div><h2>What has been done</h2><ul class="tl" id="timeline"></ul></div>
         <div>
           <h2>Next</h2><ul class="plain" id="next"></ul>
-          <h2 style="margin-top:28px">Needed from Meditron</h2><ul class="plain" id="asks"></ul>
+          
         </div>
       </div>
+    </section>
+
+    <section id="s-discuss">
+      <h2>To discuss</h2>
+      <p class="sub">Not tasks. Questions for the next meeting where a Meditron decision would move the ranking.</p>
+      <div class="cards" id="discuss"></div>
     </section>
 
     <section id="s-log">
@@ -168,7 +174,7 @@ async function render() {
   $("articles").innerHTML = d.articles.map((a, i) => `<div class="art"><div class="img" style="background:${colours[i % colours.length]}">${mark}</div><div class="body"><span class="pill ${a.status === "live" ? "live" : "draft"}">${esc(a.status)}</span><h3>${a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a>` : esc(a.title)}</h3><div class="by">Author: ${esc(a.author)}</div><p>${esc(a.why)}</p></div></div>`).join("");
   $("timeline").innerHTML = d.timeline.map(t => `<li><div class="d">${esc(t.date)}</div><div>${esc(t.text)}</div></li>`).join("");
   $("next").innerHTML = d.next.map(x => `<li>${esc(x)}</li>`).join("");
-  $("asks").innerHTML = d.asks.map(x => `<li>${esc(x)}</li>`).join("");
+  $("discuss").innerHTML = d.discuss.map(x => `<div class="card"><h3>${esc(x.topic)}</h3><p>${esc(x.why)}</p></div>`).join("");
   $("log").innerHTML = d.log.map(l => `<div class="card"><h3>${esc(l.week)}</h3><p>${esc(l.text)}</p></div>`).join("");
 }
 async function unlock(pw) {

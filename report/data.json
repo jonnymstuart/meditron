@@ -2,16 +2,16 @@
   "client": "Meditron SA",
   "programme": "Samsung ultrasound · search & AI visibility",
   "period": "September 2026 – January 2027",
-  "updated": "2026-10-02",
-  "week": 4,
+  "updated": "2026-10-05",
+  "week": 5,
   "goal": "Be the answer for “Samsung ultrasound” in Swiss Google and in AI assistants (ChatGPT, Gemini, Google AI Overviews) in German, French, Italian and English.",
   "headline": {
-    "status": "First three Insights articles live on meditron.ch. Baseline measured. Site groundwork done.",
+    "status": "Three articles live with German and French URLs. Three more on staging for review. Tracking list agreed; keyword data source being set up.",
     "tiles": [
       {
         "label": "Articles live",
         "value": "3",
-        "note": "of 6 drafted · EN + DE + FR"
+        "note": "3 more on staging · EN + DE + FR"
       },
       {
         "label": "Keywords in Google top 100 (CH)",
@@ -233,19 +233,18 @@
     {
       "date": "2026-10-02",
       "text": "German and French article URLs now carry German and French slugs (e.g. /de/news-events/ultraschallgeraet-neu-oder-occasion). Old URLs redirect. Publish dates staggered across September."
+    },
+    {
+      "date": "2026-10-05",
+      "text": "Articles 4 to 6 on staging in EN, DE and FR with images and FAQ. Tracking list of 24 Google terms and 20 AI prompts agreed. Article tables fixed for narrow screens."
     }
   ],
   "next": [
-    "Run the Tier 1–6 checks in ChatGPT, Gemini and Google AI Overviews from Switzerland; log results here.",
-    "Jean reviews the German versions of articles 4–6; publish when approved.",
-    "Model page copy for HERA Z20, V8, R20 and V7 from the existing briefs.",
-    "Semrush Position Tracking on the full target list (needs API units).",
-    "Google Business Profiles for Rolle and Frauenfeld with “Samsung ultrasound” in the description."
-  ],
-  "asks": [
-    "Top up Semrush API units so keyword-level tracking can start.",
-    "Confirm the German job titles used in the article bylines (Kundenberater Ultraschall, Geschäftsführer, Applikationsspezialistin Ultraschall).",
-    "Product photography for articles, if preferred over the brand-colour placeholders."
+    "Meditron reviews the German of articles 4 to 6 on staging; then deploy to production on the planned dates.",
+    "Set up the keyword data source (DataForSEO) and run the baseline on the 24 tracked terms in four languages.",
+    "Monthly AI check on the 20 tracked prompts in ChatGPT, Gemini and Google AI Overviews.",
+    "Model page copy for HERA Z20, V8, R20 and V7 from the briefs.",
+    "Request indexing in Search Console for the six new German and French article URLs."
   ],
   "log": [
     {
@@ -263,6 +262,56 @@
     {
       "week": "Week 4 · 29 Sep",
       "text": "Baseline measured, six articles in EN and DE, three published, Insights category, image system."
+    },
+    {
+      "week": "Week 5 · 5 Oct",
+      "text": "German and French article URLs, articles 4 to 6 staged, tracking list, tool decision (Search Console + DataForSEO)."
+    }
+  ],
+  "discuss": [
+    {
+      "topic": "Page headlines (H1s)",
+      "why": "The hub and model pages now carry 'Samsung Ultraschall' in the headline. The home page and About page headlines are brand phrases ('Auf Erfahrung gebaut'). Do we want the home headline to say what Meditron is, in one line, for Google and AI assistants?"
+    },
+    {
+      "topic": "About page text animation",
+      "why": "The 'Our why' paragraph animates letter by letter. Browser translation, screen readers and AI readers get scrambled text. Keep the animation or switch to plain text?"
+    },
+    {
+      "topic": "Italian",
+      "why": "Italian pages show the English text today. Translate the six articles, or hide Italian for Insights until there is a reviewer?"
+    },
+    {
+      "topic": "Pre-owned stock page",
+      "why": "'Ultraschallgerät Occasion' is one of the strongest buying searches. A live list of certified pre-owned systems would rank for it. Is there stock to show, and who keeps it current?"
+    },
+    {
+      "topic": "Price ranges",
+      "why": "The price article ranks without numbers. Competitors publish none either. Would Meditron publish 'from CHF' ranges per class, or stay with quote only?"
+    },
+    {
+      "topic": "Samsung's distributor listing",
+      "why": "A link from Samsung Healthcare's own 'where to buy' page is the single strongest backlink available. Is Meditron listed with a link, and who at Samsung can confirm it?"
+    },
+    {
+      "topic": "Google Business Profiles",
+      "why": "Rolle and Frauenfeld profiles with 'Samsung Ultraschall' in the description feed the map results and AI answers. Who owns the Google account?"
+    },
+    {
+      "topic": "Legacy news posts",
+      "why": "Eight older news items have English URLs and no German or French text. Translate, leave, or archive?"
+    },
+    {
+      "topic": "Events",
+      "why": "The Events tab is hidden. Congress and trade-fair pages earn links and local searches. Any 2026 or 2027 dates to list?"
+    },
+    {
+      "topic": "Imagery",
+      "why": "Articles use brand-colour placeholders with the Meditron mark. Product or practice photography would lift click-through from Google and LinkedIn. Is there a photo library?"
+    },
+    {
+      "topic": "Home page weight",
+      "why": "The home page is 1.4 MB of HTML with 194 images, heavy for phones and crawlers. Worth a design pass to trim sections?"
     }
   ]
 }
