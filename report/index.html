@@ -164,7 +164,7 @@
 </main>
 
 <script>
-const HASH = "6b5250b9b159d52710aabea2b71e6f525fbfda7962f42e34e667c223cf5dd928";
+const HASH = "6c6dab33994f8b98bb9db20ef4ed62d66b5f267cbcfc575b582e317fe2d58c62";
 async function sha256(s) { const b = await crypto.subtle.digest("SHA-256", new TextEncoder().encode(s)); return [...new Uint8Array(b)].map(x => x.toString(16).padStart(2, "0")).join(""); }
 const $ = id => document.getElementById(id);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
