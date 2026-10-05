@@ -11,6 +11,9 @@ Decided 2026-10-05 (Jonny): three articles a week, published Monday, Wednesday a
 
 Quality gate: the drafting routine is the reviewer. Facts only from meditron.ch and Samsung's published material, no prices, no clinical claims, German read once as a sceptical Swiss doctor. Meditron can still comment in the status Google Doc; comments are applied to the live article afterwards.
 
+## Standing rule: German is hands-off
+Decided 2026-10-05 (Jonny). The German version of the site is translated by hand by Meditron. Never write to the German locale (C9aJRu34X) of any existing page, component, collection item or FAQ row, and never run Framer's AI translation. The only German we create is the first German draft of a new Insights article, written before the item exists; after that the German belongs to Meditron. Scripts must skip DE in `valueByLocale` and `setLocalizationData` for existing items.
+
 ## Holds
 Add an article number here to stop it publishing (e.g. `7 HOLD, Henri checking leasing wording`).
 (none)
