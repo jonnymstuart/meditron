@@ -118,6 +118,20 @@
       <div class="cards" id="tiers"></div>
     </section>
 
+    <section id="s-google" hidden>
+      <h2>Google rankings, tracked terms</h2>
+      <p class="sub" id="googleSrc"></p>
+      <div class="tablewrap"><table><thead><tr><th>Lang</th><th>Term</th><th>Searches / month (CH)</th><th>Meditron position</th><th>Who ranks top 3</th><th>AI Overview</th></tr></thead><tbody id="google"></tbody></table></div>
+      <p class="caveat">Position is the median of three live Swiss Google queries on the day. "–" means not in the top 50. Volumes are Google Ads estimates; blank means too few searches for Google to report.</p>
+    </section>
+
+    <section id="s-aiprompts" hidden>
+      <h2>AI answers, tracked prompts</h2>
+      <p class="sub" id="aiSrc"></p>
+      <div class="tablewrap"><table><thead><tr><th>Lang</th><th>Prompt</th><th>ChatGPT</th><th>Gemini</th><th>Perplexity</th><th>Named first</th></tr></thead><tbody id="aiprompts"></tbody></table></div>
+      <p class="caveat">"Named" = Meditron appears in the answer. "Cited" = meditron.ch is one of the answer's sources. Answers come from the engines' APIs with web search on, from a neutral location, so they are a trend line rather than what one Swiss user sees.</p>
+    </section>
+
     <section id="s-articles">
       <h2>Insights articles</h2>
       <p class="sub">Six planned. Each answers a question buyers ask, links to the model pages and carries FAQ and author markup so Google and AI assistants can quote it.</p>
@@ -171,6 +185,11 @@ async function render() {
   $("aiSummary").textContent = d.ai.summary;
   $("aiLinks").innerHTML = d.ai.links.map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join(" · ");
   $("tiers").innerHTML = d.ai.tiers.map(t => `<div class="card"><span class="pill ${t.status === "mentioned" ? "mentioned" : "totest"}">${esc(t.status)} · ${esc(t.difficulty)}</span><h3>${esc(t.name)}</h3><ul class="ex">${t.examples.map(e => `<li>${esc(e)}</li>`).join("")}</ul></div>`).join("");
+  if (d.google) { $("s-google").hidden = false; $("googleSrc").textContent = "Source: " + d.google.source;
+    $("google").innerHTML = d.google.rows.map(r => `<tr><td>${esc(r.lang.toUpperCase())}</td><td>${esc(r.keyword)}</td><td class="v">${r.volume ?? ""}</td><td class="v">${r.position ?? "–"}</td><td>${esc((r.top3||[]).map(x=>x.replace(/^www\./,"")).join(", "))}</td><td>${r.ai_overview ? (r.ai_overview_cites_meditron ? "cites Meditron" : "yes, not cited") : "none"}</td></tr>`).join(""); }
+  if (d.aiPrompts) { $("s-aiprompts").hidden = false; $("aiSrc").textContent = "Source: " + d.aiPrompts.source;
+    const cell = x => !x ? "" : x.named ? (x.cited ? "named + cited" : "named") : "no";
+    $("aiprompts").innerHTML = d.aiPrompts.rows.map(r => `<tr><td>${esc(r.lang.toUpperCase())}</td><td>${esc(r.prompt)}</td><td>${cell(r.chatgpt)}</td><td>${cell(r.gemini)}</td><td>${cell(r.perplexity)}</td><td>${esc(r.first_named ?? "")}</td></tr>`).join(""); }
   $("articles").innerHTML = d.articles.map((a, i) => `<div class="art"><div class="img" style="background:${colours[i % colours.length]}">${mark}</div><div class="body"><span class="pill ${a.status === "live" ? "live" : "draft"}">${esc(a.status)}</span><h3>${a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a>` : esc(a.title)}</h3><div class="by">Author: ${esc(a.author)}</div><p>${esc(a.why)}</p></div></div>`).join("");
   $("timeline").innerHTML = d.timeline.map(t => `<li><div class="d">${esc(t.date)}</div><div>${esc(t.text)}</div></li>`).join("");
   $("next").innerHTML = d.next.map(x => `<li>${esc(x)}</li>`).join("");
