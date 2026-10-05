@@ -121,8 +121,8 @@
     <section id="s-google" hidden>
       <h2>Google rankings, tracked terms</h2>
       <p class="sub" id="googleSrc"></p>
-      <div class="tablewrap"><table><thead><tr><th>Lang</th><th>Term</th><th>Searches / month (CH)</th><th>Meditron position</th><th>Who ranks top 3</th><th>AI Overview</th></tr></thead><tbody id="google"></tbody></table></div>
-      <p class="caveat">Position is the median of three live Swiss Google queries on the day. "–" means not in the top 50. Volumes are Google Ads estimates; blank means too few searches for Google to report.</p>
+      <div class="tablewrap"><table><thead><tr><th>Lang</th><th>Term</th><th>Searches / month (CH)</th><th>Meditron position</th><th>Seen</th><th>Who ranks top 3</th><th>AI Overview</th></tr></thead><tbody id="google"></tbody></table></div>
+      <p class="caveat">Best position seen in three live Swiss Google queries on the day; "seen" says how many of the three showed meditron.ch, since Google serves varying result sets. "–" means not in the top 50 in any of them. Volumes are Google Ads estimates; blank means too few searches for Google to report.</p>
     </section>
 
     <section id="s-aiprompts" hidden>
@@ -186,7 +186,7 @@ async function render() {
   $("aiLinks").innerHTML = d.ai.links.map(l => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)} ↗</a>`).join(" · ");
   $("tiers").innerHTML = d.ai.tiers.map(t => `<div class="card"><span class="pill ${t.status === "mentioned" ? "mentioned" : "totest"}">${esc(t.status)} · ${esc(t.difficulty)}</span><h3>${esc(t.name)}</h3><ul class="ex">${t.examples.map(e => `<li>${esc(e)}</li>`).join("")}</ul></div>`).join("");
   if (d.google) { $("s-google").hidden = false; $("googleSrc").textContent = "Source: " + d.google.source;
-    $("google").innerHTML = d.google.rows.map(r => `<tr><td>${esc(r.lang.toUpperCase())}</td><td>${esc(r.keyword)}</td><td class="v">${r.volume ?? ""}</td><td class="v">${r.position ?? "–"}</td><td>${esc((r.top3||[]).map(x=>x.replace(/^www\./,"")).join(", "))}</td><td>${r.ai_overview ? (r.ai_overview_cites_meditron ? "cites Meditron" : "yes, not cited") : "none"}</td></tr>`).join(""); }
+    $("google").innerHTML = d.google.rows.map(r => `<tr><td>${esc(r.lang.toUpperCase())}</td><td>${esc(r.keyword)}</td><td class="v">${r.volume ?? ""}</td><td class="v">${r.position ?? "–"}</td><td>${esc(r.seen ?? "")}</td><td>${esc((r.top3||[]).map(x=>x.replace(/^www\./,"")).join(", "))}</td><td>${r.ai_overview ? (r.ai_overview_cites_meditron ? "cites Meditron" : "yes, not cited") : "none"}</td></tr>`).join(""); }
   if (d.aiPrompts) { $("s-aiprompts").hidden = false; $("aiSrc").textContent = "Source: " + d.aiPrompts.source;
     const cell = x => !x ? "" : x.named ? (x.cited ? "named + cited" : "named") : "no";
     $("aiprompts").innerHTML = d.aiPrompts.rows.map(r => `<tr><td>${esc(r.lang.toUpperCase())}</td><td>${esc(r.prompt)}</td><td>${cell(r.chatgpt)}</td><td>${cell(r.gemini)}</td><td>${cell(r.perplexity)}</td><td>${esc(r.first_named ?? "")}</td></tr>`).join(""); }

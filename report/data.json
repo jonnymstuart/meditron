@@ -245,10 +245,10 @@
   ],
   "next": [
     "Meditron reviews the German of articles 4 to 6 on staging; then deploy to production on the planned dates.",
-    "Set up the keyword data source (DataForSEO) and run the baseline on the 24 tracked terms in four languages.",
-    "Monthly AI check on the 20 tracked prompts in ChatGPT, Gemini and Google AI Overviews.",
+    "Weekly rerun of the 20 Google terms and 20 AI prompts every Monday; trend lines added to this page from week 7.",
     "Model page copy for HERA Z20, V8, R20 and V7 from the briefs.",
-    "Request indexing in Search Console for the six new German and French article URLs."
+    "Request indexing in Search Console for the six new German and French article URLs.",
+    "Add Search Console clicks and impressions once access is granted."
   ],
   "log": [
     {
