@@ -977,8 +977,8 @@
           "why": "The price article ranks without numbers. Publish 'from CHF' ranges per class, or stay quote-only?"
         },
         {
-          "topic": "Samsung's distributor listing",
-          "why": "A link from Samsung Healthcare's 'where to buy' page is the strongest backlink available. Is Meditron listed, and who at Samsung can confirm?"
+          "topic": "Samsung's partner listing and SMD Medical",
+          "why": "Samsung Healthcare's site has a 'Global Network' map, not a crawlable partner list, so a link from it is unlikely. SMD Medical is now also a Samsung partner in Switzerland. What is Meditron's agreement with Samsung, and can 'official distributor since 2012' be backed by a Samsung statement?"
         },
         {
           "topic": "Google Business Profiles",
@@ -1024,7 +1024,7 @@
           "Generic medical terms (medizinisches Ultraschallgerät, mobiles Ultraschallgerät, échographe portable) are small but clean; the hub and article 5 already target them."
         ],
         "risks": [
-          "SMD Medical, Lysis and MHZ are the names AI assistants give instead of Meditron in German and Italian. They are gaining the generic ground while Meditron holds the brand ground.",
+          "SMD Medical (St. Gallen) has been a second Samsung ultrasound sales and service partner for Switzerland since mid-2025, and since 30 June 2026 a contract supplier to FMH Services with 15% off Samsung systems for member practices. It is the name AI assistants give in German and Italian, and it outranks Meditron on model searches. Lysis and MHZ take the rest.",
           "Search volume for this category is small (a few hundred searches a month across all terms). Ranking alone will not fill the pipeline; demos, referrals and congresses still do most of the work.",
           "Site weight: the home page is 1.4 MB with 194 images, and the About page animates its text letter by letter. Both slow crawlers and readers.",
           "Articles go live on a fixed schedule without a Meditron read-through. A factual slip on a medical page costs more than a late article; spot checks are welcome."
@@ -1106,8 +1106,8 @@
       "why": "The price article ranks without numbers. Publish 'from CHF' ranges per class, or stay quote-only?"
     },
     {
-      "topic": "Samsung's distributor listing",
-      "why": "A link from Samsung Healthcare's 'where to buy' page is the strongest backlink available. Is Meditron listed, and who at Samsung can confirm?"
+      "topic": "Samsung's partner listing and SMD Medical",
+      "why": "Samsung Healthcare's site has a 'Global Network' map, not a crawlable partner list, so a link from it is unlikely. SMD Medical is now also a Samsung partner in Switzerland. What is Meditron's agreement with Samsung, and can 'official distributor since 2012' be backed by a Samsung statement?"
     },
     {
       "topic": "Google Business Profiles",
