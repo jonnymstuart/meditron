@@ -1176,5 +1176,77 @@
     "Ultraschallgerät leasen Schweiz": "lease an ultrasound machine Switzerland",
     "échographe Samsung occasion Suisse": "used Samsung ultrasound scanner Switzerland",
     "Was macht Meditron in Frauenfeld?": "What does Meditron do in Frauenfeld?"
+  },
+  "programme": {
+    "months": [
+      {
+        "id": "2026-09",
+        "label": "September 2026",
+        "short": "Sep"
+      },
+      {
+        "id": "2026-10",
+        "label": "October 2026",
+        "short": "Oct"
+      },
+      {
+        "id": "2026-11",
+        "label": "November 2026",
+        "short": "Nov"
+      },
+      {
+        "id": "2026-12",
+        "label": "December 2026",
+        "short": "Dec"
+      },
+      {
+        "id": "2027-01",
+        "label": "January 2027",
+        "short": "Jan"
+      }
+    ],
+    "forecastNote": "Dashed line: projection to the end of the programme, based on the content cadence (three articles a week), the model page copy and the authority work listed under Focus. It is a working target, not a promise.",
+    "forecast": {
+      "page1": {
+        "2026-11": 13,
+        "2026-12": 15,
+        "2027-01": 16
+      },
+      "top20": {
+        "2026-11": 15,
+        "2026-12": 17,
+        "2027-01": 18
+      },
+      "avgpos": {
+        "2026-11": 9.5,
+        "2026-12": 8,
+        "2027-01": 7
+      },
+      "aio": {
+        "2026-11": 2,
+        "2026-12": 3,
+        "2027-01": 4
+      },
+      "named": {
+        "2026-11": 28,
+        "2026-12": 36,
+        "2027-01": 42
+      },
+      "cited": {
+        "2026-11": 22,
+        "2026-12": 30,
+        "2027-01": 36
+      },
+      "first": {
+        "2026-11": 10,
+        "2026-12": 13,
+        "2027-01": 15
+      },
+      "articles": {
+        "2026-11": 16,
+        "2026-12": 28,
+        "2027-01": 38
+      }
+    }
   }
 }

@@ -58,6 +58,10 @@
   .chart .ln { fill: none; stroke: var(--ink); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; }
   .chart .pt { fill: var(--ink); stroke: var(--paper); stroke-width: 2; }
   .chart .pt.base { fill: var(--paper); stroke: var(--ink); }
+  .chart .ln.fc { stroke: var(--ink-3); stroke-dasharray: 4 5; stroke-width: 1.6; }
+  .chart .pt.fc { fill: var(--paper); stroke: var(--ink-3); stroke-width: 1.5; }
+  .chart .val.fc { fill: var(--ink-3); font-weight: 500; }
+  .chart .ax.future { fill: var(--ink-3); opacity: .55; }
   table { width: 100%; border-collapse: collapse; background: var(--paper); border: 1px solid var(--line); border-radius: 14px; overflow: hidden; font-size: 14px; }
   th, td { text-align: left; padding: 10px 12px; vertical-align: top; border-top: 1px solid var(--line); }
   thead th { background: var(--cream); border-top: 0; font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); }
@@ -159,22 +163,28 @@ function tile(k, m, prev) {
   const v = m.values[k.id];
   return `<div class="tile">${k.help ? `<span class="tr eye" data-en="${esc(k.help)}" aria-label="${esc(k.help)}"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="3"/></svg></span>` : ""}<div class="l">${esc(k.label)}</div><div class="v">${v == null ? `<small style="margin:0">${k.group === "Search Console" ? "not connected" : "not measured"}</small>` : esc(fmt(v)) + (k.unit ? `<small>${esc(k.unit)}</small>` : "")}</div>${prev ? delta(k, v, prev.values[k.id]) : ""}<div class="n">${esc(k.note)}${m.baseline ? " · baseline, different method" : ""}</div></div>`;
 }
-function chart(k, months) {
-  const pts = months.map((m, i) => ({ i, m, v: num(m.values[k.id]) }));
+function chart(k, slots, months, forecast) {
+  const byId = Object.fromEntries(months.map(m => [m.id, m]));
+  const pts = slots.map((sl, i) => { const m = byId[sl.id]; return { i, sl, m, v: m ? num(m.values[k.id]) : null, f: forecast?.[sl.id] ?? null }; });
   const have = pts.filter(p => p.v != null);
-  const W = 300, H = 120, L = 28, R = 12, T = 14, B = 26;
+  const W = 300, H = 130, L = 28, R = 12, T = 16, B = 26;
   if (have.length === 0) return `<div class="chart"><div class="l">${esc(k.label)}</div><div class="n">${esc(k.note)}</div><p class="caveat" style="margin:8px 0 10px">No data yet.</p></div>`;
-  const max = Math.max(...have.map(p => p.v), k.id.startsWith("page") || k.id === "top20" || k.id === "first" ? 20 : k.id === "named" || k.id === "cited" ? 60 : 1);
+  const allv = [...have.map(p => p.v), ...pts.filter(p => p.f != null).map(p => p.f)];
+  const max = Math.max(...allv, k.id.startsWith("page") || k.id === "top20" || k.id === "first" ? 20 : k.id === "named" || k.id === "cited" ? 60 : 1);
   const min = 0;
-  const x = i => L + (months.length === 1 ? (W - L - R) / 2 : (W - L - R) * i / (months.length - 1));
+  const x = i => L + (W - L - R) * i / (slots.length - 1);
   const y = v => T + (H - T - B) * (1 - (v - min) / (max - min || 1));
   const path = have.map((p, j) => `${j ? "L" : "M"}${x(p.i).toFixed(1)},${y(p.v).toFixed(1)}`).join(" ");
-  const grid = [0, 0.5, 1].map(f => { const v = min + (max - min) * f; return `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"/><text class="ax" x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${Math.round(v * 10) / 10}</text>`; }).join("");
-  const labels = pts.map(p => `<text class="ax" x="${x(p.i)}" y="${H - 8}" text-anchor="middle">${esc(p.m.short)}</text>`).join("");
-  const dots = have.map(p => `<circle class="pt ${p.m.baseline ? "base" : ""}" cx="${x(p.i)}" cy="${y(p.v)}" r="4.5"><title>${esc(p.m.label)}: ${esc(fmt(p.m.values[k.id]))}</title></circle>`).join("");
   const last = have[have.length - 1];
-  const lab = `<text class="val" x="${x(last.i)}" y="${y(last.v) - 9}" text-anchor="${last.i === months.length - 1 ? "end" : "middle"}">${esc(fmt(last.m.values[k.id]))}</text>`;
-  return `<div class="chart"><div class="l">${esc(k.label)}</div><div class="n">${esc(k.unit || k.note)}</div><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(k.label)} by month">${grid}<path class="ln" d="${path}"/>${dots}${lab}${labels}</svg></div>`;
+  const fpts = pts.filter(p => p.f != null && p.i > last.i);
+  const fpath = fpts.length ? `M${x(last.i).toFixed(1)},${y(last.v).toFixed(1)} ` + fpts.map(p => `L${x(p.i).toFixed(1)},${y(p.f).toFixed(1)}`).join(" ") : "";
+  const grid = [0, 0.5, 1].map(f => { const v = min + (max - min) * f; return `<line class="grid" x1="${L}" x2="${W - R}" y1="${y(v)}" y2="${y(v)}"/><text class="ax" x="${L - 6}" y="${y(v) + 4}" text-anchor="end">${Math.round(v * 10) / 10}</text>`; }).join("");
+  const labels = pts.map(p => `<text class="ax ${p.m ? "" : "future"}" x="${x(p.i)}" y="${H - 8}" text-anchor="middle">${esc(p.sl.short)}</text>`).join("");
+  const dots = have.map(p => `<circle class="pt ${p.m.baseline ? "base" : ""}" cx="${x(p.i)}" cy="${y(p.v)}" r="4.5"><title>${esc(p.m.label)}: ${esc(fmt(p.m.values[k.id]))}</title></circle>`).join("");
+  const fdots = fpts.map(p => `<circle class="pt fc" cx="${x(p.i)}" cy="${y(p.f)}" r="3.5"><title>${esc(p.sl.label)} target: ${p.f}</title></circle>`).join("");
+  const lab = `<text class="val" x="${x(last.i)}" y="${y(last.v) - 9}" text-anchor="middle">${esc(fmt(last.m.values[k.id]))}</text>`;
+  const flab = fpts.length ? `<text class="val fc" x="${x(fpts[fpts.length - 1].i)}" y="${y(fpts[fpts.length - 1].f) - 9}" text-anchor="end">${fpts[fpts.length - 1].f}</text>` : "";
+  return `<div class="chart"><div class="l">${esc(k.label)}</div><div class="n">${esc(k.unit || k.note)}</div><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${esc(k.label)} by month">${grid}${fpath ? `<path class="ln fc" d="${fpath}"/>` : ""}<path class="ln" d="${path}"/>${fdots}${dots}${lab}${flab}${labels}</svg></div>`;
 }
 function groupTiles(k, m, prev) { return k.map(x => tile(x, m, prev)).join(""); }
 const groups = ["SEO", "GEO", "Content", "Search Console"];
@@ -182,12 +192,10 @@ const groups = ["SEO", "GEO", "Content", "Search Console"];
 function overview() {
   const ms = D.months, cur = ms[ms.length - 1], prev = ms.length > 1 ? ms[ms.length - 2] : null;
   let h = `<div class="hero"><div class="kicker">Overview · ${esc(D.brand.sub)}</div><h1>Where things stand, <em>${esc(cur.label)}</em></h1><p class="lede">${esc(cur.status)}</p></div>`;
-  h += `<section><h2>Scorecard</h2><p class="sub">${esc(D.method)}</p>`;
-  for (const g of groups) { const ks = D.kpis.filter(k => k.group === g); if (!ks.length) continue; h += `<h3 class="g">${esc(g)}</h3><div class="tiles">${groupTiles(ks, cur, prev)}</div>`; }
-  h += `</section>`;
+  const slots = D.programme?.months || ms.map(m => ({ id: m.id, label: m.label, short: m.short }));
+  h += `<section><h2>Where we have been, where we are going</h2><p class="sub">September to January, one line per measure. Solid line: measured. Hollow dot: the September baseline, taken with a different method. ${esc(D.programme?.forecastNote || "")}</p><div class="charts">${D.kpis.filter(k => ms.some(m => num(m.values[k.id]) != null)).map(k => chart(k, slots, ms, D.programme?.forecast?.[k.id])).join("")}</div><p class="caveat">${esc(D.method)}</p></section>`;
   if (cur.gaps) { const col = (t, items, cls) => `<div class="card gap ${cls}"><h3>${esc(t)}</h3><ul class="plain">${items.map(x => `<li>${esc(x)}</li>`).join("")}</ul></div>`;
     h += `<section><h2>Where the gaps are</h2><p class="sub">What is working, what is not, and where the next gains sit. Based on the ${esc(cur.label)} measurement.</p><div class="gaps">${col("Working", cur.gaps.working, "ok")}${col("Gaps", cur.gaps.gaps, "bad")}${col("Opportunities", cur.gaps.opportunities, "opp")}${col("Risks", cur.gaps.risks, "risk")}</div>${cur.focus ? `<h3 class="g">Focus next</h3><ol class="focus">${cur.focus.map(x => `<li>${esc(x)}</li>`).join("")}</ol>` : ""}</section>`; }
-  h += `<section><h2>Month by month</h2><p class="sub">One line per measure. A hollow dot is the September baseline, measured differently; the trend from October onwards is like for like.</p><div class="charts">${D.kpis.filter(k => ms.some(m => num(m.values[k.id]) != null)).map(k => chart(k, ms)).join("")}</div></section>`;
   h += `<section><h2>Insights articles</h2><p class="sub">Each answers a question buyers ask, links to the model pages and carries FAQ and author markup so Google and AI assistants can quote it.</p><div class="arts">${D.articles.map((a, i) => `<div class="art"><div class="img" style="background:${colours[i % colours.length]}">${mark}</div><div class="body"><span class="pill ${a.status === "live" ? "live" : "draft"}">${esc(a.status)}</span><h3>${a.url ? `<a href="${esc(a.url)}" target="_blank" rel="noopener">${esc(a.title)}</a>` : esc(a.title)}</h3><div class="by">Author: ${esc(a.author)}</div><p>${esc(a.why)}</p></div></div>`).join("")}</div></section>`;
   if (cur.discuss) h += `<section><h2>To discuss</h2><p class="sub">Not tasks. Questions for the next meeting where a Meditron decision would move the numbers.</p><div class="cards">${cur.discuss.map(x => `<div class="card"><h3>${esc(x.topic)}</h3><p>${esc(x.why)}</p></div>`).join("")}</div></section>`;
   return h;
