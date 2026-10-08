@@ -212,7 +212,7 @@
       "label": "October 2026",
       "short": "Oct",
       "baseline": false,
-      "status": "First measured month. Meditron is on page 1 for 11 of 20 tracked Swiss searches and is named in 20 of 60 AI answers. Four articles live in four languages, two more this week, then three a week.",
+      "status": "First measured month. Meditron is on page 1 for 11 of 20 tracked Swiss searches and is named in 20 of 60 AI answers. Six articles live in four languages; three a week from here.",
       "source": "DataForSEO, Switzerland, 2026-10-05. Google: 3 live queries per term. AI: ChatGPT gpt-5.5, Gemini 3.5 Flash, Perplexity sonar-pro, web search on.",
       "values": {
         "page1": 11,
@@ -222,7 +222,7 @@
         "named": 20,
         "cited": 15,
         "first": 7,
-        "articles": 4,
+        "articles": 6,
         "clicks": null,
         "impressions": null
       },
@@ -944,6 +944,10 @@
         {
           "date": "2026-10-05",
           "text": "Italian versions of all six articles added: titles, intros, bodies, FAQ and Italian URLs, with redirects from the old Italian URLs."
+        },
+        {
+          "date": "2026-10-08",
+          "text": "Articles 5 (mobile or stationary) and 6 (first 90 days) published in EN, DE, FR and IT. Six articles live."
         }
       ],
       "log": [
@@ -1074,17 +1078,17 @@
     {
       "n": 5,
       "title": "Portable or stationary ultrasound system?",
-      "status": "on staging · EN + DE + FR",
+      "status": "live",
       "author": "Dr. Henri Hagenmüller",
-      "url": "",
+      "url": "https://www.meditron.ch/news-events/mobile-or-stationary-ultrasound-system",
       "why": "The old site had a handheld page with backlinks; gives that traffic a landing page and introduces Clarius."
     },
     {
       "n": 6,
       "title": "The first 90 days with your new ultrasound system",
-      "status": "on staging · EN + DE + FR",
+      "status": "live",
       "author": "Christelle Sam-Hine",
-      "url": "",
+      "url": "https://www.meditron.ch/news-events/first-90-days-new-ultrasound-system",
       "why": "Training and applications support is where Meditron beats the competition; supports retention."
     }
   ],

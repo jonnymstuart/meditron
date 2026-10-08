@@ -27,8 +27,8 @@ Ordered. Status: live / staging / next. Keywords from docs/05-samsung-ultrasound
 | 2 | Was kostet ein Samsung Ultraschallgerät in der Schweiz? | samsung ultraschall preis | live 25 Sep |
 | 3 | Ultraschallgerät neu oder Occasion | ultraschallgerät occasion | live 30 Sep |
 | 4 | Samsung HERA Z20 oder V8 für die Gynäkologie | samsung hera z20, samsung v8 | live 5 Oct |
-| 5 | Ultraschallgerät tragbar oder stationär | ultraschallgerät tragbar, échographe portable | staging, planned 7 Oct |
-| 6 | Die ersten 90 Tage mit dem neuen Ultraschallgerät | brand, retention | staging, planned 9 Oct |
+| 5 | Ultraschallgerät tragbar oder stationär | ultraschallgerät tragbar, échographe portable | live 8 Oct (dated 7 Oct) |
+| 6 | Die ersten 90 Tage mit dem neuen Ultraschallgerät | brand, retention | live 8 Oct |
 | 7 | Samsung Ultraschall in der Schweiz: Service, Schulung, Garantie | samsung healthcare schweiz | next |
 | 8 | Ultraschall-Leasing für Arztpraxen: so funktioniert es | ultraschallgerät leasing | next |
 | 9 | Ultraschallgerät kaufen: Checkliste für die Hausarztpraxis | ultraschallgerät kaufen (140/month, not ranking) | next |
