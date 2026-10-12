@@ -1,6 +1,6 @@
 // Weekly Google baseline for data/tracking-list.csv: Swiss search volume, meditron.ch position,
 // top 3 competitors, AI Overview presence and citations. Writes reports/data/google-<date>.json
-// and updates report/data.json tiles. Usage: node scripts/dataforseo/baseline.mjs [--dry-run]
+// Then run report-fill.mjs to update report/data.json. Usage: node scripts/dataforseo/baseline.mjs [--dry-run]
 import { readFileSync, writeFileSync } from "node:fs";
 import { dfs, CH, LANG, today } from "./lib.mjs";
 const dry = process.argv.includes("--dry-run");
@@ -46,14 +46,4 @@ for (const r of rows) {
 const out = `reports/data/google-${today()}.json`;
 writeFileSync(out, JSON.stringify({ source: "DataForSEO SERP + Google Ads volume, Switzerland", date: today(), results }, null, 1));
 console.log("wrote", out);
-
-// 3. Tiles on the report page
-const top50 = results.filter(r => r.position && r.position <= 50).length;
-const page12 = results.filter(r => r.position && r.position <= 20).length;
-const aioN = results.filter(r => r.ai_overview).length, aioCite = results.filter(r => r.ai_overview_cites_meditron).length;
-const p = "report/data.json", d = JSON.parse(readFileSync(p, "utf8"));
-d.headline.tiles[1] = { label: "Tracked terms where meditron.ch ranks (top 50, CH)", value: String(top50), note: `of ${results.length} · DataForSEO ${today()}` };
-d.headline.tiles[2] = { label: "Tracked terms on page 1–2", value: String(page12), note: `of ${results.length} · target: 10+ by January` };
-d.headline.tiles[3] = { label: "AI Overviews citing Meditron", value: `${aioCite} / ${aioN}`, note: `AI Overview shown on ${aioN} of ${results.length} terms · ${today()}` };
-writeFileSync(p, JSON.stringify(d, null, 2) + "\n");
-console.log("tiles:", top50, page12, `${aioCite}/${aioN}`);
+// Report tiles are filled by report-fill.mjs (same formulas every month).
