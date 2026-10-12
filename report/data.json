@@ -1022,7 +1022,6 @@
         ],
         "gaps": [
           "German buying searches: not visible for 'ultraschallgerät kaufen' (140 searches a month) or 'ultraschallgerät occasion'. Shops and marketplaces hold those results.",
-          "The price question: no AI engine names Meditron when asked what a Samsung ultrasound costs (0 of 12 answers). Nobody answers it with a Swiss source yet.",
           "Model names: 'samsung hera z20' is now at 10 in EN and DE (13 to 16 a week earlier) but still behind smdmedical.ch. The rewritten Z20 page is on staging and not yet live.",
           "Italian: MHZ is named instead of Meditron on the Italian pre-owned and generic prompts, even though Italian Google rankings are the best of the four languages.",
           "Price: only the Italian price answer cites meditron.ch; in EN, DE and FR no engine names Meditron for the price question.",
@@ -1231,14 +1230,14 @@
         "2027-01": 18
       },
       "avgpos": {
-        "2026-11": 9.5,
-        "2026-12": 8,
+        "2026-11": 8,
+        "2026-12": 7.5,
         "2027-01": 7
       },
       "aio": {
-        "2026-11": 2,
-        "2026-12": 3,
-        "2027-01": 4
+        "2026-11": 4,
+        "2026-12": 5,
+        "2027-01": 6
       },
       "named": {
         "2026-11": 28,
@@ -1246,14 +1245,14 @@
         "2027-01": 42
       },
       "cited": {
-        "2026-11": 22,
-        "2026-12": 30,
-        "2027-01": 36
+        "2026-11": 26,
+        "2026-12": 32,
+        "2027-01": 38
       },
       "first": {
-        "2026-11": 10,
-        "2026-12": 13,
-        "2027-01": 15
+        "2026-11": 12,
+        "2026-12": 14,
+        "2027-01": 16
       },
       "articles": {
         "2026-11": 16,
