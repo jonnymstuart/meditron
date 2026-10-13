@@ -213,7 +213,7 @@
       "short": "Oct",
       "baseline": false,
       "status": "Second reading, 12 October. Meditron is on page 1 for 10 of 20 tracked Swiss searches (average position 8.9, up from 11.8), cited in 3 of 7 Google AI Overviews, and named in 22 of 60 AI answers with 21 citations. Six articles live in four languages.",
-      "source": "DataForSEO, Switzerland, 2026-10-12 (first reading 2026-10-05). Google: 3 live queries per term. AI: ChatGPT gpt-5.5, Gemini 3.5 Flash, Perplexity sonar-pro, web search on.",
+      "source": "DataForSEO, Switzerland, 2026-10-12. Google: 3 live queries per term. AI: ChatGPT gpt-5.5, Gemini 3.5 Flash, Perplexity sonar-pro, web search on.",
       "values": {
         "page1": 10,
         "top20": 11,
@@ -525,7 +525,8 @@
               "named": true,
               "cited": true
             },
-            "first_named": "Meditron"
+            "first_named": "Meditron",
+            "rivals": "SMD Medical ×2, Art Medical Suisse"
           },
           {
             "lang": "de",
@@ -542,7 +543,8 @@
               "named": true,
               "cited": true
             },
-            "first_named": "Meditron"
+            "first_named": "Meditron",
+            "rivals": "SMD Medical ×2"
           },
           {
             "lang": "fr",
@@ -559,7 +561,8 @@
               "named": true,
               "cited": true
             },
-            "first_named": "Meditron"
+            "first_named": "Meditron",
+            "rivals": "SMD Medical ×3, Art Medical Suisse ×2"
           },
           {
             "lang": "it",
@@ -576,7 +579,8 @@
               "named": true,
               "cited": true
             },
-            "first_named": "Meditron"
+            "first_named": "Meditron",
+            "rivals": "SMD Medical ×3, Art Medical Suisse"
           },
           {
             "lang": "en",
@@ -593,7 +597,8 @@
               "named": false,
               "cited": false
             },
-            "first_named": null
+            "first_named": null,
+            "rivals": ""
           },
           {
             "lang": "de",
@@ -610,7 +615,8 @@
               "named": false,
               "cited": false
             },
-            "first_named": null
+            "first_named": null,
+            "rivals": ""
           },
           {
             "lang": "fr",
@@ -627,7 +633,8 @@
               "named": false,
               "cited": false
             },
-            "first_named": null
+            "first_named": null,
+            "rivals": ""
           },
           {
             "lang": "it",
@@ -644,7 +651,8 @@
               "named": false,
               "cited": false
             },
-            "first_named": "Meditron"
+            "first_named": "Meditron",
+            "rivals": ""
           },
           {
             "lang": "en",
@@ -661,7 +669,8 @@
               "named": false,
               "cited": false
             },
-            "first_named": null
+            "first_named": null,
+            "rivals": ""
           },
           {
             "lang": "de",
@@ -678,7 +687,8 @@
               "named": false,
               "cited": false
             },
-            "first_named": null
+            "first_named": null,
+            "rivals": ""
           },
           {
             "lang": "fr",
@@ -695,7 +705,8 @@
               "named": false,
               "cited": false
             },
-            "first_named": null
+            "first_named": null,
+            "rivals": ""
           },
           {
             "lang": "it",
@@ -712,7 +723,8 @@
               "named": false,
               "cited": false
             },
-            "first_named": "MHZ"
+            "first_named": "MHZ",
+            "rivals": "MHZ"
           },
           {
             "lang": "en",
@@ -729,7 +741,8 @@
               "named": false,
               "cited": true
             },
-            "first_named": "Meditron"
+            "first_named": "Meditron",
+            "rivals": "SMD Medical"
           },
           {
             "lang": "de",
@@ -746,7 +759,8 @@
               "named": false,
               "cited": true
             },
-            "first_named": "Meditron"
+            "first_named": "Meditron",
+            "rivals": "SMD Medical"
           },
           {
             "lang": "de",
@@ -763,7 +777,8 @@
               "named": false,
               "cited": false
             },
-            "first_named": null
+            "first_named": null,
+            "rivals": ""
           },
           {
             "lang": "fr",
@@ -780,7 +795,8 @@
               "named": false,
               "cited": true
             },
-            "first_named": null
+            "first_named": null,
+            "rivals": "SMD Medical"
           },
           {
             "lang": "en",
@@ -797,7 +813,8 @@
               "named": true,
               "cited": true
             },
-            "first_named": "Meditron"
+            "first_named": "Meditron",
+            "rivals": "SMD Medical ×2, Lysis"
           },
           {
             "lang": "de",
@@ -814,7 +831,8 @@
               "named": false,
               "cited": false
             },
-            "first_named": "Meditron"
+            "first_named": "Meditron",
+            "rivals": "MHZ, SMD Medical"
           },
           {
             "lang": "fr",
@@ -831,7 +849,8 @@
               "named": false,
               "cited": true
             },
-            "first_named": "Meditron"
+            "first_named": "Meditron",
+            "rivals": "MHZ ×2, SMD Medical ×2, Neurolite, Art Medical Suisse"
           },
           {
             "lang": "it",
@@ -848,7 +867,8 @@
               "named": false,
               "cited": true
             },
-            "first_named": "MHZ"
+            "first_named": "MHZ",
+            "rivals": "MHZ ×3, Art Medical Suisse"
           }
         ]
       },

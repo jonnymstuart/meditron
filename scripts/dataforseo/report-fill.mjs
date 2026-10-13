@@ -16,9 +16,10 @@ const avgpos = ranking.length ? Math.round(ranking.reduce((s, p) => s + p, 0) / 
 const aioN = rows.filter(r => r.ai_overview).length, aioCite = rows.filter(r => r.ai_overview_cites_meditron).length;
 
 const byPrompt = {};
-for (const r of a.results) { const k = `${r.lang}|${r.prompt}`; byPrompt[k] ??= { lang: r.lang, prompt: r.prompt, firsts: [] };
+for (const r of a.results) { const k = `${r.lang}|${r.prompt}`; byPrompt[k] ??= { lang: r.lang, prompt: r.prompt, firsts: [], rivalCounts: {} };
+  for (const c of r.competitors_named || []) byPrompt[k].rivalCounts[c] = (byPrompt[k].rivalCounts[c] || 0) + 1;
   byPrompt[k][r.engine] = r.ok ? { named: r.meditron_named, cited: r.meditron_cited } : null; if (r.first_named) byPrompt[k].firsts.push(r.first_named); }
-const prows = Object.values(byPrompt).map(p => { const c = {}; p.firsts.forEach(f => c[f] = (c[f] || 0) + 1); const first = Object.entries(c).sort((x, y) => y[1] - x[1])[0]?.[0] ?? null; delete p.firsts; return { ...p, first_named: first }; });
+const prows = Object.values(byPrompt).map(p => { const c = {}; p.firsts.forEach(f => c[f] = (c[f] || 0) + 1); const first = Object.entries(c).sort((x, y) => y[1] - x[1])[0]?.[0] ?? null; const rivals = Object.entries(p.rivalCounts).sort((x, y) => y[1] - x[1]).map(([n, c]) => c > 1 ? `${n} ×${c}` : n).join(", "); delete p.firsts; delete p.rivalCounts; return { ...p, first_named: first, rivals }; });
 const okA = a.results.filter(r => r.ok), named = okA.filter(r => r.meditron_named).length, cited = okA.filter(r => r.meditron_cited).length;
 const first = prows.filter(p => p.first_named === "Meditron").length;
 const articles = d.articles.filter(x => x.status === "live").length;
