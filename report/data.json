@@ -868,26 +868,26 @@
         {
           "name": "Tier 1 · generic, no brand, no country",
           "difficulty": "hardest",
-          "status": "7 of 12 named",
+          "status": "4 of 12 named",
           "examples": [
             "best ultrasound machine for a gynaecology practice",
             "Ultraschallgerät für Praxis kaufen – welches?",
             "échographe pour cabinet médical, lequel choisir",
             "ecografo per studio medico, quale scegliere"
           ],
-          "result": "Closest tracked prompts (no brand, Switzerland named): Meditron named in 7 of 12 answers, site cited in 7. Named in EN, DE and FR; Italian answers name MHZ instead."
+          "result": "Generic Swiss practice prompts: Meditron named in 4 of 12 answers (7 a week ago), MHZ named first in DE, FR and IT. The 'which system for a Swiss practice' guide is the answer to this."
         },
         {
           "name": "Tier 2 · brand, no country",
           "difficulty": "hard",
-          "status": "3 of 24 named",
+          "status": "1 of 24 named",
           "examples": [
             "Samsung HERA Z20 vs V8",
             "Samsung Ultraschallgerät Erfahrungen",
             "échographe Samsung avis",
             "ecografo Samsung prezzo"
           ],
-          "result": "Model and price prompts: Meditron named in 3 of 24 answers, site cited in 6 (up from 0 and 1 on 5 Oct). The price question is answered with meditron.ch only in Italian. The HERA Z20 page rewrite is on staging and not yet counted."
+          "result": "Model and price prompts: Meditron named in 1 of 24 answers, site cited in 5. No pricing will be published, so the price prompts stay informational; the model pages are where this tier moves once the Z20, V8, R20 and V7 pages are live."
         },
         {
           "name": "Tier 3 · brand + Switzerland (core targets)",
@@ -899,7 +899,7 @@
             "échographe Samsung Suisse",
             "ecografo Samsung Svizzera"
           ],
-          "result": "Core prompts: Meditron named in 12 of 12 answers, site cited in 8. Named first in all four languages on all three engines, same as 5 Oct."
+          "result": "Core prompts: Meditron named in 12 of 12 answers, site cited in 8, named first in all four languages on all three engines. SMD Medical is named alongside in every answer."
         },
         {
           "name": "Tier 4 · “official distributor” wording",
@@ -916,14 +916,14 @@
         {
           "name": "Tier 5 · service, used, leasing",
           "difficulty": "easier",
-          "status": "0 of 12 named",
+          "status": "1 of 12 named",
           "examples": [
             "used Samsung ultrasound machine Switzerland",
             "Samsung Ultraschallgerät Occasion Schweiz",
             "Ultraschallgerät leasen Schweiz",
             "échographe Samsung occasion Suisse"
           ],
-          "result": "New-or-used prompts: Meditron named in 0 of 12 answers (1 on 5 Oct). Italian answers name MHZ; the pre-owned page would address this directly."
+          "result": "New-or-used prompts: Meditron named in 1 of 12 answers (Italian, ChatGPT). A pre-owned page would address this directly."
         },
         {
           "name": "Tier 6 · Meditron named",
@@ -977,6 +977,10 @@
         },
         {
           "week": "Week 6 · 12 Oct",
+          "text": "Articles 5 and 6 live. HERA Z20 model page rewritten with seven transducers (staging). Second measurement run."
+        },
+        {
+          "week": "Week 7 · 19 Oct",
           "text": "Product CMS audit: probes become compatible products with their own pages, related models get a field of their own. Hub page heading spacing. Dashboard gains the product-page summary and a checkable To-discuss list. Third measurement on 20 Oct."
         }
       ],
