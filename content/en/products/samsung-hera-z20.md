@@ -6,8 +6,8 @@ lang: en
 review: approved
 meta_title: "Samsung HERA Z20 ultrasound in Switzerland: probes, price, demo | Meditron"
 meta_description: "Samsung's premium women's health ultrasound, from Meditron, Samsung partner in Switzerland since 2012. Eight transducers, AI-assisted OB/GYN workflow, demo in Rolle, Frauenfeld or your practice. Ask for a quote."
-related: [samsung-v8, samsung-r20, samsung-v6]
-probes: [ca1-7sv2, ca3-10a, cv1-8a, ea2-11ar, ea2-11av, ev2-12, lm2-18]
+related: [samsung-v8, samsung-r20, samsung-v6]          # Related Products field (ZW57wAQ93), shown as "Related models"
+compatible: [samsung-ca1-7sv2, samsung-ca3-10a, samsung-cv1-8a, samsung-ea2-11ar, samsung-ea2-11av, samsung-ev2-12, samsung-lm2-18]  # Compatible Products field (SWiYaC7ST); probe copy lives in samsung-transducers.md
 sources:
   - Samsung Healthcare HERA Z20 overview and brochure (attached to the Framer item)
   - Samsung Z20 transducer list (usa.samsunghealthcare.com/ultrasound/womens-health/z20)
@@ -64,14 +64,6 @@ The HERA Z20 is the newer platform. It runs Samsung's second-generation Crystal 
 ### Which transducers come with the HERA Z20, and can I lease it?
 The HERA Z20 has four active ports and accepts Samsung's current S-Vue transducers: convex, volume convex, endocavity, volume endocavity and linear probes (see the list on this page). A typical OB/GYN configuration uses a convex, a volume convex and an endocavity probe. Yes, leasing is available through Meditron's financing partners, and we also offer certified pre-owned Samsung systems.
 
-## Probes (Product - Variants items)
+## Compatible products
 
-| slug | Name | Description |
-|---|---|---|
-| ca1-7sv2 | CA1-7Sv2 convex | S-Vue curved-array transducer for abdominal, gynaecology and obstetrics imaging, with broad bandwidth and deep penetration. |
-| ca3-10a | CA3-10A convex | High-resolution curved-array transducer for gynaecology and obstetrics, for detailed anatomy in the first and second trimester. |
-| cv1-8a | CV1-8A volume convex | 3D/4D volume curved-array transducer with S-Vue technology, for fetal volume imaging, RealisticVue and 5D tools. |
-| ea2-11ar | EA2-11AR endocavity | Slim-grip micro-convex endocavity transducer for gynaecology, early pregnancy and urology. |
-| ea2-11av | EA2-11AV volume endocavity | 3D/4D endocavity transducer for early pregnancy, fetal brain and gynaecological volume imaging. |
-| ev2-12 | EV2-12 volume endocavity | S-Vue 3D/4D endocavity transducer with micro-convex design for gynaecology, obstetrics and urology. |
-| lm2-18 | LM2-18 linear | High-frequency linear transducer for breast and small-parts imaging. |
+The seven transducers listed in `compatible:` above. Their copy, specs and system links are maintained in `content/en/products/samsung-transducers.md` and pushed by `scripts/framer/push-probes.mjs`. Probes are products with their own pages, so each one also lists the HERA Z20 under its own Compatible Products.

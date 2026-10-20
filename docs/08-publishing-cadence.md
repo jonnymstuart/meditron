@@ -43,3 +43,8 @@ Ordered. Status: live / staging / next. Keywords from docs/05-samsung-ultrasound
 | 18 | DICOM, PACS und Praxissoftware: Ultraschallbilder richtig anbinden | dicom ultraschall praxissoftware | next |
 
 Add topics at the bottom; never reorder live or staged rows.
+
+## Probe pages and the discuss list (20 Oct)
+- Probe product pages (`/products/samsung-<code>`) are English only until the Meditron team translates them; German falls back to English under `/de/`. They are hidden from the catalogue grid (`Visible` = false) but reachable from the system pages and indexable.
+- The dashboard's "To discuss" cards can be ticked with a note. On Monday, read `https://<storeid>.public.blob.vercel-storage.com/discuss.json` (URL in docs/06 once the Blob store exists), mark the matching `months[].discuss[]` entries `done/note/by/at` in `report/data.json`, add a "Decided" line to `done[]`, and mention the decisions in the client email.
+

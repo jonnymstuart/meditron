@@ -1209,6 +1209,74 @@
     "échographe Samsung occasion Suisse": "used Samsung ultrasound scanner Switzerland",
     "Was macht Meditron in Frauenfeld?": "What does Meditron do in Frauenfeld?"
   },
+  "productModel": {
+    "title": "Product pages: how the three link types work",
+    "sub": "Every product page can show three kinds of linked items under the body copy. The audit on 20 October found the HERA Z20 test page had two of them the wrong way round; the fix below is on staging.",
+    "types": [
+      {
+        "name": "Variants",
+        "what": "Versions of the same product you can order. Small cards with a picture, a name and one line; no page of their own, not clickable.",
+        "used": "31 products, none ultrasound.",
+        "examples": [
+          {
+            "label": "Lead Glasses: Discovery, Focus, Nike Blue, Nike Silver",
+            "url": "https://www.meditron.ch/products/lead-glasses"
+          },
+          {
+            "label": "Radioprotective Aprons: Coat, Vest & Kilt, Front",
+            "url": "https://www.meditron.ch/products/radioprotective-aprons"
+          },
+          {
+            "label": "Resolution patterns: 21 Pro-Res test patterns",
+            "url": "https://www.meditron.ch/products/resolution-patterns"
+          },
+          {
+            "label": "Head and Neck Solutions: five immobilisation systems",
+            "url": "https://www.meditron.ch/products/head-and-neck-solutions"
+          },
+          {
+            "label": "Piranha: Premium, Dental, Mammo, CT, R/F, Multi",
+            "url": "https://www.meditron.ch/products/piranha"
+          }
+        ]
+      },
+      {
+        "name": "Compatible Products",
+        "what": "Add-ons that work with this product: probes for an ultrasound system. Each card opens the add-on's own product page.",
+        "used": "Not used before this fix. The field label in the CMS also carried a typo (\"Compactible\"), now corrected.",
+        "examples": [
+          {
+            "label": "HERA Z20: seven Samsung transducers (staging)",
+            "url": "https://only-measure-905157.framer.app/products/samsung-hera-z20"
+          },
+          {
+            "label": "Samsung CA1-7Sv2 probe page listing the Z20 (staging)",
+            "url": "https://only-measure-905157.framer.app/products/samsung-ca1-7sv2"
+          }
+        ]
+      },
+      {
+        "name": "Related Products",
+        "what": "Other models a buyer should also look at. New field added on 20 October, shown as \"Related models\".",
+        "used": "HERA Z20 only so far: V8, R20, V6.",
+        "examples": [
+          {
+            "label": "HERA Z20: V8, R20, V6 under Related models (staging)",
+            "url": "https://only-measure-905157.framer.app/products/samsung-hera-z20"
+          }
+        ]
+      }
+    ],
+    "wrong": "On the HERA Z20 test page (8 October) the probes were filed under Variants and the V8, R20 and V6 under Compatible Products. Nothing reached production.",
+    "ultrasound": [
+      "Every Samsung system page will follow one pattern: body copy, technical data, Compatible Products = its probes, Related Products = neighbouring models. Variants stays empty and the section hides itself.",
+      "Probes become products with their own pages, for example /products/samsung-ca1-7sv2. Several probes fit more than one system, so one probe page can sit under the V8 and the Z20 at the same time.",
+      "Order of work: HERA Z20 first (seven probes, done on staging), then V8, R20, V7, then V6, V5, V4. Each model only adds the probes not already created.",
+      "Probe pages are hidden from the catalogue grid for now so the Ultrasound listing keeps showing systems; they are reachable from the system pages and indexable. One flag turns them on in the catalogue.",
+      "Needed from Meditron: real probe photos (placeholder tiles are in use) and a check of the Swiss probe set per system. Specs stay limited to what Samsung publishes.",
+      "German stays with the Meditron team. New probe pages show English under /de/ until translated. Clarius and Esaote pages are untouched."
+    ]
+  },
   "programme": {
     "months": [
       {
