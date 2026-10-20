@@ -1,0 +1,1349 @@
+{
+ "source": "DataForSEO AI Optimization API (ChatGPT gpt-5.5, Gemini 3.5 Flash, Perplexity sonar-pro), web search on",
+ "date": "2026-10-20",
+ "results": [
+  {
+   "group": "A core",
+   "lang": "en",
+   "keyword": "samsung ultrasound",
+   "prompt": "Who sells Samsung ultrasound systems in Switzerland?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": true,
+   "first_named": "Meditron",
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "meditron.ch",
+    "smdmedical.ch"
+   ],
+   "excerpt": "**Meditron SA** appears to be the official seller/distributor for **Samsung Healthcare ultrasound systems in Switzerland**. Meditron states it has been the **official Samsung Healthcare distributor in Switzerland since 2012**, with sales, installation, training, and service from **Rolle** and **Frau",
+   "cost": 0.072695
+  },
+  {
+   "group": "A core",
+   "lang": "en",
+   "keyword": "samsung ultrasound",
+   "prompt": "Who sells Samsung ultrasound systems in Switzerland?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": false,
+   "first_named": "Meditron",
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "In Switzerland, Samsung Healthcare ultrasound systems are sold and serviced primarily by authorized medical technology distributors: 1. **Meditron AG** * **Role:** Primary official distributor of Samsung ultrasound systems in Switzerland (partnering with Samsung Healthcare since 2012). * **Services:",
+   "cost": 0.015363
+  },
+  {
+   "group": "A core",
+   "lang": "en",
+   "keyword": "samsung ultrasound",
+   "prompt": "Who sells Samsung ultrasound systems in Switzerland?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": true,
+   "first_named": "Meditron",
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "meditron.ch",
+    "smdmedical.ch"
+   ],
+   "excerpt": "Samsung ultrasound systems in Switzerland are sold by: - **Meditron SA** — Samsung Healthcare’s official Swiss distributor since 2012. It provides sales, installation, training, and servicing across Switzerland. Offices are in Rolle and Frauenfeld; phone: **+41 22 995 01 91**.[1] - **SMD Medical AG*",
+   "cost": 0.00885
+  },
+  {
+   "group": "A core",
+   "lang": "de",
+   "keyword": "samsung ultraschall",
+   "prompt": "Wer verkauft Samsung Ultraschallgeräte in der Schweiz?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": true,
+   "first_named": "Meditron",
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "meditron.ch",
+    "smdmedical.ch"
+   ],
+   "excerpt": "**Verifying Samsung's global presence** I need to find a concise answer and consider mentioning SMD as well. It's important to verify if Samsung has listings or operations in Switzerland. I should look into their global presence to see if they mention Switzerland, so I’ll open the relevant informati",
+   "cost": 0.086365
+  },
+  {
+   "group": "A core",
+   "lang": "de",
+   "keyword": "samsung ultraschall",
+   "prompt": "Wer verkauft Samsung Ultraschallgeräte in der Schweiz?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": false,
+   "first_named": "Meditron",
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "In der Schweiz werden Ultraschallgeräte von **Samsung Healthcare / Samsung Medison** hauptsächlich über zwei vertragliche Vertriebspartner vertrieben und betreut: 1. **Meditron AG** * **Rolle:** Offizieller Hauptvertriebspartner (Distributor) von Samsung Healthcare in der Schweiz. * **Standorte:** R",
+   "cost": 0.04365
+  },
+  {
+   "group": "A core",
+   "lang": "de",
+   "keyword": "samsung ultraschall",
+   "prompt": "Wer verkauft Samsung Ultraschallgeräte in der Schweiz?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": true,
+   "first_named": "Meditron",
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "smdmedical.ch",
+    "meditron.ch",
+    "sonomed.de",
+    "businesslink.ch",
+    "medizintechnikmarkt.de",
+    "meineinkauf.ch"
+   ],
+   "excerpt": "In der Schweiz verkaufen derzeit vor allem diese Anbieter Samsung-Ultraschallgeräte: - **Meditron AG** – offizieller Samsung-Healthcare-Vertriebspartner in der Schweiz; Beratung, Installation, Schulung und Service. Standorte: Rolle und Frauenfeld.[4] - **SMD Medical AG** – Samsung-Partner für Vertri",
+   "cost": 0.009522
+  },
+  {
+   "group": "A core",
+   "lang": "fr",
+   "keyword": "échographe samsung",
+   "prompt": "Qui vend les échographes Samsung en Suisse ?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": true,
+   "first_named": "Meditron",
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "meditron.ch",
+    "smdmedical.ch"
+   ],
+   "excerpt": "**Searching for distributor info** I need to find information about current distributors in French. My first step will be to search the web for this info, ensuring I look for the most relevant and up-to-date sources. Once I gather the details, I’ll organize them in a clear way so that they’re easy t",
+   "cost": 0.072415
+  },
+  {
+   "group": "A core",
+   "lang": "fr",
+   "keyword": "échographe samsung",
+   "prompt": "Qui vend les échographes Samsung en Suisse ?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": false,
+   "first_named": "Meditron",
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "En Suisse, la distribution, le conseil et le service après-vente (SAV) des systèmes d'échographie **Samsung Healthcare** sont principalement assurés par deux acteurs spécialisés dans l'imagerie médicale : 1. **Meditron** * **Rôle :** Distributeur officiel de Samsung Healthcare en Suisse (partenaire ",
+   "cost": 0.029713
+  },
+  {
+   "group": "A core",
+   "lang": "fr",
+   "keyword": "échographe samsung",
+   "prompt": "Qui vend les échographes Samsung en Suisse ?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": true,
+   "first_named": "Meditron",
+   "competitors_named": [
+    "SMD Medical",
+    "Art Medical Suisse"
+   ],
+   "cited_domains": [
+    "smdmedical.ch",
+    "meditron.ch",
+    "artmedicalsuisse.ch",
+    "samsung.com",
+    "ch.kompass.com"
+   ],
+   "excerpt": "En Suisse, **Meditron SA** est le distributeur officiel des échographes Samsung Healthcare depuis 2012. L’entreprise propose la vente, l’installation, la formation et le service après-vente, en français, allemand et italien.[5][6] - **Meditron SA** - Rolle : Place de l’Industrie 2, 1180 Rolle - Frau",
+   "cost": 0.009297
+  },
+  {
+   "group": "A core",
+   "lang": "it",
+   "keyword": "ecografo samsung",
+   "prompt": "Chi vende gli ecografi Samsung in Svizzera?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": true,
+   "first_named": "Meditron",
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "meditron.ch",
+    "smdmedical.ch"
+   ],
+   "excerpt": "**Searching for dealer info** I need to provide the information in Italian since that seems to be what the user expects. I’ll search the web for current dealer information relevant to their request. It’s important that I find up-to-date details to ensure I’m being as helpful as possible. Let’s see w",
+   "cost": 0.07392
+  },
+  {
+   "group": "A core",
+   "lang": "it",
+   "keyword": "ecografo samsung",
+   "prompt": "Chi vende gli ecografi Samsung in Svizzera?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": false,
+   "first_named": "Meditron",
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "In Svizzera, i sistemi ecografici di **Samsung Healthcare** vengono distribuiti da partner commerciali specializzati nel settore della tecnologia medica e della diagnostica per immagini: 1. **Meditron SA** * È il distributore ufficiale e storico dei sistemi ecografici Samsung in Svizzera (partner da",
+   "cost": 0.029928
+  },
+  {
+   "group": "A core",
+   "lang": "it",
+   "keyword": "ecografo samsung",
+   "prompt": "Chi vende gli ecografi Samsung in Svizzera?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": true,
+   "first_named": "Meditron",
+   "competitors_named": [
+    "SMD Medical",
+    "Art Medical Suisse"
+   ],
+   "cited_domains": [
+    "smdmedical.ch",
+    "meditron.ch",
+    "artmedicalsuisse.ch",
+    "samsung.com",
+    "stg-images.samsung.com"
+   ],
+   "excerpt": "In Svizzera gli ecografi **Samsung Healthcare** sono venduti principalmente da: - **Meditron AG** — distributore ufficiale Samsung Healthcare in Svizzera dal 2012. Offre consulenza, installazione, formazione e assistenza in tedesco, francese e italiano. Sedi a **Rolle** e **Frauenfeld**; e-mail: **i",
+   "cost": 0.010155
+  },
+  {
+   "group": "B buying",
+   "lang": "en",
+   "keyword": "samsung ultrasound price",
+   "prompt": "How much does a Samsung ultrasound machine cost?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "absolutemed.com",
+    "bimedis.com"
+   ],
+   "excerpt": "A **Samsung ultrasound machine typically costs anywhere from about $7,000 to $90,000+**, depending on the model, age, probes, software options, warranty, and whether it’s new, used, or refurbished. Typical U.S. market ranges: | Samsung ultrasound type / model | Approx. price | |---|---:| | Older/ref",
+   "cost": 0.08124
+  },
+  {
+   "group": "B buying",
+   "lang": "en",
+   "keyword": "samsung ultrasound price",
+   "prompt": "How much does a Samsung ultrasound machine cost?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "The cost of a Samsung ultrasound machine varies widely depending on whether it is bought new, used, or refurbished, the specific product series, and the probes/features included. Prices typically range from **$15,000 to $100,000+**: ### 1. Pricing by System Category & Tier * **Entry-Level / Economy ",
+   "cost": 0.031644
+  },
+  {
+   "group": "B buying",
+   "lang": "en",
+   "keyword": "samsung ultrasound price",
+   "prompt": "How much does a Samsung ultrasound machine cost?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "medverguide.com",
+    "ultrasoundtrainers.com",
+    "todopocus.com",
+    "drsono.com",
+    "lannx.net",
+    "bimedis.com",
+    "medequipdirectory.com",
+    "directmedimaging.com",
+    "dotmed.com"
+   ],
+   "excerpt": "A **Samsung ultrasound machine typically costs about $30,000–$50,000 new for mid-range HS models**, while premium systems can range from **$80,000–$140,000**. Refurbished or used units commonly cost **$10,000–$40,000**, depending on model, age, probes, software, and warranty.[8][9] Approximate range",
+   "cost": 0.009978
+  },
+  {
+   "group": "B buying",
+   "lang": "de",
+   "keyword": "samsung ultraschallgerät preis",
+   "prompt": "Was kostet ein Samsung Ultraschallgerät?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "medizinio.de",
+    "de.bimedis.com",
+    "sonomed.de"
+   ],
+   "excerpt": "**Searching for German prices** I realize I need to find current prices related to something German. I should look this up on the web to get the most accurate and up-to-date information. My plan is to conduct a search focused on German pricing relevant to the user's inquiry, ensuring I gather reliab",
+   "cost": 0.079175
+  },
+  {
+   "group": "B buying",
+   "lang": "de",
+   "keyword": "samsung ultraschallgerät preis",
+   "prompt": "Was kostet ein Samsung Ultraschallgerät?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "Die Preise für medizinische Ultraschallgeräte von Samsung variieren stark, da sie von der Geräteklasse, den gewählten Sonden (Schallköpfen), den Software-Funktionen sowie dem Gerätezustand (Neu- vs. Gebrauchtgerät) abhängen. Im Durchschnitt kostet ein **neues Samsung-Ultraschallsystem rund 38.000 Eu",
+   "cost": 0.045985
+  },
+  {
+   "group": "B buying",
+   "lang": "de",
+   "keyword": "samsung ultraschallgerät preis",
+   "prompt": "Was kostet ein Samsung Ultraschallgerät?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "amt-abken.de",
+    "sonomed.de",
+    "medizinio.de",
+    "alleantworten.de",
+    "de.bimedis.com",
+    "k-m-t.de"
+   ],
+   "excerpt": "Ein **Samsung-Ultraschallgerät kostet grob zwischen 15.000 und 120.000 € netto**, abhängig von Modell, Sonden, Software und Ausstattung.[3][5] - **Einsteigergeräte:** etwa **15.000–35.000 €** - **Mittelklasse:** etwa **35.000–70.000 €** - **Premiumsysteme:** etwa **70.000–120.000 €** - **Gebrauchte ",
+   "cost": 0.009717
+  },
+  {
+   "group": "B buying",
+   "lang": "fr",
+   "keyword": "échographe samsung prix",
+   "prompt": "Combien coûte un échographe Samsung ?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "biomedexchange.com",
+    "lannx.net",
+    "usa.samsunghealthcare.com"
+   ],
+   "excerpt": "Le prix d’un **échographe Samsung** varie beaucoup selon le modèle, les sondes, les options logicielles, l’état neuf/reconditionné et le pays. À titre indicatif : - **Occasion / reconditionné Samsung** : environ **8 000 à 20 000 $** pour certains modèles courants ; on voit par exemple des Samsung au",
+   "cost": 0.06704
+  },
+  {
+   "group": "B buying",
+   "lang": "fr",
+   "keyword": "échographe samsung prix",
+   "prompt": "Combien coûte un échographe Samsung ?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "Le prix d'un échographe Samsung varie considérablement — généralement **entre 10 000 € et plus de 100 000 € HT** — en fonction du type d'appareil (portable ou sur console), du niveau de gamme, du reconditionnement et des options de sondes. --- ### 1. Entrée / Milieu de gamme (Cabinet polyvalent, méd",
+   "cost": 0.031677
+  },
+  {
+   "group": "B buying",
+   "lang": "fr",
+   "keyword": "échographe samsung prix",
+   "prompt": "Combien coûte un échographe Samsung ?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": true,
+   "first_named": null,
+   "competitors_named": [
+    "Art Medical Suisse"
+   ],
+   "cited_domains": [
+    "accio.com",
+    "fr.bimedis.com",
+    "lannx.net",
+    "isonic.fr",
+    "meditron.ch",
+    "artmedicalsuisse.ch"
+   ],
+   "excerpt": "Un échographe Samsung coûte généralement **de quelques milliers à plus de 100 000 €**, selon le modèle, l’état, les sondes et les options. - **Modèles anciens ou d’occasion** : environ **800 à 7 000 €** — par exemple, SonoAce X8 à 856 € ou HM70A à 1 800 €.[2] - **Modèles courants** : environ **8 000",
+   "cost": 0.010755
+  },
+  {
+   "group": "B buying",
+   "lang": "it",
+   "keyword": "ecografo samsung prezzo",
+   "prompt": "Quanto costa un ecografo Samsung?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "remma.fr",
+    "medicalpriceonline.com"
+   ],
+   "excerpt": "Il prezzo di un **ecografo Samsung** varia molto in base a **modello, anno, sonde incluse, software/opzioni, garanzia e se è nuovo o ricondizionato**. Indicativamente: - **Usato/ricondizionato base**: circa **4.000–8.000 €** per modelli più datati come SonoAce/R-series. - **Samsung HS40 / HS50 ricon",
+   "cost": 0.08193
+  },
+  {
+   "group": "B buying",
+   "lang": "it",
+   "keyword": "ecografo samsung prezzo",
+   "prompt": "Quanto costa un ecografo Samsung?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "Il costo di un ecografo Samsung (Samsung Medison) varia notevolmente in base a diversi fattori: * **Modello e fascia di appartenenza** (entry-level, fascia media o top di gamma). * **Tipologia** (portatile/laptop o carrellato da studio). * **Configurazione di vendita** (numero e tipologia di sonde i",
+   "cost": 0.032123
+  },
+  {
+   "group": "B buying",
+   "lang": "it",
+   "keyword": "ecografo samsung prezzo",
+   "prompt": "Quanto costa un ecografo Samsung?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "accio.com",
+    "centrodiagnosticoippocrate.it",
+    "it.bimedis.com",
+    "tmamedica.com",
+    "comunidadmedica.com.ar",
+    "suresultmed.com",
+    "todopocus.com",
+    "relmedic.com"
+   ],
+   "excerpt": "Il prezzo di un ecografo Samsung varia molto in base a modello, sonde, funzioni e condizioni: - **Usato o ricondizionato:** circa **1.800–10.000 €**; ad esempio, un HM70A parte da 1.800 €, mentre un HS50 da circa 4.740 €.[3] - **Portatile di fascia media:** circa **10.000–25.000 €**.[2] - **Modelli ",
+   "cost": 0.010338
+  },
+  {
+   "group": "B buying",
+   "lang": "en",
+   "keyword": "used ultrasound machine switzerland",
+   "prompt": "Should I buy a new or a used ultrasound machine for my practice?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "aium.org",
+    "fda.gov"
+   ],
+   "excerpt": "**Short answer:** For most practices, a **certified refurbished/used ultrasound from a reputable vendor** is often the best value **if** it meets your clinical needs, has compatible probes, integrates with your workflow, comes with warranty/service support, and can pass documented quality assurance.",
+   "cost": 0.09416
+  },
+  {
+   "group": "B buying",
+   "lang": "en",
+   "keyword": "used ultrasound machine switzerland",
+   "prompt": "Should I buy a new or a used ultrasound machine for my practice?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [],
+   "excerpt": "Deciding whether to buy a new or a used (or refurbished) ultrasound machine depends on your practice’s specific clinical needs, financial situation, patient volume, and long-term goals. Here is a breakdown of the key factors, advantages, and drawbacks to help you make the best decision: --- ### 1. F",
+   "cost": 0.004783
+  },
+  {
+   "group": "B buying",
+   "lang": "en",
+   "keyword": "used ultrasound machine switzerland",
+   "prompt": "Should I buy a new or a used ultrasound machine for my practice?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "ultrasound.forsale",
+    "elzhen.com",
+    "gehealthcare.com",
+    "ultrasoundtrainers.com",
+    "strataimaging.com",
+    "mindray.com",
+    "medboundtimes.com",
+    "info.umiultrasound.com",
+    "uscimaging.com"
+   ],
+   "excerpt": "For most small or mid-sized practices, a **professionally refurbished ultrasound machine** is usually the best compromise: lower cost than new, with tested components, updated software, and some warranty protection.[1][3] Buy **new** if downtime would seriously affect revenue, you need the latest im",
+   "cost": 0.015093
+  },
+  {
+   "group": "B buying",
+   "lang": "de",
+   "keyword": "ultraschallgerät occasion",
+   "prompt": "Ultraschallgerät neu oder Occasion kaufen, worauf achten?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "swissmedic.ch"
+   ],
+   "excerpt": "**Considering language and regulations** I see that we can respond in German, which seems appropriate for the user’s context. They’re asking for advice about buying a medical device, and I should include current regulations, possibly related to the web. I might need to search for official EU or Swis",
+   "cost": 0.12563
+  },
+  {
+   "group": "B buying",
+   "lang": "de",
+   "keyword": "ultraschallgerät occasion",
+   "prompt": "Ultraschallgerät neu oder Occasion kaufen, worauf achten?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [],
+   "excerpt": "Beim Kauf eines Ultraschallgeräts – egal ob **neu** oder als **Occasion (gebraucht)** – stehen meist drei Kriterien im Vordergrund: **Bildqualität, Verlässlichkeit** und **Wirtschaftlichkeit**. Hier ist eine strukturierte Übersicht, die Ihnen bei der Entscheidung hilft und zeigt, worauf Sie jeweils ",
+   "cost": 0.005864
+  },
+  {
+   "group": "B buying",
+   "lang": "de",
+   "keyword": "ultraschallgerät occasion",
+   "prompt": "Ultraschallgerät neu oder Occasion kaufen, worauf achten?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": true,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "meditron.ch",
+    "ultraschall-fokus.de",
+    "drsono.com",
+    "info.umiultrasound.com",
+    "medboundtimes.com",
+    "zimeda.de",
+    "medizintechnikmarkt.de",
+    "wlw.at",
+    "pref-med.com"
+   ],
+   "excerpt": "Beim Kauf eines **medizinischen Ultraschallgeräts** ist ein geprüftes Occasion-/Refurbished-Gerät oft sinnvoll—aber nur mit nachvollziehbarer Historie, getesteten Sonden und schriftlicher Garantie. Neu lohnt sich besonders bei täglichem Einsatz, speziellen Anwendungen oder einer geplanten Nutzungsda",
+   "cost": 0.020412
+  },
+  {
+   "group": "B buying",
+   "lang": "fr",
+   "keyword": "échographe occasion suisse",
+   "prompt": "Échographe neuf ou d'occasion pour un cabinet, que vérifier ?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "sante.gouv.fr",
+    "eur-lex.europa.eu",
+    "legifrance.gouv.fr"
+   ],
+   "excerpt": "**Considering medical device regulations** I think I can answer general questions in French without needing to search the web. However, for current information about medical device regulations, it seems important to use reliable sources due to the high stakes involved. I should consider searching fo",
+   "cost": 0.114395
+  },
+  {
+   "group": "B buying",
+   "lang": "fr",
+   "keyword": "échographe occasion suisse",
+   "prompt": "Échographe neuf ou d'occasion pour un cabinet, que vérifier ?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": "MHZ",
+   "competitors_named": [
+    "MHZ"
+   ],
+   "cited_domains": [],
+   "excerpt": "Acheter un échographe (neuf ou d'occasion) est un investissement majeur pour un cabinet médical. Le choix dépend de votre budget, de votre spécialité et du niveau de garantie souhaité. Voici un guide complet des points clés à vérifier selon chaque option : --- ### 1. Que vérifier dans TOUS LES CAS (",
+   "cost": 0.005748
+  },
+  {
+   "group": "B buying",
+   "lang": "fr",
+   "keyword": "échographe occasion suisse",
+   "prompt": "Échographe neuf ou d'occasion pour un cabinet, que vérifier ?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "doctoccaz.com",
+    "medi-plus.fr",
+    "echofirst.fr",
+    "xn--mdimo-bsa.fr",
+    "fr.accio.com",
+    "suresultmed.com",
+    "marlon.fr",
+    "medicaleyetec.fr",
+    "4dmedica.ai"
+   ],
+   "excerpt": "Pour un cabinet, l’occasion ou le reconditionné peut être un excellent choix, à condition de vérifier surtout **les sondes, la qualité d’image, la conformité et le SAV**. Le neuf apporte davantage de garantie et de pérennité, mais coûte nettement plus cher. ## Checklist avant achat - **Usage cliniqu",
+   "cost": 0.021903
+  },
+  {
+   "group": "B buying",
+   "lang": "it",
+   "keyword": "ecografo usato svizzera",
+   "prompt": "Ecografo nuovo o usato per uno studio medico, cosa controllare?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": true,
+   "first_named": "Meditron",
+   "competitors_named": [],
+   "cited_domains": [
+    "eur-lex.europa.eu",
+    "salute.gov.it",
+    "meditron.ch",
+    "fnofi.it"
+   ],
+   "excerpt": "**Considering ultrasound purchase advice** The user is asking for advice on purchasing a new or used ultrasound machine for a medical office. It seems like current regulations and prices would be important, so a generic checklist could help. I think I should search for official resources, like EU MD",
+   "cost": 0.126215
+  },
+  {
+   "group": "B buying",
+   "lang": "it",
+   "keyword": "ecografo usato svizzera",
+   "prompt": "Ecografo nuovo o usato per uno studio medico, cosa controllare?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [],
+   "excerpt": "La scelta tra un **ecografo nuovo o usato** per uno studio medico dipende da diversi fattori, tra cui il budget, il volume di pazienti, la specializzazione medica e le esigenze di accuratezza diagnostica. Ecco una guida completa con i **pro e contro** di entrambe le opzioni e la **checklist di cosa ",
+   "cost": 0.006347
+  },
+  {
+   "group": "B buying",
+   "lang": "it",
+   "keyword": "ecografo usato svizzera",
+   "prompt": "Ecografo nuovo o usato per uno studio medico, cosa controllare?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "mpahs.com",
+    "centrodiagnosticoippocrate.it",
+    "suresultmed.com",
+    "todopocus.com",
+    "it.bimedis.com",
+    "gdmedicalsolution.com"
+   ],
+   "excerpt": "Per uno studio medico, **un ecografo ricondizionato con garanzia e assistenza locale** è spesso il compromesso migliore; l’usato “così com’è” conviene solo dopo una verifica tecnica molto accurata. Un apparecchio nuovo offre invece minori rischi, aggiornamenti e maggiore prevedibilità dei costi. ## ",
+   "cost": 0.022425
+  },
+  {
+   "group": "C models",
+   "lang": "en",
+   "keyword": "samsung hera z20",
+   "prompt": "Samsung HERA Z20 or V8 for a gynaecology practice?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": "Lysis",
+   "competitors_named": [
+    "Lysis"
+   ],
+   "cited_domains": [
+    "resources.samsunghealthcare.com",
+    "news.samsung.com",
+    "cdn.samsungsuite.com",
+    "usa.samsunghealthcare.com"
+   ],
+   "excerpt": "**Short answer:** for a *dedicated gynaecology / women’s health practice*, I’d usually choose the **Samsung HERA Z20** **if OB, fertility, fetal assessment, 3D/4D, and high-volume gynae scanning are central to the business**. Choose the **Samsung V8** if you need a **more versatile, lower-cost, mixe",
+   "cost": 0.09275
+  },
+  {
+   "group": "C models",
+   "lang": "en",
+   "keyword": "samsung hera z20",
+   "prompt": "Samsung HERA Z20 or V8 for a gynaecology practice?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "Both the **Samsung HERA Z20** and the **Samsung V8** are excellent ultrasound systems, but they are built for fundamentally different practice needs and budget levels. --- ### 1. Samsung HERA Z20: Premium, Dedicated Women’s Health The **HERA Z20** is Samsung’s flagship ultrasound system, engineered ",
+   "cost": 0.04803
+  },
+  {
+   "group": "C models",
+   "lang": "en",
+   "keyword": "samsung hera z20",
+   "prompt": "Samsung HERA Z20 or V8 for a gynaecology practice?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": true,
+   "first_named": null,
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "meditron.ch",
+    "usa.samsunghealthcare.com",
+    "smdmedical.ch",
+    "news.samsung.com",
+    "global.samsungsuite.com",
+    "accessdata.fda.gov"
+   ],
+   "excerpt": "For a **gynaecology-focused practice, choose the Samsung HERA Z20**. Choose the **V8** only if you need one ultrasound system for gynaecology plus substantial abdominal, thyroid, breast, vascular, musculoskeletal, or other general imaging. | Consideration | HERA Z20 | V8 | |---|---|---| | Main stren",
+   "cost": 0.014529
+  },
+  {
+   "group": "C models",
+   "lang": "de",
+   "keyword": "samsung hera z20",
+   "prompt": "Samsung HERA Z20 oder V8 für die Gynäkologie?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": true,
+   "first_named": "Meditron",
+   "competitors_named": [],
+   "cited_domains": [
+    "usa.samsunghealthcare.com",
+    "meditron.ch"
+   ],
+   "excerpt": "**Kurzempfehlung:** Für eine **rein oder überwiegend gynäkologisch-/geburtshilfliche Praxis** würde ich klar eher zum **Samsung HERA Z20** greifen. Wenn Sie aber ein **gemischtes Spektrum** fahren — Gynäkologie plus Abdomen, Schilddrüse, Brust, Gefäße, MSK etc. — ist der **Samsung V8** oft der wirts",
+   "cost": 0.10601
+  },
+  {
+   "group": "C models",
+   "lang": "de",
+   "keyword": "samsung hera z20",
+   "prompt": "Samsung HERA Z20 oder V8 für die Gynäkologie?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "Die Wahl zwischen dem **Samsung HERA Z20** und dem **Samsung V8** für die Gynäkologie und Geburtshilfe hängt primär vom **Untersuchungsschwerpunkt**, den Anforderungen an High-End-Funktionen sowie dem verfügbaren Budget ab. Beide Systeme nutzen modernste Bildgebungstechnologien, richten sich jedoch ",
+   "cost": 0.062289
+  },
+  {
+   "group": "C models",
+   "lang": "de",
+   "keyword": "samsung hera z20",
+   "prompt": "Samsung HERA Z20 oder V8 für die Gynäkologie?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": true,
+   "first_named": null,
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "meditron.ch",
+    "usa.samsunghealthcare.com",
+    "smdmedical.ch",
+    "medizinio.de",
+    "lysishealthcare.at",
+    "medicalexpo.com",
+    "21291849.fs1.hubspotusercontent-na1.net"
+   ],
+   "excerpt": "Für eine **rein gynäkologisch-geburtshilfliche Praxis** ist der **Samsung HERA Z20** die passendere Wahl. Für eine Praxis mit **gemischtem Untersuchungsspektrum** ist der **Samsung V8** meist wirtschaftlicher und vielseitiger. | Kriterium | HERA Z20 | V8 | |---|---|---| | Schwerpunkt | Gynäkologie, ",
+   "cost": 0.017169
+  },
+  {
+   "group": "C models",
+   "lang": "de",
+   "keyword": "samsung v8 ultraschall",
+   "prompt": "Welches Samsung Ultraschallgerät für eine Praxis?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "usa.samsunghealthcare.com",
+    "accessdata.fda.gov"
+   ],
+   "excerpt": "**Looking into product recommendations** I need to help with finding a German product recommendation, so I'll start by browsing for current options. First, it would be good to clarify the specialty or budget because that will guide my recommendations. However, I can still provide a framework based o",
+   "cost": 0.11014
+  },
+  {
+   "group": "C models",
+   "lang": "de",
+   "keyword": "samsung v8 ultraschall",
+   "prompt": "Welches Samsung Ultraschallgerät für eine Praxis?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "Welches Samsung-Ultraschallgerät für Ihre Praxis optimal ist, hängt maßgeblich von Ihrer **Fachrichtung**, den gewünschten **Anwendungsbereichen** (z. B. 3D/4D, Elastographie) und Ihrem **Budget** ab. Samsung (Samsung Medison) strukturiert sein Portfolio in verschiedene spezialisierte Modellreihen: ",
+   "cost": 0.03439
+  },
+  {
+   "group": "C models",
+   "lang": "de",
+   "keyword": "samsung v8 ultraschall",
+   "prompt": "Welches Samsung Ultraschallgerät für eine Praxis?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "sonomed.de",
+    "usa.samsunghealthcare.com",
+    "bms-ultraschall.de",
+    "smdmedical.ch",
+    "amt-abken.de"
+   ],
+   "excerpt": "Für eine **allgemeinmedizinische Praxis** ist das **Samsung HS30** meist der sinnvollste Einstieg: kompakt, platzsparend und mit automatischen Messfunktionen, Nadelführung sowie moderner Bildoptimierung.[1][2] | Einsatz | Empfehlenswertes Samsung-Modell | Begründung | |---|---|---| | Hausarztpraxis,",
+   "cost": 0.015813
+  },
+  {
+   "group": "C models",
+   "lang": "fr",
+   "keyword": "samsung hera w10",
+   "prompt": "Quel échographe Samsung pour un cabinet de gynécologie ?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "usa.samsunghealthcare.com"
+   ],
+   "excerpt": "Pour un **cabinet de gynécologie libéral**, je regarderais surtout **Samsung V8** ou **Samsung HS40**, selon votre activité et votre budget. ## Recommandation rapide | Profil du cabinet | Modèle Samsung conseillé | Pourquoi | |---|---|---| | **Gynécologie courante + obstétrique de suivi** | **Samsun",
+   "cost": 0.09624
+  },
+  {
+   "group": "C models",
+   "lang": "fr",
+   "keyword": "samsung hera w10",
+   "prompt": "Quel échographe Samsung pour un cabinet de gynécologie ?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "Le choix d'un échographe Samsung pour un cabinet de gynécologie-obstétrique dépend principalement de votre niveau d'expertise (suivi de routine vs médecine fœtale d'expertise), de la part de gynécologie/obstétrique dans votre activité et de votre budget. Samsung structuré sa gamme en deux grandes fa",
+   "cost": 0.033768
+  },
+  {
+   "group": "C models",
+   "lang": "fr",
+   "keyword": "samsung hera w10",
+   "prompt": "Quel échographe Samsung pour un cabinet de gynécologie ?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": true,
+   "first_named": null,
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "meditron.ch",
+    "samsung-lab.fr",
+    "sodimmed-dz.com",
+    "app.marlon.fr",
+    "ecografossamsung.es",
+    "smdmedical.ch",
+    "usa.samsunghealthcare.com",
+    "medicalexpo.fr",
+    "dyatek.net"
+   ],
+   "excerpt": "Pour un cabinet de gynécologie, le **Samsung HERA Z20** est le choix le plus complet : il est dédié à la santé de la femme, avec imagerie 2D, 3D/4D, Doppler couleur et outils automatisés pour les examens gynécologiques et obstétricaux avancés.[1][8] ### Choix selon votre activité - **HERA Z20** : re",
+   "cost": 0.014442
+  },
+  {
+   "group": "D no brand",
+   "lang": "en",
+   "keyword": "ultrasound machine switzerland",
+   "prompt": "Best ultrasound machine for a private practice in Switzerland?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": true,
+   "first_named": "Meditron",
+   "competitors_named": [],
+   "cited_domains": [
+    "swissmedic.ch",
+    "meditron.ch",
+    "bag.admin.ch"
+   ],
+   "excerpt": "**Exploring recommendations** I need to gather current recommendations for the user, which means I'll be spending some time browsing options. I'm considering what types of recommendations would be helpful—is it for products, services, experiences? I wonder if I should focus on something specific lik",
+   "cost": 0.115885
+  },
+  {
+   "group": "D no brand",
+   "lang": "en",
+   "keyword": "ultrasound machine switzerland",
+   "prompt": "Best ultrasound machine for a private practice in Switzerland?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": false,
+   "first_named": "SMD Medical",
+   "competitors_named": [
+    "SMD Medical",
+    "Lysis"
+   ],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "There is no single \"best\" ultrasound machine for a private practice in Switzerland, as the optimal choice depends heavily on your **medical specialty, practice space, budget, and local Swiss service support**. When practicing in Switzerland, key factors to keep in mind include **FMH / SGUM (Swiss So",
+   "cost": 0.033692
+  },
+  {
+   "group": "D no brand",
+   "lang": "en",
+   "keyword": "ultrasound machine switzerland",
+   "prompt": "Best ultrasound machine for a private practice in Switzerland?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": true,
+   "first_named": null,
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "praxisdienst.com",
+    "meditron.ch",
+    "siemens-healthineers.com",
+    "smdmedical.ch",
+    "suresultmed.com",
+    "probomedical.com",
+    "indexbox.io",
+    "sonoscanner.com"
+   ],
+   "excerpt": "For a **Swiss private practice**, the best all-round choice is usually a **compact cart-based system from a Swiss-supported manufacturer**, rather than a very cheap handheld device. A strong shortlist is: | Best fit | Recommended system | Why | |---|---|---| | **Best overall, multi-specialty** | **S",
+   "cost": 0.014376
+  },
+  {
+   "group": "D no brand",
+   "lang": "de",
+   "keyword": "ultraschallgerät kaufen",
+   "prompt": "Welches Ultraschallgerät für eine Praxis in der Schweiz?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": "MHZ",
+   "competitors_named": [
+    "MHZ"
+   ],
+   "cited_domains": [
+    "fujifilm.com",
+    "swissmedic.ch",
+    "sgum-ssum.ch"
+   ],
+   "excerpt": "Für eine **Praxis in der Schweiz** würde ich das Gerät primär nach **Fachgebiet, Untersuchungsprofil, Mobilitätsbedarf und Service in der Schweiz** auswählen – weniger nach “bestem Hersteller” allgemein. Ohne weitere Angaben wäre meine Kurzempfehlung: ## Kurzempfehlung nach Praxistyp | Praxissituati",
+   "cost": 0.10386
+  },
+  {
+   "group": "D no brand",
+   "lang": "de",
+   "keyword": "ultraschallgerät kaufen",
+   "prompt": "Welches Ultraschallgerät für eine Praxis in der Schweiz?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": "MHZ",
+   "competitors_named": [
+    "SMD Medical",
+    "MHZ"
+   ],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "Die Wahl des richtigen Ultraschallgeräts für eine Praxis in der Schweiz hängt maßgeblich von **Ihrer Fachrichtung**, den **Anwendungsbereichen (SGUM-Fähigkeitsausweis)** und den **räumlichen sowie finanziellen Rahmenbedingungen** ab. --- ### 1. Nach Fachrichtung: Typische Gerätekategorien #### A. Ha",
+   "cost": 0.033634
+  },
+  {
+   "group": "D no brand",
+   "lang": "de",
+   "keyword": "ultraschallgerät kaufen",
+   "prompt": "Welches Ultraschallgerät für eine Praxis in der Schweiz?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": null,
+   "competitors_named": [],
+   "cited_domains": [
+    "philips.ch",
+    "praxisdienst.com",
+    "acumax.ch",
+    "doccheckshop.ch",
+    "frei-swiss.ch",
+    "bm-med.ch",
+    "gryps.ch",
+    "siemens-healthineers.com",
+    "ksmedizintechnik.de"
+   ],
+   "excerpt": "Für eine Schweizer Praxis ist **nicht ein bestimmtes Gerät für alle Fachrichtungen optimal**. Als vielseitige Standardlösung empfiehlt sich ein **mobiles oder kompaktes Farbdoppler-System** mit Linear- und Konvexsonde; für Kardiologie, Gynäkologie oder hohe Untersuchungszahlen ist meist ein stationä",
+   "cost": 0.021537
+  },
+  {
+   "group": "D no brand",
+   "lang": "fr",
+   "keyword": "échographe cabinet médical",
+   "prompt": "Quel échographe pour un cabinet médical en Suisse ?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": true,
+   "first_named": "MHZ",
+   "competitors_named": [
+    "MHZ"
+   ],
+   "cited_domains": [
+    "meditron.ch",
+    "swissmedic.ch"
+   ],
+   "excerpt": "Pour un **cabinet médical en Suisse**, le bon choix dépend surtout de l’usage : **POCUS / médecine générale**, **MSK-infiltrations**, **vasculaire**, **gynéco-obstétrique**, **cardio**, ou activité polyvalente. Sans autre précision, je recommanderais **un portable sur chariot avec 2–3 sondes**, plut",
+   "cost": 0.118805
+  },
+  {
+   "group": "D no brand",
+   "lang": "fr",
+   "keyword": "échographe cabinet médical",
+   "prompt": "Quel échographe pour un cabinet médical en Suisse ?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": true,
+   "meditron_cited": false,
+   "first_named": "MHZ",
+   "competitors_named": [
+    "SMD Medical",
+    "MHZ"
+   ],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "Le choix d’un échographe pour un cabinet médical en Suisse repose sur **trois critères principaux** : la spécialité médicale exercée, la mobilité souhaitée, et les contraintes réglementaires / tarifaires locales (comme le système TARMED / TARDOC et les exigences de formation continue FMH / SSUM). --",
+   "cost": 0.033643
+  },
+  {
+   "group": "D no brand",
+   "lang": "fr",
+   "keyword": "échographe cabinet médical",
+   "prompt": "Quel échographe pour un cabinet médical en Suisse ?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": true,
+   "first_named": null,
+   "competitors_named": [
+    "SMD Medical"
+   ],
+   "cited_domains": [
+    "praxisdienst.com",
+    "meditron.ch",
+    "smdmedical.ch",
+    "ultraschall.polymed.ch",
+    "philips.ch",
+    "siemens-healthineers.com",
+    "ifas-expo.ch",
+    "swibrace-sonosolutions.ch",
+    "cardiodepot.ch"
+   ],
+   "excerpt": "Pour un cabinet médical polyvalent en Suisse, le meilleur compromis est généralement un **échographe sur chariot ou compact haut de gamme**, avec Doppler couleur, sondes convexe et linéaire, et une sonde endocavitaire si la gynécologie est prévue. Le **Samsung V8** constitue une option polyvalente; ",
+   "cost": 0.018594
+  },
+  {
+   "group": "D no brand",
+   "lang": "it",
+   "keyword": "ecografo studio medico",
+   "prompt": "Quale ecografo per uno studio medico in Svizzera?",
+   "engine": "chatgpt",
+   "model": "gpt-5.5",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": "MHZ",
+   "competitors_named": [
+    "MHZ"
+   ],
+   "cited_domains": [
+    "swissmedic.ch",
+    "ifas-expo.ch",
+    "ultrasoundmarkt.ch"
+   ],
+   "excerpt": "**Searching for Italian medical equipment** I need to find current recommendations for Italian medical equipment. I should specify what types of medical equipment I’m looking for, like models and categories. It’s important to clarify what factors might influence these recommendations, so I’ll need t",
+   "cost": 0.126495
+  },
+  {
+   "group": "D no brand",
+   "lang": "it",
+   "keyword": "ecografo studio medico",
+   "prompt": "Quale ecografo per uno studio medico in Svizzera?",
+   "engine": "gemini",
+   "model": "gemini-3.5-flash",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": false,
+   "first_named": "MHZ",
+   "competitors_named": [
+    "MHZ"
+   ],
+   "cited_domains": [
+    "vertexaisearch.cloud.google.com"
+   ],
+   "excerpt": "La scelta dell’ecografo ideale per uno studio medico in Svizzera dipende principalmente da **tre fattori chiave**: la **specializzazione medica**, le **normative/rimborsabilità previste (SIWF/SGUM)** e la **flessibilità logistica** dell'apparecchiatura. --- ### 1. In base alla Specializzazione Medic",
+   "cost": 0.033965
+  },
+  {
+   "group": "D no brand",
+   "lang": "it",
+   "keyword": "ecografo studio medico",
+   "prompt": "Quale ecografo per uno studio medico in Svizzera?",
+   "engine": "perplexity",
+   "model": "sonar-pro",
+   "date": "2026-10-20",
+   "ok": true,
+   "meditron_named": false,
+   "meditron_cited": true,
+   "first_named": null,
+   "competitors_named": [
+    "Art Medical Suisse",
+    "MHZ"
+   ],
+   "cited_domains": [
+    "praxisdienst.com",
+    "medswiss.ch",
+    "fujifilm.com",
+    "artmedicalsuisse.ch",
+    "mhzsa.ch",
+    "meditron.ch"
+   ],
+   "excerpt": "Per uno **studio medico generalista in Svizzera**, sceglierei un ecografo **portatile o compatto su carrello**, con Doppler colore e almeno: - **Sonda convex**: addome, reni, vie urinarie, FAST. - **Sonda lineare**: tiroide, mammella, muscoli, tendini, vasi e procedure. - **Sonda endocavitaria**: so",
+   "cost": 0.018996
+  }
+ ]
+}

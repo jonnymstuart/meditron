@@ -205,7 +205,7 @@ function discussCards(list) {
   const rows = list.map(x => ({ ...x, k: dkey(x.topic), s: DS.items[dkey(x.topic)] || (x.done ? { done: true, note: x.note || "", by: x.by || "", at: x.at || "" } : null) }));
   const open = rows.filter(r => !r.s?.done), done = rows.filter(r => r.s?.done);
   const card = r => `<div class="card discuss${r.s?.done ? " done" : ""}" data-k="${r.k}"><h3>${r.s?.done ? "<span class=\"tick\">✓</span> " : ""}${esc(r.topic)}</h3><p>${esc(r.why)}</p>${r.s?.done ? `<div class="decided"><strong>Decided</strong>${r.s.by ? ` by ${esc(r.s.by)}` : ""}${r.s.at ? ` · ${esc(String(r.s.at).slice(0, 10))}` : ""}<br>${esc(r.s.note || "")}</div>` : ""}<form class="dform" data-k="${r.k}"><label class="chk"><input type="checkbox" name="done" ${r.s?.done ? "checked" : ""}> Done</label><textarea name="note" rows="2" placeholder="What was decided or done">${esc(r.s?.note || "")}</textarea><div class="drow"><input name="by" placeholder="Your name" value="${esc(myName())}"><button type="submit">Save</button></div></form></div>`;
-  return [...open, ...done].map(card).join("");
+  return open.map(card).join("") + (done.length ? `</div><h3 class="g">Decided, archive</h3><div class="cards">${done.map(card).join("")}` : "");
 }
 function myName() { try { return localStorage.getItem("mtr-name") || ""; } catch { return ""; } }
 async function loadDiscuss() {
