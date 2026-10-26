@@ -14,6 +14,9 @@ Quality gate: the drafting routine is the reviewer. Facts only from meditron.ch 
 ## Standing rule: German is hands-off
 Decided 2026-10-05 (Jonny). The German version of the site is translated by hand by Meditron. Never write to the German locale (C9aJRu34X) of any existing page, component, collection item or FAQ row, and never run Framer's AI translation. The only German we create is the first German draft of a new Insights article, written before the item exists; after that the German belongs to Meditron. Scripts must skip DE in `valueByLocale` and `setLocalizationData` for existing items.
 
+## How articles 7+ are built (25 Oct)
+`content/_drafts/aN-{en,de,fr,it}.html` → `python3 scripts/framer/build-articles.py N` → `node scripts/framer/push-articles.mjs N [--production]` (EN default value, DE/FR/IT via valueByLocale and slugByLocale, FAQ rows, hero tile, staging publish). The two routines did not fire between 8 and 25 Oct; articles 7–9 were produced by hand on 25 Oct with this pipeline.
+
 ## Holds
 Add an article number here to stop it publishing (e.g. `7 HOLD, Henri checking leasing wording`).
 (none)
@@ -29,9 +32,9 @@ Ordered. Status: live / staging / next. Keywords from docs/05-samsung-ultrasound
 | 4 | Samsung HERA Z20 oder V8 für die Gynäkologie | samsung hera z20, samsung v8 | live 5 Oct |
 | 5 | Ultraschallgerät tragbar oder stationär | ultraschallgerät tragbar, échographe portable | live 8 Oct (dated 7 Oct) |
 | 6 | Die ersten 90 Tage mit dem neuen Ultraschallgerät | brand, retention | live 8 Oct |
-| 7 | Samsung Ultraschall in der Schweiz: Service, Schulung, Garantie | samsung healthcare schweiz | next |
-| 8 | Ultraschall-Leasing für Arztpraxen: so funktioniert es | ultraschallgerät leasing | next |
-| 9 | Ultraschallgerät kaufen: Checkliste für die Hausarztpraxis | ultraschallgerät kaufen (140/month, not ranking) | next |
+| 7 | Samsung Ultraschall in der Schweiz: Service, Schulung, Garantie | samsung healthcare schweiz | staging 25 Oct, dated 27 Oct (EN DE FR IT) |
+| 8 | Ultraschall-Leasing für Arztpraxen: so funktioniert es | ultraschallgerät leasing | staging 25 Oct, dated 29 Oct |
+| 9 | Ultraschallgerät kaufen: Checkliste für die Hausarztpraxis | ultraschallgerät kaufen (140/month, not ranking) | staging 25 Oct, dated 31 Oct |
 | 10 | Samsung V7 vs V6 vs V5: die Mittelklasse im Vergleich | samsung v7, samsung v5 | next |
 | 11 | Ultraschall für die Gynäkologie: welche Schallköpfe braucht die Praxis? | schallkopf gynäkologie | next |
 | 12 | Samsung R20: Premium-Radiologie für Institute und Spitäler | samsung r20 | next |
