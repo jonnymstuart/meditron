@@ -1,5 +1,7 @@
 # Language audit and rule set: French and Italian (with the shared rules for German)
 
+Google Doc for review: https://docs.google.com/document/d/1-5KmFZacKNMz2MzmxM4ejfn8HiijZ2nfuMf33PFn_Ek/edit
+
 Date: 2 November 2026. Scope: www.meditron.ch /fr/ and /it/, read on the live site: home, ultrasound hub, HERA Z20, V8, R20, V7, about, team, contact, product and news listings. German was audited separately on 25 October (docs/11, Google Doc for Jean); its rules are folded into the shared set below so all three languages follow one standard.
 
 Purpose: a rule set the team can apply when writing or reviewing any page, plus the current passages that break the rules, with a suggested rewrite. Nothing has been changed on the site. The client's French and Italian speakers decide; approved rules go into the localisation prompt and the glossary (docs/glossary.md).
