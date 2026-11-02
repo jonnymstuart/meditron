@@ -972,6 +972,10 @@
         {
           "date": "2026-10-25",
           "text": "Articles 7 (service, training and warranty), 8 (leasing) and 9 (buying checklist for a GP practice) on staging in EN, DE, FR and IT with FAQ rows, dated 27, 29 and 31 October. German language audit delivered as a Google Doc for Jean; indexing audit with seven ranked findings written."
+        },
+        {
+          "date": "2026-11-01",
+          "text": "Decided: no pre-owned stock page. Article 3 (new or pre-owned) stays the only piece on that topic."
         }
       ],
       "log": [
@@ -996,8 +1000,8 @@
         "Deploy the HERA Z20 and probe pages to production after Meditron's look at staging.",
         "Model page copy for V8, R20 and V7 from the briefs, same structure as the Z20.",
         "Weekly rerun of the 20 Google terms and 20 AI prompts every Monday.",
-        "Decide on the pre-owned page; claim the two Google Business Profiles.",
-        "Add Search Console clicks and impressions once access is granted."
+        "Add Search Console clicks and impressions once access is granted.",
+        "Claim the two Google Business Profiles."
       ],
       "discuss": [
         {
@@ -1011,10 +1015,6 @@
         {
           "topic": "About page text animation",
           "why": "The 'Our why' text animates letter by letter, which scrambles it for translation tools, screen readers and AI. Keep it, or switch to plain text?"
-        },
-        {
-          "topic": "Pre-owned stock page",
-          "why": "'Ultraschallgerät Occasion' is a strong buying search. A live pre-owned list would rank for it. Is there stock, and who keeps it current?"
         },
         {
           "topic": "Samsung's partner listing and SMD Medical",
@@ -1053,13 +1053,12 @@
           "Model prompts: no engine names Meditron for 'HERA Z20 or V8' in English (Lysis is named first); the German version names Meditron on ChatGPT only. The model pages are the fix and they are not live.",
           "Indexing (25 Oct check): the English sitemap lists the six German article URLs without /de/, all 404; legacy.meditron.ch is still live and indexed next to the new site; seven old news posts sit under English URLs in DE, FR and IT. Full list and fixes in the indexing audit.",
           "Generic 'which ultrasound for a practice in Switzerland' prompts now go to MHZ in DE, FR and IT (named first on 3 of 4). Meditron is named only in EN and FR on two engines.",
-          "German buying searches still invisible: 'ultraschallgerät kaufen' (140 a month) and 'ultraschallgerät occasion' are held by shops and marketplaces; the pre-owned page decision is still open.",
+          "German buying searches still invisible: 'ultraschallgerät kaufen' (140 a month) and 'ultraschallgerät occasion' are held by shops and marketplaces. Decision 1 Nov: no pre-owned stock page, so these searches stay with article 3.",
           "No click or impression data: Search Console access is still outstanding, so none of this can be tied to visits."
         ],
         "opportunities": [
           "Publish the HERA Z20 page and probe pages to production, then V8, R20 and V7 the same way: model searches and model prompts are where a dealer can beat Samsung's own site and SMD Medical.",
           "Three more Insights articles are on staging (service and training, leasing, buying checklist) and go live with the next production publish; nine articles in four languages then cover every question in the tracked prompt list.",
-          "A pre-owned stock page would own the 'Occasion' searches and the Italian and French used-machine answers that already cite meditron.ch.",
           "'Which ultrasound for a Swiss practice' is an open question in DE and IT: one guide per language, built on article 1, would take the MHZ answers.",
           "Two Google Business Profiles (Rolle, Frauenfeld) and a Samsung Healthcare partner mention are the cheapest authority gains and feed the AI answers directly."
         ],
@@ -1074,7 +1073,7 @@
         "Merge the two open Framer branches and publish production: HERA Z20, V8, R20, V7 copy, the seven probe pages and articles 7 to 9 are all waiting on that one click.",
         "Redirect legacy.meditron.ch to www.meditron.ch (hosting/DNS, Meditron) so the old site stops competing on brand searches.",
         "Report the sitemap bug to Framer: six German article URLs appear in the English sitemap and 404.",
-        "Decide the pre-owned stock page and the legacy news posts (translate, archive or hide).",
+        "Decide the legacy news posts (translate the three Samsung-related ones, archive the rest).",
         "Jean reviews the German audit in the Google Doc; approved wording goes live through the API, nothing is changed before that.",
         "Grant Search Console access: it is the only source that shows which of the ~200 missing URLs are not indexed and why.",
         "Hold the 20 tracked terms and prompts unchanged; add the 10 'watch list' prompts as a separate block from next week."
@@ -1167,10 +1166,6 @@
     {
       "topic": "About page text animation",
       "why": "The 'Our why' text animates letter by letter, which scrambles it for translation tools, screen readers and AI. Keep it, or switch to plain text?"
-    },
-    {
-      "topic": "Pre-owned stock page",
-      "why": "'Ultraschallgerät Occasion' is a strong buying search. A live pre-owned list would rank for it. Is there stock, and who keeps it current?"
     },
     {
       "topic": "Samsung's partner listing and SMD Medical",
