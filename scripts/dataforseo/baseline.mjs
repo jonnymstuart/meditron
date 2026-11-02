@@ -22,16 +22,24 @@ for (const lang of Object.keys(LANG)) {
 const SAMPLES = Number(process.env.SAMPLES || 3);
 const results = [];
 const seeMeditron = s => /(^|\.)meditron\.ch$/.test(s || "") || /meditron\.ch/.test(s || "");
+// Since late Oct 2026 Google wraps many results in a google.com/goto redirect; the real site is only in the breadcrumb
+// ("https://www.meditron.ch › Solutions › ..."). Resolve the domain from the breadcrumb so ranks stay comparable.
+const realDomain = i => {
+  if (i.domain && i.domain !== "google.com") return i.domain;
+  const m = /^(?:https?:\/\/)?([a-z0-9.-]+\.[a-z]{2,})/i.exec((i.breadcrumb || "").trim());
+  return m ? m[1].toLowerCase() : i.domain;
+};
+const realUrl = i => (i.url && !/google\.com\/goto/.test(i.url)) ? i.url : (i.breadcrumb || i.url);
 for (const r of rows) {
   const samples = [];
   for (let n = 0; n < SAMPLES; n++) {
     const tasks = await dfs("serp/google/organic/live/advanced", [{ keyword: r.keyword, location_code: CH, language_code: LANG[r.lang], device: "desktop", depth: 50, load_async_ai_overview: true }]);
     const items = tasks[0]?.result?.[0]?.items ?? [];
     const organic = items.filter(i => i.type === "organic");
-    const mine = organic.find(i => seeMeditron(i.domain) || seeMeditron(i.url));
+    const mine = organic.find(i => seeMeditron(realDomain(i)) || seeMeditron(realUrl(i)));
     const aio = items.find(i => i.type === "ai_overview");
     const refs = (aio?.references ?? aio?.items?.flatMap(x => x.references ?? []) ?? []).map(x => x.domain || x.url).filter(Boolean);
-    samples.push({ pos: mine ? mine.rank_absolute : null, url: mine?.url ?? null, top3: organic.slice(0, 3).map(i => i.domain), aio: !!aio, refs });
+    samples.push({ pos: mine ? mine.rank_absolute : null, url: mine ? realUrl(mine) : null, top3: organic.slice(0, 3).map(realDomain), aio: !!aio, refs });
   }
   const poss = samples.map(s => s.pos ?? 101).sort((a, b) => a - b);
   const med = poss[Math.floor(poss.length / 2)];
