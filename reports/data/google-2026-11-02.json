@@ -1,0 +1,481 @@
+{
+ "source": "DataForSEO SERP + Google Ads volume, Switzerland",
+ "date": "2026-11-02",
+ "results": [
+  {
+   "group": "A core",
+   "lang": "en",
+   "keyword": "samsung ultrasound",
+   "prompt": "Who sells Samsung ultrasound systems in Switzerland?",
+   "date": "2026-11-02",
+   "volume": 10,
+   "position": 3,
+   "positions_seen": [
+    3,
+    3,
+    29
+   ],
+   "url": "https://www.meditron.ch/",
+   "top3": [
+    "news.samsung.com",
+    "www.samsunghealthcare.com",
+    "www.meditron.ch"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  },
+  {
+   "group": "A core",
+   "lang": "de",
+   "keyword": "samsung ultraschall",
+   "prompt": "Wer verkauft Samsung Ultraschallgeräte in der Schweiz?",
+   "date": "2026-11-02",
+   "volume": 30,
+   "position": 20,
+   "positions_seen": [
+    20,
+    2,
+    20
+   ],
+   "url": "https://www.meditron.ch › products › brand=samsung",
+   "top3": [
+    "smdmedical.ch",
+    "smdmedical.ch",
+    "google.com"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  },
+  {
+   "group": "A core",
+   "lang": "fr",
+   "keyword": "échographe samsung",
+   "prompt": "Qui vend les échographes Samsung en Suisse ?",
+   "date": "2026-11-02",
+   "volume": 10,
+   "position": null,
+   "positions_seen": [
+    null,
+    null,
+    null
+   ],
+   "url": null,
+   "top3": [
+    "www.medicalexpo.fr",
+    "www.samsung-lab.fr",
+    "www.samsung-lab.fr"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  },
+  {
+   "group": "A core",
+   "lang": "it",
+   "keyword": "ecografo samsung",
+   "prompt": "Chi vende gli ecografi Samsung in Svizzera?",
+   "date": "2026-11-02",
+   "volume": 10,
+   "position": 28,
+   "positions_seen": [
+    47,
+    28,
+    28
+   ],
+   "url": "https://www.meditron.ch › ... › Samsung EA2-11AR",
+   "top3": [
+    "www.flexomedical.it",
+    "www.youtube.com",
+    "smdmedical.ch"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  },
+  {
+   "group": "B buying",
+   "lang": "en",
+   "keyword": "samsung ultrasound price",
+   "prompt": "How much does a Samsung ultrasound machine cost?",
+   "date": "2026-11-02",
+   "volume": 10,
+   "position": null,
+   "positions_seen": [
+    null,
+    null,
+    null
+   ],
+   "url": null,
+   "top3": [
+    "www.ultrasoundportables.com",
+    "lbnmedical.com",
+    "www.justdial.com"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  },
+  {
+   "group": "B buying",
+   "lang": "de",
+   "keyword": "samsung ultraschallgerät preis",
+   "prompt": "Was kostet ein Samsung Ultraschallgerät?",
+   "date": "2026-11-02",
+   "volume": null,
+   "position": 36,
+   "positions_seen": [
+    36,
+    30,
+    39
+   ],
+   "url": "https://www.meditron.ch › products › brand=samsung",
+   "top3": [
+    "www.dormed-stuttgart.de",
+    "www.mtjendreyko.de",
+    "www.mit-gelenk.ch"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  },
+  {
+   "group": "B buying",
+   "lang": "fr",
+   "keyword": "échographe samsung prix",
+   "prompt": "Combien coûte un échographe Samsung ?",
+   "date": "2026-11-02",
+   "volume": 10,
+   "position": 9,
+   "positions_seen": [
+    9,
+    22,
+    7
+   ],
+   "url": "https://www.meditron.ch/fr/products?category=ultrasound",
+   "top3": [
+    "news.samsung.com",
+    "be.bimedis.com",
+    "remma.fr"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  },
+  {
+   "group": "B buying",
+   "lang": "it",
+   "keyword": "ecografo samsung prezzo",
+   "prompt": "Quanto costa un ecografo Samsung?",
+   "date": "2026-11-02",
+   "volume": 0,
+   "position": 16,
+   "positions_seen": [
+    16,
+    48,
+    9
+   ],
+   "url": "https://www.meditron.ch/it/products?brand=clarius",
+   "top3": [
+    "bioimaging.it",
+    "www.biomecsrl.it",
+    "digimedicasrl.it"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  },
+  {
+   "group": "B buying",
+   "lang": "en",
+   "keyword": "used ultrasound machine switzerland",
+   "prompt": "Should I buy a new or a used ultrasound machine for my practice?",
+   "date": "2026-11-02",
+   "volume": null,
+   "position": null,
+   "positions_seen": [
+    null,
+    null,
+    null
+   ],
+   "url": null,
+   "top3": [
+    "www.artmedicalsuisse.ch",
+    "www.artmedicalsuisse.ch",
+    "www.artmedicalsuisse.ch"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  },
+  {
+   "group": "B buying",
+   "lang": "de",
+   "keyword": "ultraschallgerät occasion",
+   "prompt": "Ultraschallgerät neu oder Occasion kaufen, worauf achten?",
+   "date": "2026-11-02",
+   "volume": 10,
+   "position": null,
+   "positions_seen": [
+    null,
+    null,
+    null
+   ],
+   "url": null,
+   "top3": [
+    "eshop.esaote.com",
+    "www.ultra-medical.de",
+    "bisono.de"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  },
+  {
+   "group": "B buying",
+   "lang": "fr",
+   "keyword": "échographe occasion suisse",
+   "prompt": "Échographe neuf ou d'occasion pour un cabinet, que vérifier ?",
+   "date": "2026-11-02",
+   "volume": null,
+   "position": null,
+   "positions_seen": [
+    null,
+    null,
+    null
+   ],
+   "url": null,
+   "top3": [
+    "www.artmedicalsuisse.ch",
+    "www.artmedicalsuisse.ch",
+    "www.artmedicalsuisse.ch"
+   ],
+   "ai_overview": true,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": [
+    "www.artmedicalsuisse.ch"
+   ]
+  },
+  {
+   "group": "B buying",
+   "lang": "it",
+   "keyword": "ecografo usato svizzera",
+   "prompt": "Ecografo nuovo o usato per uno studio medico, cosa controllare?",
+   "date": "2026-11-02",
+   "volume": null,
+   "position": null,
+   "positions_seen": [
+    null,
+    null,
+    null
+   ],
+   "url": null,
+   "top3": [],
+   "ai_overview": true,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": [
+    "www.artmedicalsuisse.ch",
+    "ultrasoundmarkt.ch",
+    "www.ecografiusati.com"
+   ]
+  },
+  {
+   "group": "C models",
+   "lang": "en",
+   "keyword": "samsung hera z20",
+   "prompt": "Samsung HERA Z20 or V8 for a gynaecology practice?",
+   "date": "2026-11-02",
+   "volume": null,
+   "position": 13,
+   "positions_seen": [
+    28,
+    13,
+    8
+   ],
+   "url": "https://www.meditron.ch › which-...",
+   "top3": [
+    "smdmedical.ch",
+    "google.com",
+    "smdmedical.ch"
+   ],
+   "ai_overview": true,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": [
+    "www.youtube.com",
+    "global.samsungsuite.com",
+    "www.samsunghealthcare.com"
+   ]
+  },
+  {
+   "group": "C models",
+   "lang": "de",
+   "keyword": "samsung hera z20",
+   "prompt": "Samsung HERA Z20 oder V8 für die Gynäkologie?",
+   "date": "2026-11-02",
+   "volume": null,
+   "position": 8,
+   "positions_seen": [
+    8,
+    24,
+    4
+   ],
+   "url": "https://www.meditron.ch/de/news-events/samsung-hera-z20-oder-v8-gynaekologie",
+   "top3": [
+    "smdmedical.ch",
+    "news.samsung.com",
+    "usa.samsunghealthcare.com"
+   ],
+   "ai_overview": true,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": [
+    "global.samsungsuite.com",
+    "www.medicaldevice-developments.com",
+    "www.absolutemed.com"
+   ]
+  },
+  {
+   "group": "C models",
+   "lang": "de",
+   "keyword": "samsung v8 ultraschall",
+   "prompt": "Welches Samsung Ultraschallgerät für eine Praxis?",
+   "date": "2026-11-02",
+   "volume": null,
+   "position": 6,
+   "positions_seen": [
+    6,
+    6,
+    6
+   ],
+   "url": "https://www.meditron.ch/de/products?category=ultrasound&brand=samsung",
+   "top3": [
+    "smdmedical.ch",
+    "de.bimedis.com",
+    "smdmedical.ch"
+   ],
+   "ai_overview": true,
+   "ai_overview_cites_meditron": true,
+   "ai_overview_sources": [
+    "www.meditron.ch",
+    "smdmedical.ch",
+    "de.bimedis.com",
+    "www.youtube.com"
+   ]
+  },
+  {
+   "group": "C models",
+   "lang": "fr",
+   "keyword": "samsung hera w10",
+   "prompt": "Quel échographe Samsung pour un cabinet de gynécologie ?",
+   "date": "2026-11-02",
+   "volume": 10,
+   "position": null,
+   "positions_seen": [
+    null,
+    null,
+    null
+   ],
+   "url": null,
+   "top3": [
+    "global.samsungsuite.com",
+    "medicinosiranga.com",
+    "medhealth-group.files.svdcdn.com"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  },
+  {
+   "group": "D no brand",
+   "lang": "en",
+   "keyword": "ultrasound machine switzerland",
+   "prompt": "Best ultrasound machine for a private practice in Switzerland?",
+   "date": "2026-11-02",
+   "volume": null,
+   "position": null,
+   "positions_seen": [
+    null,
+    null,
+    null
+   ],
+   "url": null,
+   "top3": [
+    "www.artmedicalsuisse.ch",
+    "www.artmedicalsuisse.ch",
+    "www.artmedicalsuisse.ch"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  },
+  {
+   "group": "D no brand",
+   "lang": "de",
+   "keyword": "ultraschallgerät kaufen",
+   "prompt": "Welches Ultraschallgerät für eine Praxis in der Schweiz?",
+   "date": "2026-11-02",
+   "volume": 110,
+   "position": null,
+   "positions_seen": [
+    null,
+    null,
+    null
+   ],
+   "url": null,
+   "top3": [
+    "www.mides.com",
+    "www.dobi.ch",
+    "www.frei-swiss.ch"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  },
+  {
+   "group": "D no brand",
+   "lang": "fr",
+   "keyword": "échographe cabinet médical",
+   "prompt": "Quel échographe pour un cabinet médical en Suisse ?",
+   "date": "2026-11-02",
+   "volume": null,
+   "position": null,
+   "positions_seen": [
+    null,
+    null,
+    null
+   ],
+   "url": null,
+   "top3": [
+    "boutique.revmed.ch",
+    "www.medimagesa.ch",
+    "iicc-radiologie.ch"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  },
+  {
+   "group": "D no brand",
+   "lang": "it",
+   "keyword": "ecografo studio medico",
+   "prompt": "Quale ecografo per uno studio medico in Svizzera?",
+   "date": "2026-11-02",
+   "volume": null,
+   "position": null,
+   "positions_seen": [
+    10,
+    null,
+    null
+   ],
+   "url": "https://www.meditron.ch › news-events › prezzo-ecogra...",
+   "top3": [
+    "www.gastromedical.ch",
+    "www.sme-diagnosticaperimmagini.it",
+    "www.humanitas.it"
+   ],
+   "ai_overview": false,
+   "ai_overview_cites_meditron": false,
+   "ai_overview_sources": []
+  }
+ ]
+}
