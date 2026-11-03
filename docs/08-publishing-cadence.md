@@ -51,3 +51,6 @@ Add topics at the bottom; never reorder live or staged rows.
 - Probe product pages (`/products/samsung-<code>`) are English only until the Meditron team translates them; German falls back to English under `/de/`. They are hidden from the catalogue grid (`Visible` = false) but reachable from the system pages and indexable.
 - The dashboard's "To discuss" cards can be ticked with a note. On Monday, read `https://<storeid>.public.blob.vercel-storage.com/discuss.json` (URL in docs/06 once the Blob store exists), mark the matching `months[].discuss[]` entries `done/note/by/at` in `report/data.json`, add a "Decided" line to `done[]`, and mention the decisions in the client email.
 
+
+## Languages (3 Nov)
+- Model pages Z20/V8/R20/V7, the seven probe pages, the hub, the FAQ rows and articles 1–9 now have DE, FR and IT copy written from the EN source with the rule sets in docs/11 and docs/15 (logs: docs/16, docs/17). Canonical copy per language lives in `content/<lang>/products/`; push with `scripts/framer/push-de.mjs` or `push-lang.mjs --lang=fr|it`. New articles still follow the a4 pipeline (four HTML drafts per article). Probe pages are no longer EN-only (supersedes the 20 Oct note above).
