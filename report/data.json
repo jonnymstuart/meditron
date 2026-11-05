@@ -1104,6 +1104,10 @@
     {
      "date": "2026-11-03",
      "text": "French and Italian update written to Framer staging from the English source with the docs/15 rules: 277 FR and 269 IT fields. Italian model and probe pages had been falling back to English; French had Framer machine text. Production publish pending (one click in Framer)."
+    },
+    {
+     "date": "2026-11-05",
+     "text": "Production published by Meditron. The publish merged a Framer branch with 26 October machine translations and overwrote the German and French product copy; restored the same day from the content files, plus the hub and legacy-news URLs that Framer's auto-translate had renamed. Re-publish pending."
     }
    ],
    "log": [
@@ -1851,7 +1855,7 @@
    "focus": [
     "Audit items 1, 4, 8, 10 this week: titles and meta fields, hub Guides section, alt text, listing headings. One Framer branch, half a day.",
     "Get the legacy.meditron.ch redirect done by Meditron's hosting contact.",
-    "Publish production in Framer (Jonny): staging carries the German, French and Italian update. Then one reviewer per language reads the live pages; corrections are rule changes, re-run in minutes.",
+    "Framer auto-translate off for German and French, then publish main again; request indexing for the 12 priority URLs and resubmit the sitemap.",
     "Check Framer's auto-translate setting for French: it rewrote the French locale with machine text 15 seconds after the German push.",
     "Report the sitemap bug to Framer; set the Italian URLs for articles 1 to 6."
    ],
