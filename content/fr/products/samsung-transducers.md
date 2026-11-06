@@ -25,7 +25,7 @@ Meditron livre et entretient des échographes Samsung en Suisse depuis 2012. Nou
 
 ### Meta
 
-- meta_title: "Sonde échographique Samsung {name} en Suisse | Meditron"
+- meta_title: "Sonde échographique {name} en Suisse | Meditron"
 - meta_description: "{name} : sonde {type} pour le {systems_names}, livrée et entretenue en Suisse par Meditron, partenaire Samsung depuis 2012. Demandez une offre ou une démonstration."
 
 ### Spec rows (in this order)

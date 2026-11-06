@@ -47,7 +47,7 @@ const CFG = {
       [/support de maintenance/g, "service de maintenance"], [/support local/g, "service en Suisse"], [/support après[- ]vente/g, "service après-vente"], [/support technique/g, "assistance technique"], [/support logiciel/g, "mises à jour logicielles"], [/fin du support/g, "fin des mises à jour"],
       [/le meilleur service et support/g, "le meilleur service et la meilleure assistance"], [/\b([Uu])n support\b/g, "$1ne assistance"], [/\b([Ll])e support\b/g, "$1'assistance"], [/\bdu support\b/g, "de l'assistance"], [/\bau support\b/g, "à l'assistance"], [/\bde support\b/g, "d'assistance"], [/\bsupport\b/g, "assistance"], [/\bSupport\b/g, "Assistance"],
       // no "workflow": protocole(s) d'examen keeps gender and number
-      [/outils de flux de travail intelligents/g, "assistants intelligents"], [/[Ff]lux de travail hépatique centralisé/g, "Bilan hépatique sur un seul appareil"], [/\b(des|les|ses|aux) flux de travail\b/g, "$1 protocoles d'examen"], [/Flux de travail/g, "Protocoles d'examen"], [/flux de travail/g, "protocole d'examen"],
+      [/outils de flux de travail intelligents/g, "assistants intelligents"], [/[Ff]lux de travail hépatique centralisé/g, "Bilan hépatique sur un seul appareil"], [/\b(des|les|ses|aux)[  ]flux de travail\b/g, "$1 protocoles d'examen"], [/Flux de travail/g, "Protocoles d'examen"], [/flux de travail/g, "protocole d'examen"],
       [/échographe médicale/g, "échographe médical"], [/assistance diagnostique avancé(?!e)/g, "assistance diagnostique avancée"], [/échographes vétérinaire\b/g, "échographes vétérinaires"], [/formation applicative/g, "formation d'application"],
       [/Suisse Romande/g, "Suisse romande"],
     ],

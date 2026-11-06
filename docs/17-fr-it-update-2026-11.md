@@ -51,3 +51,10 @@ node scripts/framer/push-lang.mjs --lang=it --only=faq,news  # limit writes to s
 node scripts/framer/push-lang.mjs --lang=fr --publish        # write everything and publish staging
 ```
 Each rule is a one-line regex in the `CFG` block; the script is idempotent (Framer's HTML normalisation of the highlights list shows as a change on every run, the text is identical). Beware `\b` after an accented letter in JS regexes without the `u` flag: it never matches, use a lookahead instead (the "avancé" rule).
+
+## Post-publish review, 6 Nov
+
+Jonny published main a second time on 6 Nov with auto-translate off for all locales. Live check: DE, FR and IT model pages, probe pages and the hub show the new copy, the hub URLs are back on `/de|fr/solutions/ultrasound`, no English fallback on spec rows or FAQs. A CMS-wide review (fallbacks, English remnants, placeholders, doubled words, rule leftovers) found three errors of ours, fixed the same day (staging 966669c4c, pending the next publish):
+- 14 FR/IT probe meta titles read "Samsung Samsung CA1-7Sv2": the templates in `samsung-transducers.md` prefixed "Samsung" to `{name}`, which already contains it. Templates corrected. Not visible on the live pages today because the product template ignores the meta field (docs/14 item 1).
+- One "des flux de travail" left in the FR body of article 4: the rule now also matches a non-breaking space.
+- Known and accepted: IT probe Name fields are empty and fall back to the identical English name; spec rows that list Samsung feature names are identical in all languages; "1991-2026 ... 35 ans" in a legacy post is an ellipsis.

@@ -25,7 +25,7 @@ Meditron fornisce e assiste ecografi Samsung in Svizzera dal 2012. Componiamo il
 
 ### Meta
 
-- meta_title: "Sonda ecografica Samsung {name} in Svizzera | Meditron Svizzera"
+- meta_title: "Sonda ecografica {name} in Svizzera | Meditron Svizzera"
 - meta_description: "{name}: sonda {type} per il {systems_names}, fornita e assistita in Svizzera da Meditron, partner Samsung dal 2012. Richiedete un'offerta o una demo."
 
 ### Spec rows (in this order)
