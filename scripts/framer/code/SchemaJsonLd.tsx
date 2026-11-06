@@ -44,13 +44,8 @@ export default function SchemaJsonLd(props: SchemaJsonLdProps) {
             brand: brand ? { "@type": "Brand", name: brand } : undefined,
             category: category || undefined,
             url,
-            offers: {
-                "@type": "Offer",
-                availability: "https://schema.org/InStock",
-                priceSpecification: { "@type": "PriceSpecification", priceCurrency: "CHF", description: "Price on request" },
-                seller: { "@type": "Organization", name: "Meditron SA", url: SITE },
-                url: SITE + "/contact",
-            },
+            // No Offer: Google requires a numeric price on Offer (Search Console "Either price or priceSpecification.price
+            // should be specified"), and Meditron quotes per configuration. Product without offers is valid, warnings only.
         })
     }
     if (kind === "article" && name) {
