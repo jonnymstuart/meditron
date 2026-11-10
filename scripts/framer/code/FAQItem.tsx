@@ -1,10 +1,11 @@
 import { useEffect, useId, useState } from "react"
 import { addPropertyControls, ControlType, useIsStaticRenderer } from "framer"
-import { motion, AnimatePresence } from "framer-motion"
+import { motion } from "framer-motion"
 
 interface FAQItemProps {
     question: string
     answer: string
+    answerRich?: React.ReactNode
     group: string
     defaultOpen: boolean
     textColor: string
@@ -18,6 +19,7 @@ const EVENT = "meditron-faq-open"
 
 /**
  * One FAQ row. Click to open; opening one row closes the others in the same group.
+ * The answer stays in the HTML when closed and the row emits FAQPage JSON-LD.
  * @framerSupportedLayoutWidth any-prefer-fixed
  * @framerSupportedLayoutHeight auto
  */
@@ -25,6 +27,7 @@ export default function FAQItem(props: FAQItemProps) {
     const {
         question = "Question",
         answer = "Answer",
+        answerRich,
         group = "faq",
         defaultOpen = false,
         textColor = "rgb(16, 44, 71)",
@@ -56,6 +59,11 @@ export default function FAQItem(props: FAQItemProps) {
     }
 
     const showOpen = isStatic ? defaultOpen : open
+    // One FAQPage block per row: rows are independent CMS items, so the page-level list cannot be assembled here.
+    const plainAnswer = (answer || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()
+    const schema = question && plainAnswer && !answerRich
+        ? JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: plainAnswer } }] })
+        : ""
 
     return (
         <div style={{ position: "relative", width: "100%", borderBottom: `1px solid ${lineColor}`, ...style }}>
@@ -95,28 +103,37 @@ export default function FAQItem(props: FAQItemProps) {
                     <span style={{ position: "absolute", left: 10, top: 0, width: 2, height: 22, background: textColor, borderRadius: 2 }} />
                 </span>
             </button>
-            <AnimatePresence initial={false}>
-                {showOpen && (
-                    <motion.div
-                        id={`${id}-panel`}
-                        role="region"
-                        key="panel"
-                        initial={{ height: 0, opacity: 0 }}
-                        animate={{ height: "auto", opacity: 1 }}
-                        exit={{ height: 0, opacity: 0 }}
-                        transition={{ duration: 0.28, ease: [0.4, 0, 0.2, 1] }}
-                        style={{ overflow: "hidden" }}
-                    >
-                        <div style={{ padding: "0 46px 24px 0", color: textColor, whiteSpace: "pre-line", ...answerFont }}>{answer}</div>
-                    </motion.div>
+            {/* The answer is always in the DOM (collapsed to height 0 when closed) so crawlers that do not run
+                JavaScript, and AI assistants, read the question and the answer together. */}
+            <motion.div
+                id={`${id}-panel`}
+                role="region"
+                aria-hidden={!showOpen}
+                initial={false}
+                animate={{ height: showOpen ? "auto" : 0, opacity: showOpen ? 1 : 0 }}
+                transition={{ duration: 0.28, ease: [0.4, 0, 0.2, 1] }}
+                style={{ overflow: "hidden", height: showOpen ? "auto" : 0 }}
+            >
+                {answerRich ? (
+                    <div className="mtr-faq-answer" style={{ padding: "0 46px 24px 0", color: textColor, ...answerFont }}>{answerRich}</div>
+                ) : /<[a-z][\s\S]*>/i.test(answer) ? (
+                    <div
+                        className="mtr-faq-answer"
+                        style={{ padding: "0 46px 24px 0", color: textColor, ...answerFont }}
+                        dangerouslySetInnerHTML={{ __html: answer }}
+                    />
+                ) : (
+                    <div style={{ padding: "0 46px 24px 0", color: textColor, whiteSpace: "pre-line", ...answerFont }}>{answer}</div>
                 )}
-            </AnimatePresence>
+            </motion.div>
+            {schema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schema }} />}
         </div>
     )
 }
 
 addPropertyControls(FAQItem, {
     question: { type: ControlType.String, title: "Question", defaultValue: "Is Meditron the official Samsung distributor?" },
+    answerRich: { type: ControlType.RichText, title: "Answer (rich text)" },
     answer: { type: ControlType.String, title: "Answer", displayTextArea: true, defaultValue: "Yes. Meditron has been the official Samsung Healthcare distributor in Switzerland since 2012." },
     group: { type: ControlType.String, title: "Group", defaultValue: "faq", description: "Rows with the same group close each other." },
     defaultOpen: { type: ControlType.Boolean, title: "Open", defaultValue: false },
