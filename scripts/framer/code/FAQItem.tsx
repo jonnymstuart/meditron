@@ -26,7 +26,7 @@ const EVENT = "meditron-faq-open"
 export default function FAQItem(props: FAQItemProps) {
     const {
         question = "Question",
-        answer = "Answer",
+        answer = "",
         answerRich,
         group = "faq",
         defaultOpen = false,
@@ -38,7 +38,10 @@ export default function FAQItem(props: FAQItemProps) {
     } = props
     // The plain "Answer" field (bound to the CMS) always wins. Framer passes an unset rich-text control as an
     // empty element or array, which is truthy, so the rich answer is used only when there is no plain answer.
-    const rich = (answer || "").trim() ? null : Array.isArray(answerRich) ? (answerRich.length ? answerRich : null) : answerRich || null
+    // The old default answer was a placeholder sentence; instances that never bound the field still carry it.
+    const PLACEHOLDER = "Yes. Meditron has been the official Samsung Healthcare distributor in Switzerland since 2012."
+    const plain = (answer || "").trim() === PLACEHOLDER ? "" : (answer || "").trim()
+    const rich = plain ? null : Array.isArray(answerRich) ? (answerRich.length ? answerRich : null) : answerRich || null
     const id = useId()
     const isStatic = useIsStaticRenderer()
     const [open, setOpen] = useState<boolean>(defaultOpen)
@@ -63,7 +66,7 @@ export default function FAQItem(props: FAQItemProps) {
 
     const showOpen = isStatic ? defaultOpen : open
     // One FAQPage block per row: rows are independent CMS items, so the page-level list cannot be assembled here.
-    const plainAnswer = (answer || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()
+    const plainAnswer = plain.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()
     const schema = question && plainAnswer && !rich
         ? JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: plainAnswer } }] })
         : ""
@@ -119,14 +122,14 @@ export default function FAQItem(props: FAQItemProps) {
             >
                 {rich ? (
                     <div className="mtr-faq-answer" style={{ padding: "0 46px 24px 0", color: textColor, ...answerFont }}>{rich}</div>
-                ) : /<[a-z][\s\S]*>/i.test(answer) ? (
+                ) : /<[a-z][\s\S]*>/i.test(plain) ? (
                     <div
                         className="mtr-faq-answer"
                         style={{ padding: "0 46px 24px 0", color: textColor, ...answerFont }}
-                        dangerouslySetInnerHTML={{ __html: answer }}
+                        dangerouslySetInnerHTML={{ __html: plain }}
                     />
                 ) : (
-                    <div style={{ padding: "0 46px 24px 0", color: textColor, whiteSpace: "pre-line", ...answerFont }}>{answer}</div>
+                    <div style={{ padding: "0 46px 24px 0", color: textColor, whiteSpace: "pre-line", ...answerFont }}>{plain}</div>
                 )}
             </motion.div>
             {schema && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: schema }} />}
@@ -137,7 +140,7 @@ export default function FAQItem(props: FAQItemProps) {
 addPropertyControls(FAQItem, {
     question: { type: ControlType.String, title: "Question", defaultValue: "Is Meditron the official Samsung distributor?" },
     answerRich: { type: ControlType.RichText, title: "Answer (rich text)" },
-    answer: { type: ControlType.String, title: "Answer", displayTextArea: true, defaultValue: "Yes. Meditron has been the official Samsung Healthcare distributor in Switzerland since 2012." },
+    answer: { type: ControlType.String, title: "Answer", displayTextArea: true, defaultValue: "" },
     group: { type: ControlType.String, title: "Group", defaultValue: "faq", description: "Rows with the same group close each other." },
     defaultOpen: { type: ControlType.Boolean, title: "Open", defaultValue: false },
     textColor: { type: ControlType.Color, title: "Text", defaultValue: "rgb(16, 44, 71)" },

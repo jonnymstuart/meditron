@@ -1,0 +1,321 @@
+{
+ "_note": "FAQs for the four non-ultrasound hubs and the 17 ultrasound products without FAQs. Written 10 Nov 2026 from each hub's product range and each product's own Description; no prices, no clinical claims beyond the product text. Pushed by scripts/framer/faq-fill.mjs.",
+ "common": {
+  "q_offer": {
+   "en": "How do I get an offer?",
+   "de": "Wie erhalte ich eine Offerte?",
+   "fr": "Comment obtenir une offre?",
+   "it": "Come ottengo un'offerta?"
+  },
+  "a_offer": {
+   "en": "There is no list price. Send your requirements through the form below or to info@meditron.ch, and Meditron prepares an offer for your configuration.",
+   "de": "Einen Listenpreis gibt es nicht. Senden Sie Ihre Anforderungen über das Formular unten oder an info@meditron.ch, und Meditron erstellt eine Offerte für Ihre Konfiguration.",
+   "fr": "Il n'y a pas de prix catalogue. Envoyez vos besoins via le formulaire ci-dessous ou à info@meditron.ch, et Meditron prépare une offre pour votre configuration.",
+   "it": "Non esiste un prezzo di listino. Inviate le vostre esigenze tramite il modulo qui sotto o a info@meditron.ch e Meditron prepara un'offerta per la vostra configurazione."
+  },
+  "q_support": {
+   "en": "Does Meditron provide advice and support in Switzerland?",
+   "de": "Bietet Meditron Beratung und Service in der Schweiz?",
+   "fr": "Meditron offre-t-elle conseil et assistance en Suisse?",
+   "it": "Meditron offre consulenza e assistenza in Svizzera?"
+  },
+  "a_support": {
+   "en": "Yes. Meditron advises and supports customers from its offices in Rolle (VD) and Frauenfeld (TG), in German, French, Italian and English, before and after delivery.",
+   "de": "Ja. Meditron berät und betreut Kundinnen und Kunden von den Standorten Rolle (VD) und Frauenfeld (TG) aus, auf Deutsch, Französisch, Italienisch und Englisch, vor und nach der Lieferung.",
+   "fr": "Oui. Meditron conseille et accompagne ses clients depuis ses bureaux de Rolle (VD) et Frauenfeld (TG), en français, allemand, italien et anglais, avant et après la livraison.",
+   "it": "Sì. Meditron offre consulenza e assistenza dalle sedi di Rolle (VD) e Frauenfeld (TG), in italiano, tedesco, francese e inglese, prima e dopo la consegna."
+  }
+ },
+ "hubs": {
+  "radiotherapy": [
+   {
+    "q": {
+     "en": "What does Meditron supply for radiotherapy?",
+     "de": "Was liefert Meditron für die Strahlentherapie?",
+     "fr": "Que fournit Meditron pour la radiothérapie?",
+     "it": "Che cosa fornisce Meditron per la radioterapia?"
+    },
+    "a": {
+     "en": "Quality assurance and patient positioning products: Standard Imaging electrometers and QA checkers, Gafchromic dosimetry films with FilmQA Pro software, Diagnomatic radiotherapy phantoms and Orfit immobilisation and positioning solutions.",
+     "de": "Produkte für Qualitätssicherung und Patientenpositionierung: Elektrometer und QA-Prüfgeräte von Standard Imaging, Gafchromic-Dosimetriefilme mit der Software FilmQA Pro, Strahlentherapie-Phantome von Diagnomatic sowie Immobilisierungs- und Positionierungslösungen von Orfit.",
+     "fr": "Des produits d'assurance qualité et de positionnement du patient: électromètres et contrôleurs QA Standard Imaging, films dosimétriques Gafchromic avec le logiciel FilmQA Pro, fantômes de radiothérapie Diagnomatic et solutions d'immobilisation et de positionnement Orfit.",
+     "it": "Prodotti per l'assicurazione di qualità e il posizionamento del paziente: elettrometri e dispositivi QA Standard Imaging, pellicole dosimetriche Gafchromic con il software FilmQA Pro, fantocci per radioterapia Diagnomatic e soluzioni di immobilizzazione e posizionamento Orfit."
+    }
+   },
+   {
+    "q": {
+     "en": "Who are these products for?",
+     "de": "Für wen sind diese Produkte?",
+     "fr": "À qui s'adressent ces produits?",
+     "it": "A chi sono destinati questi prodotti?"
+    },
+    "a": {
+     "en": "For radiotherapy departments, medical physicists and proton therapy centres in Switzerland.",
+     "de": "Für Radio-Onkologie-Abteilungen, Medizinphysikerinnen und Medizinphysiker sowie Protonentherapie-Zentren in der Schweiz.",
+     "fr": "Aux services de radio-oncologie, aux physiciens médicaux et aux centres de protonthérapie en Suisse.",
+     "it": "Ai reparti di radio-oncologia, ai fisici medici e ai centri di protonterapia in Svizzera."
+    }
+   },
+   "support",
+   "offer"
+  ],
+  "radiology": [
+   {
+    "q": {
+     "en": "What does Meditron supply for radiology?",
+     "de": "Was liefert Meditron für die Radiologie?",
+     "fr": "Que fournit Meditron pour la radiologie?",
+     "it": "Che cosa fornisce Meditron per la radiologia?"
+    },
+    "a": {
+     "en": "Diagnomatic phantoms and test tools for quality assurance in mammography, dental CT and CBCT, radiography and fluoroscopy, plus test objects for non-destructive testing.",
+     "de": "Phantome und Prüfmittel von Diagnomatic für die Qualitätssicherung in Mammografie, Dental-CT und DVT, Radiografie und Durchleuchtung, dazu Prüfkörper für die zerstörungsfreie Prüfung.",
+     "fr": "Des fantômes et outils de test Diagnomatic pour l'assurance qualité en mammographie, CT dentaire et CBCT, radiographie et radioscopie, ainsi que des objets de test pour le contrôle non destructif.",
+     "it": "Fantocci e strumenti di test Diagnomatic per l'assicurazione di qualità in mammografia, TC dentale e CBCT, radiografia e fluoroscopia, oltre a oggetti di prova per i controlli non distruttivi."
+    }
+   },
+   {
+    "q": {
+     "en": "Who are these products for?",
+     "de": "Für wen sind diese Produkte?",
+     "fr": "À qui s'adressent ces produits?",
+     "it": "A chi sono destinati questi prodotti?"
+    },
+    "a": {
+     "en": "For radiology departments, medical physicists and service engineers who test imaging equipment in Switzerland.",
+     "de": "Für Radiologie-Abteilungen, Medizinphysikerinnen und Medizinphysiker sowie Servicetechniker, die bildgebende Geräte in der Schweiz prüfen.",
+     "fr": "Aux services de radiologie, aux physiciens médicaux et aux techniciens de maintenance qui contrôlent les équipements d'imagerie en Suisse.",
+     "it": "Ai reparti di radiologia, ai fisici medici e ai tecnici dell'assistenza che controllano le apparecchiature di imaging in Svizzera."
+    }
+   },
+   "support",
+   "offer"
+  ],
+  "biomedical-testing": [
+   {
+    "q": {
+     "en": "What does Meditron supply for biomedical testing?",
+     "de": "Was liefert Meditron für die Medizingeräteprüfung?",
+     "fr": "Que fournit Meditron pour le contrôle biomédical?",
+     "it": "Che cosa fornisce Meditron per i test biomedicali?"
+    },
+    "a": {
+     "en": "Datrend Systems test equipment: electrical safety analysers, patient and vital-signs simulators, SpO2 and NIBP testers, and analysers for infusion devices, incubators, defibrillators and electrosurgical units.",
+     "de": "Prüfgeräte von Datrend Systems: Analysatoren für die elektrische Sicherheit, Patienten- und Vitalparameter-Simulatoren, SpO2- und NIBP-Tester sowie Analysatoren für Infusionsgeräte, Inkubatoren, Defibrillatoren und HF-Chirurgiegeräte.",
+     "fr": "Des équipements de test Datrend Systems: analyseurs de sécurité électrique, simulateurs de patient et de signes vitaux, testeurs SpO2 et PNI, et analyseurs pour pompes à perfusion, incubateurs, défibrillateurs et bistouris électriques.",
+     "it": "Apparecchiature di test Datrend Systems: analizzatori di sicurezza elettrica, simulatori paziente e di parametri vitali, tester SpO2 e NIBP e analizzatori per pompe d'infusione, incubatrici, defibrillatori ed elettrobisturi."
+    }
+   },
+   {
+    "q": {
+     "en": "Who are these products for?",
+     "de": "Für wen sind diese Produkte?",
+     "fr": "À qui s'adressent ces produits?",
+     "it": "A chi sono destinati questi prodotti?"
+    },
+    "a": {
+     "en": "For biomedical and clinical engineering teams in hospitals and for service companies that maintain medical devices.",
+     "de": "Für Medizintechnik-Abteilungen in Spitälern und für Serviceunternehmen, die Medizinprodukte warten.",
+     "fr": "Aux services biomédicaux des hôpitaux et aux entreprises de maintenance de dispositifs médicaux.",
+     "it": "Ai servizi di ingegneria clinica degli ospedali e alle aziende che effettuano la manutenzione di dispositivi medici."
+    }
+   },
+   "support",
+   "offer"
+  ],
+  "industrial-solutions": [
+   {
+    "q": {
+     "en": "What does Meditron supply for radiation monitoring?",
+     "de": "Was liefert Meditron für die Strahlenüberwachung?",
+     "fr": "Que fournit Meditron pour la surveillance des rayonnements?",
+     "it": "Che cosa fornisce Meditron per il monitoraggio delle radiazioni?"
+    },
+    "a": {
+     "en": "Thermo Scientific radiation detection and dosimetry: personal radiation detectors and electronic dosimeters, survey meters, area and article monitors, handheld isotope identifiers, neutron detectors and Harshaw TLD readers.",
+     "de": "Strahlenmessung und Dosimetrie von Thermo Scientific: Personendosimeter und elektronische Dosimeter, Dosisleistungsmessgeräte, Raum- und Gegenstandsmonitore, Handgeräte zur Nuklididentifikation, Neutronendetektoren und Harshaw-TLD-Auswertegeräte.",
+     "fr": "La détection des rayonnements et la dosimétrie Thermo Scientific: détecteurs personnels et dosimètres électroniques, radiamètres, moniteurs de zone et d'objets, identificateurs d'isotopes portables, détecteurs de neutrons et lecteurs TLD Harshaw.",
+     "it": "Rilevamento delle radiazioni e dosimetria Thermo Scientific: rivelatori personali e dosimetri elettronici, misuratori di rateo di dose, monitor d'area e per oggetti, identificatori di isotopi portatili, rivelatori di neutroni e lettori TLD Harshaw."
+    }
+   },
+   {
+    "q": {
+     "en": "Who are these products for?",
+     "de": "Für wen sind diese Produkte?",
+     "fr": "À qui s'adressent ces produits?",
+     "it": "A chi sono destinati questi prodotti?"
+    },
+    "a": {
+     "en": "For hospitals, research institutes, industry and security services that need to detect and measure radiation.",
+     "de": "Für Spitäler, Forschungsinstitute, Industrie und Sicherheitsdienste, die Strahlung erkennen und messen müssen.",
+     "fr": "Aux hôpitaux, instituts de recherche, entreprises industrielles et services de sécurité qui doivent détecter et mesurer les rayonnements.",
+     "it": "A ospedali, istituti di ricerca, industria e servizi di sicurezza che devono rilevare e misurare le radiazioni."
+    }
+   },
+   "support",
+   "offer"
+  ]
+ },
+ "productQ": {
+  "what": {
+   "en": "What is the {name}?",
+   "de": "Was ist {name}?",
+   "fr": "Qu'est-ce que le {name}?",
+   "it": "Che cos'è il {name}?"
+  },
+  "who": {
+   "en": "Who supplies the {name} in Switzerland?",
+   "de": "Wer liefert {name} in der Schweiz?",
+   "fr": "Qui fournit le {name} en Suisse?",
+   "it": "Chi fornisce il {name} in Svizzera?"
+  },
+  "demo": {
+   "en": "Can I see the {name} before deciding?",
+   "de": "Kann ich {name} vor dem Entscheid sehen?",
+   "fr": "Puis-je voir le {name} avant de décider?",
+   "it": "Posso vedere il {name} prima di decidere?"
+  },
+  "advice": {
+   "en": "Can Meditron advise on the right phantom?",
+   "de": "Berät Meditron bei der Wahl des Phantoms?",
+   "fr": "Meditron peut-elle conseiller le bon fantôme?",
+   "it": "Meditron può consigliare il fantoccio giusto?"
+  },
+  "price": {
+   "en": "How much does the {name} cost?",
+   "de": "Was kostet {name}?",
+   "fr": "Combien coûte le {name}?",
+   "it": "Quanto costa il {name}?"
+  }
+ },
+ "productA": {
+  "who": {
+   "en": "Meditron SA supplies the {name} in Switzerland, with offices in Rolle (VD) and Frauenfeld (TG) and advice in German, French, Italian and English.",
+   "de": "Meditron SA liefert {name} in der Schweiz, mit Standorten in Rolle (VD) und Frauenfeld (TG) und Beratung auf Deutsch, Französisch, Italienisch und Englisch.",
+   "fr": "Meditron SA fournit le {name} en Suisse, avec des bureaux à Rolle (VD) et Frauenfeld (TG) et des conseils en français, allemand, italien et anglais.",
+   "it": "Meditron SA fornisce il {name} in Svizzera, con sedi a Rolle (VD) e Frauenfeld (TG) e consulenza in italiano, tedesco, francese e inglese."
+  },
+  "demo": {
+   "en": "Yes. Meditron demonstrates the {name} in Rolle, Frauenfeld or at your practice or clinic. Leasing and financing are available on request.",
+   "de": "Ja. Meditron demonstriert {name} in Rolle, in Frauenfeld oder in Ihrer Praxis oder Klinik. Leasing und Finanzierung sind auf Anfrage möglich.",
+   "fr": "Oui. Meditron présente le {name} à Rolle, à Frauenfeld ou dans votre cabinet ou clinique. Leasing et financement sur demande.",
+   "it": "Sì. Meditron presenta il {name} a Rolle, a Frauenfeld o nel vostro studio o clinica. Leasing e finanziamento su richiesta."
+  },
+  "advice": {
+   "en": "Yes. Meditron's specialists help you choose the right Diagnomatic phantom for your ultrasound quality assurance and supply it with its documentation.",
+   "de": "Ja. Die Fachleute von Meditron helfen Ihnen, das passende Diagnomatic-Phantom für Ihre Ultraschall-Qualitätssicherung zu wählen, und liefern es mit der Dokumentation.",
+   "fr": "Oui. Les spécialistes de Meditron vous aident à choisir le bon fantôme Diagnomatic pour l'assurance qualité de vos échographes et le livrent avec sa documentation.",
+   "it": "Sì. Gli specialisti di Meditron vi aiutano a scegliere il fantoccio Diagnomatic adatto all'assicurazione di qualità dei vostri ecografi e lo forniscono con la documentazione."
+  },
+  "price": {
+   "en": "There is no list price. Meditron prepares an offer for your configuration; contact us through the form below or at info@meditron.ch.",
+   "de": "Einen Listenpreis gibt es nicht. Meditron erstellt eine Offerte für Ihre Konfiguration; kontaktieren Sie uns über das Formular unten oder unter info@meditron.ch.",
+   "fr": "Il n'y a pas de prix catalogue. Meditron prépare une offre pour votre configuration; contactez-nous via le formulaire ci-dessous ou à info@meditron.ch.",
+   "it": "Non esiste un prezzo di listino. Meditron prepara un'offerta per la vostra configurazione; contattateci tramite il modulo qui sotto o a info@meditron.ch."
+  }
+ },
+ "productWhat": {
+  "pro-us-uniform": {
+   "en": "A homogeneous, tissue-mimicking phantom for routine technical quality assurance (TQA) of ultrasound systems. Its PVA material mimics the sound velocity and acoustic attenuation of human tissue, and a single image gives comparable, reproducible results.",
+   "de": "Ein homogenes, gewebeähnliches Phantom für die routinemässige technische Qualitätssicherung (TQA) von Ultraschallgeräten. Das PVA-Material bildet Schallgeschwindigkeit und Dämpfung von menschlichem Gewebe nach; ein einziges Bild liefert vergleichbare, reproduzierbare Ergebnisse.",
+   "fr": "Un fantôme homogène imitant les tissus, pour l'assurance qualité technique (TQA) de routine des échographes. Son matériau PVA reproduit la vitesse du son et l'atténuation acoustique des tissus humains; une seule image donne des résultats comparables et reproductibles.",
+   "it": "Un fantoccio omogeneo che simula i tessuti, per l'assicurazione di qualità tecnica (TQA) di routine degli ecografi. Il materiale in PVA riproduce la velocità del suono e l'attenuazione acustica dei tessuti umani; una sola immagine fornisce risultati confrontabili e riproducibili."
+  },
+  "pro-us-mtf": {
+   "en": "A tissue-mimicking phantom for routine technical quality assurance of ultrasound systems. The Diagnomatic software calculates a modulation transfer function (MTF) from its images to measure spatial resolution, and the phantom also contains structures to assess geometry.",
+   "de": "Ein gewebeähnliches Phantom für die routinemässige technische Qualitätssicherung von Ultraschallgeräten. Die Diagnomatic-Software berechnet aus den Bildern eine Modulationsübertragungsfunktion (MTF) zur Bestimmung der räumlichen Auflösung; zusätzlich enthält das Phantom Strukturen zur Beurteilung der Geometrie.",
+   "fr": "Un fantôme imitant les tissus pour l'assurance qualité technique de routine des échographes. Le logiciel Diagnomatic calcule à partir des images une fonction de transfert de modulation (FTM) pour mesurer la résolution spatiale; le fantôme contient aussi des structures pour évaluer la géométrie.",
+   "it": "Un fantoccio che simula i tessuti per l'assicurazione di qualità tecnica di routine degli ecografi. Il software Diagnomatic calcola dalle immagini una funzione di trasferimento della modulazione (MTF) per misurare la risoluzione spaziale; il fantoccio contiene anche strutture per valutare la geometria."
+  },
+  "esaote-mylab-panther-vet": {
+   "en": "Esaote's high-end veterinary ultrasound platform for diagnostic imaging across clinical settings and animal species.",
+   "de": "Die High-End-Ultraschallplattform von Esaote für die Tiermedizin, für die bildgebende Diagnostik in verschiedenen klinischen Umgebungen und bei allen Tierarten.",
+   "fr": "La plateforme d'échographie vétérinaire haut de gamme d'Esaote, pour l'imagerie diagnostique dans différents environnements cliniques et pour toutes les espèces.",
+   "it": "La piattaforma ecografica veterinaria di fascia alta di Esaote, per la diagnostica per immagini in diversi ambienti clinici e per tutte le specie animali."
+  },
+  "esaote-mylab-wolf-vet": {
+   "en": "An intuitive veterinary ultrasound system from Esaote that delivers sharp, immediate images for everyday diagnostics, from pets to exotic species.",
+   "de": "Ein intuitives Veterinär-Ultraschallsystem von Esaote mit scharfen, sofortigen Bildern für die tägliche Diagnostik, vom Haustier bis zu exotischen Arten.",
+   "fr": "Un échographe vétérinaire intuitif d'Esaote qui fournit des images nettes et immédiates pour le diagnostic quotidien, des animaux de compagnie aux espèces exotiques.",
+   "it": "Un ecografo veterinario intuitivo di Esaote che fornisce immagini nitide e immediate per la diagnostica quotidiana, dagli animali da compagnia alle specie esotiche."
+  },
+  "esaote-mylab-fox-vet": {
+   "en": "A multidisciplinary veterinary ultrasound system from Esaote for a broad range of applications in all animal species.",
+   "de": "Ein multidisziplinäres Veterinär-Ultraschallsystem von Esaote für ein breites Anwendungsspektrum bei allen Tierarten.",
+   "fr": "Un échographe vétérinaire polyvalent d'Esaote pour un large éventail d'applications chez toutes les espèces.",
+   "it": "Un ecografo veterinario multidisciplinare di Esaote per un'ampia gamma di applicazioni in tutte le specie animali."
+  },
+  "esaote-mylab-falcon-vet": {
+   "en": "A robust, precise portable veterinary ultrasound system from Esaote for fast diagnostics in any setting.",
+   "de": "Ein robustes, präzises tragbares Veterinär-Ultraschallsystem von Esaote für schnelle Diagnosen in jeder Umgebung.",
+   "fr": "Un échographe vétérinaire portable, robuste et précis, d'Esaote pour un diagnostic rapide dans tout environnement.",
+   "it": "Un ecografo veterinario portatile, robusto e preciso, di Esaote per una diagnostica rapida in qualsiasi ambiente."
+  },
+  "esaote-mylab-heron-vet": {
+   "en": "A versatile portable veterinary ultrasound system from Esaote, designed to perform reliably in a wide range of clinical environments.",
+   "de": "Ein vielseitiges tragbares Veterinär-Ultraschallsystem von Esaote für den zuverlässigen Einsatz in unterschiedlichsten klinischen Umgebungen.",
+   "fr": "Un échographe vétérinaire portable et polyvalent d'Esaote, conçu pour fonctionner de manière fiable dans de nombreux environnements cliniques.",
+   "it": "Un ecografo veterinario portatile e versatile di Esaote, progettato per funzionare in modo affidabile in un'ampia gamma di ambienti clinici."
+  },
+  "esaote-mylab-x1-go-vet": {
+   "en": "An ultra-slim, portable ultrasound system from Esaote for fast, mobile veterinary diagnostics.",
+   "de": "Ein ultraschlankes, tragbares Ultraschallsystem von Esaote für schnelle, mobile Diagnostik in der Tiermedizin.",
+   "fr": "Un échographe ultra-fin et portable d'Esaote pour un diagnostic vétérinaire rapide et mobile.",
+   "it": "Un ecografo ultrasottile e portatile di Esaote per una diagnostica veterinaria rapida e mobile."
+  },
+  "esaote-q7-vet": {
+   "en": "An ultra-compact, wireless veterinary ultrasound system from Esaote, small enough to carry in a pocket for mobile use.",
+   "de": "Ein ultrakompaktes, kabelloses Veterinär-Ultraschallsystem von Esaote, klein genug für die Kitteltasche und ideal für den mobilen Einsatz.",
+   "fr": "Un échographe vétérinaire ultra-compact et sans fil d'Esaote, assez petit pour tenir dans une poche, idéal en mobilité.",
+   "it": "Un ecografo veterinario ultracompatto e wireless di Esaote, abbastanza piccolo da stare in tasca, ideale per l'uso in mobilità."
+  },
+  "c3-hd3": {
+   "en": "A compact, wireless Clarius scanner for deep structures up to 40 cm, for point-of-care assessments of the abdomen, lungs and heart in primary care.",
+   "de": "Ein kompakter, kabelloser Clarius-Scanner für tiefe Strukturen bis 40 cm, für Point-of-Care-Untersuchungen von Abdomen, Lunge und Herz in der Grundversorgung.",
+   "fr": "Un scanner Clarius compact et sans fil pour les structures profondes jusqu'à 40 cm, pour les examens au point de soins de l'abdomen, des poumons et du cœur en médecine de premier recours.",
+   "it": "Uno scanner Clarius compatto e wireless per strutture profonde fino a 40 cm, per valutazioni point-of-care di addome, polmoni e cuore nelle cure primarie."
+  },
+  "clarius-l15-hd3": {
+   "en": "A high-resolution Clarius linear scanner for muscles, tendons, joints and nerves, with a maximum depth of 7 cm, for assessing injuries and guiding procedures.",
+   "de": "Ein hochauflösender Clarius-Linearscanner für Muskeln, Sehnen, Gelenke und Nerven mit einer maximalen Tiefe von 7 cm, zur Beurteilung von Verletzungen und zur Steuerung von Eingriffen.",
+   "fr": "Un scanner linéaire Clarius haute résolution pour les muscles, tendons, articulations et nerfs, avec une profondeur maximale de 7 cm, pour évaluer les lésions et guider les gestes.",
+   "it": "Uno scanner lineare Clarius ad alta risoluzione per muscoli, tendini, articolazioni e nervi, con una profondità massima di 7 cm, per valutare lesioni e guidare procedure."
+  },
+  "clarius-pal-hd3": {
+   "en": "A multipurpose Clarius scanner that switches between abdominal, vascular and cardiac views for everyday care.",
+   "de": "Ein Mehrzweck-Scanner von Clarius, der für die tägliche Versorgung zwischen Abdomen-, Gefäss- und Herzansichten wechselt.",
+   "fr": "Un scanner Clarius polyvalent qui passe des vues abdominales aux vues vasculaires et cardiaques pour les soins quotidiens.",
+   "it": "Uno scanner Clarius multiuso che passa da viste addominali a vascolari e cardiache per l'attività quotidiana."
+  },
+  "clarius-l20-hd3": {
+   "en": "An ultra-portable 20 MHz Clarius scanner designed for aesthetics, to visualise superficial anatomy, vessels and tissue layers, for example when guiding facial injections.",
+   "de": "Ein ultraportabler 20-MHz-Scanner von Clarius für die ästhetische Medizin, zur Darstellung oberflächlicher Anatomie, Gefässe und Gewebeschichten, etwa bei Injektionen im Gesicht.",
+   "fr": "Un scanner Clarius ultra-portable de 20 MHz conçu pour la médecine esthétique, pour visualiser l'anatomie superficielle, les vaisseaux et les couches tissulaires, par exemple lors d'injections faciales.",
+   "it": "Uno scanner Clarius ultraportatile a 20 MHz pensato per la medicina estetica, per visualizzare anatomia superficiale, vasi e strati tissutali, ad esempio durante le iniezioni al viso."
+  },
+  "clarius-c7vet-hd3": {
+   "en": "A Clarius scanner for small animal care, for abdominal, cardiac and reproductive exams in dogs and cats.",
+   "de": "Ein Clarius-Scanner für Kleintiere, für Abdomen-, Herz- und Reproduktionsuntersuchungen bei Hunden und Katzen.",
+   "fr": "Un scanner Clarius pour les petits animaux, pour les examens abdominaux, cardiaques et de reproduction chez le chien et le chat.",
+   "it": "Uno scanner Clarius per piccoli animali, per esami addominali, cardiaci e riproduttivi in cani e gatti."
+  },
+  "clarius-ec7-hd3": {
+   "en": "A wireless handheld Clarius endocavity scanner for men's and women's health, from early pregnancy to prostate assessments, with automated measurements.",
+   "de": "Ein kabelloser Clarius-Handscanner für endokavitäre Untersuchungen in der Frauen- und Männergesundheit, von der Frühschwangerschaft bis zur Prostata, mit automatischen Messungen.",
+   "fr": "Un scanner endocavitaire Clarius portable et sans fil pour la santé de l'homme et de la femme, du début de grossesse à l'évaluation de la prostate, avec mesures automatiques.",
+   "it": "Uno scanner endocavitario Clarius palmare e wireless per la salute maschile e femminile, dalla gravidanza iniziale alla valutazione della prostata, con misurazioni automatiche."
+  },
+  "clarius-pa-hd3": {
+   "en": "A Clarius phased-array scanner for cardiac and deep structures, for cardiac assessments, trauma exams and rapid diagnostics at the bedside or in the field.",
+   "de": "Ein Phased-Array-Scanner von Clarius für Herz und tiefe Strukturen, für Herzuntersuchungen, Traumaabklärungen und schnelle Diagnostik am Bett oder im Feld.",
+   "fr": "Un scanner Clarius à réseau phasé pour le cœur et les structures profondes, pour les examens cardiaques, traumatologiques et le diagnostic rapide au lit du patient ou sur le terrain.",
+   "it": "Uno scanner Clarius phased array per cuore e strutture profonde, per valutazioni cardiache, esami traumatologici e diagnostica rapida al letto del paziente o sul campo."
+  },
+  "clarius-l7-hd3": {
+   "en": "A high-definition Clarius scanner for surgery and musculoskeletal care, to visualise soft tissue, vessels and nerves and guide procedures.",
+   "de": "Ein hochauflösender Clarius-Scanner für Chirurgie und Bewegungsapparat, zur Darstellung von Weichteilen, Gefässen und Nerven und zur Steuerung von Eingriffen.",
+   "fr": "Un scanner Clarius haute définition pour la chirurgie et l'appareil locomoteur, pour visualiser tissus mous, vaisseaux et nerfs et guider les gestes.",
+   "it": "Uno scanner Clarius ad alta definizione per chirurgia e apparato muscoloscheletrico, per visualizzare tessuti molli, vasi e nervi e guidare le procedure."
+  }
+ }
+}
