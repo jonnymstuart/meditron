@@ -13,5 +13,6 @@ Goal (client brief): rank in Swiss Google for **"Samsung ultrasound"** in each l
 - Medical device marketing: no clinical claims beyond Samsung's own published material; no pricing unless client supplies it; CE/Swissmedic wording verbatim.
 - Keyword data comes from the Semrush MCP (database `ch`; `de`/`fr`/`it` only as proxies). Rankings come from Semrush Position Tracking + GSC. Cite the source and date in every report.
 - Backlinks: no paid links, no PBNs, no automated directory blasts. Only outreach in `docs/03-link-playbook.md`.
+- Framer layout: any frame that holds a CMS collection list or bound text gets `height="auto"`, and so does every parent up to the section. Never a fixed px height (the 100px Guides box on the hub overlapped the FAQ on 10 Nov). After an `applyChanges` that adds or edits a section, serialise the section and its parents and check for px heights before publishing.
 - Every week produces a commit in `reports/` and an email to the client. If a step fails, the report says so.
 - Commit messages in English, imperative. No secrets in git (`.env` is ignored).
