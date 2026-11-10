@@ -36,6 +36,8 @@ export default function FAQItem(props: FAQItemProps) {
         answerFont,
         style,
     } = props
+    // Framer passes an unset rich-text control as an empty array; only a real node counts as a rich answer.
+    const rich = Array.isArray(answerRich) ? (answerRich.length ? answerRich : null) : answerRich || null
     const id = useId()
     const isStatic = useIsStaticRenderer()
     const [open, setOpen] = useState<boolean>(defaultOpen)
@@ -61,7 +63,7 @@ export default function FAQItem(props: FAQItemProps) {
     const showOpen = isStatic ? defaultOpen : open
     // One FAQPage block per row: rows are independent CMS items, so the page-level list cannot be assembled here.
     const plainAnswer = (answer || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()
-    const schema = question && plainAnswer && !answerRich
+    const schema = question && plainAnswer && !rich
         ? JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: plainAnswer } }] })
         : ""
 
@@ -114,8 +116,8 @@ export default function FAQItem(props: FAQItemProps) {
                 transition={{ duration: 0.28, ease: [0.4, 0, 0.2, 1] }}
                 style={{ overflow: "hidden", height: showOpen ? "auto" : 0 }}
             >
-                {answerRich ? (
-                    <div className="mtr-faq-answer" style={{ padding: "0 46px 24px 0", color: textColor, ...answerFont }}>{answerRich}</div>
+                {rich ? (
+                    <div className="mtr-faq-answer" style={{ padding: "0 46px 24px 0", color: textColor, ...answerFont }}>{rich}</div>
                 ) : /<[a-z][\s\S]*>/i.test(answer) ? (
                     <div
                         className="mtr-faq-answer"
