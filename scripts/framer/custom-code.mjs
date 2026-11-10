@@ -5,6 +5,7 @@ const HTML = `<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
+  gtag('config', 'G-JYMMLFWJZW');
 </script>`;
 await withFramer(async (framer) => {
   const before = await framer.getCustomCode();
