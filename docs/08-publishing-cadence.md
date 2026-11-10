@@ -54,3 +54,4 @@ Add topics at the bottom; never reorder live or staged rows.
 
 ## Languages (3 Nov)
 - Model pages Z20/V8/R20/V7, the seven probe pages, the hub, the FAQ rows and articles 1–9 now have DE, FR and IT copy written from the EN source with the rule sets in docs/11 and docs/15 (logs: docs/16, docs/17). Canonical copy per language lives in `content/<lang>/products/`; push with `scripts/framer/push-de.mjs` or `push-lang.mjs --lang=fr|it`. New articles still follow the a4 pipeline (four HTML drafts per article). Probe pages are no longer EN-only (supersedes the 20 Oct note above).
+- 10 Nov: hero images alternate between a flat tile and a real product photo (odd articles by date get the photo; `scripts/framer/article-images.mjs`). New articles: keep the alternation, pick the photo of the model the article is about.
