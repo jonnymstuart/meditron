@@ -36,8 +36,9 @@ export default function FAQItem(props: FAQItemProps) {
         answerFont,
         style,
     } = props
-    // Framer passes an unset rich-text control as an empty array; only a real node counts as a rich answer.
-    const rich = Array.isArray(answerRich) ? (answerRich.length ? answerRich : null) : answerRich || null
+    // The plain "Answer" field (bound to the CMS) always wins. Framer passes an unset rich-text control as an
+    // empty element or array, which is truthy, so the rich answer is used only when there is no plain answer.
+    const rich = (answer || "").trim() ? null : Array.isArray(answerRich) ? (answerRich.length ? answerRich : null) : answerRich || null
     const id = useId()
     const isStatic = useIsStaticRenderer()
     const [open, setOpen] = useState<boolean>(defaultOpen)
