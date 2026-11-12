@@ -1,0 +1,118 @@
+{
+ "_note": "Titles (<= 60 chars), descriptions (<= 155) and H1s written 12 Nov 2026. Hubs and Samsung models by hand; other products by rule in scripts/framer/optimise-meta.mjs. Facts from the existing page copy only; no prices.",
+ "hubs": {
+  "ultrasound": {
+   "title": {
+    "en": "Samsung Ultrasound in Switzerland | Meditron",
+    "de": "Samsung Ultraschall Schweiz – Distributor | Meditron",
+    "fr": "Échographe Samsung en Suisse | Meditron",
+    "it": "Ecografo Samsung in Svizzera | Meditron"
+   },
+   "description": {
+    "en": "Samsung ultrasound systems for practices, clinics and hospitals in Switzerland. Official Samsung Healthcare distributor since 2012: advice, demo, service.",
+    "de": "Samsung Ultraschallgeräte für Praxen, Kliniken und Spitäler in der Schweiz. Offizieller Distributor seit 2012: Beratung, Demo, Service und Offerte.",
+    "fr": "Échographes Samsung pour cabinets, cliniques et hôpitaux en Suisse. Distributeur officiel depuis 2012 : conseil, démo, assistance et offre.",
+    "it": "Ecografi Samsung per studi medici, cliniche e ospedali in Svizzera. Distributore ufficiale dal 2012: consulenza, demo, assistenza e offerta."
+   }
+  },
+  "radiology": {
+   "title": {
+    "it": "Controllo qualità in radiologia Svizzera | Meditron"
+   }
+  },
+  "industrial-solutions": {
+   "title": {
+    "it": "Rilevazione radiazioni e dosimetria Svizzera | Meditron"
+   }
+  },
+  "radiotherapy": {
+   "description": {
+    "fr": "Assurance qualité en radiothérapie, dosimétrie et positionnement des patients pour les cliniques suisses, avec le service et les conseils de Meditron.",
+    "it": "Controllo qualità in radioterapia, dosimetria e posizionamento del paziente per le cliniche svizzere, con assistenza e consulenza di Meditron."
+   }
+  }
+ },
+ "models": {
+  "samsung-hera-z20": {
+   "name": "HERA Z20",
+   "description": {
+    "en": "Samsung HERA Z20, the premium ultrasound for obstetrics and gynaecology. From Meditron, official Samsung distributor in Switzerland. Demo and offer.",
+    "de": "Samsung HERA Z20: Premium-Ultraschall für Gynäkologie und Geburtshilfe. Von Meditron, offizieller Samsung Distributor in der Schweiz. Demo und Offerte.",
+    "fr": "Samsung HERA Z20 : l'échographe haut de gamme pour la gynécologie-obstétrique. Par Meditron, distributeur officiel Samsung en Suisse. Démo et offre.",
+    "it": "Samsung HERA Z20: l'ecografo di fascia alta per ginecologia e ostetricia. Da Meditron, distributore ufficiale Samsung in Svizzera. Demo e offerta."
+   }
+  },
+  "samsung-v8": {
+   "name": "V8",
+   "description": {
+    "en": "Samsung V8, the high-end ultrasound for general imaging and women's health. From Meditron, official Samsung distributor in Switzerland. Demo and offer.",
+    "de": "Samsung V8: High-End-Ultraschall für allgemeine Bildgebung und Gynäkologie. Von Meditron, offizieller Samsung Distributor in der Schweiz. Demo und Offerte.",
+    "fr": "Samsung V8 : l'échographe haut de gamme pour l'imagerie générale et la gynécologie. Par Meditron, distributeur officiel Samsung en Suisse. Démo et offre.",
+    "it": "Samsung V8: l'ecografo di fascia alta per imaging generale e ginecologia. Da Meditron, distributore ufficiale Samsung in Svizzera. Demo e offerta."
+   }
+  },
+  "samsung-r20": {
+   "name": "R20",
+   "description": {
+    "en": "Samsung R20: premium ultrasound for radiology, from screening to intervention. Meditron, official Samsung distributor in Switzerland. Demo and offer.",
+    "de": "Samsung R20: Premium-Ultraschall für die Radiologie, vom Screening bis zur Intervention. Von Meditron, offizieller Samsung Distributor in der Schweiz.",
+    "fr": "Samsung R20 : l'échographe haut de gamme pour la radiologie, du dépistage à l'intervention. Par Meditron, distributeur officiel Samsung en Suisse.",
+    "it": "Samsung R20: l'ecografo di fascia alta per la radiologia, dallo screening all'intervento. Da Meditron, distributore ufficiale Samsung in Svizzera."
+   }
+  },
+  "samsung-v7": {
+   "name": "V7",
+   "description": {
+    "en": "Samsung V7 with Crystal Architecture and S-Shearwave for abdomen, MSK, vascular and gynaecology. From Meditron, official distributor in Switzerland.",
+    "de": "Samsung V7 mit Crystal Architecture und S-Shearwave für Abdomen, Bewegungsapparat, Gefässe und Gynäkologie. Von Meditron, Distributor in der Schweiz.",
+    "fr": "Samsung V7 avec Crystal Architecture et S-Shearwave pour l'abdomen, l'appareil locomoteur, le vasculaire et la gynécologie. Par Meditron, en Suisse.",
+    "it": "Samsung V7 con Crystal Architecture e S-Shearwave per addome, muscoloscheletrico, vascolare e ginecologia. Da Meditron, distributore in Svizzera."
+   }
+  },
+  "samsung-v6": {
+   "name": "V6",
+   "description": {
+    "en": "Samsung V6 with Crystal Architecture for women's health, urology and general imaging. From Meditron, official Samsung distributor in Switzerland.",
+    "de": "Samsung V6 mit Crystal Architecture für Gynäkologie, Urologie und allgemeine Bildgebung. Von Meditron, offizieller Samsung Distributor in der Schweiz.",
+    "fr": "Samsung V6 avec Crystal Architecture pour la gynécologie, l'urologie et l'imagerie générale. Par Meditron, distributeur officiel Samsung en Suisse.",
+    "it": "Samsung V6 con Crystal Architecture per ginecologia, urologia e imaging generale. Da Meditron, distributore ufficiale Samsung in Svizzera."
+   }
+  },
+  "samsung-v5": {
+   "name": "V5",
+   "description": {
+    "en": "Samsung V5 with AI diagnostic support and intelligent automation for everyday practice. From Meditron, official Samsung distributor in Switzerland.",
+    "de": "Samsung V5 mit KI-Diagnoseunterstützung und intelligenter Automatisierung für den Praxisalltag. Von Meditron, offizieller Distributor in der Schweiz.",
+    "fr": "Samsung V5 avec aide au diagnostic par IA et automatisation intelligente pour le cabinet. Par Meditron, distributeur officiel Samsung en Suisse.",
+    "it": "Samsung V5 con supporto diagnostico IA e automazione intelligente per lo studio medico. Da Meditron, distributore ufficiale Samsung in Svizzera."
+   }
+  },
+  "samsung-v4": {
+   "name": "V4",
+   "description": {
+    "en": "Samsung V4, the fanless ultrasound for routine diagnostics with efficient, quality imaging. From Meditron, official Samsung distributor in Switzerland.",
+    "de": "Samsung V4: lüfterloses Ultraschallgerät für die Routinediagnostik, effizient und mit hochwertiger Bildgebung. Von Meditron, Distributor in der Schweiz.",
+    "fr": "Samsung V4 : l'échographe sans ventilateur pour le diagnostic de routine, efficace et précis. Par Meditron, distributeur officiel Samsung en Suisse.",
+    "it": "Samsung V4: l'ecografo senza ventola per la diagnostica di routine, efficiente e preciso. Da Meditron, distributore ufficiale Samsung in Svizzera."
+   }
+  }
+ },
+ "modelTitle": {
+  "en": "Samsung {m} Ultrasound | Meditron Switzerland",
+  "de": "Samsung {m} Ultraschallgerät | Meditron Schweiz",
+  "fr": "Échographe Samsung {m} | Meditron Suisse",
+  "it": "Ecografo Samsung {m} | Meditron Svizzera"
+ },
+ "modelH1": {
+  "en": "Samsung {m} ultrasound system",
+  "de": "Samsung {m} Ultraschallgerät",
+  "fr": "Échographe Samsung {m}",
+  "it": "Ecografo Samsung {m}"
+ },
+ "suffix": {
+  "en": "Meditron Switzerland",
+  "de": "Meditron Schweiz",
+  "fr": "Meditron Suisse",
+  "it": "Meditron Svizzera"
+ }
+}

@@ -1,0 +1,73 @@
+{
+ "_note": "Samsung model pages, 12 Nov 2026: FAQ 5-6 and two guide links per model. Facts as already stated on the site (pre-owned with warranty subject to availability, leasing via financing partners, service in Switzerland). {m} = model name.",
+ "q5": {
+  "en": "Is the Samsung {m} available pre-owned or on lease?",
+  "de": "Gibt es den Samsung {m} als Occasion oder im Leasing?",
+  "fr": "Le Samsung {m} est-il disponible d'occasion ou en leasing?",
+  "it": "Il Samsung {m} è disponibile usato o in leasing?"
+ },
+ "a5": {
+  "en": "Meditron offers certified pre-owned Samsung systems with warranty, subject to availability, and leasing through its financing partners. Ask for an offer for the {m}.",
+  "de": "Meditron bietet geprüfte Samsung Occasionsgeräte mit Garantie an, je nach Verfügbarkeit, sowie Leasing über Finanzierungspartner. Fragen Sie eine Offerte für den {m} an.",
+  "fr": "Meditron propose des échographes Samsung d'occasion certifiés avec garantie, selon disponibilité, ainsi que le leasing via ses partenaires de financement. Demandez une offre pour le {m}.",
+  "it": "Meditron offre ecografi Samsung usati certificati con garanzia, secondo disponibilità, e il leasing tramite i suoi partner finanziari. Chiedete un'offerta per il {m}."
+ },
+ "q6": {
+  "en": "Who services the Samsung {m} in Switzerland?",
+  "de": "Wer betreut den Samsung {m} in der Schweiz?",
+  "fr": "Qui assure le service du Samsung {m} en Suisse?",
+  "it": "Chi fornisce assistenza per il Samsung {m} in Svizzera?"
+ },
+ "a6": {
+  "en": "Meditron, the official Samsung Healthcare distributor in Switzerland since 2012, installs, services and repairs the {m} in German, French and Italian. Application specialists train your team at installation.",
+  "de": "Meditron, seit 2012 offizieller Distributor von Samsung Healthcare in der Schweiz, installiert, wartet und repariert den {m} auf Deutsch, Französisch und Italienisch. Applikationsspezialisten schulen Ihr Team bei der Installation.",
+  "fr": "Meditron, distributeur officiel de Samsung Healthcare en Suisse depuis 2012, installe, entretient et répare le {m} en français, allemand et italien. Des spécialistes d'application forment votre équipe à l'installation.",
+  "it": "Meditron, distributore ufficiale di Samsung Healthcare in Svizzera dal 2012, installa, mantiene e ripara il {m} in italiano, tedesco e francese. Gli specialisti applicativi formano il vostro team all'installazione."
+ },
+ "readHeading": {
+  "en": "Further reading",
+  "de": "Weiterlesen",
+  "fr": "À lire aussi",
+  "it": "Per approfondire"
+ },
+ "guides": {
+  "samsung-hera-z20": [
+   "samsung-hera-z20-or-v8-gynaecology",
+   "ultrasound-probes-gynaecology-practice"
+  ],
+  "samsung-v8": [
+   "samsung-hera-z20-or-v8-gynaecology",
+   "which-samsung-ultrasound-system-for-my-practice"
+  ],
+  "samsung-r20": [
+   "samsung-ultrasound-service-training-warranty-switzerland",
+   "samsung-ultrasound-price-switzerland"
+  ],
+  "samsung-v7": [
+   "samsung-v7-vs-v6-vs-v5",
+   "buying-an-ultrasound-machine-checklist-gp-practice"
+  ],
+  "samsung-v6": [
+   "samsung-v7-vs-v6-vs-v5",
+   "new-or-pre-owned-ultrasound-system"
+  ],
+  "samsung-v5": [
+   "samsung-v7-vs-v6-vs-v5",
+   "mobile-or-stationary-ultrasound-system"
+  ],
+  "samsung-v4": [
+   "which-samsung-ultrasound-system-for-my-practice",
+   "ultrasound-leasing-medical-practice-switzerland"
+  ]
+ },
+ "models": {
+  "samsung-hera-z20": "HERA Z20",
+  "samsung-v8": "V8",
+  "samsung-r20": "R20",
+  "samsung-v7": "V7",
+  "samsung-v6": "V6",
+  "samsung-v5": "V5",
+  "samsung-v4": "V4"
+ },
+ "_todo": "When the R20 radiology article goes live (scheduled 13 Nov), put samsung-r20-radiology-institutes-hospitals first in guides.samsung-r20 and rerun scripts/framer/model-extras.mjs."
+}
