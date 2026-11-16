@@ -65,3 +65,8 @@ Nothing to request until the re-publish, otherwise Google fetches the machine Ge
 | 30 Nov | Probe pages for V8, R20, V7 after Jean's probe list (docs/13) | us |
 
 Decision still open from October: the legacy news posts (English only under DE/FR/IT) are now back on their English slugs. Translate, archive or noindex is the client's call; whichever it is, slugs change only together with redirects.
+
+## 16 Nov: Search Console page indexing and sitemap check
+- Search Console (domain property meditron.ch, data 11 Nov): 1K indexed (401 on 26 Oct), 27.6K not indexed. Crawled – currently not indexed 24,511; Duplicate without user-selected canonical 2,502; Discovered – not indexed 190; 404 120; noindex 108; alternate with canonical 107; redirect 29; 5xx 1. The domain property includes legacy.meditron.ch, which still serves the old Joomla site (robots.txt 200 on 16 Nov), so the large rows are expected to be old-site URLs; to confirm from the row examples.
+- Sitemap check 16 Nov: index lists sitemap_en/de/fr/it.xml, 258 URLs each, 1,032 in total, no duplicates, every URL 200, self-canonical, none noindex. The earlier "German slugs in the EN sitemap" issue is gone. Production still unpublished since 11 Nov (live hub title old).
+- Removal of the old site from Google: Search Console Removals → prefix https://legacy.meditron.ch/ and http://legacy.meditron.ch/ (temporary, about six months); permanent fix remains the 301 from legacy.meditron.ch to www at the hosting provider.
