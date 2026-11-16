@@ -5,7 +5,13 @@
 **What we need, in one sentence:**
 Please set up a permanent (301) redirect so that every page on **legacy.meditron.ch** goes to **https://www.meditron.ch**, keeping the rest of the address.
 
-**Why:** the old website is still online. Google keeps reading its 24,000 old pages, and that holds back the new website.
+**Why it matters:**
+- **Old links count again.** A few other websites still link to pages on the old site. Today those links lead to an outdated site, so their value is lost. With the redirect, Google passes that value to the new website.
+- **Visitors land in the right place.** Anyone with an old bookmark or old link currently sees the old website, with outdated products and information. After the redirect they land on the current page.
+- **Google stops spending time on the old site.** Google keeps reading the old site's pages (Search Console lists about 24,000 pages it read but did not index, most likely the old site's), including old error pages it once indexed. After the redirect it focuses on the new site.
+- **Cleaner Search Console reports.** The "not indexed" figure will fall over a few weeks, so real problems on the new site become visible.
+
+**What it will not do:** it will not jump the new website up the rankings on its own. The old site does not appear in the 20 Google searches we track, so it is not competing with the new pages there. It is housekeeping that removes a drag; the ranking work happens on the new site.
 
 **Steps for the technical person (pick one):**
 
