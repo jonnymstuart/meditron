@@ -16,7 +16,7 @@ interface SchemaJsonLdProps {
 const SITE = "https://www.meditron.ch"
 
 /**
- * Emits JSON-LD (Product / Article / BreadcrumbList) for the current CMS item. Renders nothing visible.
+ * Emits JSON-LD (MedicalDevice / Article / BreadcrumbList) for the current CMS item. Renders nothing visible.
  * @framerSupportedLayoutWidth fixed
  * @framerSupportedLayoutHeight fixed
  */
@@ -36,16 +36,18 @@ export default function SchemaJsonLd(props: SchemaJsonLdProps) {
         },
     ]
     if (kind === "product" && name) {
+        // MedicalDevice, not Product. Google's product snippets require offers, review or aggregateRating on a Product
+        // (Search Console marks it critical otherwise). Meditron publishes no prices and has no reviews to mark up, so a
+        // Product type always fails. MedicalDevice carries the same facts without merchant requirements.
+        const fullName = brand && !name.toLowerCase().startsWith(brand.toLowerCase()) ? `${brand} ${name}` : name
         graph.push({
-            "@type": "Product",
-            name,
+            "@type": "MedicalDevice",
+            "@id": url + "#device",
+            name: fullName,
             description: description || undefined,
             image: image?.src ? [image.src] : undefined,
-            brand: brand ? { "@type": "Brand", name: brand } : undefined,
-            category: category || undefined,
             url,
-            // No Offer: Google requires a numeric price on Offer (Search Console "Either price or priceSpecification.price
-            // should be specified"), and Meditron quotes per configuration. Product without offers is valid, warnings only.
+            subjectOf: { "@type": "WebPage", "@id": url, url },
         })
     }
     if (kind === "article" && name) {
