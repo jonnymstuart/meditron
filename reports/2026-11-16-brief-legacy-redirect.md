@@ -1,19 +1,28 @@
-# Brief: redirect the old website legacy.meditron.ch
+# Request: switch off the old website (legacy.meditron.ch)
 
-**For:** whoever manages Meditron's old web hosting or the meditron.ch domain (DNS). Meditron IT or their hosting provider.
+**Who should do this:** whoever looks after Meditron's old website or the meditron.ch domain. That is usually your IT person or your web hosting company. If you are not sure, forward this email to the company that sends the invoice for the old website or the domain.
 
-**What:** send every address on legacy.meditron.ch, http and https, permanently (301) to the same path on https://www.meditron.ch.
-Example: legacy.meditron.ch/ultrasound/ → www.meditron.ch/ultrasound/. The new site already forwards each old path to the right new page.
+**What we need, in one sentence:**
+Please set up a permanent (301) redirect so that every page on **legacy.meditron.ch** goes to **https://www.meditron.ch**, keeping the rest of the address.
 
-**Why:** the old site is still online, and Google still crawls about 24,000 of its pages. This holds back the new site in search.
+**Why:** the old website is still online. Google keeps reading its 24,000 old pages, and that holds back the new website.
 
-**How (one of these):**
-1. On the old server (Apache), at the top of `.htaccess`:
-   ```
-   RewriteEngine On
-   RewriteCond %{HTTP_HOST} ^legacy\.meditron\.ch$ [NC]
-   RewriteRule ^(.*)$ https://www.meditron.ch/$1 [R=301,L]
-   ```
-2. Or at the domain/DNS provider: set a permanent (301) forwarding for legacy.meditron.ch to https://www.meditron.ch, keeping the path.
+**Steps for the technical person (pick one):**
 
-**Done when:** opening https://legacy.meditron.ch/ultrasound/ lands on the new Samsung ultrasound page on www.meditron.ch. About 15 minutes of work.
+Option A – on the old web server (the Joomla site, Apache):
+1. Open the file called `.htaccess` in the main folder of the old website.
+2. Paste these three lines at the very top and save:
+```
+RewriteEngine On
+RewriteCond %{HTTP_HOST} ^legacy\.meditron\.ch$ [NC]
+RewriteRule ^(.*)$ https://www.meditron.ch/$1 [R=301,L]
+```
+
+Option B – at the domain company (DNS):
+1. Log in where the meditron.ch domain is managed.
+2. Find "legacy.meditron.ch" and create a "permanent redirect / 301 forwarding" to `https://www.meditron.ch`, with "keep path" (or "forward path") switched on.
+
+**How to check it worked (anyone can do this):**
+Open https://legacy.meditron.ch/ultrasound/ in a browser. It should jump to the new website and show the Samsung ultrasound page. If you still see the old website, it is not done yet.
+
+**Time needed:** about 15 minutes. Nothing changes on the new website.
