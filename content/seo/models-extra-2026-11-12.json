@@ -40,8 +40,8 @@
    "which-samsung-ultrasound-system-for-my-practice"
   ],
   "samsung-r20": [
-   "samsung-ultrasound-service-training-warranty-switzerland",
-   "samsung-ultrasound-price-switzerland"
+   "samsung-r20-radiology-institutes-hospitals",
+   "samsung-ultrasound-service-training-warranty-switzerland"
   ],
   "samsung-v7": [
    "samsung-v7-vs-v6-vs-v5",
@@ -68,6 +68,5 @@
   "samsung-v6": "V6",
   "samsung-v5": "V5",
   "samsung-v4": "V4"
- },
- "_todo": "When the R20 radiology article goes live (scheduled 13 Nov), put samsung-r20-radiology-institutes-hospitals first in guides.samsung-r20 and rerun scripts/framer/model-extras.mjs."
+ }
 }
