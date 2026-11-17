@@ -13,7 +13,16 @@ Google Search Console, 7 September to 16 November 2026 (since the new website we
 - Average position in Google: 10.7.
 - The trend is up. In September the site appeared in Google about 50 to 100 times a day. Since early November it is 300 to 600 times a day, about five times more. Daily visits roughly doubled over the same period.
 
-{{RANKINGS}}
+Rankings in Swiss Google for the four target searches (DataForSEO, 17 November, best of three searches; 10 November in brackets):
+
+- "samsung ultraschall": position 6 (18)
+- "samsung ultrasound": position 8 (1)
+- "échographe samsung": position 8 (7)
+- "ecografo samsung": not in the top 50 (29)
+
+Positions are moving a lot this week. The same search returned position 6 once and 53 twice within an hour. That is normal for a few weeks after a large change to a website, and we published many changes on 16 November. Google has not yet re-read most of the updated pages, so we will judge the effect on the 24 November reading, once the pages are indexed.
+
+AI answers (ChatGPT, Gemini, Perplexity, 10 November): Meditron is named in 18 of 60 answers and cited as a source in 23, up from 20 in October.
 
 ## What we did since 10 November (all live)
 
@@ -42,7 +51,7 @@ Also: Google Analytics is on every page, the sitemap was checked, the overlappin
 
 ## What we do next
 
-1. Samsung ultrasound page, new layout: two columns and shorter lines, a "Which Samsung model for your practice?" guide by speciality, clearer price, financing and pre-owned options with a link to request an offer, and each model in the comparison table linked to its page. We will send a preview link before it goes live.
+1. Samsung ultrasound page, new layout (ready, goes live with the next publish): two columns with shorter lines, a "Which Samsung model for your practice?" guide by speciality, new, leasing and pre-owned options with a link to request an offer, and each model in the comparison table linked to its page. In all four languages.
 2. Ask Google to index the updated Samsung pages and confirm the product page fix in Search Console (Gabe).
 3. French: "échographe samsung" is the weakest of the four target searches. One French article and better French links to the Samsung page.
 4. Remaining clean-up: 330 short product descriptions that end in "…", the order of the Samsung models on the overview page, and new photos on six articles.
