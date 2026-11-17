@@ -2,7 +2,7 @@
 // ultrasound hub in EN/DE/FR/IT from content/seo/hub-ultrasound-2026-11-17.json. Links are localized
 // (locale prefix + the article's localized slug). Also rewrites the comparison table with model links and
 // a Format column, and trims the SEO intro to H2 + paragraph (Why / Price move to their own fields).
-// Also: button label/link fields per locale, product thumbnail in each table row.
+// Also: button labels per locale; a 24px product thumbnail column (content/seo/table-thumbs.json) left of the model name.
 // Usage: node scripts/framer/hub-redesign-content.mjs [--dry]
 import { withFramer } from "./lib.mjs";
 import { readFileSync } from "node:fs";
@@ -10,7 +10,7 @@ const C = JSON.parse(readFileSync(new URL("../../content/seo/hub-ultrasound-2026
 const L = { en: null, de: "C9aJRu34X", fr: "rRxiWhpq8", it: "D9HoCmqY1" };
 const PFX = { en: "", de: "/de", fr: "/fr", it: "/it" };
 export const NEW = { why: "Intro Side", guideIntro: "Guide Intro", guide: "Guide", priceIntro: "Price Intro", price: "Price Options" };
-const BTN = { guideLabel: ["Guide Button Label", "string"], guideLink: ["Guide Button Link", "link"], priceLabel: ["Price Button Label", "string"], priceLink: ["Price Button Link", "link"] };
+const BTN = { guideLabel: ["Guide Button Label", "string"], priceLabel: ["Price Button Label", "string"] };
 const esc = s => s.replace(/&/g, "&amp;").replace(/</g, "&lt;");
 await withFramer(async (f) => {
   const dry = process.argv.includes("--dry");
@@ -18,11 +18,10 @@ await withFramer(async (f) => {
   const news = await f.getCollection("WUGvbtwAI"); const slug = {};
   for (const i of await news.getItems()) for (const l of Object.keys(L)) slug[`${l}|${i.slug}`] = l === "en" ? i.slug : (i.slugByLocale?.[L[l]]?.value || i.slug);
   const fill = (html, l) => html.replace(/\{p\}/g, PFX[l]).replace(/\{a:([^}]+)\}/g, (_, s) => { const v = slug[`${l}|${s}`]; if (!v) throw new Error(`no article ${s}`); return v; });
-  const table = l => `<h3>${esc(C.table.heading[l])}</h3><table><thead><tr>${C.table.cols[l].map(c => `<th><p>${esc(c)}</p></th>`).join("")}</tr></thead><tbody>${
-    C.table.rows.map(([s, name, best, fmt, hi]) => `<tr><td>${thumb[s] ? `<img src="${thumb[s]}" alt="${esc(name)}">` : ""}<p><a href="${PFX[l]}/products/${s}">${esc(name)}</a></p></td><td><p>${esc(best[l])}</p></td><td><p>${esc(fmt[l])}</p></td><td><p>${esc(hi[l])}</p></td></tr>`).join("")}</tbody></table>`;
-  // Product thumbnails (Products field Thumbnail Dh60jX8lX)
-  const thumb = {};
-  for (const i of await (await f.getCollection("IGaxjVLL3")).getItems()) { const v = i.fieldData.Dh60jX8lX?.value; if (v) thumb[i.slug] = (v.url ?? v).split("?")[0] + "?scale-down-to=256"; }
+  // Product thumbnails: 24 × 24 px squares from table-thumbs.mjs, in their own first column (left of the name)
+  const thumb = JSON.parse(readFileSync(new URL("../../content/seo/table-thumbs.json", import.meta.url)));
+  const table = l => `<h3>${esc(C.table.heading[l])}</h3><table><thead><tr><th><p></p></th>${C.table.cols[l].map(c => `<th><p>${esc(c)}</p></th>`).join("")}</tr></thead><tbody>${
+    C.table.rows.map(([s, name, best, fmt, hi]) => `<tr><td>${thumb[s] ? `<img src="${thumb[s]}" alt="${esc(name)}">` : "<p></p>"}</td><td><p><a href="${PFX[l]}/products/${s}">${esc(name)}</a></p></td><td><p>${esc(best[l])}</p></td><td><p>${esc(fmt[l])}</p></td><td><p>${esc(hi[l])}</p></td></tr>`).join("")}</tbody></table>`;
   // Fields
   const sol = await f.getCollection("gZyqCZdng");
   let fields = await sol.getFields();
@@ -45,14 +44,11 @@ await withFramer(async (f) => {
     [id.priceIntro]: put(l => C.priceIntro[l]),
     [id.price]: put(l => fill(C.price[l], l)),
     [bid.guideLabel]: putT("string", l => C.buttons.guide.label[l]),
-    [bid.guideLink]: putT("link", l => fill(C.buttons.guide.href, l)),
     [bid.priceLabel]: putT("string", l => C.buttons.price.label[l]),
-    [bid.priceLink]: putT("link", l => fill(C.buttons.price.href, l)),
   };
   if (/<(strong|b)[\s>]/.test(JSON.stringify(fd))) throw new Error("bold found");
   console.log("DE guide sample:", fd[id.guide].valueByLocale[L.de].value.slice(0, 300));
   console.log("FR table sample:", fd.Lwudih0L8.valueByLocale[L.fr].value.slice(0, 400));
-  console.log("DE button link:", fd[bid.guideLink].valueByLocale[L.de].value, "| IT price link:", fd[bid.priceLink].valueByLocale[L.it].value);
   if (dry) return;
   const hub = (await sol.getItems()).find(i => i.slug === "ultrasound");
   await sol.addItems([{ id: hub.id, fieldData: fd }]);
