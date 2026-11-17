@@ -7,7 +7,7 @@ const RICH = ["R4BTWDCVh", "JnvQbqY0v", "zbg3y_eFj", "wNA8ZUOAA"];
 const strip = (h) => (h || "").replace(/<\/p>\s*<p[^>]*>/g, "\n\n").replace(/<br\s*\/?>/g, "\n").replace(/<[^>]+>/g, "").replace(/&nbsp;/g, " ").replace(/&amp;/g, "&").replace(/&#39;|&apos;/g, "'").replace(/&quot;/g, '"').replace(/[ \t]+/g, " ").trim();
 await withFramer(async (f) => {
   const col = await f.getCollection("IGaxjVLL3");
-  const T = Object.fromEntries((await col.getFields()).filter(x => /^FAQ Answer \d Text$/.test(x.name)).map(x => [Number(x.name[11]) - 1, x.id]));
+  const T = { 0: "NLA9rfXHq", 1: "JXW61ChTO", 2: "JpYVT2T5Q", 3: "CaUnY6FvZ" }; // field IDs (names carry length hints since 17 Nov)
   if (Object.keys(T).length !== 4) throw new Error("plain FAQ fields missing on this branch: " + JSON.stringify(T));
   const upd = [];
   for (const i of await col.getItems()) {
