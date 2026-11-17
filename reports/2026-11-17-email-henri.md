@@ -21,7 +21,7 @@ What we do next:
 - Tidy the remaining product descriptions and article photos.
 
 What we need from you:
-1. Who manages your hosting or the meditron.ch domain, so Gabe can redirect the old site legacy.meditron.ch to the new one.
+1. Retiring the old website: legacy.meditron.ch is still online and Google still reads it. Please tell us who manages your hosting or the meditron.ch domain, so Gabe can arrange a permanent redirect to the new site with them. It takes about 15 minutes on their side. The briefing explains what to do, why it matters and how to check it: https://docs.google.com/document/d/1V2CJQJyIq87IIwGDxhrdHKDbF4ZPWYHKPlbHC2W2AW4/edit
 2. Names, photos and regions of your application specialists, and 2 or 3 customers who would give a short quote.
 3. The service facts you can promise in writing (repair response time, loan systems, training included).
 4. Which of the two RIIDEye X/M entries in the product list we should hide.
