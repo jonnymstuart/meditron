@@ -1,23 +1,33 @@
-// 24 × 24 px square thumbnails of the seven Samsung models for the hub comparison table (rich-text images render at
-// their natural size, so the file itself must be small). Source: Products field Thumbnail (Dh60jX8lX); ImageMagick trims
-// the transparent margin, fits the product into a square with transparent padding and resizes. Uploads to Framer and
-// writes the URLs to content/seo/table-thumbs.json. Usage: node scripts/framer/table-thumbs.mjs
+// Square white thumbnails of the seven Samsung models for the hub comparison table. Rich-text images render at their
+// natural size (the editor ignores site CSS), so the file itself carries the geometry, measured on a 1:1 canvas crop
+// (18 Nov): the model name's ink runs from 3px below the cell top (cap line of line 1) to the baseline of line 2,
+// 34px in total. File = transparent band of OFFSET px, then a SIZE × SIZE white square with the product (cut-out from
+// Products field Thumbnail Dh60jX8lX) trimmed and centred with ~12% padding, corners rounded (--radius, default 2px). With --2x the file is drawn at double
+// resolution and named @2x (Framer then shows it at half size). Writes content/seo/table-thumbs.json.
+// Usage: node scripts/framer/table-thumbs.mjs [--size 34] [--offset 3] [--radius 2] [--2x]
 import { withFramer } from "./lib.mjs";
 import { execFileSync } from "node:child_process";
 import { mkdtempSync, readFileSync, writeFileSync } from "node:fs";
 import { tmpdir } from "node:os";
-const SIZE = 24, MODELS = ["samsung-hera-z20", "samsung-r20", "samsung-v8", "samsung-v7", "samsung-v6", "samsung-v5", "samsung-v4"];
+const arg = (k, d) => { const i = process.argv.indexOf(k); return i > 0 ? Number(process.argv[i + 1]) : d; };
+const X = process.argv.includes("--2x") ? 2 : 1, SIZE = arg("--size", 34) * X, OFFSET = arg("--offset", 3) * X, RADIUS = arg("--radius", 2) * X, INNER = Math.round(SIZE * 0.76);
+const MODELS = ["samsung-hera-z20", "samsung-r20", "samsung-v8", "samsung-v7", "samsung-v6", "samsung-v5", "samsung-v4"];
 const dir = mkdtempSync(tmpdir() + "/thumbs-");
 await withFramer(async (f) => {
   const items = await (await f.getCollection("IGaxjVLL3")).getItems(); const out = {};
   for (const slug of MODELS) {
     const v = items.find(i => i.slug === slug)?.fieldData.Dh60jX8lX?.value; const src = (v?.url ?? v).split("?")[0];
-    const raw = `${dir}/${slug}-src`, png = `${dir}/${slug}-${SIZE}.png`;
+    const raw = `${dir}/${slug}-src`, png = `${dir}/${slug}.png`;
     writeFileSync(raw, Buffer.from(await (await fetch(src)).arrayBuffer()));
-    execFileSync("convert", [raw, "-trim", "+repage", "-resize", `${SIZE}x${SIZE}`, "-background", "none", "-gravity", "center", "-extent", `${SIZE}x${SIZE}`, png]);
-    const img = await f.uploadImage({ image: { bytes: new Uint8Array(readFileSync(png)), mimeType: "image/png" }, name: `${slug}-thumb-${SIZE}.png`, altText: slug });
+    execFileSync("convert", [raw, "-trim", "+repage", "-resize", `${INNER}x${INNER}`,
+      "-background", "white", "-gravity", "center", "-extent", `${SIZE}x${SIZE}`, "-flatten",
+      "(", "-size", `${SIZE}x${SIZE}`, "xc:none", "-fill", "white", "-draw", `roundrectangle 0,0,${SIZE - 1},${SIZE - 1},${RADIUS},${RADIUS}`, ")",
+      "-compose", "DstIn", "-composite", "-compose", "Over",
+      "-background", "none", "-gravity", "south", "-extent", `${SIZE}x${SIZE + OFFSET}`, png]);
+    const name = `${slug}-table-${SIZE / X}${X === 2 ? "@2x" : ""}.png`;
+    const img = await f.uploadImage({ image: { bytes: new Uint8Array(readFileSync(png)), mimeType: "image/png" }, name, altText: slug });
     out[slug] = img.url.split("?")[0];
-    console.log(slug, execFileSync("identify", ["-format", "%wx%h", png]).toString(), out[slug]);
+    console.log(slug, execFileSync("identify", ["-format", "%wx%h", png]).toString(), name, out[slug]);
   }
   writeFileSync(new URL("../../content/seo/table-thumbs.json", import.meta.url), JSON.stringify(out, null, 1));
 });
