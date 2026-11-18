@@ -1,0 +1,863 @@
+{
+ "_note": "Other four hubs, 18 Nov 2026: same structure as the Samsung hub (intro + Why Meditron, product comparison, offer row). Facts only from each product's CMS description and Meditron facts (since 1991, Rolle and Frauenfeld, DE/FR/IT). No 'official distributor' claim (only confirmed for Samsung). No prices, no bold. Client proofreads all languages.",
+ "hubs": {
+  "radiotherapy": {
+   "intro": {
+    "en": "<h2>Radiotherapy QA and patient positioning in Switzerland</h2><p>Meditron supplies dosimetry, quality assurance and patient immobilisation for radiotherapy in Switzerland: Standard Imaging electrometers and QA devices, Diagnomatic phantoms, Gafchromic films and Orfit positioning systems. We advise and support you from Rolle and Frauenfeld, in German, French and Italian.</p>",
+    "de": "<h2>Strahlentherapie: QA und Patientenlagerung in der Schweiz</h2><p>Meditron liefert Dosimetrie, Qualitätssicherung und Patientenfixierung für die Strahlentherapie in der Schweiz: Elektrometer und QA-Geräte von Standard Imaging, Phantome von Diagnomatic, Gafchromic-Filme und Lagerungssysteme von Orfit. Wir beraten und betreuen Sie aus Rolle und Frauenfeld, auf Deutsch, Französisch und Italienisch.</p>",
+    "fr": "<h2>Radiothérapie : QA et positionnement des patients en Suisse</h2><p>Meditron fournit dosimétrie, assurance qualité et immobilisation des patients pour la radiothérapie en Suisse : électromètres et dispositifs de QA Standard Imaging, fantômes Diagnomatic, films Gafchromic et systèmes de positionnement Orfit. Nous vous conseillons et vous accompagnons depuis Rolle et Frauenfeld, en français, allemand et italien.</p>",
+    "it": "<h2>Radioterapia: QA e posizionamento del paziente in Svizzera</h2><p>Meditron fornisce dosimetria, garanzia di qualità e immobilizzazione del paziente per la radioterapia in Svizzera: elettrometri e dispositivi QA Standard Imaging, fantocci Diagnomatic, pellicole Gafchromic e sistemi di posizionamento Orfit. Vi consigliamo e assistiamo da Rolle e Frauenfeld, in italiano, tedesco e francese.</p>"
+   },
+   "heading": {
+    "en": "Radiotherapy products compared",
+    "de": "Strahlentherapie-Produkte im Vergleich",
+    "fr": "Produits de radiothérapie comparés",
+    "it": "Prodotti per radioterapia a confronto"
+   },
+   "rows": [
+    [
+     "max-4000-plus-electrometer",
+     "MAX 4000 Plus",
+     {
+      "en": "Dosimetry in all radiotherapy applications",
+      "de": "Dosimetrie für alle Strahlentherapie-Anwendungen",
+      "fr": "Dosimétrie pour toutes les applications de radiothérapie",
+      "it": "Dosimetria per tutte le applicazioni di radioterapia"
+     },
+     {
+      "en": "Reference-grade electrometer",
+      "de": "Referenz-Elektrometer",
+      "fr": "Électromètre de référence",
+      "it": "Elettrometro di riferimento"
+     },
+     {
+      "en": "External beam, diagnostic X-ray, mammography and brachytherapy",
+      "de": "Externe Bestrahlung, Röntgendiagnostik, Mammografie und Brachytherapie",
+      "fr": "Faisceaux externes, radiologie diagnostique, mammographie et curiethérapie",
+      "it": "Fasci esterni, radiologia diagnostica, mammografia e brachiterapia"
+     }
+    ],
+    [
+     "qa-beamchecker-pro",
+     "QA BeamChecker Pro",
+     {
+      "en": "Daily linac checks",
+      "de": "Tägliche Linac-Kontrollen",
+      "fr": "Contrôles quotidiens des accélérateurs",
+      "it": "Controlli giornalieri dei linac"
+     },
+     {
+      "en": "Daily QA device",
+      "de": "Gerät für die tägliche QA",
+      "fr": "Dispositif de QA quotidienne",
+      "it": "Dispositivo per QA giornaliera"
+     },
+     {
+      "en": "Automatic energy detection, standalone, Wi-Fi",
+      "de": "Automatische Energieerkennung, eigenständig, WLAN",
+      "fr": "Détection automatique de l'énergie, autonome, Wi-Fi",
+      "it": "Rilevamento automatico dell'energia, autonomo, Wi-Fi"
+     }
+    ],
+    [
+     "qa-stereochecker",
+     "QA StereoChecker",
+     {
+      "en": "Daily CyberKnife QA",
+      "de": "Tägliche CyberKnife-QA",
+      "fr": "QA quotidienne CyberKnife",
+      "it": "QA giornaliera CyberKnife"
+     },
+     {
+      "en": "Filmless QA system",
+      "de": "Filmloses QA-System",
+      "fr": "Système de QA sans film",
+      "it": "Sistema QA senza pellicola"
+     },
+     {
+      "en": "For physicists and radiation therapists",
+      "de": "Für Medizinphysik und Fachpersonen MTR",
+      "fr": "Pour physiciens et TRM",
+      "it": "Per fisici e TRM"
+     }
+    ],
+    [
+     "pro-rt-ctsim",
+     "Pro-RT CTsim",
+     {
+      "en": "Quality control of CT simulators",
+      "de": "Qualitätskontrolle von CT-Simulatoren",
+      "fr": "Contrôle qualité des CT de simulation",
+      "it": "Controllo qualità dei CT simulatori"
+     },
+     {
+      "en": "Phantom",
+      "de": "Phantom",
+      "fr": "Fantôme",
+      "it": "Fantoccio"
+     },
+     {
+      "en": "Checks the CT, simulation software and laser marking",
+      "de": "Prüft CT, Simulationssoftware und Lasermarkierung",
+      "fr": "Contrôle le CT, le logiciel de simulation et les lasers",
+      "it": "Verifica CT, software di simulazione e laser"
+     }
+    ],
+    [
+     "gafchromic-ebt4-radiotherapy-films",
+     "Gafchromic EBT4",
+     {
+      "en": "Dose measurement in radiotherapy",
+      "de": "Dosismessung in der Strahlentherapie",
+      "fr": "Mesure de dose en radiothérapie",
+      "it": "Misura della dose in radioterapia"
+     },
+     {
+      "en": "Radiochromic film",
+      "de": "Radiochromer Film",
+      "fr": "Film radiochromique",
+      "it": "Pellicola radiocromica"
+     },
+     {
+      "en": "Fast, highly accurate measurements",
+      "de": "Schnelle, hochgenaue Messungen",
+      "fr": "Mesures rapides et très précises",
+      "it": "Misure rapide e molto accurate"
+     }
+    ],
+    [
+     "the-aio-solution-3.0",
+     "Orfit AIO Solution 3.0",
+     {
+      "en": "Positioning and immobilisation of all body regions",
+      "de": "Lagerung und Fixierung aller Körperregionen",
+      "fr": "Positionnement et immobilisation de toutes les régions du corps",
+      "it": "Posizionamento e immobilizzazione di tutte le parti del corpo"
+     },
+     {
+      "en": "Modular immobilisation system",
+      "de": "Modulares Fixierungssystem",
+      "fr": "Système d'immobilisation modulaire",
+      "it": "Sistema di immobilizzazione modulare"
+     },
+     {
+      "en": "One base plate, cushions and thermoplastic masks",
+      "de": "Eine Grundplatte, Kissen und thermoplastische Masken",
+      "fr": "Une plaque de base, des coussins et des masques thermoplastiques",
+      "it": "Una base, cuscini e maschere termoplastiche"
+     }
+    ],
+    [
+     "srs-solution",
+     "Orfit SRS Solution",
+     {
+      "en": "Stereotactic radiosurgery",
+      "de": "Stereotaktische Radiochirurgie",
+      "fr": "Radiochirurgie stéréotaxique",
+      "it": "Radiochirurgia stereotassica"
+     },
+     {
+      "en": "Immobilisation system",
+      "de": "Fixierungssystem",
+      "fr": "Système d'immobilisation",
+      "it": "Sistema di immobilizzazione"
+     },
+     {
+      "en": "Precise, stable fixation, standard or customised",
+      "de": "Präzise, stabile Fixierung, Standard oder individuell",
+      "fr": "Fixation précise et stable, standard ou sur mesure",
+      "it": "Fissaggio preciso e stabile, standard o personalizzato"
+     }
+    ]
+   ],
+   "why": {
+    "en": "<h3>Why Meditron</h3><h4>More than 30 years in Switzerland</h4><p>Meditron has supplied medical technology in Switzerland since 1991.</p><h4>Advice before you buy</h4><p>We help you choose the right product for your application.</p><h4>Support in your language</h4><p>From Rolle and Frauenfeld, in German, French and Italian.</p>",
+    "de": "<h3>Warum Meditron</h3><h4>Über 30 Jahre in der Schweiz</h4><p>Meditron liefert seit 1991 Medizintechnik in der Schweiz.</p><h4>Beratung vor dem Kauf</h4><p>Wir helfen Ihnen, das passende Produkt für Ihre Anwendung zu wählen.</p><h4>Betreuung in Ihrer Sprache</h4><p>Aus Rolle und Frauenfeld, auf Deutsch, Französisch und Italienisch.</p>",
+    "fr": "<h3>Pourquoi Meditron</h3><h4>Plus de 30 ans en Suisse</h4><p>Meditron fournit des technologies médicales en Suisse depuis 1991.</p><h4>Des conseils avant l'achat</h4><p>Nous vous aidons à choisir le bon produit pour votre application.</p><h4>Un accompagnement dans votre langue</h4><p>Depuis Rolle et Frauenfeld, en français, allemand et italien.</p>",
+    "it": "<h3>Perché Meditron</h3><h4>Oltre 30 anni in Svizzera</h4><p>Meditron fornisce tecnologia medica in Svizzera dal 1991.</p><h4>Consulenza prima dell'acquisto</h4><p>Vi aiutiamo a scegliere il prodotto giusto per la vostra applicazione.</p><h4>Assistenza nella vostra lingua</h4><p>Da Rolle e Frauenfeld, in italiano, tedesco e francese.</p>"
+   },
+   "priceIntro": {
+    "en": "<h3>Offer and advice</h3><p>Prices depend on the configuration and accessories you need, so we quote rather than list prices.</p>",
+    "de": "<h3>Offerte und Beratung</h3><p>Der Preis hängt von Konfiguration und Zubehör ab. Darum nennen wir keine Listenpreise, sondern erstellen eine Offerte.</p>",
+    "fr": "<h3>Offre et conseil</h3><p>Le prix dépend de la configuration et des accessoires : nous établissons donc une offre plutôt qu'un prix catalogue.</p>",
+    "it": "<h3>Offerta e consulenza</h3><p>Il prezzo dipende dalla configurazione e dagli accessori: per questo prepariamo un'offerta invece di un prezzo di listino.</p>"
+   },
+   "price": {
+    "en": "<h4>Written offer</h4><p>Tell us your application and we send you a written offer.</p><h4>Product advice</h4><p>We help you compare models and accessories before you decide.</p>",
+    "de": "<h4>Schriftliche Offerte</h4><p>Nennen Sie uns Ihre Anwendung, und wir senden Ihnen eine schriftliche Offerte.</p><h4>Produktberatung</h4><p>Wir helfen Ihnen, Modelle und Zubehör vor dem Entscheid zu vergleichen.</p>",
+    "fr": "<h4>Offre écrite</h4><p>Décrivez-nous votre application et nous vous envoyons une offre écrite.</p><h4>Conseil produit</h4><p>Nous vous aidons à comparer modèles et accessoires avant de décider.</p>",
+    "it": "<h4>Offerta scritta</h4><p>Indicateci la vostra applicazione e vi inviamo un'offerta scritta.</p><h4>Consulenza sui prodotti</h4><p>Vi aiutiamo a confrontare modelli e accessori prima di decidere.</p>"
+   },
+   "labels": [
+    {
+     "en": "Product",
+     "de": "Produkt",
+     "fr": "Produit",
+     "it": "Prodotto"
+    },
+    {
+     "en": "Used for",
+     "de": "Einsatz",
+     "fr": "Usage",
+     "it": "Uso"
+    },
+    {
+     "en": "Type",
+     "de": "Typ",
+     "fr": "Type",
+     "it": "Tipo"
+    },
+    {
+     "en": "Highlights",
+     "de": "Merkmale",
+     "fr": "Points forts",
+     "it": "Caratteristiche"
+    }
+   ],
+   "priceLabel": {
+    "en": "Request an offer",
+    "de": "Offerte anfragen",
+    "fr": "Demander une offre",
+    "it": "Richiedere un'offerta"
+   }
+  },
+  "radiology": {
+   "intro": {
+    "en": "<h2>Radiology QA and radiation protection in Switzerland</h2><p>Meditron supplies quality-control phantoms, X-ray test meters and radiation protection for radiology in Switzerland: Diagnomatic phantoms for mammography, dental CT and X-ray, RTI meters and MDT protective wear. We advise and support you from Rolle and Frauenfeld, in German, French and Italian.</p>",
+    "de": "<h2>Radiologie: QA und Strahlenschutz in der Schweiz</h2><p>Meditron liefert Phantome für die Qualitätskontrolle, Röntgen-Messgeräte und Strahlenschutz für die Radiologie in der Schweiz: Phantome von Diagnomatic für Mammografie, Dental-CT und Röntgen, Messgeräte von RTI und Schutzkleidung von MDT. Wir beraten und betreuen Sie aus Rolle und Frauenfeld, auf Deutsch, Französisch und Italienisch.</p>",
+    "fr": "<h2>Radiologie : QA et radioprotection en Suisse</h2><p>Meditron fournit fantômes de contrôle qualité, multimètres RX et radioprotection pour la radiologie en Suisse : fantômes Diagnomatic pour la mammographie, le CT dentaire et la radiologie, multimètres RTI et vêtements de protection MDT. Nous vous conseillons et vous accompagnons depuis Rolle et Frauenfeld, en français, allemand et italien.</p>",
+    "it": "<h2>Radiologia: QA e radioprotezione in Svizzera</h2><p>Meditron fornisce fantocci per il controllo qualità, multimetri per raggi X e radioprotezione per la radiologia in Svizzera: fantocci Diagnomatic per mammografia, CT dentale e radiologia, multimetri RTI e indumenti protettivi MDT. Vi consigliamo e assistiamo da Rolle e Frauenfeld, in italiano, tedesco e francese.</p>"
+   },
+   "heading": {
+    "en": "Radiology products compared",
+    "de": "Radiologie-Produkte im Vergleich",
+    "fr": "Produits de radiologie comparés",
+    "it": "Prodotti per radiologia a confronto"
+   },
+   "rows": [
+    [
+     "mako",
+     "RTI Mako",
+     {
+      "en": "X-ray QA testing",
+      "de": "QA-Prüfung von Röntgenanlagen",
+      "fr": "Contrôle qualité des installations RX",
+      "it": "Controllo qualità degli impianti RX"
+     },
+     {
+      "en": "X-ray test meter",
+      "de": "Röntgen-Messgerät",
+      "fr": "Multimètre RX",
+      "it": "Multimetro per raggi X"
+     },
+     {
+      "en": "Meter, display and Ocean Next software",
+      "de": "Messgerät, Display und Ocean-Next-Software",
+      "fr": "Appareil, écran et logiciel Ocean Next",
+      "it": "Strumento, display e software Ocean Next"
+     }
+    ],
+    [
+     "piranha",
+     "RTI Piranha",
+     {
+      "en": "X-ray QA testing",
+      "de": "QA-Prüfung von Röntgenanlagen",
+      "fr": "Contrôle qualité des installations RX",
+      "it": "Controllo qualità degli impianti RX"
+     },
+     {
+      "en": "X-ray test meter",
+      "de": "Röntgen-Messgerät",
+      "fr": "Multimètre RX",
+      "it": "Multimetro per raggi X"
+     },
+     {
+      "en": "Recognises the probe and chooses the settings",
+      "de": "Erkennt die Sonde und wählt die Einstellungen",
+      "fr": "Reconnaît la sonde et choisit les réglages",
+      "it": "Riconosce la sonda e sceglie le impostazioni"
+     }
+    ],
+    [
+     "pro-mam-gold-mk-ii",
+     "Pro-MAM Gold mk II",
+     {
+      "en": "Digital mammography QA",
+      "de": "QA in der digitalen Mammografie",
+      "fr": "QA en mammographie numérique",
+      "it": "QA in mammografia digitale"
+     },
+     {
+      "en": "Contrast-detail phantom",
+      "de": "Kontrast-Detail-Phantom",
+      "fr": "Fantôme contraste-détail",
+      "it": "Fantoccio contrasto-dettaglio"
+     },
+     {
+      "en": "According to the European Protocol",
+      "de": "Nach European Protocol",
+      "fr": "Selon le protocole européen",
+      "it": "Secondo il protocollo europeo"
+     }
+    ],
+    [
+     "pro-digimam",
+     "Pro-DigiMAM",
+     {
+      "en": "Digital mammography QA",
+      "de": "QA in der digitalen Mammografie",
+      "fr": "QA en mammographie numérique",
+      "it": "QA in mammografia digitale"
+     },
+     {
+      "en": "Phantom",
+      "de": "Phantom",
+      "fr": "Fantôme",
+      "it": "Fantoccio"
+     },
+     {
+      "en": "European Guidelines and IEC 61223-3-2",
+      "de": "European Guidelines und IEC 61223-3-2",
+      "fr": "European Guidelines et CEI 61223-3-2",
+      "it": "European Guidelines e IEC 61223-3-2"
+     }
+    ],
+    [
+     "pro-dent-ct-mk-ii",
+     "Pro-Dent CT mk II",
+     {
+      "en": "Quality control of dental CBCT",
+      "de": "Qualitätskontrolle von DVT",
+      "fr": "Contrôle qualité du CBCT dentaire",
+      "it": "Controllo qualità del CBCT dentale"
+     },
+     {
+      "en": "Modular phantom",
+      "de": "Modulares Phantom",
+      "fr": "Fantôme modulaire",
+      "it": "Fantoccio modulare"
+     },
+     {
+      "en": "According to SEDENTEXCT (Radiation Protection 172)",
+      "de": "Nach SEDENTEXCT (Radiation Protection 172)",
+      "fr": "Selon SEDENTEXCT (Radiation Protection 172)",
+      "it": "Secondo SEDENTEXCT (Radiation Protection 172)"
+     }
+    ],
+    [
+     "pro-hvl-cu",
+     "Pro-HVL Cu",
+     {
+      "en": "Half-value layer testing",
+      "de": "Prüfung der Halbwertschichtdicke",
+      "fr": "Mesure de la couche de demi-atténuation",
+      "it": "Misura dello strato emivalente"
+     },
+     {
+      "en": "High-purity copper plates",
+      "de": "Hochreine Kupferplatten",
+      "fr": "Plaques de cuivre haute pureté",
+      "it": "Piastre di rame ad alta purezza"
+     },
+     {
+      "en": "Different plate sets",
+      "de": "Verschiedene Plattensätze",
+      "fr": "Différents jeux de plaques",
+      "it": "Diversi set di piastre"
+     }
+    ],
+    [
+     "radioprotective-aprons",
+     "MDT radioprotective aprons",
+     {
+      "en": "Staff protection in interventional radiology",
+      "de": "Strahlenschutz für das Personal in der Intervention",
+      "fr": "Protection du personnel en radiologie interventionnelle",
+      "it": "Protezione del personale in radiologia interventistica"
+     },
+     {
+      "en": "X-ray apron",
+      "de": "Röntgenschürze",
+      "fr": "Tablier radioprotecteur",
+      "it": "Grembiule anti-X"
+     },
+     {
+      "en": "Lead composite or lead-free, adjustable belt",
+      "de": "Bleikomposit oder bleifrei, verstellbarer Gurt",
+      "fr": "Composite plombé ou sans plomb, ceinture réglable",
+      "it": "Composito al piombo o senza piombo, cintura regolabile"
+     }
+    ]
+   ],
+   "why": {
+    "en": "<h3>Why Meditron</h3><h4>More than 30 years in Switzerland</h4><p>Meditron has supplied medical technology in Switzerland since 1991.</p><h4>Advice before you buy</h4><p>We help you choose the right product for your application.</p><h4>Support in your language</h4><p>From Rolle and Frauenfeld, in German, French and Italian.</p>",
+    "de": "<h3>Warum Meditron</h3><h4>Über 30 Jahre in der Schweiz</h4><p>Meditron liefert seit 1991 Medizintechnik in der Schweiz.</p><h4>Beratung vor dem Kauf</h4><p>Wir helfen Ihnen, das passende Produkt für Ihre Anwendung zu wählen.</p><h4>Betreuung in Ihrer Sprache</h4><p>Aus Rolle und Frauenfeld, auf Deutsch, Französisch und Italienisch.</p>",
+    "fr": "<h3>Pourquoi Meditron</h3><h4>Plus de 30 ans en Suisse</h4><p>Meditron fournit des technologies médicales en Suisse depuis 1991.</p><h4>Des conseils avant l'achat</h4><p>Nous vous aidons à choisir le bon produit pour votre application.</p><h4>Un accompagnement dans votre langue</h4><p>Depuis Rolle et Frauenfeld, en français, allemand et italien.</p>",
+    "it": "<h3>Perché Meditron</h3><h4>Oltre 30 anni in Svizzera</h4><p>Meditron fornisce tecnologia medica in Svizzera dal 1991.</p><h4>Consulenza prima dell'acquisto</h4><p>Vi aiutiamo a scegliere il prodotto giusto per la vostra applicazione.</p><h4>Assistenza nella vostra lingua</h4><p>Da Rolle e Frauenfeld, in italiano, tedesco e francese.</p>"
+   },
+   "priceIntro": {
+    "en": "<h3>Offer and advice</h3><p>Prices depend on the configuration and accessories you need, so we quote rather than list prices.</p>",
+    "de": "<h3>Offerte und Beratung</h3><p>Der Preis hängt von Konfiguration und Zubehör ab. Darum nennen wir keine Listenpreise, sondern erstellen eine Offerte.</p>",
+    "fr": "<h3>Offre et conseil</h3><p>Le prix dépend de la configuration et des accessoires : nous établissons donc une offre plutôt qu'un prix catalogue.</p>",
+    "it": "<h3>Offerta e consulenza</h3><p>Il prezzo dipende dalla configurazione e dagli accessori: per questo prepariamo un'offerta invece di un prezzo di listino.</p>"
+   },
+   "price": {
+    "en": "<h4>Written offer</h4><p>Tell us your application and we send you a written offer.</p><h4>Product advice</h4><p>We help you compare models and accessories before you decide.</p>",
+    "de": "<h4>Schriftliche Offerte</h4><p>Nennen Sie uns Ihre Anwendung, und wir senden Ihnen eine schriftliche Offerte.</p><h4>Produktberatung</h4><p>Wir helfen Ihnen, Modelle und Zubehör vor dem Entscheid zu vergleichen.</p>",
+    "fr": "<h4>Offre écrite</h4><p>Décrivez-nous votre application et nous vous envoyons une offre écrite.</p><h4>Conseil produit</h4><p>Nous vous aidons à comparer modèles et accessoires avant de décider.</p>",
+    "it": "<h4>Offerta scritta</h4><p>Indicateci la vostra applicazione e vi inviamo un'offerta scritta.</p><h4>Consulenza sui prodotti</h4><p>Vi aiutiamo a confrontare modelli e accessori prima di decidere.</p>"
+   },
+   "labels": [
+    {
+     "en": "Product",
+     "de": "Produkt",
+     "fr": "Produit",
+     "it": "Prodotto"
+    },
+    {
+     "en": "Used for",
+     "de": "Einsatz",
+     "fr": "Usage",
+     "it": "Uso"
+    },
+    {
+     "en": "Type",
+     "de": "Typ",
+     "fr": "Type",
+     "it": "Tipo"
+    },
+    {
+     "en": "Highlights",
+     "de": "Merkmale",
+     "fr": "Points forts",
+     "it": "Caratteristiche"
+    }
+   ],
+   "priceLabel": {
+    "en": "Request an offer",
+    "de": "Offerte anfragen",
+    "fr": "Demander une offre",
+    "it": "Richiedere un'offerta"
+   }
+  },
+  "biomedical-testing": {
+   "intro": {
+    "en": "<h2>Biomedical test equipment in Switzerland</h2><p>Meditron supplies Datrend test equipment for clinical engineering in Switzerland: electrical safety analysers, patient simulators and analysers for infusion pumps, defibrillators and ventilators. We advise and support you from Rolle and Frauenfeld, in German, French and Italian.</p>",
+    "de": "<h2>Biomedizinische Prüfgeräte in der Schweiz</h2><p>Meditron liefert Prüfgeräte von Datrend für die Medizintechnik in der Schweiz: Analysatoren für die elektrische Sicherheit, Patientensimulatoren sowie Analysatoren für Infusionspumpen, Defibrillatoren und Beatmungsgeräte. Wir beraten und betreuen Sie aus Rolle und Frauenfeld, auf Deutsch, Französisch und Italienisch.</p>",
+    "fr": "<h2>Équipements de test biomédicaux en Suisse</h2><p>Meditron fournit les équipements de test Datrend pour le génie biomédical en Suisse : analyseurs de sécurité électrique, simulateurs patients et analyseurs pour pompes à perfusion, défibrillateurs et ventilateurs. Nous vous conseillons et vous accompagnons depuis Rolle et Frauenfeld, en français, allemand et italien.</p>",
+    "it": "<h2>Strumenti di test biomedicali in Svizzera</h2><p>Meditron fornisce gli strumenti di test Datrend per l'ingegneria clinica in Svizzera: analizzatori di sicurezza elettrica, simulatori paziente e analizzatori per pompe d'infusione, defibrillatori e ventilatori. Vi consigliamo e assistiamo da Rolle e Frauenfeld, in italiano, tedesco e francese.</p>"
+   },
+   "heading": {
+    "en": "Datrend test equipment compared",
+    "de": "Datrend-Prüfgeräte im Vergleich",
+    "fr": "Équipements de test Datrend comparés",
+    "it": "Strumenti di test Datrend a confronto"
+   },
+   "rows": [
+    [
+     "vpad-rugged-2-electrical-safety-analyser",
+     "vPad-Rugged 2",
+     {
+      "en": "Electrical safety and preventive maintenance",
+      "de": "Elektrische Sicherheit und Wartung",
+      "fr": "Sécurité électrique et maintenance préventive",
+      "it": "Sicurezza elettrica e manutenzione preventiva"
+     },
+     {
+      "en": "Electrical safety analyser",
+      "de": "Sicherheitsanalysator",
+      "fr": "Analyseur de sécurité électrique",
+      "it": "Analizzatore di sicurezza elettrica"
+     },
+     {
+      "en": "CMMS apps, automated maintenance routines",
+      "de": "CMMS-Apps, automatisierte Wartungsabläufe",
+      "fr": "Apps GMAO, routines de maintenance automatisées",
+      "it": "App CMMS, routine di manutenzione automatiche"
+     }
+    ],
+    [
+     "vpad-mini-electrical-safety-analyzer",
+     "vPad-Mini",
+     {
+      "en": "Basic electrical safety checks",
+      "de": "Elektrische Basisprüfungen",
+      "fr": "Contrôles de sécurité électrique de base",
+      "it": "Controlli di sicurezza elettrica di base"
+     },
+     {
+      "en": "Compact analyser",
+      "de": "Kompakter Analysator",
+      "fr": "Analyseur compact",
+      "it": "Analizzatore compatto"
+     },
+     {
+      "en": "All medical equipment, from beds to patient monitors",
+      "de": "Alle Medizingeräte, vom Bett bis zum Patientenmonitor",
+      "fr": "Tous les équipements, du lit au moniteur patient",
+      "it": "Tutte le apparecchiature, dal letto al monitor paziente"
+     }
+    ],
+    [
+     "vpad-a1-all-in-one-vital-signs-simulator",
+     "vPad-A1",
+     {
+      "en": "Patient monitor testing",
+      "de": "Prüfung von Patientenmonitoren",
+      "fr": "Test des moniteurs patients",
+      "it": "Test dei monitor paziente"
+     },
+     {
+      "en": "All-in-one vital signs simulator",
+      "de": "Vitalparameter-Simulator",
+      "fr": "Simulateur de signes vitaux tout-en-un",
+      "it": "Simulatore di parametri vitali all-in-one"
+     },
+     {
+      "en": "Multi-parameter, SpO2 and NIBP modules",
+      "de": "Module für Multiparameter, SpO2 und NIBP",
+      "fr": "Modules multiparamètres, SpO2 et PNI",
+      "it": "Moduli multiparametrici, SpO2 e NIBP"
+     }
+    ],
+    [
+     "vpad-iv-infusion-device-analyzer",
+     "vPad-IV",
+     {
+      "en": "Infusion pump testing",
+      "de": "Prüfung von Infusionspumpen",
+      "fr": "Test des pompes à perfusion",
+      "it": "Test delle pompe d'infusione"
+     },
+     {
+      "en": "Infusion device analyser",
+      "de": "Infusionsanalysator",
+      "fr": "Analyseur de perfusion",
+      "it": "Analizzatore per infusione"
+     },
+     {
+      "en": "Modular, 1 to 6 channels",
+      "de": "Modular, 1 bis 6 Kanäle",
+      "fr": "Modulaire, 1 à 6 canaux",
+      "it": "Modulare, da 1 a 6 canali"
+     }
+    ],
+    [
+     "defibrillator-and-multi-pacer-analyzer",
+     "vPad-DF",
+     {
+      "en": "Defibrillator, AED and pacemaker testing",
+      "de": "Prüfung von Defibrillatoren, AED und Schrittmachern",
+      "fr": "Test des défibrillateurs, DAE et stimulateurs",
+      "it": "Test di defibrillatori, DAE e pacemaker"
+     },
+     {
+      "en": "All-in-one analyser",
+      "de": "All-in-one-Analysator",
+      "fr": "Analyseur tout-en-un",
+      "it": "Analizzatore all-in-one"
+     },
+     {
+      "en": "Transcutaneous and transvenous pacemakers",
+      "de": "Transkutane und transvenöse Schrittmacher",
+      "fr": "Stimulateurs transcutanés et transveineux",
+      "it": "Pacemaker transcutanei e transvenosi"
+     }
+    ],
+    [
+     "ventest",
+     "venTest",
+     {
+      "en": "Ventilator and anaesthesia system testing",
+      "de": "Prüfung von Beatmungs- und Anästhesiegeräten",
+      "fr": "Test des ventilateurs et systèmes d'anesthésie",
+      "it": "Test di ventilatori e sistemi di anestesia"
+     },
+     {
+      "en": "Portable analyser",
+      "de": "Tragbarer Analysator",
+      "fr": "Analyseur portable",
+      "it": "Analizzatore portatile"
+     },
+     {
+      "en": "7-inch touch screen, rechargeable battery",
+      "de": "7-Zoll-Touchscreen, Akku",
+      "fr": "Écran tactile 7 pouces, batterie rechargeable",
+      "it": "Touchscreen da 7 pollici, batteria ricaricabile"
+     }
+    ]
+   ],
+   "why": {
+    "en": "<h3>Why Meditron</h3><h4>More than 30 years in Switzerland</h4><p>Meditron has supplied medical technology in Switzerland since 1991.</p><h4>Advice before you buy</h4><p>We help you choose the right product for your application.</p><h4>Support in your language</h4><p>From Rolle and Frauenfeld, in German, French and Italian.</p>",
+    "de": "<h3>Warum Meditron</h3><h4>Über 30 Jahre in der Schweiz</h4><p>Meditron liefert seit 1991 Medizintechnik in der Schweiz.</p><h4>Beratung vor dem Kauf</h4><p>Wir helfen Ihnen, das passende Produkt für Ihre Anwendung zu wählen.</p><h4>Betreuung in Ihrer Sprache</h4><p>Aus Rolle und Frauenfeld, auf Deutsch, Französisch und Italienisch.</p>",
+    "fr": "<h3>Pourquoi Meditron</h3><h4>Plus de 30 ans en Suisse</h4><p>Meditron fournit des technologies médicales en Suisse depuis 1991.</p><h4>Des conseils avant l'achat</h4><p>Nous vous aidons à choisir le bon produit pour votre application.</p><h4>Un accompagnement dans votre langue</h4><p>Depuis Rolle et Frauenfeld, en français, allemand et italien.</p>",
+    "it": "<h3>Perché Meditron</h3><h4>Oltre 30 anni in Svizzera</h4><p>Meditron fornisce tecnologia medica in Svizzera dal 1991.</p><h4>Consulenza prima dell'acquisto</h4><p>Vi aiutiamo a scegliere il prodotto giusto per la vostra applicazione.</p><h4>Assistenza nella vostra lingua</h4><p>Da Rolle e Frauenfeld, in italiano, tedesco e francese.</p>"
+   },
+   "priceIntro": {
+    "en": "<h3>Offer and advice</h3><p>Prices depend on the configuration and accessories you need, so we quote rather than list prices.</p>",
+    "de": "<h3>Offerte und Beratung</h3><p>Der Preis hängt von Konfiguration und Zubehör ab. Darum nennen wir keine Listenpreise, sondern erstellen eine Offerte.</p>",
+    "fr": "<h3>Offre et conseil</h3><p>Le prix dépend de la configuration et des accessoires : nous établissons donc une offre plutôt qu'un prix catalogue.</p>",
+    "it": "<h3>Offerta e consulenza</h3><p>Il prezzo dipende dalla configurazione e dagli accessori: per questo prepariamo un'offerta invece di un prezzo di listino.</p>"
+   },
+   "price": {
+    "en": "<h4>Written offer</h4><p>Tell us your application and we send you a written offer.</p><h4>Product advice</h4><p>We help you compare models and accessories before you decide.</p>",
+    "de": "<h4>Schriftliche Offerte</h4><p>Nennen Sie uns Ihre Anwendung, und wir senden Ihnen eine schriftliche Offerte.</p><h4>Produktberatung</h4><p>Wir helfen Ihnen, Modelle und Zubehör vor dem Entscheid zu vergleichen.</p>",
+    "fr": "<h4>Offre écrite</h4><p>Décrivez-nous votre application et nous vous envoyons une offre écrite.</p><h4>Conseil produit</h4><p>Nous vous aidons à comparer modèles et accessoires avant de décider.</p>",
+    "it": "<h4>Offerta scritta</h4><p>Indicateci la vostra applicazione e vi inviamo un'offerta scritta.</p><h4>Consulenza sui prodotti</h4><p>Vi aiutiamo a confrontare modelli e accessori prima di decidere.</p>"
+   },
+   "labels": [
+    {
+     "en": "Product",
+     "de": "Produkt",
+     "fr": "Produit",
+     "it": "Prodotto"
+    },
+    {
+     "en": "Used for",
+     "de": "Einsatz",
+     "fr": "Usage",
+     "it": "Uso"
+    },
+    {
+     "en": "Type",
+     "de": "Typ",
+     "fr": "Type",
+     "it": "Tipo"
+    },
+    {
+     "en": "Highlights",
+     "de": "Merkmale",
+     "fr": "Points forts",
+     "it": "Caratteristiche"
+    }
+   ],
+   "priceLabel": {
+    "en": "Request an offer",
+    "de": "Offerte anfragen",
+    "fr": "Demander une offre",
+    "it": "Richiedere un'offerta"
+   }
+  },
+  "industrial-solutions": {
+   "intro": {
+    "en": "<h2>Radiation detection and dosimetry in Switzerland</h2><p>Meditron supplies Thermo Scientific radiation detection instruments in Switzerland: personal detectors and dosimeters, survey meters, isotope identifiers and TLD readers. We advise and support you from Rolle and Frauenfeld, in German, French and Italian.</p>",
+    "de": "<h2>Strahlungsdetektion und Dosimetrie in der Schweiz</h2><p>Meditron liefert Strahlungsmessgeräte von Thermo Scientific in der Schweiz: Personendetektoren und Dosimeter, Messgeräte, Isotopenidentifikatoren und TLD-Leser. Wir beraten und betreuen Sie aus Rolle und Frauenfeld, auf Deutsch, Französisch und Italienisch.</p>",
+    "fr": "<h2>Détection des rayonnements et dosimétrie en Suisse</h2><p>Meditron fournit les instruments de détection des rayonnements Thermo Scientific en Suisse : détecteurs et dosimètres personnels, radiamètres, identificateurs d'isotopes et lecteurs TLD. Nous vous conseillons et vous accompagnons depuis Rolle et Frauenfeld, en français, allemand et italien.</p>",
+    "it": "<h2>Rilevamento delle radiazioni e dosimetria in Svizzera</h2><p>Meditron fornisce gli strumenti di rilevamento delle radiazioni Thermo Scientific in Svizzera: rivelatori e dosimetri personali, misuratori, identificatori di isotopi e lettori TLD. Vi consigliamo e assistiamo da Rolle e Frauenfeld, in italiano, tedesco e francese.</p>"
+   },
+   "heading": {
+    "en": "Thermo Scientific instruments compared",
+    "de": "Thermo-Scientific-Messgeräte im Vergleich",
+    "fr": "Instruments Thermo Scientific comparés",
+    "it": "Strumenti Thermo Scientific a confronto"
+   },
+   "rows": [
+    [
+     "radeye-g-series-dose-rate-meters",
+     "RadEye G Series",
+     {
+      "en": "Personal gamma dose rate",
+      "de": "Persönliche Gamma-Dosisleistung",
+      "fr": "Débit de dose gamma personnel",
+      "it": "Rateo di dose gamma personale"
+     },
+     {
+      "en": "Personal radiation detector",
+      "de": "Persönlicher Strahlungsdetektor",
+      "fr": "Détecteur de rayonnement personnel",
+      "it": "Rivelatore personale di radiazioni"
+     },
+     {
+      "en": "Intrinsically safe",
+      "de": "Eigensicher",
+      "fr": "Sécurité intrinsèque",
+      "it": "A sicurezza intrinseca"
+     }
+    ],
+    [
+     "radeye-sprd-and-sprd-er-personal-radiation-detector",
+     "RadEye SPRD-ER",
+     {
+      "en": "Personal radiation detection",
+      "de": "Persönliche Strahlungsdetektion",
+      "fr": "Détection personnelle des rayonnements",
+      "it": "Rilevamento personale delle radiazioni"
+     },
+     {
+      "en": "Personal radiation detector",
+      "de": "Persönlicher Strahlungsdetektor",
+      "fr": "Détecteur de rayonnement personnel",
+      "it": "Rivelatore personale di radiazioni"
+     },
+     {
+      "en": "Very high dose rate range and accuracy",
+      "de": "Sehr hoher Dosisleistungsbereich und Genauigkeit",
+      "fr": "Très haute plage de débit de dose et précision",
+      "it": "Gamma di rateo di dose molto elevata e precisione"
+     }
+    ],
+    [
+     "fh-40-g-multi-purpose-digital-survey-meter",
+     "FH 40 G",
+     {
+      "en": "Radiation protection measurements",
+      "de": "Strahlenschutzmessungen",
+      "fr": "Mesures de radioprotection",
+      "it": "Misure di radioprotezione"
+     },
+     {
+      "en": "Multi-purpose digital survey meter",
+      "de": "Digitales Mehrzweck-Messgerät",
+      "fr": "Radiamètre numérique polyvalent",
+      "it": "Misuratore digitale multiuso"
+     },
+     {
+      "en": "Beta, X-ray and gamma detection",
+      "de": "Beta-, Röntgen- und Gammadetektion",
+      "fr": "Détection bêta, X et gamma",
+      "it": "Rilevamento beta, X e gamma"
+     }
+    ],
+    [
+     "riideye-series-isotope-identifiers",
+     "RIIDEye X/M",
+     {
+      "en": "Locating and identifying radioactive material",
+      "de": "Radioaktives Material finden und identifizieren",
+      "fr": "Localiser et identifier les matières radioactives",
+      "it": "Localizzare e identificare materiale radioattivo"
+     },
+     {
+      "en": "Handheld isotope identifier",
+      "de": "Handgehaltener Isotopenidentifikator",
+      "fr": "Identificateur d'isotopes portatif",
+      "it": "Identificatore di isotopi portatile"
+     },
+     {
+      "en": "Portable, rugged, field-ready",
+      "de": "Tragbar, robust, feldtauglich",
+      "fr": "Portable, robuste, prêt pour le terrain",
+      "it": "Portatile, robusto, pronto per il campo"
+     }
+    ],
+    [
+     "harshaw-tld-8800-plus-card-reader",
+     "Harshaw TLD 8800 Plus",
+     {
+      "en": "Large TLD dosimetry labs",
+      "de": "Grosse TLD-Dosimetrielabore",
+      "fr": "Grands laboratoires de dosimétrie TLD",
+      "it": "Grandi laboratori di dosimetria TLD"
+     },
+     {
+      "en": "Automatic card reader",
+      "de": "Automatischer Kartenleser",
+      "fr": "Lecteur de cartes automatique",
+      "it": "Lettore di schede automatico"
+     },
+     {
+      "en": "Whole-body, neutron and environmental cards",
+      "de": "Ganzkörper-, Neutronen- und Umgebungskarten",
+      "fr": "Cartes corps entier, neutrons et environnement",
+      "it": "Schede corpo intero, neutroni e ambientali"
+     }
+    ],
+    [
+     "epd-trudose-electronic-personal-dosimeter",
+     "EPD TruDose",
+     {
+      "en": "Staff dose monitoring",
+      "de": "Überwachung der Personendosis",
+      "fr": "Suivi de la dose du personnel",
+      "it": "Monitoraggio della dose del personale"
+     },
+     {
+      "en": "Electronic personal dosimeter",
+      "de": "Elektronisches Personendosimeter",
+      "fr": "Dosimètre personnel électronique",
+      "it": "Dosimetro personale elettronico"
+     },
+     {
+      "en": "Real-time dose information",
+      "de": "Dosisinformation in Echtzeit",
+      "fr": "Information de dose en temps réel",
+      "it": "Informazioni sulla dose in tempo reale"
+     }
+    ],
+    [
+     "packeye-radiation-detection-backpack",
+     "PackEye",
+     {
+      "en": "Searching for orphaned sources and contamination",
+      "de": "Suche nach herrenlosen Quellen und Kontamination",
+      "fr": "Recherche de sources orphelines et de contamination",
+      "it": "Ricerca di sorgenti orfane e contaminazione"
+     },
+     {
+      "en": "Radiation detection backpack",
+      "de": "Detektionsrucksack",
+      "fr": "Sac à dos de détection",
+      "it": "Zaino di rilevamento"
+     },
+     {
+      "en": "For survey teams",
+      "de": "Für Messteams",
+      "fr": "Pour les équipes de mesure",
+      "it": "Per squadre di misura"
+     }
+    ]
+   ],
+   "why": {
+    "en": "<h3>Why Meditron</h3><h4>More than 30 years in Switzerland</h4><p>Meditron has supplied medical technology in Switzerland since 1991.</p><h4>Advice before you buy</h4><p>We help you choose the right product for your application.</p><h4>Support in your language</h4><p>From Rolle and Frauenfeld, in German, French and Italian.</p>",
+    "de": "<h3>Warum Meditron</h3><h4>Über 30 Jahre in der Schweiz</h4><p>Meditron liefert seit 1991 Medizintechnik in der Schweiz.</p><h4>Beratung vor dem Kauf</h4><p>Wir helfen Ihnen, das passende Produkt für Ihre Anwendung zu wählen.</p><h4>Betreuung in Ihrer Sprache</h4><p>Aus Rolle und Frauenfeld, auf Deutsch, Französisch und Italienisch.</p>",
+    "fr": "<h3>Pourquoi Meditron</h3><h4>Plus de 30 ans en Suisse</h4><p>Meditron fournit des technologies médicales en Suisse depuis 1991.</p><h4>Des conseils avant l'achat</h4><p>Nous vous aidons à choisir le bon produit pour votre application.</p><h4>Un accompagnement dans votre langue</h4><p>Depuis Rolle et Frauenfeld, en français, allemand et italien.</p>",
+    "it": "<h3>Perché Meditron</h3><h4>Oltre 30 anni in Svizzera</h4><p>Meditron fornisce tecnologia medica in Svizzera dal 1991.</p><h4>Consulenza prima dell'acquisto</h4><p>Vi aiutiamo a scegliere il prodotto giusto per la vostra applicazione.</p><h4>Assistenza nella vostra lingua</h4><p>Da Rolle e Frauenfeld, in italiano, tedesco e francese.</p>"
+   },
+   "priceIntro": {
+    "en": "<h3>Offer and advice</h3><p>Prices depend on the configuration and accessories you need, so we quote rather than list prices.</p>",
+    "de": "<h3>Offerte und Beratung</h3><p>Der Preis hängt von Konfiguration und Zubehör ab. Darum nennen wir keine Listenpreise, sondern erstellen eine Offerte.</p>",
+    "fr": "<h3>Offre et conseil</h3><p>Le prix dépend de la configuration et des accessoires : nous établissons donc une offre plutôt qu'un prix catalogue.</p>",
+    "it": "<h3>Offerta e consulenza</h3><p>Il prezzo dipende dalla configurazione e dagli accessori: per questo prepariamo un'offerta invece di un prezzo di listino.</p>"
+   },
+   "price": {
+    "en": "<h4>Written offer</h4><p>Tell us your application and we send you a written offer.</p><h4>Product advice</h4><p>We help you compare models and accessories before you decide.</p>",
+    "de": "<h4>Schriftliche Offerte</h4><p>Nennen Sie uns Ihre Anwendung, und wir senden Ihnen eine schriftliche Offerte.</p><h4>Produktberatung</h4><p>Wir helfen Ihnen, Modelle und Zubehör vor dem Entscheid zu vergleichen.</p>",
+    "fr": "<h4>Offre écrite</h4><p>Décrivez-nous votre application et nous vous envoyons une offre écrite.</p><h4>Conseil produit</h4><p>Nous vous aidons à comparer modèles et accessoires avant de décider.</p>",
+    "it": "<h4>Offerta scritta</h4><p>Indicateci la vostra applicazione e vi inviamo un'offerta scritta.</p><h4>Consulenza sui prodotti</h4><p>Vi aiutiamo a confrontare modelli e accessori prima di decidere.</p>"
+   },
+   "labels": [
+    {
+     "en": "Product",
+     "de": "Produkt",
+     "fr": "Produit",
+     "it": "Prodotto"
+    },
+    {
+     "en": "Used for",
+     "de": "Einsatz",
+     "fr": "Usage",
+     "it": "Uso"
+    },
+    {
+     "en": "Type",
+     "de": "Typ",
+     "fr": "Type",
+     "it": "Tipo"
+    },
+    {
+     "en": "Highlights",
+     "de": "Merkmale",
+     "fr": "Points forts",
+     "it": "Caratteristiche"
+    }
+   ],
+   "priceLabel": {
+    "en": "Request an offer",
+    "de": "Offerte anfragen",
+    "fr": "Demander une offre",
+    "it": "Richiedere un'offerta"
+   }
+  }
+ }
+}
