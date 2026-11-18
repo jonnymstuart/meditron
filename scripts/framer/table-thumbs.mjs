@@ -4,7 +4,8 @@
 // 34px in total. File = transparent band of OFFSET px, then a SIZE × SIZE white square with the product (cut-out from
 // Products field Thumbnail Dh60jX8lX) trimmed and centred with ~12% padding, corners rounded (--radius, default 2px). With --2x the file is drawn at double
 // resolution and named @2x (Framer then shows it at half size). Writes content/seo/table-thumbs.json.
-// Usage: node scripts/framer/table-thumbs.mjs [--size 34] [--offset 3] [--radius 2] [--2x]
+// --cms also writes the tiles to the Products image field "Comparison Thumbnail" (used by comparison-layout.mjs; run with --offset 0).
+// Usage: node scripts/framer/table-thumbs.mjs [--size 34] [--offset 3] [--radius 2] [--2x] [--cms]
 import { withFramer } from "./lib.mjs";
 import { execFileSync } from "node:child_process";
 import { mkdtempSync, readFileSync, writeFileSync } from "node:fs";
@@ -30,4 +31,10 @@ await withFramer(async (f) => {
     console.log(slug, execFileSync("identify", ["-format", "%wx%h", png]).toString(), name, out[slug]);
   }
   writeFileSync(new URL("../../content/seo/table-thumbs.json", import.meta.url), JSON.stringify(out, null, 1));
+  if (process.argv.includes("--cms")) { // store the tiles in the Products image field "Comparison Thumbnail" (hub comparison layout)
+    const c = await f.getCollection("IGaxjVLL3"); let fl = (await c.getFields()).find(x => x.name === "Comparison Thumbnail");
+    if (!fl) { await c.addFields([{ type: "image", name: "Comparison Thumbnail" }]); fl = (await c.getFields()).find(x => x.name === "Comparison Thumbnail"); }
+    await c.addItems(MODELS.map(slug => ({ id: items.find(i => i.slug === slug).id, fieldData: { [fl.id]: { type: "image", value: out[slug], alt: "" } } })));
+    console.log("Comparison Thumbnail field:", fl.id);
+  }
 });

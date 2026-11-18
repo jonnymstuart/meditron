@@ -18,11 +18,9 @@ await withFramer(async (f) => {
   const news = await f.getCollection("WUGvbtwAI"); const slug = {};
   for (const i of await news.getItems()) for (const l of Object.keys(L)) slug[`${l}|${i.slug}`] = l === "en" ? i.slug : (i.slugByLocale?.[L[l]]?.value || i.slug);
   const fill = (html, l) => html.replace(/\{p\}/g, PFX[l]).replace(/\{a:([^}]+)\}/g, (_, s) => { const v = slug[`${l}|${s}`]; if (!v) throw new Error(`no article ${s}`); return v; });
-  // Product thumbnails from table-thumbs.mjs in their own first column, left of the name; the "Model" header sits over
-  // the thumbnail column so it reads as the heading for image and name together
-  const thumb = JSON.parse(readFileSync(new URL("../../content/seo/table-thumbs.json", import.meta.url)));
-  const table = l => `<h3>${esc(C.table.heading[l])}</h3><table><thead><tr><th><p>${esc(C.table.cols[l][0])}</p></th><th><p></p></th>${C.table.cols[l].slice(1).map(c => `<th><p>${esc(c)}</p></th>`).join("")}</tr></thead><tbody>${
-    C.table.rows.map(([s, name, best, fmt, hi]) => `<tr><td>${thumb[s] ? `<img src="${thumb[s]}" alt="${esc(name)}">` : "<p></p>"}</td><td><p><a href="${PFX[l]}/products/${s}">${esc(name)}</a></p></td><td><p>${esc(best[l])}</p></td><td><p>${esc(fmt[l])}</p></td><td><p>${esc(hi[l])}</p></td></tr>`).join("")}</tbody></table>`;
+  // Comparison block (18 Nov): the table is now a Framer layout fed by Products fields (comparison-data.mjs,
+  // comparison-layout.mjs); this field only holds its H3 heading.
+  const table = l => `<h3>${esc(C.table.heading[l])}</h3>`;
   // Fields
   const sol = await f.getCollection("gZyqCZdng");
   let fields = await sol.getFields();
