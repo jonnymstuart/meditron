@@ -84,20 +84,20 @@
     {
       "id": "clicks",
       "group": "Search Console",
-      "label": "Google clicks, month",
+      "label": "Google clicks, 28 days",
       "unit": "",
       "better": "up",
-      "note": "needs Search Console access",
-      "help": "Visits from Google search to meditron.ch in the month, from Google Search Console. Needs Meditron to grant access."
+      "note": "Search Console, rolling 28 days",
+      "help": "Visits from Google search to meditron.ch in the 28 days before the reading, from Google Search Console (web search)."
     },
     {
       "id": "impressions",
       "group": "Search Console",
-      "label": "Google impressions, month",
+      "label": "Google impressions, 28 days",
       "unit": "",
       "better": "up",
-      "note": "needs Search Console access",
-      "help": "How often meditron.ch appeared in Google results in the month, from Google Search Console. Needs Meditron to grant access."
+      "note": "Search Console, rolling 28 days",
+      "help": "How often meditron.ch appeared in Google results in the 28 days before the reading, from Google Search Console (web search)."
     }
   ],
   "months": [
@@ -223,8 +223,8 @@
         "cited": 20,
         "first": 7,
         "articles": 6,
-        "clicks": null,
-        "impressions": null
+        "clicks": 220,
+        "impressions": 4300
       },
       "google": {
         "source": "DataForSEO SERP + Google Ads volume, Switzerland, 2026-10-20",
@@ -1148,6 +1148,10 @@
         {
           "date": "2026-11-24",
           "text": "Phone and tablet layout fixed (product text, Guides, product grids). Length limits added to the remaining product fields (Benefits, Why, Further reading, comparison). Production published 08:21 UTC. Search Console: live test confirms the product error is gone; indexing requested for the hub and model pages; 24 Nov rankings and AI answers measured."
+        },
+        {
+          "date": "2026-11-24",
+          "text": "Search Console: 'Validate fix' started on Product snippets (offers/review/aggregateRating, 3 items) and Merchant listings (missing price, 14 items). Indexing requested for the hub and Samsung model pages; the daily quota ran out after 13 of 22, the rest follow on 25 Nov."
         }
       ],
       "log": [
@@ -1173,10 +1177,10 @@
         "cited": 27,
         "first": 9,
         "articles": 15,
-        "clicks": null,
-        "impressions": null
+        "clicks": 425,
+        "impressions": 10800
       },
-      "source": "DataForSEO, Switzerland, 2026-11-24. Google: 3 live queries per term. AI: ChatGPT gpt-5.5, Gemini 3.5 Flash, Perplexity sonar-pro, web search on.",
+      "source": "DataForSEO, Switzerland, 2026-11-24. Google: 3 live queries per term. AI: ChatGPT gpt-5.5, Gemini 3.5 Flash, Perplexity sonar-pro, web search on. Search Console (web search, read 24 Nov): last 28 days vs previous 28 days; October values are the previous 28 days.",
       "google": {
         "source": "DataForSEO SERP + Google Ads volume, Switzerland, 2026-11-24",
         "rows": [
@@ -1819,7 +1823,7 @@
           }
         ]
       },
-      "status": "24 November reading, the first after the 16 and 18 November publishes (the rest went live on 24 Nov). Page 1 for 6 of 20 tracked Swiss searches, top 20 for 9 (from 7), average position 14.3 (from 14.9). Up: 'samsung hera z20' in German 24 to 3; 'ecografo samsung' in Italian position 1 in one of three queries (was outside the top 50); 'ecografo usato svizzera' 14 and 'échographe cabinet médical' 15, both new. Down: 'samsung ultrasound' in English 8 to 20 (positions 20 to 42 within minutes, still very unstable); 'samsung v8 ultraschall' 4 to 23, where Google shows an article instead of the V8 page; 'ultraschallgerät preis' out of the top 50 (12). Google had last read most product pages on 16 November; indexing for the hub and model pages was requested on 24 November. AI answers: meditron.ch cited in 27 of 60 (from 23), Meditron named in 13 (from 18 on 10 Nov), named first on 9 of 20 prompts.",
+      "status": "Google Search Console, last 28 days against the 28 days before: 425 clicks (from 220, +93%) and 10,800 impressions (from 4,300, +150%); average position 10.9 (10.0), CTR 3.9% (5.1%), which fall because impressions grew faster than clicks. Last 3 months: 801 clicks, 16,600 impressions. 24 November reading, the first after the 16 and 18 November publishes (the rest went live on 24 Nov). Page 1 for 6 of 20 tracked Swiss searches, top 20 for 9 (from 7), average position 14.3 (from 14.9). Up: 'samsung hera z20' in German 24 to 3; 'ecografo samsung' in Italian position 1 in one of three queries (was outside the top 50); 'ecografo usato svizzera' 14 and 'échographe cabinet médical' 15, both new. Down: 'samsung ultrasound' in English 8 to 20 (positions 20 to 42 within minutes, still very unstable); 'samsung v8 ultraschall' 4 to 23, where Google shows an article instead of the V8 page; 'ultraschallgerät preis' out of the top 50 (12). Google had last read most product pages on 16 November; indexing for the hub and model pages was requested on 24 November. AI answers: meditron.ch cited in 27 of 60 (from 23), Meditron named in 13 (from 18 on 10 Nov), named first on 9 of 20 prompts.",
       "next": [
         "Samsung hub: Samsung intro and comparison straight under the heading; Clarius and Esaote move to an 'Also from Meditron' row below the offer.",
         "Comparison labels kept on tablet and phone; offer button ('Request an offer') on every product page; contact form fields fixed, then one test submission per language by Meditron.",
