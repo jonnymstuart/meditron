@@ -1983,6 +1983,46 @@
           ],
           "result": "Prompts that name Meditron are the easiest case and were left out of the list to save budget. Add two if you want them on the page."
         }
+      ],
+      "hideTiles": [
+        "page1",
+        "top20",
+        "avgpos",
+        "aio",
+        "named"
+      ],
+      "hideNote": "Ranking positions and AI answer counts are measured again on 1 December, once Google has re-read the pages published on 16, 18 and 24 November. The full 24 November readings are in the tables below.",
+      "highlights": [
+        {
+          "label": "Google clicks from searches other than 'Meditron'",
+          "value": "322",
+          "change": "+179 vs previous 28 days (143)",
+          "note": "Search Console, last 28 days"
+        },
+        {
+          "label": "Different searches showing meditron.ch",
+          "value": "1,054",
+          "note": "Search Console, last 28 days"
+        },
+        {
+          "label": "Samsung searches showing meditron.ch",
+          "value": "8",
+          "change": "+4 vs previous 28 days (4)",
+          "note": "e.g. samsung ultraschall, samsung v6, v7, v8 ultraschall, hera z20 preis"
+        },
+        {
+          "label": "'samsung ultraschall' appearances in Google",
+          "value": "48",
+          "change": "+29 vs previous 28 days (19)",
+          "note": "Search Console, last 28 days"
+        },
+        {
+          "label": "'samsung hera z20' in German",
+          "value": "3",
+          "unit": "position",
+          "change": "up from 24 on 17 Nov",
+          "note": "Swiss Google, 24 Nov"
+        }
       ]
     }
   ],
