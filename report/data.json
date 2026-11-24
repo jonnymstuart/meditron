@@ -1823,7 +1823,7 @@
           }
         ]
       },
-      "status": "Google Search Console, last 28 days against the 28 days before: 425 clicks (from 220, +93%) and 10,800 impressions (from 4,300, +150%); average position 10.9 (10.0), CTR 3.9% (5.1%), which fall because impressions grew faster than clicks. Last 3 months: 801 clicks, 16,600 impressions. 24 November reading, the first after the 16 and 18 November publishes (the rest went live on 24 Nov). Page 1 for 6 of 20 tracked Swiss searches, top 20 for 9 (from 7), average position 14.3 (from 14.9). Up: 'samsung hera z20' in German 24 to 3; 'ecografo samsung' in Italian position 1 in one of three queries (was outside the top 50); 'ecografo usato svizzera' 14 and 'échographe cabinet médical' 15, both new. Down: 'samsung ultrasound' in English 8 to 20 (positions 20 to 42 within minutes, still very unstable); 'samsung v8 ultraschall' 4 to 23, where Google shows an article instead of the V8 page; 'ultraschallgerät preis' out of the top 50 (12). Google had last read most product pages on 16 November; indexing for the hub and model pages was requested on 24 November. AI answers: meditron.ch cited in 27 of 60 (from 23), Meditron named in 13 (from 18 on 10 Nov), named first on 9 of 20 prompts.",
+      "status": "Google Search Console, last 28 days against the 28 days before: 425 clicks (from 220, +93%) and 10,800 impressions (from 4,300, +150%); average position 10.9 (10.0), CTR 3.9% (5.1%), which fall because impressions grew faster than clicks. Last 3 months: 801 clicks, 16,600 impressions. 24 November reading, the first after the 16 and 18 November publishes (the rest went live on 24 Nov). Page 1 for 6 of 20 tracked Swiss searches, top 20 for 9 (from 7), average position 14.3 (from 14.9). Up: 'samsung hera z20' in German typically 16 (from about 34), best 3; 'ecografo samsung' in Italian position 1 in one of three queries (was outside the top 50); 'ecografo usato svizzera' 14 and 'échographe cabinet médical' 15, both new. Down: 'samsung ultrasound' in English 8 to 20 (positions 20 to 42 within minutes, still very unstable); 'samsung v8 ultraschall' 4 to 23, where Google shows an article instead of the V8 page; 'ultraschallgerät preis' out of the top 50 (12). Google had last read most product pages on 16 November; indexing for the hub and model pages was requested on 24 November. AI answers: meditron.ch cited in 27 of 60 (from 23), Meditron named in 13 (from 18 on 10 Nov), named first on 9 of 20 prompts.",
       "next": [
         "Samsung hub: Samsung intro and comparison straight under the heading; Clarius and Esaote move to an 'Also from Meditron' row below the offer.",
         "Comparison labels kept on tablet and phone; offer button ('Request an offer') on every product page; contact form fields fixed, then one test submission per language by Meditron.",
@@ -1885,7 +1885,7 @@
         "working": [
           "Google visits almost doubled: 425 clicks in the last 28 days against 220 in the 28 days before, and 10,800 appearances against 4,300 (Search Console, 24 Nov).",
           "Growth comes from product and topic searches: 322 clicks from searches other than 'Meditron', against 143. Samsung searches such as 'samsung ultraschall', V6, V7 and V8 now show meditron.ch.",
-          "'samsung hera z20' in German moved from 24 to 3; 'ecografo samsung' reached position 1 in one of three Italian searches (24 Nov reading).",
+          "'samsung hera z20' in German typically at position 16 (was about 34 on 17 Nov), once at 3; 'ecografo samsung' reached position 1 in one of three Italian searches (24 Nov reading).",
           "AI answers cite meditron.ch in 27 of 60 (from 23). For 'who sells Samsung ultrasound in Switzerland', ChatGPT and Perplexity name Meditron first in all four languages.",
           "The Search Console product error is fixed: Google's live test is clean and its re-check of all product pages started on 24 November."
         ],
@@ -2019,10 +2019,10 @@
         },
         {
           "label": "'samsung hera z20' in German",
-          "value": "3",
+          "value": "16",
           "unit": "position",
-          "change": "up from 24 on 17 Nov",
-          "note": "Swiss Google, 24 Nov"
+          "change": "up from about 34 on 17 Nov",
+          "note": "Swiss Google, 3 searches on 24 Nov: 16, 16 and 3"
         }
       ]
     }
