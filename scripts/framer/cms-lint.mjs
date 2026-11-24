@@ -3,7 +3,7 @@
 // Usage: node scripts/framer/cms-lint.mjs   (run before every publish and in the Monday report)
 import { withFramer } from "./lib.mjs";
 import { writeFileSync } from "node:fs";
-import { LIMITS, FAQ_Q, FAQ_A } from "./cms-fields.mjs";
+import { LIMITS, FAQ_Q, FAQ_A, BLOCKS } from "./cms-fields.mjs";
 
 const L = { en: null, de: "C9aJRu34X", fr: "rRxiWhpq8", it: "D9HoCmqY1" };
 const raw = (v, l) => String((L[l] ? v?.valueByLocale?.[L[l]]?.value : v?.value) ?? "");
@@ -11,7 +11,7 @@ const txt = (v, l) => raw(v, l).replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").tr
 const NAME = "krFC3FLEV", H1 = "qFsZD3PuD", DESC = "VKK1rLOkt", MT = "yNO0L700R", MD = "Fw8KRORIm";
 const KEYS = ["a8Dv7KCyw", "FE3Bghuvu", "PjsWoh2zd", "Q9AMtoLDz", "aOyuBf41h", "vhVilYGav", "SbdX5INdb", "wQ5pZVQVr", "QHMw6KQYg", "ECh9wGmzt"];
 const VALS = ["Tbj_vy63h", "qzdeoLiMo", "IQZRo2Wt4", "VQvL6dl_G", "CRACdCSo6", "BzceDkif5", "v9F_AjhtU", "ofQLZrlVl", "itkpMi72Z", "P_90IpRTk"];
-const RICH = { htnpvAE7_: "Benefits", T6CfH6qEg: "Why Work With Meditron" };
+const RICH = { htnpvAE7_: "Benefits", T6CfH6qEg: "Why Work With Meditron", QIolXlLNu: "Why Side", G2TvZEqos: "Reading Intro", frZ7K4sHO: "Reading" };
 const IMAGES = { Dh60jX8lX: "Thumbnail", G8s0uckMp: "Main Image" };
 const ERR = "error", WARN = "warning";
 
@@ -35,6 +35,7 @@ await withFramer(async (f) => {
         if (s.length > max) add([MT, MD, H1].includes(id) && s.length > max + 5 ? ERR : WARN, "Too long", i, l, id, `${s.length} > ${max}: ${s.slice(0, 70)}…`);
         else if (s.length < min && [MT, MD, DESC].includes(id)) add(WARN, "Too short", i, l, id, `${s.length} < ${min}: ${s}`);
       }
+      for (const [id, [max, re]] of Object.entries(BLOCKS)) { const n = (raw(fd[id], l).match(re) || []).length; if (n > max) add(WARN, "Too many points", i, l, id, `${n} > ${max}`); }
       const t = txt(fd[MT], l), d = txt(fd[MD], l), h = txt(fd[H1], l);
       if (/(…|\.\.\.)$/.test(d)) add(WARN, "Meta Description cut off (ends in …)", i, l, MD, d.slice(-60));
       if (t && !/Meditron/.test(t)) add(WARN, "Meta Title without 'Meditron'", i, l, MT, t);

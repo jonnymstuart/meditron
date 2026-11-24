@@ -21,6 +21,12 @@ For anyone adding or editing a product in Framer (CMS → Products). The limits 
 | Value 1–10 | max 150 | Technical Data text. Fill Key and Value together, never one without the other. |
 | FAQ Question 1–6 | max 90 | Written the way a customer asks. |
 | FAQ Answer 1–6 Text | max 350 | This is the answer shown on the page and read by Google. Fill it whenever there is a question. |
+| Benefits | max 6 points, 800 characters | One short sentence per point. No bold. |
+| Why Work With Meditron | max 400 | One paragraph: what Meditron does for this product in Switzerland. |
+| Why Side | 3 points, max 400 | Three short headings, each with one sentence. |
+| Reading Intro | max 120 | One line above the linked guides. |
+| Reading | 3 guides, max 600 | Each guide: linked title plus one sentence. |
+| Comparison Model / Best For / Format / Highlights | max 30 / 60 / 45 / 75 | One row of the comparison on the Solutions page. Keep it to a few words. |
 
 "FAQ Answer 1–4 (old, not shown)" are the previous rich-text answers. The page shows the Text field, so editing the old field changes nothing.
 

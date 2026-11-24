@@ -18,6 +18,20 @@ export const FAQ_Q = ["DgtWCAqSG", "rLcE_AA5B", "YzTVKn3Aa", "dFHEcNCRv", "rn1j_
 export const FAQ_A = ["NLA9rfXHq", "JXW61ChTO", "JpYVT2T5Q", "CaUnY6FvZ", "Jobv4lasS", "XzkDy5p5C"];
 FAQ_Q.forEach((id, n) => LIMITS[id] = [`FAQ Question ${n + 1} (max 90)`, 10, 90]);
 FAQ_A.forEach((id, n) => LIMITS[id] = [`FAQ Answer ${n + 1} Text (max 350, shown on page)`, 40, 350]);
+// 23 Nov: the remaining text fields editors can fill (rich-text limits count visible characters, tags stripped).
+Object.assign(LIMITS, {
+  htnpvAE7_: ["Benefits (max 6 points, 800 characters)", 1, 800],
+  T6CfH6qEg: ["Why Work With Meditron (max 400)", 1, 400],
+  QIolXlLNu: ["Why Side (3 points, max 400)", 1, 400],
+  G2TvZEqos: ["Reading Intro (max 120)", 1, 120],
+  frZ7K4sHO: ["Reading (3 guides, max 600)", 1, 600],
+  VtLBeQb6s: ["Comparison Model (max 30)", 1, 30],
+  yxKEtShab: ["Comparison Best For (max 60)", 1, 60],
+  XLxfdKqCR: ["Comparison Format (max 45)", 1, 45],
+  lSLwpuk7K: ["Comparison Highlights (max 75)", 1, 75],
+});
+// Max number of points (p / li / h4 blocks; Why Side and Reading count their H4 items) in rich-text fields.
+export const BLOCKS = { htnpvAE7_: [6, /<(p|li)[\s>]/gi], QIolXlLNu: [3, /<h4[\s>]/gi], frZ7K4sHO: [3, /<h4[\s>]/gi] };
 // Old rich-text answers: the page shows the Text field when it is filled, so editing these alone changes nothing.
 const OLD_RICH = { R4BTWDCVh: "FAQ Answer 1 (old, not shown: edit the Text field)", JnvQbqY0v: "FAQ Answer 2 (old, not shown: edit the Text field)",
   zbg3y_eFj: "FAQ Answer 3 (old, not shown: edit the Text field)", wNA8ZUOAA: "FAQ Answer 4 (old, not shown: edit the Text field)" };
