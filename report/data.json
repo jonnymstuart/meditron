@@ -1883,28 +1883,29 @@
       ],
       "gaps": {
         "working": [
-          "Brand terms responded to the new pages within a week: 'samsung ultrasound' 3rd in English, 'samsung ultraschall' 2nd in German, 'samsung hera z20' 8th in English and 4th in German (was 24 and 10).",
-          "AI answers improved on every measure: named in 19 of 60, cited in 26 (from 20), named first on 10 of 20 prompts (from 7). Meditron is now named first for 'HERA Z20 or V8' in English and French and for 'which ultrasound for a Swiss practice' in German.",
-          "The core question still goes Meditron's way: 'who sells Samsung ultrasound in Switzerland' names Meditron first in all four languages on all three engines."
+          "Google visits almost doubled: 425 clicks in the last 28 days against 220 in the 28 days before, and 10,800 appearances against 4,300 (Search Console, 24 Nov).",
+          "Growth comes from product and topic searches: 322 clicks from searches other than 'Meditron', against 143. Samsung searches such as 'samsung ultraschall', V6, V7 and V8 now show meditron.ch.",
+          "'samsung hera z20' in German moved from 24 to 3; 'ecografo samsung' reached position 1 in one of three Italian searches (24 Nov reading).",
+          "AI answers cite meditron.ch in 27 of 60 (from 23). For 'who sells Samsung ultrasound in Switzerland', ChatGPT and Perplexity name Meditron first in all four languages.",
+          "The Search Console product error is fixed: Google's live test is clean and its re-check of all product pages started on 24 November."
         ],
         "gaps": [
-          "Italian slipped: 'ecografo samsung' 1 to 28, 'ecografo samsung prezzo' 1 to 9, 'ecografo usato svizzera' out of the top 50. The Italian pages were untouched by the publish, so this is Google re-weighing the site; watch next week before acting.",
-          "French used-machine term gone: 'échographe occasion suisse' 3 to out of the top 50, with Art Medical Suisse in all three top spots and in all three for 'ultrasound machine switzerland' too.",
-          "Only 401 of about 980 pages are indexed; 27,000 old-site URLs are taking Google's crawl time. The legacy redirect is the fix and needs Meditron.",
-          "Product page titles and meta descriptions ignore the CMS meta fields we filled; the live Z20 title is the template default and its meta description is 998 characters long.",
-          "No click or impression data yet: Search Console access is still outstanding."
+          "Google last read most of the updated pages on 16 November. Re-reading was requested on 24 November for the Samsung page and models, and continues daily until 1 December.",
+          "For 'samsung v8 ultraschall' Google shows the 'HERA Z20 or V8' article instead of the V8 page (position 23, from 4).",
+          "'samsung ultrasound' in English is unstable: positions 20, 37 and 42 within minutes.",
+          "legacy.meditron.ch is still online and read by Google, which spends its attention on the old site. The redirect needs Meditron's hosting contact."
         ],
         "opportunities": [
-          "'ultraschallgerät' (590 a month) and 'ultraschall' (1,900): SMD Medical ranks 17th and 4th with one page. The German hub needs those words in its title and heading; it goes through Jean's review.",
-          "The hub links to no articles. A Guides section passes the hub's authority to the nine pieces AI engines quote.",
-          "Mobile speed: the hub's main image takes 8.8 seconds on a phone and the site loads 91 font files. Fixing fonts and hero images lifts every page.",
-          "A 'which Samsung system for a Swiss practice' guide per language: MHZ is still named first in French and Italian for that question."
+          "Samsung page: show the Samsung introduction and model comparison first, with Clarius and Esaote further down.",
+          "Product pages: a clear 'Request an offer' button, so visitors from the new searches can act.",
+          "Strengthen the V8 page for 'samsung v8 ultraschall', and the French pages for 'échographe samsung'.",
+          "New Samsung searches (V6, V7, 'samsung ultrason') can be won as Google re-reads the updated model pages this week.",
+          "Named application specialists and 2 or 3 customer quotes: Google and AI tools trust pages that name real people."
         ],
         "risks": [
-          "SMD Medical holds a top-3 spot on 5 of 20 tracked searches and ranks 1st for 'samsung ultraschall' and 'samsung hera z20' in German; Meditron is 2nd and 4th.",
-          "Art Medical Suisse now owns the used-machine and generic 'ultrasound machine switzerland' results in French and English.",
-          "Week-to-week swings of this size (Italian 1 to 28) mean one reading is not a trend; the Monday series is what counts.",
-          "Google's result format changed in late October; the measurement now reads the site from the breadcrumb, which keeps the series comparable but is a reminder that SERP tooling needs checking each month."
+          "One weekly reading is not a trend; positions are still moving a lot after the November changes. The 1 December reading is the one to judge.",
+          "SMD Medical and Art Medical Suisse each hold a top-3 spot on 3 of the 20 tracked searches (24 Nov).",
+          "Until legacy.meditron.ch redirects, the old site competes with the new one in Google."
         ]
       },
       "focus": [
