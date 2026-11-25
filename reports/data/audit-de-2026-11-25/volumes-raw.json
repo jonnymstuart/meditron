@@ -1,0 +1,7990 @@
+[
+ {
+  "id": "11251213-1946-0367-0000-d74e1549bc58",
+  "status_code": 20000,
+  "status_message": "Ok.",
+  "time": "3.3737 sec.",
+  "cost": 0.09,
+  "result_count": 116,
+  "path": [
+   "v3",
+   "keywords_data",
+   "google_ads",
+   "search_volume",
+   "live"
+  ],
+  "data": {
+   "api": "keywords_data",
+   "function": "search_volume",
+   "se": "google_ads",
+   "keywords": [
+    "ultraschallgerät",
+    "ultraschallgeräte",
+    "ultraschall gerät",
+    "ultraschallgerät kaufen",
+    "ultraschallgeräte kaufen",
+    "ultraschall gerät kaufen",
+    "sonographiegerät",
+    "sonographie gerät",
+    "sonografiegerät",
+    "ultraschallgerät praxis",
+    "ultraschallgerät arztpraxis",
+    "ultraschallgerät hausarzt",
+    "ultraschall hausarzt",
+    "gynäkologie ultraschall gerät",
+    "ultraschallgerät gynäkologie",
+    "gynäkologisches ultraschallgerät",
+    "ultraschallgerät radiologie",
+    "ultraschallgerät kardiologie",
+    "ultraschallgerät medizin",
+    "medizinisches ultraschallgerät",
+    "medizinische ultraschallgeräte",
+    "tragbares ultraschallgerät",
+    "mobiles ultraschallgerät",
+    "portables ultraschallgerät",
+    "handheld ultraschall",
+    "ultraschall handheld",
+    "pocket ultraschall",
+    "ultraschall app",
+    "kabelloser schallkopf",
+    "ultraschallgerät occasion",
+    "ultraschallgerät gebraucht",
+    "gebrauchte ultraschallgeräte",
+    "ultraschall occasion",
+    "ultraschall leasing",
+    "ultraschallgerät leasing",
+    "ultraschallgerät mieten",
+    "ultraschallgerät preis",
+    "ultraschallgerät kosten",
+    "was kostet ein ultraschallgerät",
+    "ultraschallgerät preise",
+    "ultraschallgerät schweiz",
+    "ultraschallgeräte schweiz",
+    "ultraschall schweiz",
+    "ultraschallgerät zürich",
+    "ultraschallgerät bern",
+    "ultraschall kurs",
+    "sonographie kurs",
+    "ultraschall schulung",
+    "ultraschall service",
+    "schallkopf",
+    "schallkopf kaufen",
+    "ultraschall sonde",
+    "linearschallkopf",
+    "konvexschallkopf",
+    "3d ultraschallgerät",
+    "4d ultraschallgerät",
+    "ultraschallgerät 3d 4d",
+    "ultraschall elastographie",
+    "point of care ultraschall",
+    "pocus",
+    "samsung ultraschall",
+    "ultraschall samsung",
+    "samsung ultraschallgerät",
+    "samsung ultraschallgeräte",
+    "samsung medison",
+    "samsung healthcare",
+    "samsung ultraschall preis",
+    "samsung ultraschallgerät preis",
+    "samsung v8",
+    "samsung v8 ultraschall",
+    "samsung v7",
+    "samsung v6",
+    "samsung v5",
+    "samsung v4",
+    "samsung hera z20",
+    "hera z20",
+    "samsung hera w10",
+    "hera w10",
+    "samsung r20",
+    "samsung rs85",
+    "rs85 prestige",
+    "samsung hs40",
+    "samsung hs50",
+    "samsung hs60",
+    "samsung hm70",
+    "samsung ws80",
+    "samsung schallkopf",
+    "samsung sonde",
+    "samsung ultraschall gynäkologie",
+    "samsung hera z20 preis",
+    "samsung v8 preis",
+    "ge ultraschall",
+    "ge voluson",
+    "voluson e10",
+    "philips ultraschall",
+    "mindray ultraschall",
+    "canon ultraschall",
+    "siemens ultraschall",
+    "esaote ultraschall",
+    "clarius ultraschall",
+    "butterfly iq",
+    "fujifilm sonosite",
+    "sonosite",
+    "ultraschall tierarzt",
+    "ultraschallgerät tierarzt",
+    "veterinär ultraschall",
+    "ultraschallgerät veterinär",
+    "esaote",
+    "esaote mylab",
+    "esaote vet",
+    "ultraschall pferd",
+    "ultraschallgerät pferd",
+    "ultraschall hund",
+    "meditron",
+    "smd medical",
+    "art medical"
+   ],
+   "location_code": 2756,
+   "language_code": "de"
+  },
+  "result": [
+   {
+    "keyword": "ultraschallgerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 590,
+    "low_top_of_page_bid": 0.71,
+    "high_top_of_page_bid": 2.43,
+    "cpc": 1.62,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 590
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 480
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 590
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 390
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 480
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 590
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 590
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 720
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 720
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 720
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 590
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 590
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgeräte",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 590,
+    "low_top_of_page_bid": 0.71,
+    "high_top_of_page_bid": 2.43,
+    "cpc": 1.62,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 590
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 480
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 590
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 390
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 480
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 590
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 590
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 720
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 720
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 720
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 590
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 590
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschall gerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 70,
+    "low_top_of_page_bid": 1.27,
+    "high_top_of_page_bid": 2.52,
+    "cpc": 1.77,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 50
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 50
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 110
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 70
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 70
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 90
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät kaufen",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 110,
+    "low_top_of_page_bid": 1.01,
+    "high_top_of_page_bid": 2,
+    "cpc": 1.53,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 90
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 90
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 110
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 90
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 110
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 170
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 170
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 210
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 140
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 140
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgeräte kaufen",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 110,
+    "low_top_of_page_bid": 1.01,
+    "high_top_of_page_bid": 2,
+    "cpc": 1.53,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 90
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 90
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 110
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 90
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 110
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 170
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 170
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 210
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 140
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 140
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschall gerät kaufen",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 10,
+    "low_top_of_page_bid": 1.02,
+    "high_top_of_page_bid": 2.8,
+    "cpc": 3.15,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "sonographiegerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 71,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": 2.04,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 20
+     }
+    ]
+   },
+   {
+    "keyword": "sonographie gerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 77,
+    "search_volume": 20,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "sonografiegerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 0,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät praxis",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät arztpraxis",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät hausarzt",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": null,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": null
+   },
+   {
+    "keyword": "ultraschall hausarzt",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 29,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "gynäkologie ultraschall gerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": null,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": null
+   },
+   {
+    "keyword": "ultraschallgerät gynäkologie",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 29,
+    "search_volume": 10,
+    "low_top_of_page_bid": 1.34,
+    "high_top_of_page_bid": 3.04,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 20
+     }
+    ]
+   },
+   {
+    "keyword": "gynäkologisches ultraschallgerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 10,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät radiologie",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät kardiologie",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät medizin",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 70,
+    "low_top_of_page_bid": 1.18,
+    "high_top_of_page_bid": 3.72,
+    "cpc": 3.71,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 90
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 140
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 70
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 140
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 90
+     }
+    ]
+   },
+   {
+    "keyword": "medizinisches ultraschallgerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 70,
+    "low_top_of_page_bid": 1.18,
+    "high_top_of_page_bid": 3.72,
+    "cpc": 3.71,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 90
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 140
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 70
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 140
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 90
+     }
+    ]
+   },
+   {
+    "keyword": "medizinische ultraschallgeräte",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 70,
+    "low_top_of_page_bid": 1.18,
+    "high_top_of_page_bid": 3.72,
+    "cpc": 3.71,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 90
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 140
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 70
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 140
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 90
+     }
+    ]
+   },
+   {
+    "keyword": "tragbares ultraschallgerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 10,
+    "low_top_of_page_bid": 1.06,
+    "high_top_of_page_bid": 2.39,
+    "cpc": 2.3,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "mobiles ultraschallgerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 99,
+    "search_volume": 20,
+    "low_top_of_page_bid": 1.06,
+    "high_top_of_page_bid": 2.74,
+    "cpc": 2.57,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 50
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 30
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 30
+     }
+    ]
+   },
+   {
+    "keyword": "portables ultraschallgerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 20,
+    "low_top_of_page_bid": 1.06,
+    "high_top_of_page_bid": 3.75,
+    "cpc": 1.88,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 20
+     }
+    ]
+   },
+   {
+    "keyword": "handheld ultraschall",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 99,
+    "search_volume": 10,
+    "low_top_of_page_bid": 1.2,
+    "high_top_of_page_bid": 4.09,
+    "cpc": 2.49,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschall handheld",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "pocket ultraschall",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 98,
+    "search_volume": 10,
+    "low_top_of_page_bid": 1.06,
+    "high_top_of_page_bid": 2.3,
+    "cpc": 1.72,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschall app",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 0,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "kabelloser schallkopf",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": 0,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät occasion",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 71,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": 1.65,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät gebraucht",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 20,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 30
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 40
+     }
+    ]
+   },
+   {
+    "keyword": "gebrauchte ultraschallgeräte",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 20,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 30
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 40
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschall occasion",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 71,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": 1.65,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschall leasing",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": null,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": null
+   },
+   {
+    "keyword": "ultraschallgerät leasing",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät mieten",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "MEDIUM",
+    "competition_index": 52,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät preis",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 10,
+    "low_top_of_page_bid": 0.54,
+    "high_top_of_page_bid": 2.14,
+    "cpc": 1.83,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 50
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät kosten",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 81,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": 1.32,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "was kostet ein ultraschallgerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 86,
+    "search_volume": 10,
+    "low_top_of_page_bid": 1.09,
+    "high_top_of_page_bid": 3.01,
+    "cpc": 1.33,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät preise",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 10,
+    "low_top_of_page_bid": 0.54,
+    "high_top_of_page_bid": 2.14,
+    "cpc": 1.83,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 50
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät schweiz",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": null,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": null
+   },
+   {
+    "keyword": "ultraschallgeräte schweiz",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": null,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": null
+   },
+   {
+    "keyword": "ultraschall schweiz",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 0,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät zürich",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": null,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": null
+   },
+   {
+    "keyword": "ultraschallgerät bern",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": null,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": null
+   },
+   {
+    "keyword": "ultraschall kurs",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 23,
+    "search_volume": 20,
+    "low_top_of_page_bid": 1.72,
+    "high_top_of_page_bid": 3.22,
+    "cpc": 4.84,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 30
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 20
+     }
+    ]
+   },
+   {
+    "keyword": "sonographie kurs",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 24,
+    "search_volume": 30,
+    "low_top_of_page_bid": 0.84,
+    "high_top_of_page_bid": 4.74,
+    "cpc": 8.23,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 50
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 40
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 30
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 40
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschall schulung",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschall service",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": null,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": null
+   },
+   {
+    "keyword": "schallkopf",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 4,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 20
+     }
+    ]
+   },
+   {
+    "keyword": "schallkopf kaufen",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": null,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": null
+   },
+   {
+    "keyword": "ultraschall sonde",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 26,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 20
+     }
+    ]
+   },
+   {
+    "keyword": "linearschallkopf",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 0,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "konvexschallkopf",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 0,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "3d ultraschallgerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "4d ultraschallgerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät 3d 4d",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": null,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": null
+   },
+   {
+    "keyword": "ultraschall elastographie",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 0,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "point of care ultraschall",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "MEDIUM",
+    "competition_index": 55,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": 1.68,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 20
+     }
+    ]
+   },
+   {
+    "keyword": "pocus",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 2,
+    "search_volume": 480,
+    "low_top_of_page_bid": 1.2,
+    "high_top_of_page_bid": 2.55,
+    "cpc": 2.72,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 480
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 480
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 390
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 390
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 480
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 590
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 480
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 480
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 390
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 480
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 320
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 480
+     }
+    ]
+   },
+   {
+    "keyword": "samsung ultraschall",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 25,
+    "search_volume": 30,
+    "low_top_of_page_bid": 2.1,
+    "high_top_of_page_bid": 5.24,
+    "cpc": 3.93,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 50
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 30
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 70
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschall samsung",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 25,
+    "search_volume": 30,
+    "low_top_of_page_bid": 2.1,
+    "high_top_of_page_bid": 5.24,
+    "cpc": 3.93,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 50
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 30
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 70
+     }
+    ]
+   },
+   {
+    "keyword": "samsung ultraschallgerät",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "MEDIUM",
+    "competition_index": 57,
+    "search_volume": 10,
+    "low_top_of_page_bid": 1.03,
+    "high_top_of_page_bid": 3.15,
+    "cpc": 3.95,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "samsung ultraschallgeräte",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "MEDIUM",
+    "competition_index": 57,
+    "search_volume": 10,
+    "low_top_of_page_bid": 1.03,
+    "high_top_of_page_bid": 3.15,
+    "cpc": 3.95,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "samsung medison",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "samsung healthcare",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 5,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "samsung ultraschall preis",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 71,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": 4.15,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "samsung ultraschallgerät preis",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": null,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": null
+   },
+   {
+    "keyword": "samsung v8",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 21,
+    "search_volume": 10,
+    "low_top_of_page_bid": 1.68,
+    "high_top_of_page_bid": 3.04,
+    "cpc": 2.89,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "samsung v8 ultraschall",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": null,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": null
+   },
+   {
+    "keyword": "samsung v7",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 28,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": 0.24,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 20
+     }
+    ]
+   },
+   {
+    "keyword": "samsung v6",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 5,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "samsung v5",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 12,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "samsung v4",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 4,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "samsung hera z20",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "MEDIUM",
+    "competition_index": 40,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "hera z20",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "samsung hera w10",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "hera w10",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "samsung r20",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 4,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "samsung rs85",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 7,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "rs85 prestige",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "MEDIUM",
+    "competition_index": 57,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "samsung hs40",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "MEDIUM",
+    "competition_index": 43,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": 4.67,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "samsung hs50",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 0,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "samsung hs60",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 0,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "samsung hm70",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "MEDIUM",
+    "competition_index": 43,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "samsung ws80",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 0,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "samsung schallkopf",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": null,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": null
+   },
+   {
+    "keyword": "samsung sonde",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": null,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": null
+   },
+   {
+    "keyword": "samsung ultraschall gynäkologie",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "samsung hera z20 preis",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": null,
+    "competition_index": null,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "samsung v8 preis",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 67,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ge ultraschall",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "MEDIUM",
+    "competition_index": 46,
+    "search_volume": 40,
+    "low_top_of_page_bid": 0.25,
+    "high_top_of_page_bid": 2.96,
+    "cpc": 0.31,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 50
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 40
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 40
+     }
+    ]
+   },
+   {
+    "keyword": "ge voluson",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 26,
+    "search_volume": 10,
+    "low_top_of_page_bid": 0.25,
+    "high_top_of_page_bid": 2.24,
+    "cpc": 0.79,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 20
+     }
+    ]
+   },
+   {
+    "keyword": "voluson e10",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 8,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "philips ultraschall",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 70,
+    "search_volume": 20,
+    "low_top_of_page_bid": 1.68,
+    "high_top_of_page_bid": 3.72,
+    "cpc": 1.82,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 30
+     }
+    ]
+   },
+   {
+    "keyword": "mindray ultraschall",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 76,
+    "search_volume": 20,
+    "low_top_of_page_bid": 2.08,
+    "high_top_of_page_bid": 5.63,
+    "cpc": 3.42,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 20
+     }
+    ]
+   },
+   {
+    "keyword": "canon ultraschall",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 18,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "siemens ultraschall",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "MEDIUM",
+    "competition_index": 46,
+    "search_volume": 10,
+    "low_top_of_page_bid": 0.97,
+    "high_top_of_page_bid": 2.39,
+    "cpc": 3.48,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "esaote ultraschall",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 10,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "clarius ultraschall",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 90,
+    "search_volume": 20,
+    "low_top_of_page_bid": 1.2,
+    "high_top_of_page_bid": 4.26,
+    "cpc": 3.63,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 20
+     }
+    ]
+   },
+   {
+    "keyword": "butterfly iq",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "MEDIUM",
+    "competition_index": 46,
+    "search_volume": 40,
+    "low_top_of_page_bid": 1.5,
+    "high_top_of_page_bid": 6.34,
+    "cpc": 2.88,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 50
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 50
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 40
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 40
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 40
+     }
+    ]
+   },
+   {
+    "keyword": "fujifilm sonosite",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 73,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "sonosite",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 29,
+    "search_volume": 20,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": 5.74,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 20
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschall tierarzt",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 7,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 20
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 20
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät tierarzt",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 0,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "veterinär ultraschall",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät veterinär",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": 0.14,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "esaote",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 4,
+    "search_volume": 50,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": 1.5,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 50
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 50
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 40
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 30
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 50
+     }
+    ]
+   },
+   {
+    "keyword": "esaote mylab",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 0
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "esaote vet",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 31,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 0
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschall pferd",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "MEDIUM",
+    "competition_index": 54,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": 0.79,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 0
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschallgerät pferd",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "MEDIUM",
+    "competition_index": 55,
+    "search_volume": 10,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 10
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 10
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 10
+     }
+    ]
+   },
+   {
+    "keyword": "ultraschall hund",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "HIGH",
+    "competition_index": 100,
+    "search_volume": 40,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": 0.16,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 40
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 50
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 70
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 30
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 50
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 50
+     }
+    ]
+   },
+   {
+    "keyword": "meditron",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 0,
+    "search_volume": 210,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 210
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 210
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 210
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 140
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 320
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 260
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 170
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 210
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 260
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 320
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 140
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 320
+     }
+    ]
+   },
+   {
+    "keyword": "smd medical",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 0,
+    "search_volume": 320,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 320
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 320
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 320
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 320
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 390
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 320
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 260
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 260
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 320
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 320
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 260
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 320
+     }
+    ]
+   },
+   {
+    "keyword": "art medical",
+    "spell": null,
+    "location_code": 2756,
+    "language_code": "de",
+    "search_partners": false,
+    "competition": "LOW",
+    "competition_index": 3,
+    "search_volume": 30,
+    "low_top_of_page_bid": null,
+    "high_top_of_page_bid": null,
+    "cpc": null,
+    "monthly_searches": [
+     {
+      "year": 2026,
+      "month": 10,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 9,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 8,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 7,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 6,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 5,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 4,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 3,
+      "search_volume": 20
+     },
+     {
+      "year": 2026,
+      "month": 2,
+      "search_volume": 30
+     },
+     {
+      "year": 2026,
+      "month": 1,
+      "search_volume": 30
+     },
+     {
+      "year": 2025,
+      "month": 12,
+      "search_volume": 30
+     },
+     {
+      "year": 2025,
+      "month": 11,
+      "search_volume": 30
+     }
+    ]
+   }
+  ]
+ }
+]
