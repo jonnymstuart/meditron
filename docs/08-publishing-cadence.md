@@ -11,8 +11,8 @@ Decided 2026-10-05 (Jonny): three articles a week, published Monday, Wednesday a
 
 Quality gate: the drafting routine is the reviewer. Facts only from meditron.ch and Samsung's published material, no prices, no clinical claims, German read once as a sceptical Swiss doctor. Meditron can still comment in the status Google Doc; comments are applied to the live article afterwards.
 
-## Standing rule: German is hands-off
-Decided 2026-10-05 (Jonny). The German version of the site is translated by hand by Meditron. Never write to the German locale (C9aJRu34X) of any existing page, component, collection item or FAQ row, and never run Framer's AI translation. The only German we create is the first German draft of a new Insights article, written before the item exists; after that the German belongs to Meditron. Scripts must skip DE in `valueByLocale` and `setLocalizationData` for existing items.
+## Former rule: German was hands-off (lifted 3 Nov 2026)
+Lifted by Jonny on 3 Nov 2026 (`docs/16-german-update-2026-11.md`); German is now written by us and proofread by Meditron. The original rule, kept for history: decided 2026-10-05 (Jonny). The German version of the site is translated by hand by Meditron. Never write to the German locale (C9aJRu34X) of any existing page, component, collection item or FAQ row, and never run Framer's AI translation. The only German we create is the first German draft of a new Insights article, written before the item exists; after that the German belongs to Meditron. Scripts must skip DE in `valueByLocale` and `setLocalizationData` for existing items.
 
 ## How articles 7+ are built (25 Oct)
 `content/_drafts/aN-{en,de,fr,it}.html` → `python3 scripts/framer/build-articles.py N` → `node scripts/framer/push-articles.mjs N [--production]` (EN default value, DE/FR/IT via valueByLocale and slugByLocale, FAQ rows, hero tile, staging publish). The two routines did not fire between 8 and 25 Oct; articles 7–9 were produced by hand on 25 Oct with this pipeline.

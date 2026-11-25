@@ -1,4 +1,4 @@
-import { addPropertyControls, ControlType } from "framer"
+import { addPropertyControls, ControlType, useLocaleInfo } from "framer"
 
 interface SchemaJsonLdProps {
     kind: "product" | "solution" | "article"
@@ -15,6 +15,14 @@ interface SchemaJsonLdProps {
 
 const SITE = "https://www.meditron.ch"
 
+// Breadcrumb names per locale (schema only; the visible navigation is unchanged).
+const CRUMBS: Record<string, { home: string; products: string; news: string; solutions: string }> = {
+    en: { home: "Home", products: "Products", news: "News & Events", solutions: "Solutions" },
+    de: { home: "Startseite", products: "Produkte", news: "News & Ratgeber", solutions: "Lösungen" },
+    fr: { home: "Accueil", products: "Produits", news: "Actualités et guides", solutions: "Solutions" },
+    it: { home: "Home", products: "Prodotti", news: "News e guide", solutions: "Soluzioni" },
+}
+
 /**
  * Emits JSON-LD (MedicalDevice / Article / BreadcrumbList) for the current CMS item. Renders nothing visible.
  * @framerSupportedLayoutWidth fixed
@@ -22,13 +30,21 @@ const SITE = "https://www.meditron.ch"
  */
 export default function SchemaJsonLd(props: SchemaJsonLdProps) {
     const { kind = "product", name = "", description = "", brand = "", category = "", slug = "", image, author = "", datePublished = "" } = props
-    const base = kind === "product" ? `${SITE}/products/` : kind === "article" ? `${SITE}/news-events/` : `${SITE}/solutions/`
+    // The slug prop is already the localized CMS slug; the URL needs the locale prefix (/de, /fr, /it; none for EN).
+    // Before 25 Nov every DE/FR/IT page declared the EN path, which is a 404 for articles with localized slugs.
+    const { activeLocale } = useLocaleInfo()
+    const lang = String(activeLocale?.code || "en").slice(0, 2).toLowerCase()
+    const isEn = lang === "en" || !activeLocale?.slug
+    const root = isEn ? SITE : `${SITE}/${activeLocale.slug}`
+    const inLanguage = isEn ? "en" : `${lang}-CH`
+    const L = CRUMBS[isEn ? "en" : lang] || CRUMBS.en
+    const base = kind === "product" ? `${root}/products/` : kind === "article" ? `${root}/news-events/` : `${root}/solutions/`
     const url = base + slug
     const crumbs = kind === "product"
-        ? [["Home", SITE + "/"], ["Products", SITE + "/products"], [name, url]]
+        ? [[L.home, root + "/"], [L.products, root + "/products"], [name, url]]
         : kind === "article"
-          ? [["Home", SITE + "/"], ["News & Events", SITE + "/news-events"], [name, url]]
-          : [["Home", SITE + "/"], ["Solutions", SITE + "/solutions/ultrasound"], [name, url]]
+          ? [[L.home, root + "/"], [L.news, root + "/news-events"], [name, url]]
+          : [[L.home, root + "/"], [L.solutions, root + "/solutions/ultrasound"], [name, url]]
     const graph: any[] = [
         {
             "@type": "BreadcrumbList",
@@ -47,7 +63,7 @@ export default function SchemaJsonLd(props: SchemaJsonLdProps) {
             description: description || undefined,
             image: image?.src ? [image.src] : undefined,
             url,
-            subjectOf: { "@type": "WebPage", "@id": url, url },
+            subjectOf: { "@type": "WebPage", "@id": url, url, inLanguage },
         })
     }
     if (kind === "article" && name) {
@@ -59,7 +75,7 @@ export default function SchemaJsonLd(props: SchemaJsonLdProps) {
             image: image?.src ? [image.src] : undefined,
             datePublished: date,
             dateModified: date,
-            inLanguage: "en",
+            inLanguage,
             author: author
                 ? { "@type": "Person", name: author, worksFor: { "@id": SITE + "/#org" } }
                 : { "@type": "Organization", "@id": SITE + "/#org", name: "Meditron SA" },
