@@ -1,6 +1,6 @@
 # Handover: starting a new client project from the Meditron kit
 
-Written 25 Nov 2026 for the first new client after Meditron: Almacet, a large e-commerce company whose old site is being rebuilt. It works for any client after that too.
+Written 25 Nov 2026 for the first new client after Meditron: Almased, a large e-commerce company whose old site is being rebuilt. It works for any client after that too.
 
 Who reads this: the Claude session in the new client's repo, and Jonny. The new session should follow it step by step.
 
@@ -86,7 +86,7 @@ What it is: one static page (`index.html`) that reads `data.json`, behind a pass
 - A domain property counts every subdomain. Large "Crawled – not indexed" numbers are often an old subdomain still online.
 
 **Old site and redirects come first**
-- For Meditron, the old site was still online on a subdomain months later and kept competing with the new one. For a rebuild like Almacet's this matters even more:
+- For Meditron, the old site was still online on a subdomain months later and kept competing with the new one. For a rebuild like Almased's this matters even more:
   - Crawl the old site before launch and keep the crawl.
   - Build the full redirect map (old URL → best new URL, 301, no chains).
   - Keep URLs where possible, and launch with the redirects live.
@@ -138,7 +138,7 @@ Skills that cover this: `seo-ecommerce`, `seo-technical`, `seo-sitemap`, `seo-hr
 
 ---
 
-## 6. First week for Almacet
+## 6. First week for Almased
 
 1. **Facts:** the domain(s), countries and languages, the new platform and launch date, who controls the domain and hosting, and Search Console and analytics access.
 2. **Baseline crawl of the old site:** every URL, status, title, canonical and inbound internal links. Save it in `reports/data/`. It's the source for the redirect map.
@@ -178,8 +178,72 @@ Goal: <the searches and markets that matter>. Priority 1: the redirect map for t
 
 ---
 
-## 8. Opening message for the new chat
+## 8. Step by step: what Jonny does, and what to paste into the new chat
 
-Paste this as the first message in the new session (after attaching both repos):
+Do these in order. "You do" steps are done in a browser. "Paste" steps are messages for the new chat. Wait for each one to finish before the next.
 
-> New client project: Almacet, a large e-commerce company rebuilding its old website. Read `docs/30-handover-new-client.md` in the jonnymstuart/meditron repo (read-only) and follow it. Set up this repo with the kit from section 2, write CLAUDE.md from section 7, ask me for the DataForSEO credential with the secure form, then plan the first week from section 6. Ask me for the facts in section 6 step 1 before running any paid DataForSEO calls.
+### Before the chat (you do, about 10 minutes)
+
+1. **Create the repo on GitHub:** github.com → New repository → name `almased-seo`, Private, tick "Add a README" so it has a main branch.
+2. **Give Claude access to it:** if the Claude GitHub app is installed for selected repos only, go to GitHub → Settings → Applications → Claude → Configure → add `almased-seo`.
+3. **Start the chat:** claude.ai/code → new session → pick the repo `almased-seo`.
+
+### Prompt 1: set up the repo and copy the kit
+
+> New client project: Almased, a large e-commerce company whose old website is being rebuilt. Add the repo jonnymstuart/meditron with read access only. Read `docs/30-handover-new-client.md` there and follow it. First: copy the kit from section 2 into this repo, write CLAUDE.md from the template in section 7 (leave the client facts as placeholders), and update `.gitignore`. Don't copy any Meditron client data. Commit and push, then tell me what you copied.
+
+### Prompt 2: cloud environment and DataForSEO
+
+> Set up a personal cloud environment for this repo called "almased-seo". Then ask me for the DataForSEO login with the secure credential form (host api.dataforseo.com, username and password). Never ask me to paste it in the chat. Check it works with one free call (the account balance endpoint, appendix/user_data) and tell me the balance. If the scripts need DATAFORSEO_LOGIN / DATAFORSEO_PASSWORD set, use dummy values; the proxy adds the real login.
+
+(You type the DataForSEO login and password into the form that pops up, not into the chat.)
+
+### Prompt 3: skill runtime
+
+> Run the claude-seo setup (`.claude/skills/seo/bin/claude-seo setup --skip-browser`) and check the SEO skills load. If Almased's new site is on Shopify, re-run the vendor script without skipping seo-shopify.
+
+### Prompt 4: the client facts (you answer)
+
+> Here are the facts for CLAUDE.md: domain(s) ___; countries and languages ___; old platform ___, new platform ___, launch date ___; who controls the domain and hosting ___; prices allowed in schema: yes / no; budget and dates ___; weekly report day ___. Fill these into CLAUDE.md and commit.
+
+### Prompt 5: access request email
+
+> Write me a short email to Almased asking for: Full user access to Google Search Console (domain property) for my Google account, Viewer access to their analytics, read access to the new site's staging, the old site's URL list or sitemap if they have one, and the contact who controls the domain and hosting. Plain English, short.
+
+(You send it yourself. Search Console access is the slowest thing to get.)
+
+### Prompt 6: crawl the old site
+
+> Crawl the old site (start from its sitemap and the homepage). Save every URL with status code, title, canonical, meta description, H1, and inbound internal links to `reports/data/`. Summarise: page count by type (category, product, content, other), errors, duplicates, and the biggest technical risks for the rebuild.
+
+### Prompt 7: keyword research and tracking list
+
+> Use DataForSEO for the main markets and languages. Find the main category and brand searches (keyword ideas from 10–15 seed terms I'll confirm), with volumes. Then propose a tracking list of 30–40 searches plus 10 AI prompts in `data/tracking-list.csv`. Show me the list before running the baseline. Tell me the expected DataForSEO cost first.
+
+### Prompt 8: first baseline reading
+
+> Run the baseline: `baseline.mjs` (3 samples per search, report the median position) and `ai-prompts.mjs`. Change `report-fill.mjs` to use the median, not the best of 3. List who holds the top 3 for the main category searches and what their category pages do.
+
+### Prompt 9: the dashboard
+
+> Set up the client dashboard from section 3 of the handover: Almased branding, a new random passcode (show it to me once; only its hash goes in the files), and the baseline month in `data.json`. Then deploy it to a new Vercel project. Ask me which Vercel team first, and don't touch any other Vercel project. Check the live `data.json` after the deploy and send me the link.
+
+(Then, if you want the "To discuss" ticks: Vercel → Storage → create a Blob store and connect it to the new project, and tell the chat to redeploy.)
+
+### Prompt 10: redirect map draft
+
+> From the old-site crawl, draft the redirect map for the developers: old URL → best new URL (301, no chains). Mark which ones need a decision from Almased. Save it as `data/redirects.csv` plus a short brief in `docs/` explaining the rules (keep URLs where possible, out-of-stock products, faceted URLs).
+
+### Prompt 11: first data pack for the client
+
+> Write the first data pack for Almased: the baseline (rankings, AI answers), the three biggest risks of the rebuild, and three quick wins. Plain English, sources and dates named. Make it a Google Doc and give me the link.
+
+### Prompt 12 (optional): weekly routine
+
+> Set up a scheduled task every Monday morning that runs the baseline and AI prompts, updates `report/data.json`, redeploys the dashboard, commits a report in `reports/`, and drafts the client email for me to send.
+
+### Connectors to check (you do, once)
+
+- **Vercel:** already connected for all projects. Don't reconnect it in a way that drops the Meditron project.
+- **Semrush (optional):** claude.ai → Settings → Connectors → Semrush → reconnect if it asks.
+- **Google Drive:** already connected; it's used for the Google Docs.

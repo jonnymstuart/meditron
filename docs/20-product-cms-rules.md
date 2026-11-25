@@ -27,6 +27,7 @@ For anyone adding or editing a product in Framer (CMS → Products). The limits 
 | Reading Intro | max 120 | One line above the linked guides. |
 | Reading | 3 guides, max 600 | Each guide: linked title plus one sentence. |
 | Comparison Model / Best For / Format / Highlights | max 30 / 60 / 45 / 75 | One row of the comparison on the Solutions page. Keep it to a few words. |
+| Hub Order | 1–7, 100 or 999 | Order on the Solutions page. 1–7: shown in the product strip and the comparison, in that order (fill the Comparison fields too). 100: strip only. 999: not shown. A new product gets 999; an empty value can land in the strip. |
 
 "FAQ Answer 1–4 (old, not shown)" are the previous rich-text answers. The page shows the Text field, so editing the old field changes nothing.
 
