@@ -7,20 +7,19 @@ extract PageRank, harmonic centrality, crawl/ranking presence, and host counts.
 No API key needed (public data).
 
 Data source: s3://commoncrawl/projects/hyperlinkgraph/
-Releases: Quarterly (cc-main-YYYY-mon-mon-mon)
+Releases: Monthly, each built from three crawls (cc-main-YYYY-mon-mon-mon)
 
 Usage:
     python commoncrawl_graph.py example.com --json
     python commoncrawl_graph.py example.com --update --json
     python commoncrawl_graph.py --info --json
-    python commoncrawl_graph.py example.com --release cc-main-2026-jan-feb-mar --json
+    python commoncrawl_graph.py example.com --release cc-main-2026-jul-aug-sep --json
 """
 
 import argparse
-import gzip
-import io
 import json
 import os
+import re
 import sys
 import time
 from typing import Optional
@@ -43,10 +42,17 @@ except ImportError:
 # Common Crawl web graph base URL (HTTP access to S3 bucket)
 CC_GRAPH_BASE = "https://data.commoncrawl.org/projects/hyperlinkgraph"
 
-# Known recent releases (newest first).
-# Update periodically: check https://commoncrawl.github.io/cc-webgraph-statistics/
-# Naming convention: cc-main-YYYY-mon-mon-mon (quarterly, lowercase month abbreviations)
+# Common Crawl's own list of published web graphs, newest first. Read at
+# run time so a new release is picked up without editing this file.
+CC_GRAPHINFO_URL = "https://index.commoncrawl.org/graphinfo.json"
+
+# Fallback when graphinfo.json cannot be read (newest first).
+# Naming convention: cc-main-YYYY-mon-mon-mon (lowercase month abbreviations).
+# Common Crawl now publishes a graph every month from three consecutive
+# crawls; this fallback keeps one release per quarter.
 KNOWN_RELEASES = [
+    "cc-main-2026-jul-aug-sep",
+    "cc-main-2026-apr-may-jun",
     "cc-main-2026-jan-feb-mar",
     "cc-main-2025-oct-nov-dec",
     "cc-main-2025-jul-aug-sep",
@@ -55,7 +61,7 @@ KNOWN_RELEASES = [
     "cc-main-2024-oct-nov-dec",
 ]
 
-# Graph file types — filenames include the release name as prefix
+# Graph file types: filenames include the release name as prefix
 # e.g., domain/cc-main-2026-jan-feb-mar-domain-vertices.txt.gz
 VERTICES_SUFFIX = "-domain-vertices.txt.gz"
 EDGES_SUFFIX = "-domain-edges.txt.gz"
@@ -75,16 +81,43 @@ def _safe_float(s: str) -> Optional[float]:
         return None
 
 
+def _published_releases(limit: int = 3) -> list:
+    """Return up to `limit` release ids from graphinfo.json, newest first.
+
+    Returns [] on any network or format problem, so callers fall back to
+    KNOWN_RELEASES. Ids that fail _RELEASE_RE are skipped, because a release
+    id is interpolated into a download URL and a cache path.
+    """
+    try:
+        resp = requests.get(CC_GRAPHINFO_URL, timeout=10)
+        resp.raise_for_status()
+        graphs = resp.json()
+    except (requests.exceptions.RequestException, ValueError):
+        return []
+    if not isinstance(graphs, list):
+        return []
+    releases = []
+    for graph in graphs:
+        release = graph.get("id") if isinstance(graph, dict) else None
+        if isinstance(release, str) and _RELEASE_RE.match(release):
+            releases.append(release)
+        if len(releases) >= limit:
+            break
+    return releases
+
+
 def _get_latest_release() -> Optional[str]:
     """
     Discover the latest available CC web graph release.
 
-    Tries known releases in order, returns the first one that exists.
+    Asks Common Crawl's graphinfo.json for the newest graph first, then
+    falls back to KNOWN_RELEASES. Returns the first release whose domain
+    vertices file exists.
 
     Returns:
-        Release name (e.g., 'cc-main-2026-jan-feb-mar') or None.
+        Release name (e.g., 'cc-main-2026-jul-aug-sep') or None.
     """
-    for release in KNOWN_RELEASES:
+    for release in _published_releases() + KNOWN_RELEASES:
         url = _graph_file_url(release, VERTICES_SUFFIX)
         try:
             resp = requests.head(url, timeout=10, allow_redirects=True)
@@ -95,11 +128,48 @@ def _get_latest_release() -> Optional[str]:
     return None
 
 
+_CACHE_COMPONENT_RE = re.compile(r"[^A-Za-z0-9._-]")
+
+# A Common Crawl release id, e.g. cc-main-2026-jan-feb-mar. Anchored, and no
+# '..' anywhere, because this value lands in a filesystem path and a URL path.
+# \Z, not $: $ also matches before a trailing newline.
+_RELEASE_RE = re.compile(r"^(?!.*\.\.)[A-Za-z0-9._-]+\Z")
+
+
+def _safe_cache_component(value: str) -> str:
+    """Reduce one path component to a conservative charset.
+
+    Everything outside [A-Za-z0-9._-] becomes '_', then any run of dots is
+    collapsed so '..' can never survive. Both halves matter: stripping
+    separators alone still lets '..' through on a caller that joins
+    differently, and collapsing dots alone still lets a separator through.
+    """
+    cleaned = _CACHE_COMPONENT_RE.sub("_", value)
+    while ".." in cleaned:
+        cleaned = cleaned.replace("..", "_")
+    return cleaned.strip("._") or "_"
+
+
 def _get_cache_path(domain: str, release: str, data_type: str) -> str:
-    """Get the cache file path for a domain's data."""
+    """Get the cache file path for a domain's data.
+
+    Both `domain` and `release` reach this from the CLI. `release` used to be
+    interpolated raw, so `--release ../../../../tmp/x` escaped the cache
+    directory and `_save_cache`'s open(..., "w") wrote outside it. Every
+    component is now sanitised, and the joined result is asserted to stay
+    inside the cache directory as defence in depth.
+    """
     cache_dir = get_cache_dir()
-    safe_domain = domain.replace("/", "_").replace(":", "_")
-    return os.path.join(cache_dir, f"{safe_domain}-{release}-{data_type}.json")
+    safe_domain = _safe_cache_component(domain)
+    safe_release = _safe_cache_component(release)
+    safe_type = _safe_cache_component(data_type)
+    path = os.path.join(cache_dir, f"{safe_domain}-{safe_release}-{safe_type}.json")
+
+    resolved = os.path.realpath(path)
+    root = os.path.realpath(cache_dir)
+    if not (resolved == root or resolved.startswith(root + os.sep)):
+        raise ValueError(f"refusing to build a cache path outside {root}")
+    return path
 
 
 def _is_cached(domain: str, release: str) -> Optional[dict]:
@@ -124,24 +194,6 @@ def _save_cache(domain: str, release: str, data: dict) -> None:
     data.setdefault("metadata", {})["cached_at"] = time.time()
     with open(cache_path, "w") as f:
         json.dump(data, f, indent=2)
-
-
-def _stream_gz_lines(url: str, timeout: int = 120):
-    """
-    Stream and decompress a gzipped text file line by line.
-
-    Downloads the file in chunks and decompresses on the fly to avoid
-    loading multi-GiB files into memory.
-
-    Yields:
-        Decoded text lines.
-    """
-    resp = requests.get(url, stream=True, timeout=timeout)
-    resp.raise_for_status()
-
-    decompressor = gzip.GzipFile(fileobj=io.BytesIO(resp.content))
-    for line in io.TextIOWrapper(decompressor, encoding="utf-8"):
-        yield line.rstrip("\n")
 
 
 def _stream_gz_chunked(url: str, target_domain: str, timeout: int = 120,
@@ -429,6 +481,19 @@ def main():
 
     if not args.domain:
         print("Error: domain argument required (or use --info)", file=sys.stderr)
+        sys.exit(1)
+
+    # Reject a malformed release rather than silently sanitising it. The value
+    # is interpolated into both a cache filename and a download URL
+    # (_graph_file_url), so quietly rewriting it for one and not the other
+    # would make the cache key disagree with what was actually fetched.
+    if args.release is not None and not _RELEASE_RE.match(args.release):
+        print(
+            f"Error: invalid --release {args.release!r}. Expected a release id "
+            "such as cc-main-2026-jan-feb-mar (letters, digits, dot, dash, "
+            "underscore only).",
+            file=sys.stderr,
+        )
         sys.exit(1)
 
     result = get_domain_metrics(

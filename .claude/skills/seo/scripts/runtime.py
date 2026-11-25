@@ -2,8 +2,11 @@
 """Cross-platform runtime for Claude SEO's bundled Python scripts.
 
 This module deliberately uses only the Python standard library. It is launched
-by ``bin/claude-seo`` under a base Python, then dispatches work through the
-managed virtual environment created by ``setup``.
+by the sibling ``scripts/claude-seo`` launcher under a base Python, then
+dispatches work through the managed virtual environment created by ``setup``.
+Skills, agents, and hooks invoke that launcher as
+``.claude/skills/seo/bin/claude-seo``; the repository keeps no
+top-level ``bin/`` directory because hosted marketplaces reject one.
 """
 
 from __future__ import annotations
@@ -21,13 +24,18 @@ from pathlib import Path
 from typing import Any
 
 RUNTIME_SCHEMA = 1
+# Supported interpreter range. scripts/claude-seo and install.ps1 repeat these
+# bounds, and tests/test_python_range.py keeps every copy in step. 3.15 waits
+# on google-ads, whose wheels declare Python < 3.15.
+MIN_PYTHON = (3, 11)
+MAX_PYTHON = (3, 14)
 LOCK_STALE_SECONDS = 30 * 60
 SCRIPT_NAME_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9_-]*\.py$")
 EXTENSION_NAME_RE = re.compile(r"^[a-z0-9][a-z0-9-]*$")
 MANUAL_EXTENSION_SKILLS = {"banana": "seo-image-gen"}
 ALLOWED_CORE_SCRIPTS = frozenset(
     {
-        "agent_ux_check.py", "analyze_visual.py", "backlinks_auth.py",
+        "agent_ux_check.py", "agentic_check.py", "agentic_fix.py", "analyze_visual.py", "backlinks_auth.py",
         "bing_webmaster.py", "capture_screenshot.py", "commoncrawl_graph.py",
         "content_humanize.py", "content_quality.py", "content_verify.py",
         "crux_history.py", "dataforseo_costs.py", "dataforseo_merchant.py",
@@ -36,11 +44,15 @@ ALLOWED_CORE_SCRIPTS = frozenset(
         "ga4_report.py", "gbp_deprecation_lint.py", "google_auth.py",
         "google_report.py", "gsc_inspect.py", "gsc_query.py", "indexing_notify.py",
         "indexnow_submit.py", "iptc_ai_label.py", "keyword_planner.py",
-        "lcp_subparts.py", "moz_api.py", "nlp_analyze.py", "pagespeed_check.py",
+        "keywordseverywhere_api.py",
+        "lcp_subparts.py", "lighthouse_agentic.py", "matomo_auth.py", "matomo_report.py", "metadata_template.py",
+        "moz_api.py", "nlp_analyze.py", "page_checks.py", "pagespeed_check.py",
         "parasite_risk.py", "parse_html.py", "preload_check.py", "render_page.py",
         "portability_check.py", "consistency_check.py",
         "schema_ecommerce_validate.py", "schema_generate.py", "seo_updates.py",
-        "sitemap_discovery.py", "sync_flow.py", "ucp_check.py", "unlighthouse_run.py",
+        "shopify_crawl.py", "shopify_env.py",
+        "sitemap_discovery.py", "sync_flow.py", "transport_check.py", "ucp_check.py",
+        "unlighthouse_run.py",
         "url_safety.py", "validate_backlink_report.py", "verify_backlinks.py",
         "youtube_search.py",
     }
@@ -152,6 +164,19 @@ def _expected(root: Path) -> dict[str, Any]:
     }
 
 
+def _python_supported() -> bool:
+    return MIN_PYTHON <= sys.version_info[:2] <= MAX_PYTHON
+
+
+def _python_range_message() -> str:
+    found = f"{sys.version_info.major}.{sys.version_info.minor}"
+    return (
+        f"Claude SEO needs Python {MIN_PYTHON[0]}.{MIN_PYTHON[1]} to "
+        f"{MAX_PYTHON[0]}.{MAX_PYTHON[1]}. Found {found} ({sys.executable}). "
+        "Install a supported Python or set CLAUDE_SEO_PYTHON."
+    )
+
+
 def _status(root: Path) -> dict[str, Any]:
     data_dir, mode = _data_dir(root)
     venv = data_dir / ".venv"
@@ -159,6 +184,8 @@ def _status(root: Path) -> dict[str, Any]:
     state = _load_state(data_dir)
     expected = _expected(root)
     reasons: list[str] = []
+    if not _python_supported():
+        reasons.append(f"python {expected['python']} is outside the supported range")
     if not python.is_file():
         reasons.append("managed environment is missing")
     for key in ("runtime_schema", "requirements_sha256", "python"):
@@ -187,19 +214,62 @@ def _status(root: Path) -> dict[str, Any]:
     }
 
 
+# dyld's own default fallback list. Setting DYLD_FALLBACK_LIBRARY_PATH
+# replaces it, so it is kept at the end.
+_DYLD_DEFAULT_FALLBACK = ("~/lib", "/usr/local/lib", "/usr/lib")
+# Homebrew prefixes (Apple silicon, Intel). WeasyPrint dlopens Pango, GObject
+# and HarfBuzz by bare name, and Homebrew's lib directory is not on dyld's
+# search path.
+_HOMEBREW_LIB_DIRS = ("/opt/homebrew/lib", "/usr/local/lib")
+
+
+def _darwin_library_fallback(current: str | None) -> str | None:
+    """Return a DYLD_FALLBACK_LIBRARY_PATH that also covers Homebrew.
+
+    The launcher runs through /usr/bin/env bash, which SIP protects, so any
+    DYLD_* variable the user exported is stripped before Python starts. The
+    PDF report then fails to load WeasyPrint even with Pango installed.
+    Returns None when nothing needs to change.
+    """
+    existing = [part for part in (current or "").split(":") if part]
+    base = existing or [os.path.expanduser(p) for p in _DYLD_DEFAULT_FALLBACK]
+    extra = [d for d in _HOMEBREW_LIB_DIRS if os.path.isdir(d) and d not in base]
+    if not extra:
+        return None
+    return ":".join(extra + base)
+
+
 def _safe_env(status: dict[str, Any]) -> dict[str, str]:
     env = os.environ.copy()
     env["PYTHONUTF8"] = "1"
     env["PYTHONIOENCODING"] = "utf-8"
     env["PLAYWRIGHT_BROWSERS_PATH"] = str(status["data_dir"] / "ms-playwright")
+    if sys.platform == "darwin":
+        fallback = _darwin_library_fallback(env.get("DYLD_FALLBACK_LIBRARY_PATH"))
+        if fallback:
+            env["DYLD_FALLBACK_LIBRARY_PATH"] = fallback
     return env
+
+
+def _home_pattern(home: str) -> re.Pattern[str]:
+    # Child output quotes paths in repr form (doubled or quadrupled separators
+    # once nested) and Windows tools mix drive-letter case, so match the home
+    # directory by its segments rather than by the exact string.
+    parts = [re.escape(part) for part in re.split(r"[\\/]+", home) if part]
+    if not parts:
+        # A root home directory would otherwise redact every path separator.
+        return re.compile(r"(?!x)x")
+    pattern = r"[\\/]+".join(parts)
+    if home[:1] in ("\\", "/"):
+        pattern = r"[\\/]+" + pattern
+    return re.compile(pattern, re.IGNORECASE)
 
 
 def _redact(text: str) -> str:
     try:
         home = str(Path.home())
         if home:
-            text = text.replace(home, "<home>")
+            text = _home_pattern(home).sub("<home>", text)
     except RuntimeError:
         pass
     for pattern, replacement in REDACTIONS:
@@ -207,12 +277,22 @@ def _redact(text: str) -> str:
     return text
 
 
+def _tail(text: str, limit: int = 30, width: int = 400) -> str:
+    lines = [line.rstrip()[:width] for line in text.splitlines() if line.strip()]
+    return "\n".join(f"  {line}" for line in lines[-limit:])
+
+
 def _run_checked(
     argv: list[str], *, env: dict[str, str], stage: str
 ) -> subprocess.CompletedProcess[str]:
     result = subprocess.run(argv, env=env, capture_output=True, text=True, encoding="utf-8", errors="replace")
     if result.returncode:
-        raise RuntimeError(f"{stage} failed with exit code {result.returncode}")
+        # The child's own diagnostics (pip's OSError, a missing ensurepip,
+        # a proxy rejection) are the only thing that makes the failure
+        # actionable; the exit code alone is not.
+        detail = _tail(result.stderr or result.stdout)
+        message = f"{stage} failed with exit code {result.returncode}"
+        raise RuntimeError(f"{message}\n{detail}" if detail else message)
     return result
 
 
@@ -241,7 +321,27 @@ class SetupLock:
         self.path.unlink(missing_ok=True)
 
 
+def _replace_with_retry(source: Path, target: Path, attempts: int = 8) -> None:
+    """Swap a directory into place, tolerating Windows handle-release lag.
+
+    Right after pip or Playwright writes a venv, Windows (often Defender) can
+    hold handles in it briefly, so the rename fails with WinError 5 and then
+    succeeds about a second later.
+    """
+    for attempt in range(attempts):
+        try:
+            source.replace(target)
+            return
+        except PermissionError:
+            if attempt == attempts - 1:
+                raise
+            time.sleep(0.25 * (attempt + 1))
+
+
 def command_setup(args: argparse.Namespace) -> int:
+    if not _python_supported():
+        print(_python_range_message(), file=sys.stderr)
+        return 2
     root = _root()
     status = _status(root)
     data_dir: Path = status["data_dir"]
@@ -258,9 +358,21 @@ def command_setup(args: argparse.Namespace) -> int:
     had_previous = final_venv.exists()
     try:
         with SetupLock(data_dir / ".setup.lock"):
-            print("Creating isolated Claude SEO environment...")
-            _run_checked([sys.executable, "-m", "venv", str(staged)], env=env, stage="virtual environment creation")
+            print("Creating isolated Claude SEO environment...", flush=True)
+            # venv bootstraps pip itself but discards ensurepip's output, so a
+            # failing bootstrap would surface only as "ensurepip returned 1".
+            # Running it as its own stage keeps pip's diagnostics visible.
+            _run_checked(
+                [sys.executable, "-m", "venv", "--without-pip", str(staged)],
+                env=env,
+                stage="virtual environment creation",
+            )
             staged_python = _venv_python(staged)
+            _run_checked(
+                [str(staged_python), "-m", "ensurepip", "--upgrade", "--default-pip"],
+                env=env,
+                stage="pip bootstrap",
+            )
             _run_checked(
                 [str(staged_python), "-m", "pip", "install", "--disable-pip-version-check", "-r", str(root / "requirements.txt")],
                 env=env,
@@ -275,7 +387,7 @@ def command_setup(args: argparse.Namespace) -> int:
                     )
                     browser_ready = True
                 except RuntimeError as exc:
-                    print(f"Browser setup incomplete: {exc}", file=sys.stderr)
+                    print(f"Browser setup incomplete: {_redact(str(exc))}", file=sys.stderr)
             _run_checked(
                 [
                     str(staged_python),
@@ -287,9 +399,9 @@ def command_setup(args: argparse.Namespace) -> int:
             )
             shutil.rmtree(backup, ignore_errors=True)
             if final_venv.exists():
-                final_venv.replace(backup)
+                _replace_with_retry(final_venv, backup)
                 previous_moved = True
-            staged.replace(final_venv)
+            _replace_with_retry(staged, final_venv)
             swapped = True
             state = dict(status["expected"])
             state["browser_ready"] = browser_ready
@@ -304,7 +416,7 @@ def command_setup(args: argparse.Namespace) -> int:
             if swapped:
                 shutil.rmtree(final_venv, ignore_errors=True)
             if previous_moved and had_previous and backup.exists():
-                backup.replace(final_venv)
+                _replace_with_retry(backup, final_venv)
         print(f"Claude SEO setup failed: {_redact(str(exc))}", file=sys.stderr)
         return 1
     if browser_ready or args.skip_browser:

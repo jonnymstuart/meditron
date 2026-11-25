@@ -12,24 +12,34 @@ Usage:
     python google_auth.py --check --json            # JSON output
     python google_auth.py --setup                   # Show setup instructions
     python google_auth.py --tier                    # Show detected credential tier
-    python google_auth.py --auth --creds /path/to/client_secret.json  # OAuth browser flow
+    python google_auth.py --auth --creds /path/to/client_secret.json  # OAuth browser flow (read-only)
+    python google_auth.py --auth --indexing --creds /path/to/client_secret.json  # also grant the Indexing API
 """
 
 import argparse
+import base64
+import hashlib
+import hmac
 import json
 import os
 import re
+import secrets
 import sys
 import time
 from typing import Optional
 
-CONFIG_PATH = os.path.expanduser("~/.config/claude-seo/google-api.json")
-TOKEN_PATH = os.path.expanduser("~/.config/claude-seo/oauth-token.json")
+_SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
+if _SCRIPTS_DIR not in sys.path:
+    sys.path.insert(0, _SCRIPTS_DIR)
+from profile_paths import config_dir_fields, describe_config_dir, profile_dir_or_exit  # noqa: E402
+
+_PROFILE_DIR = profile_dir_or_exit()
+CONFIG_PATH = str(_PROFILE_DIR / "google-api.json")
+TOKEN_PATH = str(_PROFILE_DIR / "oauth-token.json")
 
 # Service-to-scope mapping
 SCOPES = {
     "gsc_readonly": "https://www.googleapis.com/auth/webmasters.readonly",
-    "gsc_write": "https://www.googleapis.com/auth/webmasters",
     "indexing": "https://www.googleapis.com/auth/indexing",
     "ga4": "https://www.googleapis.com/auth/analytics.readonly",
 }
@@ -44,12 +54,22 @@ SERVICE_AUTH = {
     "ga4": "oauth_or_sa",
 }
 
-OAUTH_SCOPES = (
-    "https://www.googleapis.com/auth/indexing "
-    "https://www.googleapis.com/auth/webmasters "
-    "https://www.googleapis.com/auth/analytics.readonly"
+# Least privilege: the default sign-in can only read. No script calls a
+# Search Console write method, and only indexing_notify.py publishes, so the
+# Indexing scope is granted on request with `--auth --indexing`.
+OAUTH_SCOPES = f"{SCOPES['gsc_readonly']} {SCOPES['ga4']}"
+INDEXING_SCOPE = SCOPES["indexing"]
+INDEXING_AUTH_COMMAND = (
+    "python scripts/google_auth.py --auth --indexing --creds /path/to/client_secret.json"
 )
 OAUTH_REDIRECT_URI = "http://localhost:8085"
+# How long --auth waits for the browser redirect, and how long the pending
+# sign-in (state + PKCE verifier) stays usable for a manual --exchange.
+SIGNIN_WAIT_SECONDS = 300
+SIGNIN_PENDING_MAX_AGE = 600
+# A redirect connection that sends no request is dropped after this many
+# seconds, so it cannot hold the single-threaded server.
+SIGNIN_REQUEST_TIMEOUT = 10
 
 # Human-readable service names
 SERVICE_NAMES = {
@@ -93,8 +113,9 @@ def load_config() -> dict:
     """
     Load configuration from config file with environment variable fallbacks.
 
-    Reads ~/.config/claude-seo/google-api.json first. Any missing fields
-    are filled from environment variables.
+    Reads CONFIG_PATH (google-api.json in the profile directory, see
+    profile_paths.py) first. Any missing fields are filled from environment
+    variables.
 
     Returns:
         Dictionary with keys: service_account_path, api_key,
@@ -176,6 +197,57 @@ def get_service_account_credentials(scopes: list):
         return None
 
 
+def _gcloud_adc_path() -> str:
+    """Where `gcloud auth application-default login` writes the user's credentials."""
+    config_dir = os.path.expanduser(os.environ.get("CLOUDSDK_CONFIG", ""))
+    if not config_dir:
+        if sys.platform == "win32" and os.environ.get("APPDATA"):
+            config_dir = os.path.join(os.environ["APPDATA"], "gcloud")
+        else:
+            config_dir = os.path.expanduser("~/.config/gcloud")
+    return os.path.join(config_dir, "application_default_credentials.json")
+
+
+def _load_gcloud_adc() -> Optional[dict]:
+    """The gcloud user sign-in, if one exists. Only `authorized_user` counts:
+    a service account file here is not the person's own access."""
+    path = _gcloud_adc_path()
+    try:
+        with open(path, "r") as f:
+            data = json.load(f)
+    except (OSError, json.JSONDecodeError):
+        return None
+    if data.get("type") != "authorized_user" or not data.get("refresh_token"):
+        return None
+    return data
+
+
+def _prefers_gcloud() -> bool:
+    """CLAUDE_SEO_GOOGLE_AUTH=adc picks the gcloud sign-in even when a service
+    account is configured (which may not have access to every property)."""
+    return os.environ.get("CLAUDE_SEO_GOOGLE_AUTH", "").strip().lower() in ("adc", "gcloud")
+
+
+def get_gcloud_credentials(scopes: list):
+    """Credentials from the person's own gcloud sign-in
+    (`gcloud auth application-default login`), or None.
+
+    Read from the gcloud file directly, never through google.auth.default(),
+    which would load GOOGLE_APPLICATION_CREDENTIALS (a service account) first.
+    """
+    if _load_gcloud_adc() is None:
+        return None
+    try:
+        from google.oauth2.credentials import Credentials
+        # Refresh with the scopes granted at `gcloud auth application-default login`:
+        # asking for others (say, full webmasters over webmasters.readonly) fails
+        # with invalid_scope. `scopes` is accepted for symmetry and not sent.
+        return Credentials.from_authorized_user_file(_gcloud_adc_path())
+    except Exception as e:
+        print(f"gcloud sign-in could not be used: {type(e).__name__}", file=sys.stderr)
+        return None
+
+
 def _load_oauth_client(creds_path: str) -> Optional[dict]:
     """Load OAuth client credentials from a client_secret JSON file."""
     try:
@@ -209,33 +281,45 @@ def _load_oauth_token() -> Optional[dict]:
     _chmod_quiet(TOKEN_PATH, 0o600)
     try:
         with open(TOKEN_PATH, "r") as f:
-            return json.load(f)
+            token_data = json.load(f)
     except (json.JSONDecodeError, IOError):
         return None
+    # A token file holding a JSON string or list is not a token.
+    return token_data if isinstance(token_data, dict) else None
 
 
 def _save_oauth_token(token_data: dict):
     """Save OAuth token to TOKEN_PATH with secure (0o600) permissions.
+
+    The client secret never belongs in the token file. It is dropped here, so
+    a hand-edited or foreign token file is cleaned on the next save.
+    """
+    token_data = {k: v for k, v in token_data.items() if k != "client_secret"}
+    _write_private_json(TOKEN_PATH, token_data)
+
+
+def _write_private_json(path: str, data: dict):
+    """Write JSON to ``path`` with secure (0o600) permissions.
 
     Belt-and-suspenders sequence:
         1. Pre-chmod any existing file (closes a v1.9.x umask=022 legacy).
         2. ``os.open`` with explicit mode 0o600 (mode applies only to
            newly-created files, ignored when the file already exists).
         3. ``os.fchmod`` on the open fd to *force* 0o600 even if the
-           file pre-existed at step 2 — defeats the
+           file pre-existed at step 2; defeats the
            os.path.exists()/os.open() TOCTOU race where an external
            creator could install a 0o644 file between the two calls.
 
-    The token file is never world-readable, even briefly.
+    The file is never world-readable, even briefly.
     """
-    os.makedirs(os.path.dirname(TOKEN_PATH), exist_ok=True)
-    if os.path.exists(TOKEN_PATH):
-        _chmod_quiet(TOKEN_PATH, 0o600)
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+    if os.path.exists(path):
+        _chmod_quiet(path, 0o600)
     flags = os.O_WRONLY | os.O_CREAT | os.O_TRUNC
-    fd = os.open(TOKEN_PATH, flags, 0o600)
+    fd = os.open(path, flags, 0o600)
     # fchmod on the open fd guarantees 0o600 even if the file existed at
     # open time (in which case os.open's mode arg is ignored by the OS).
-    # os.fdopen takes ownership of fd — it closes the fd whether the
+    # os.fdopen takes ownership of fd: it closes the fd whether the
     # write succeeds or raises, so there is no fd-leak path here.
     try:
         fchmod = getattr(os, "fchmod", None)
@@ -244,7 +328,101 @@ def _save_oauth_token(token_data: dict):
     except OSError:
         pass  # FS may not support fchmod (e.g. some Windows filesystems)
     with os.fdopen(fd, "w") as f:
-        json.dump(token_data, f, indent=2)
+        json.dump(data, f, indent=2)
+
+
+def _pending_flow_path() -> str:
+    """Where an unfinished --auth keeps its state and PKCE verifier."""
+    return os.path.join(os.path.dirname(TOKEN_PATH), "oauth-pending.json")
+
+
+def _pkce_pair() -> tuple[str, str]:
+    """Return a PKCE (code_verifier, S256 code_challenge) pair (RFC 7636)."""
+    verifier = secrets.token_urlsafe(64)
+    digest = hashlib.sha256(verifier.encode("ascii")).digest()
+    challenge = base64.urlsafe_b64encode(digest).rstrip(b"=").decode("ascii")
+    return verifier, challenge
+
+
+def _save_pending_flow(state: str, code_verifier: str):
+    """Persist the pending sign-in so a manual --exchange can finish it."""
+    _write_private_json(_pending_flow_path(), {
+        "state": state,
+        "code_verifier": code_verifier,
+        "redirect_uri": OAUTH_REDIRECT_URI,
+        "created_at": time.time(),
+    })
+
+
+def _clear_pending_flow():
+    try:
+        os.remove(_pending_flow_path())
+    except OSError:
+        pass
+
+
+def _load_pending_flow() -> Optional[dict]:
+    """Load the pending sign-in, or None when absent, unreadable or expired."""
+    path = _pending_flow_path()
+    if not os.path.exists(path):
+        return None
+    try:
+        with open(path, "r") as f:
+            data = json.load(f)
+    except (json.JSONDecodeError, IOError):
+        return None
+    try:
+        age = time.time() - float(data["created_at"])
+    except (KeyError, TypeError, ValueError):
+        age = -1
+    if (
+        not isinstance(data, dict)
+        or not data.get("state")
+        or not data.get("code_verifier")
+        or data.get("redirect_uri") != OAUTH_REDIRECT_URI
+        or not 0 <= age <= SIGNIN_PENDING_MAX_AGE
+    ):
+        _clear_pending_flow()
+        return None
+    return data
+
+
+def _states_match(returned: str, expected: str) -> bool:
+    """Constant-time state check that also handles non-ASCII input.
+
+    hmac.compare_digest refuses str values with non-ASCII characters, so a
+    crafted ``state`` would raise instead of being rejected. Compare bytes.
+    """
+    return hmac.compare_digest(returned.encode("utf-8"), expected.encode("utf-8"))
+
+
+def _manual_exchange_inputs(code_or_url: str) -> tuple[Optional[str], Optional[str], Optional[str]]:
+    """Turn --exchange --code input into (code, code_verifier, error).
+
+    Accepts the bare code or the full redirect URL from the address bar.
+    When a URL is pasted, its ``state`` must match the pending sign-in.
+    """
+    import urllib.parse
+
+    pending = _load_pending_flow()
+    if not pending:
+        # Every sign-in sends a PKCE challenge, so Google refuses a code
+        # exchanged without its verifier. Say so instead of sending it.
+        return None, None, "No pending sign-in (missing or expired). Run --auth again."
+    verifier = pending["code_verifier"]
+    value = code_or_url.strip()
+    if not value.lower().startswith(("http://", "https://")):
+        return value, verifier, None
+    params = urllib.parse.parse_qs(urllib.parse.urlparse(value).query)
+    if "error" in params:
+        return None, None, f"Google returned an error: {params['error'][0]}"
+    code = params.get("code", [None])[0]
+    if not code:
+        return None, None, "The pasted URL has no 'code' parameter."
+    returned_state = params.get("state", [""])[0]
+    if not _states_match(returned_state, pending["state"]):
+        return None, None, "The pasted URL does not belong to the pending sign-in. Run --auth again."
+    return code, verifier, None
 
 
 def _persist_oauth_client_path(creds_path: str):
@@ -298,7 +476,7 @@ def _refresh_oauth_token(client: dict, token_data: dict) -> Optional[dict]:
 
     try:
         req = urllib.request.Request(client.get("token_uri", "https://oauth2.googleapis.com/token"), data=params)
-        with urllib.request.urlopen(req) as resp:
+        with urllib.request.urlopen(req, timeout=30) as resp:
             new_data = json.loads(resp.read())
         token_data["access_token"] = new_data["access_token"]
         token_data["expires_at"] = time.time() + new_data.get("expires_in", 3600)
@@ -322,6 +500,12 @@ def get_oauth_credentials(scopes: list):
         google.oauth2.credentials.Credentials or service_account.Credentials, or None.
     """
     config = load_config()
+
+    # An explicit choice of the person's own gcloud sign-in wins.
+    if _prefers_gcloud():
+        creds = get_gcloud_credentials(scopes)
+        if creds is not None:
+            return creds
 
     # Try OAuth token first
     token_data = _load_oauth_token()
@@ -357,11 +541,57 @@ def get_oauth_credentials(scopes: list):
             except ImportError:
                 print("Error: google-auth required. Install with: pip install google-auth", file=sys.stderr)
 
-    # Fall back to service account
-    return get_service_account_credentials(scopes)
+    # Fall back to service account, then to the person's gcloud sign-in.
+    return get_service_account_credentials(scopes) or get_gcloud_credentials(scopes)
 
 
-def run_oauth_flow(creds_path: str):
+def oauth_scopes(include_indexing: bool = False) -> str:
+    """The space-separated scopes --auth asks for: read-only unless
+    ``include_indexing`` adds the Indexing API (`--auth --indexing`)."""
+    if include_indexing:
+        return f"{OAUTH_SCOPES} {INDEXING_SCOPE}"
+    return OAUTH_SCOPES
+
+
+def _token_has_scope(token_data: Optional[dict], scope: str) -> Optional[bool]:
+    """Whether a saved OAuth token was granted ``scope``.
+
+    None when the token does not record its scopes, so the caller can let
+    the API decide instead of refusing a token that may well be valid.
+    """
+    if not isinstance(token_data, dict):
+        return None
+    granted = token_data.get("scope")
+    if isinstance(granted, (list, tuple)):
+        granted = " ".join(str(item) for item in granted)
+    if not isinstance(granted, str) or not granted.strip():
+        return None
+    return scope in granted.split()
+
+
+def indexing_scope_error() -> Optional[str]:
+    """A message with the command to run when the saved sign-in cannot use
+    the Indexing API, or None when it can or when that cannot be told here.
+
+    Mirrors the order in get_oauth_credentials: a chosen gcloud sign-in and a
+    service account are not judged (their scopes are not recorded in a file
+    this module reads); a saved OAuth token is, because it is used first.
+    """
+    if _prefers_gcloud() and _load_gcloud_adc() is not None:
+        return None
+    token_data = _load_oauth_token()
+    if not token_data or not token_data.get("access_token"):
+        return None
+    if _token_has_scope(token_data, INDEXING_SCOPE) is not False:
+        return None
+    return (
+        "The saved Google sign-in is read-only and was not granted the Indexing "
+        f"API scope ({INDEXING_SCOPE}). To grant it, sign in again with:\n"
+        f"  {INDEXING_AUTH_COMMAND}"
+    )
+
+
+def run_oauth_flow(creds_path: str, include_indexing: bool = False):
     """
     Run OAuth browser-based authentication flow.
 
@@ -370,6 +600,8 @@ def run_oauth_flow(creds_path: str):
 
     Args:
         creds_path: Path to the OAuth client_secret JSON file.
+        include_indexing: Also ask for the Indexing API scope. Off by
+            default, so a plain sign-in is read-only.
     """
     import http.server
     import urllib.parse
@@ -381,22 +613,52 @@ def run_oauth_flow(creds_path: str):
         print("Error: Could not load OAuth client credentials.", file=sys.stderr)
         sys.exit(1)
 
+    # state binds the redirect to this run (CSRF); PKCE binds the code to
+    # this machine. Both are kept on disk for the manual --exchange path.
+    _clear_pending_flow()
+    state = secrets.token_urlsafe(32)
+    code_verifier, code_challenge = _pkce_pair()
+    _save_pending_flow(state, code_verifier)
+
     auth_url = (
-        f"{client.get('auth_uri', 'https://accounts.google.com/o/oauth2/auth')}"
-        f"?client_id={client['client_id']}"
-        f"&redirect_uri={urllib.parse.quote(OAUTH_REDIRECT_URI)}"
-        f"&response_type=code"
-        f"&scope={urllib.parse.quote(OAUTH_SCOPES)}"
-        f"&access_type=offline&prompt=consent"
+        client.get("auth_uri", "https://accounts.google.com/o/oauth2/auth")
+        + "?"
+        + urllib.parse.urlencode({
+            "client_id": client["client_id"],
+            "redirect_uri": OAUTH_REDIRECT_URI,
+            "response_type": "code",
+            "scope": oauth_scopes(include_indexing),
+            "access_type": "offline",
+            "prompt": "consent",
+            "state": state,
+            "code_challenge": code_challenge,
+            "code_challenge_method": "S256",
+        })
     )
 
-    auth_code = [None]
+    result = {"code": None, "error": None}
 
     class Handler(http.server.BaseHTTPRequestHandler):
+        # A connection that never sends a request must not stall the wait.
+        timeout = SIGNIN_REQUEST_TIMEOUT
+
         def do_GET(self):
             params = urllib.parse.parse_qs(urllib.parse.urlparse(self.path).query)
-            if "code" in params:
-                auth_code[0] = params["code"][0]
+            returned_state = params.get("state", [""])[0]
+            if not _states_match(returned_state, state):
+                # Not our redirect (a stray request or a forged one): refuse
+                # it and keep waiting for the real one.
+                self.send_response(400)
+                self.end_headers()
+                return
+            if "error" in params:
+                result["error"] = params["error"][0]
+                self.send_response(400)
+                self.send_header("Content-Type", "text/html")
+                self.end_headers()
+                self.wfile.write(b"<h1>Authentication was not completed.</h1><p>Close this tab.</p>")
+            elif "code" in params:
+                result["code"] = params["code"][0]
                 self.send_response(200)
                 self.send_header("Content-Type", "text/html")
                 self.end_headers()
@@ -404,63 +666,94 @@ def run_oauth_flow(creds_path: str):
             else:
                 self.send_response(400)
                 self.end_headers()
+
         def log_message(self, *a):
             pass
 
-    server = http.server.HTTPServer(("localhost", 8085), Handler)
-    server.timeout = 300
+    port = urllib.parse.urlparse(OAUTH_REDIRECT_URI).port or 80
+    server = http.server.HTTPServer(("localhost", port), Handler)
 
+    # CodeQL flags this print as clear-text logging because auth_url derives
+    # from the OAuth client file. The URL holds only the public client_id,
+    # state and PKCE challenge, never the secret; the alert (#1) is dismissed
+    # as a false positive and reopens if this line changes.
     print(f"\nOpen this URL in your browser:\n\n{auth_url}\n")
-    print("Waiting up to 5 minutes for authentication...")
+    print(f"Waiting up to {SIGNIN_WAIT_SECONDS} seconds for authentication...")
 
     try:
         webbrowser.open(auth_url)
     except Exception:
         pass
 
-    server.handle_request()
-    server.server_close()
+    deadline = time.monotonic() + SIGNIN_WAIT_SECONDS
+    try:
+        while result["code"] is None and result["error"] is None:
+            remaining = deadline - time.monotonic()
+            if remaining <= 0:
+                break
+            server.timeout = remaining
+            server.handle_request()
+    finally:
+        server.server_close()
 
-    if not auth_code[0]:
+    if result["error"]:
+        _clear_pending_flow()
+        print(f"\nGoogle returned an error: {result['error']}", file=sys.stderr)
+        sys.exit(1)
+
+    if not result["code"]:
+        # Restart the pending flow's clock so the manual window below is
+        # measured from now, not from before the wait.
+        _save_pending_flow(state, code_verifier)
         print("\nAuthentication failed or timed out.", file=sys.stderr)
         print("If the browser showed 'localhost refused to connect', copy the full URL")
-        print("from the browser address bar and run:")
-        print(f"  python scripts/google_auth.py --exchange --creds {creds_path} --code 'THE_CODE'")
+        print(f"from the browser address bar within {SIGNIN_PENDING_MAX_AGE // 60} minutes and run:")
+        print(f"  python scripts/google_auth.py --exchange --creds {creds_path} --code 'THE_FULL_URL'")
         sys.exit(1)
 
     # Exchange code for tokens
-    _exchange_code(client, auth_code[0], creds_path)
+    _exchange_code(client, result["code"], creds_path, code_verifier)
 
 
-def _exchange_code(client: dict, code: str, creds_path: Optional[str] = None):
+def _exchange_code(
+    client: dict,
+    code: str,
+    creds_path: Optional[str] = None,
+    code_verifier: Optional[str] = None,
+):
     """Exchange an authorization code for tokens.
 
     If creds_path is provided, persist its absolute path to the user config
     as 'oauth_client_path' so subsequent refresh flows can locate the
-    client_secret file without re-prompting.
+    client_secret file without re-prompting. ``code_verifier`` is the PKCE
+    verifier of the sign-in that produced ``code``.
     """
     import urllib.parse
     import urllib.request
 
-    params = urllib.parse.urlencode({
+    fields = {
         "code": code,
         "client_id": client["client_id"],
         "client_secret": client["client_secret"],
         "redirect_uri": OAUTH_REDIRECT_URI,
         "grant_type": "authorization_code",
-    }).encode()
+    }
+    if code_verifier:
+        fields["code_verifier"] = code_verifier
+    params = urllib.parse.urlencode(fields).encode()
 
     try:
         req = urllib.request.Request(
             client.get("token_uri", "https://oauth2.googleapis.com/token"), data=params
         )
-        with urllib.request.urlopen(req) as resp:
+        with urllib.request.urlopen(req, timeout=30) as resp:
             token_data = json.loads(resp.read())
         token_data["expires_at"] = time.time() + token_data.get("expires_in", 3600)
         token_data["client_id"] = client["client_id"]
         # SECURITY: Never store client_secret in token file. It stays in client_secret.json only.
         token_data.pop("client_secret", None)
         _save_oauth_token(token_data)
+        _clear_pending_flow()
         print("OAuth token saved successfully!")
 
         # Persist oauth_client_path so refresh works after process restart.
@@ -502,9 +795,6 @@ def validate_url(url: str) -> bool:
     # Lazy import: avoids a hard requirement on url_safety for callers that
     # only need google_auth's other helpers (e.g. token refresh) and keeps
     # the import graph one-directional.
-    _scripts_dir = os.path.dirname(os.path.abspath(__file__))
-    if _scripts_dir not in sys.path:
-        sys.path.insert(0, _scripts_dir)
     from url_safety import validate_url as _validate_url
 
     return _validate_url(url)
@@ -591,7 +881,12 @@ def check_credentials(service: str) -> dict:
     elif SERVICE_AUTH.get(service) == "oauth_or_sa":
         # Check OAuth token first
         token_data = _load_oauth_token()
-        if token_data and token_data.get("access_token"):
+        if _prefers_gcloud() and _load_gcloud_adc() is not None:
+            # Chosen with CLAUDE_SEO_GOOGLE_AUTH=adc: used first, so reported first.
+            result["available"] = True
+            result["method"] = "gcloud_adc"
+            result["account"] = _load_gcloud_adc().get("account")
+        elif token_data and token_data.get("access_token"):
             result["available"] = True
             result["method"] = "oauth_token"
             expired = time.time() > token_data.get("expires_at", 0) - 60
@@ -600,10 +895,19 @@ def check_credentials(service: str) -> dict:
             elif expired:
                 result["available"] = False
                 result["error"] = "OAuth token expired and no refresh_token. Re-run --auth."
+            if service == "indexing" and result["available"]:
+                scope_error = indexing_scope_error()
+                if scope_error:
+                    result["available"] = False
+                    result["error"] = scope_error
         else:
             # Fall back to service account
             sa_path = config.get("service_account_path")
-            if not sa_path:
+            if not sa_path and _load_gcloud_adc() is not None:
+                result["available"] = True
+                result["method"] = "gcloud_adc"
+                result["account"] = _load_gcloud_adc().get("account")
+            elif not sa_path:
                 result["error"] = (
                     "No OAuth token or service account found. Either:\n"
                     "         1. Run: python scripts/google_auth.py --auth --creds /path/to/client_secret.json\n"
@@ -629,11 +933,16 @@ def check_credentials(service: str) -> dict:
         # GA4 also needs property ID
         if service == "ga4" and result["available"]:
             ga4_id = config.get("ga4_property_id")
-            if not ga4_id:
+            site_map = config.get("sites") or {}
+            has_site_ga4 = isinstance(site_map, dict) and any(
+                isinstance(site, dict) and site.get("ga4_property_id")
+                for site in site_map.values()
+            )
+            if not ga4_id and not has_site_ga4:
                 result["available"] = False
                 result["error"] = (
                     "Credentials found but no GA4 property ID configured. "
-                    f"Set GA4_PROPERTY_ID or add 'ga4_property_id' to {CONFIG_PATH}"
+                    f"Set GA4_PROPERTY_ID or add 'ga4_property_id' or a sites mapping to {CONFIG_PATH}"
                 )
     else:
         result["error"] = f"Unknown service: {service}"
@@ -676,8 +985,16 @@ def detect_tier() -> dict:
                 except (json.JSONDecodeError, IOError):
                     pass
 
-    if has_authenticated and config.get("ga4_property_id"):
+    site_map = config.get("sites") or {}
+    has_site_ga4 = isinstance(site_map, dict) and any(
+        isinstance(site, dict) and site.get("ga4_property_id")
+        for site in site_map.values()
+    )
+    if has_authenticated and (config.get("ga4_property_id") or has_site_ga4):
         has_ga4 = True
+
+    # A read-only sign-in (the default --auth) cannot use the Indexing API.
+    indexing = [] if has_authenticated and indexing_scope_error() else ["Indexing API"]
 
     if has_ga4:
         return {
@@ -686,7 +1003,7 @@ def detect_tier() -> dict:
             "capabilities": [
                 "PageSpeed Insights", "CrUX", "CrUX History",
                 "Search Console", "URL Inspection", "Sitemaps",
-                "Indexing API", "GA4 Organic Traffic",
+                *indexing, "GA4 Organic Traffic",
             ],
             "missing": None,
         }
@@ -697,7 +1014,7 @@ def detect_tier() -> dict:
             "capabilities": [
                 "PageSpeed Insights", "CrUX", "CrUX History",
                 "Search Console", "URL Inspection", "Sitemaps",
-                "Indexing API",
+                *indexing,
             ],
             "missing": "Add 'ga4_property_id' to unlock GA4 organic traffic reports",
         }
@@ -728,6 +1045,12 @@ def print_setup_instructions():
 Google SEO API Setup Instructions
 =================================
 
+FASTEST, FOR PROPERTIES YOU OWN: use your own Google account
+   gcloud auth application-default login \\
+     --scopes=https://www.googleapis.com/auth/webmasters.readonly,https://www.googleapis.com/auth/cloud-platform
+   Then set CLAUDE_SEO_GOOGLE_AUTH=adc (needed only if a service account is
+   also configured). Add an API key (step 3) for PageSpeed and CrUX.
+
 1. CREATE A GOOGLE CLOUD PROJECT
    - Go to https://console.cloud.google.com
    - Create a new project (or select existing)
@@ -756,8 +1079,8 @@ Google SEO API Setup Instructions
      Paste email, set Viewer role
 
 6. CREATE CONFIG FILE
-   mkdir -p ~/.config/claude-seo
-   Save to ~/.config/claude-seo/google-api.json:
+   mkdir -p """ + '"' + os.path.dirname(CONFIG_PATH) + '"' + """
+   Save to """ + CONFIG_PATH + """:
 
    {
      "service_account_path": "/path/to/service_account.json",
@@ -809,6 +1132,14 @@ def main():
         help="Run OAuth browser-based authentication flow",
     )
     parser.add_argument(
+        "--indexing",
+        action="store_true",
+        help=(
+            "With --auth: also grant the Indexing API scope (needed only by "
+            "indexing_notify.py). Without it the sign-in is read-only"
+        ),
+    )
+    parser.add_argument(
         "--exchange",
         action="store_true",
         help="Manually exchange an auth code for tokens",
@@ -819,16 +1150,20 @@ def main():
     )
     parser.add_argument(
         "--code",
-        help="Authorization code to exchange (for --exchange)",
+        help="Authorization code, or the full redirect URL from the address bar (for --exchange)",
     )
 
     args = parser.parse_args()
+
+    if args.indexing and not args.auth:
+        print("Error: --indexing only applies together with --auth", file=sys.stderr)
+        sys.exit(1)
 
     if args.auth:
         if not args.creds:
             print("Error: --creds is required with --auth", file=sys.stderr)
             sys.exit(1)
-        run_oauth_flow(args.creds)
+        run_oauth_flow(args.creds, include_indexing=args.indexing)
         return
 
     if args.exchange:
@@ -837,7 +1172,11 @@ def main():
             sys.exit(1)
         client = _load_oauth_client(args.creds)
         if client:
-            _exchange_code(client, args.code, args.creds)
+            code, code_verifier, error = _manual_exchange_inputs(args.code)
+            if error:
+                print(f"Error: {error}", file=sys.stderr)
+                sys.exit(1)
+            _exchange_code(client, code, args.creds, code_verifier)
         return
 
     if args.setup:
@@ -870,13 +1209,25 @@ def main():
                 continue
             results[svc] = check_credentials(svc)
 
+        site_map = load_config().get("sites") or {}
+        site_summary = {
+            domain: [name for name, key in (("GSC", "gsc_property"), ("GA4", "ga4_property_id"))
+                     if isinstance(site, dict) and site.get(key)]
+            for domain, site in site_map.items()
+        } if isinstance(site_map, dict) else {}
         if args.json:
             tier_info = detect_tier()
-            output = {"tier": tier_info, "services": results}
+            output = {
+                "tier": tier_info,
+                **config_dir_fields(CONFIG_PATH),
+                "services": results,
+                "sites": site_summary,
+            }
             print(json.dumps(output, indent=2))
         else:
             tier_info = detect_tier()
             print(f"Credential Tier: {tier_info['tier']} -- {tier_info['description']}")
+            print(f"Config directory: {describe_config_dir(CONFIG_PATH)}")
             print()
             for svc, result in results.items():
                 status = "OK" if result["available"] else "MISSING"
@@ -885,6 +1236,10 @@ def main():
                     print(f"         {result['error']}")
                 if result.get("client_email"):
                     print(f"         Service account: {result['client_email']}")
+            if site_summary:
+                print("Configured site properties:")
+                for domain, services_for_site in sorted(site_summary.items()):
+                    print(f"  {domain}: {', '.join(services_for_site) or 'no Google properties'}")
             print()
             if tier_info["missing"]:
                 print(f"Tip: {tier_info['missing']}")

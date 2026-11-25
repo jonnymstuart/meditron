@@ -71,7 +71,7 @@ Google's doorway page algorithm penalizes programmatic location pages with thin/
 | Aspect | Requirement |
 |--------|-------------|
 | Minimum length | 30 characters |
-| Maximum length | 60 characters (Google truncates ~60) |
+| Maximum length | 60 characters (a display heuristic: Google cuts titles by pixel width, at roughly 60) |
 | Primary keyword | Near the beginning |
 | Brand name | At end (if included) |
 | Uniqueness | Each page must have unique title |
@@ -93,10 +93,23 @@ Google's doorway page algorithm penalizes programmatic location pages with thin/
 | Aspect | Requirement |
 |--------|-------------|
 | Minimum length | 120 characters |
-| Maximum length | 160 characters (Google truncates ~155-160) |
-| Call-to-action | Include compelling CTA |
+| Maximum length | 160 characters (a display heuristic: snippets are cut at roughly 155-160, and Google often writes its own) |
+| Call-to-action | Include compelling CTA, written for this page |
 | Primary keyword | Include naturally |
 | Uniqueness | Each page must have unique description |
+| Not a title restatement | Must not open by repeating the title tag verbatim |
+
+> **Templated metadata gate.** "Unique per page" is necessary but not
+> sufficient: many descriptions can each be unique strings while all sharing
+> one generated shape. Opening with the page title and closing on a stock CTA
+> ("Try it free now.", "Start free!") is that shape, and duplicated or
+> templated metadata site-wide is a documented content-quality problem even
+> when the body copy is entirely original; this heuristic check does not
+> claim any specific Google ranking or spam update targeted this pattern.
+> Check with
+> `.claude/skills/seo/bin/claude-seo run metadata_template.py --pairs-file <file> --json`.
+> The CTA requirement above means a CTA written for this page, not one
+> appended to every page by a template.
 
 ---
 

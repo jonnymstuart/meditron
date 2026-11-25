@@ -23,21 +23,33 @@ When merging data from multiple sources, apply confidence weights to each metric
 | Verification Crawler | 0.95 | Direct observation (binary: link exists or not) |
 | Moz API | 0.85 | Large index (45.5T links), established metrics, 3-day update lag |
 | Bing Webmaster | 0.70 | Smaller index (~15% of web), but authoritative for Bing-indexed pages |
-| Common Crawl | 0.50 | Domain-level only, quarterly updates, no anchor text |
+| Common Crawl | 0.50 | Domain-level only, each release covers three crawl months, no anchor text |
 
 **Composite formula:**
 ```
 weighted_score = Σ(source_score × confidence × factor_weight) / Σ(confidence × factor_weight)
 ```
 
-When only Common Crawl is available, cap the maximum health score at 70/100 and note
-"limited to domain-level metrics" in the report.
+**When only Common Crawl is available, do not produce a health score at all.**
+Not a capped one, not an "approximate" one. Common Crawl supplies domain-level
+rank and presence signals only -- it carries none of the referring-domain quality,
+anchor, or toxicity data a health score claims to summarise, so any number derived
+from it reads as "this profile is weak" when the truth is "we have no data."
+
+Report `Not Assessed` in place of the score, surface the rank/presence data that
+Common Crawl *does* support as low-confidence findings, and note "limited to
+domain-level metrics" in the report. The same applies to any finding written with
+`source: not-assessed`.
+
+This is enforced, not advisory: `.claude/skills/seo/bin/claude-seo run validate_backlink_report.py` fails
+a report (`status: FAIL`) that carries a number in either case. See the
+`seo-backlinks` skill's "MUST NOT: score what you did not measure" section.
 
 ## Source Details
 
 ### Moz API (Tier 1)
 - **Endpoint:** `https://api.moz.com/jsonrpc` (JSON-RPC 2.0)
-- **Free tier:** 2,500 rows/month, 1 request per 10 seconds (verify current limits at https://moz.com/products/api — free tier limits may change)
+- **Free tier:** 2,500 rows/month, 1 request per 10 seconds (verify current limits at https://moz.com/products/api: free tier limits may change)
 - **Signup:** https://moz.com/products/api (credit card required, not charged)
 - **Data:** Domain Authority (0-100), Page Authority, Spam Score (1-17%), link counts,
   referring domains, anchor text distribution
@@ -62,12 +74,12 @@ When only Common Crawl is available, cap the maximum health score at 70/100 and 
 
 ### Common Crawl Web Graph (Always Available)
 - **Data source:** `s3://commoncrawl/projects/hyperlinkgraph/`
-- **Releases:** Quarterly (e.g., cc-main-2025-18)
+- **Releases:** Each id names the three crawl months it covers (e.g., cc-main-2026-jul-aug-sep). The script reads Common Crawl's `graphinfo.json` and uses the newest release listed, falling back to a built-in list if that cannot be read
 - **No auth needed:** Public data, free to download
 - **Data:** Domain-level in-degree, PageRank, harmonic centrality, referring domains
 - **Command:** `.claude/skills/seo/bin/claude-seo run commoncrawl_graph.py`
 - **Cache:** `~/.cache/claude-seo/commoncrawl/` (90-day TTL)
-- **Blind spots:** No anchor text, no page-level data, monthly/quarterly freshness,
+- **Blind spots:** No anchor text, no page-level data, freshness limited to the release's crawl months,
   domain-level only (e.g., "nytimes.com links to example.com" but not which page)
 
 ### Verification Crawler (Always Available)

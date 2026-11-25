@@ -11,6 +11,7 @@ The core reframe: don't ask the agent to *replace* the strategist. Offload the *
 - Workflow 1: Ad Library analysis
 - Workflow 2: Review → persona mapping
 - Workflow 3: Competitor / brand teardown (organic)
+- Workflow 4: Persistent competitor ad tracker
 - Running it well (practical notes)
 - Where the outputs go
 
@@ -20,7 +21,7 @@ The core reframe: don't ask the agent to *replace* the strategist. Offload the *
 - You want personas grounded in real reviews, not assumptions — and the "who our ads *seem* to target vs. who actually buys" gap.
 - You're standing up a recurring competitive/creative report that should run itself and land in Slack.
 
-This is the *paid-social creative research* cut. For structured competitor dossiers from a URL list, hand off to [competitor-profiling](../../competitor-profiling/SKILL.md). For deep voice-of-customer analysis and JTBD, hand off to [customer-research](../../customer-research/SKILL.md). Persona output feeds [positioning](../../positioning/SKILL.md).
+This is the *paid-social creative research* cut. For structured competitor dossiers from a URL list, hand off to [competitor-profiling](../../competitor-profiling/SKILL.md). For deep voice-of-customer analysis and JTBD, hand off to [customer-research](../../customer-research/SKILL.md). Persona output feeds [product-marketing](../../product-marketing/SKILL.md).
 
 ## Prerequisites (connectors, exact links)
 
@@ -86,6 +87,24 @@ A monthly organic teardown of a competitor's (or an admired brand's) owned socia
 
 Run it against your competitors, your *clients'* competitors, or brands you admire for inspiration. Ask follow-up questions against the generated report in the same chat. For a full structured competitor dossier (pricing, positioning, SEO), hand the shortlist to [competitor-profiling](../../competitor-profiling/SKILL.md).
 
+## Workflow 4: Persistent competitor ad tracker
+
+Workflow 1 is a one-off teardown. When you want the same view every week, build a small tracker that keeps history, so you can see what launched, what's still running, and what got cut.
+
+1. **List competitors**, then have an agent widen the list with web search ("who else runs ads for [category]?").
+2. **Pull active ads on a schedule** from the Meta Ad Library, Google Ads Transparency Center, and LinkedIn Ad Library. Meta's official Ad Library API returns all ads only for EU delivery and political or issue ads elsewhere, and the other two libraries have no official API, so most builds use a scraping API or actor (ScrapeCreators, Apify, or similar). Check each source's terms.
+3. **Store the creative** (images and video files) so it survives the ad being turned off.
+4. **Tag every ad** with a vision-capable model: hook, angle, offer, format, length, first-seen date, last-seen date.
+5. **Write it to a database** (Postgres, a spreadsheet, whatever the team queries).
+6. **Run it weekly** and diff: new ads, ads that stopped, ads still live.
+7. **Ask gap questions** against the data: *"what angles are three competitors running that we aren't?"* Feed the answers into the brief, adapting the angle, never copying the ad.
+
+**Read longevity carefully.** An ad that has run 30–60+ days is probably working, since few teams keep paying for a loser, but it's a proxy, not proof: big brands leave evergreen ads up, and some run ads for reach rather than conversions. Weight it with how many variants of the same angle the advertiser keeps adding.
+
+**Build vs. buy:** paid ad-intelligence tools sell search, history, alerts, and tagging on top of the same public libraries. Building trades the subscription for maintenance (scrapers break when libraries change). Pick based on how often the team will actually query it.
+
+*Pipeline adapted from Cody Schneider (October 2026).*
+
 ## Running it well (practical notes)
 
 - **Connectors:** Chrome (open/read pages) + Slack (deliver reports) are the working minimum. Name them when the agent stalls.
@@ -99,5 +118,5 @@ Run it against your competitors, your *clients'* competitors, or brands you admi
 ## Where the outputs go
 
 - **Ad-library + format/partnership findings →** the concept slate and hook briefs in [ad-creative](../../ad-creative/SKILL.md).
-- **Personas doc →** shared context for [customer-research](../../customer-research/SKILL.md), [copywriting](../../copywriting/SKILL.md), and [positioning](../../positioning/SKILL.md).
+- **Personas doc →** shared context for [customer-research](../../customer-research/SKILL.md), [copywriting](../../copywriting/SKILL.md), and [product-marketing](../../product-marketing/SKILL.md).
 - **Organic teardown shortlist →** a full dossier in [competitor-profiling](../../competitor-profiling/SKILL.md).

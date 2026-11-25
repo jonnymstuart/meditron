@@ -1,8 +1,8 @@
 ---
 name: public-relations
-description: "When the user wants help with public relations, earned media, press coverage, journalist outreach, or media strategy (not pull requests). Also use when the user mentions 'PR,' 'public relations,' 'press,' 'press release,' 'press coverage,' 'media outreach,' 'pitch a journalist,' 'get featured,' 'media list,' 'media kit,' 'press kit,' 'newsjacking,' 'news hijack,' 'HARO,' 'Qwoted,' 'Featured,' 'Help A Reporter,' 'reporter request,' 'tech press,' 'TechCrunch,' 'earned media,' 'thought leadership placement,' 'op-ed,' 'guest article,' 'press contacts,' 'podcast prep,' 'going on a podcast,' 'podcast guest,' 'prep me for this podcast,' or 'how do I get press.' Use this for earned media work — finding journalists, pitching stories, newsjacking, prepping podcast appearances, and responding to press requests. For startup/SaaS/AI directory submissions, see directory-submissions. For product launches, see launch. For social-media engagement, see social. For cold-email outreach to prospects, see cold-email."
+description: "When the user wants press and media coverage, or asks what to say to a reporter, whether a story is newsworthy, or how to handle a crisis: pitches, press releases, media lists, HARO, op-eds, podcast guest prep, newsjacking (public relations, not pull requests). For directories, see directory-submissions. For launches, see launch. For cold outreach to prospects, see cold-email."
 metadata:
-  version: 1.1.1
+  version: 1.3.1
 ---
 
 # Public Relations & Earned Media
@@ -59,9 +59,23 @@ Four modes. Most teams over-index on one. Run at least three.
 
 **For inbound press-request platforms (HARO, Qwoted, etc.)** — see [references/press-platforms.md](references/press-platforms.md)
 
+**For writing a press release and choosing where to distribute it** (own newsroom, free sites, paid wires, an agent-callable API), see [references/press-releases.md](references/press-releases.md). A release is a record, not a pitch. It rarely earns coverage by itself.
+
 **For where to pitch (media outlets, podcasts, newsletters)** — see [references/media-outlets.md](references/media-outlets.md). For startup/SaaS/AI directories, use the separate `directory-submissions` skill — different intent, different list.
 
 **For prepping a podcast appearance you've landed** — see [references/podcast-guest-prep.md](references/podcast-guest-prep.md). Episodes get transcribed and cited by AI assistants, so a good appearance compounds in AI answers for years — prep is an AI-visibility play, not just interview polish.
+
+---
+
+## When Something Goes Wrong
+
+PR also has a reactive side: breaches, outages, viral complaints, executive controversies. The story is already running, so the goal shifts from earning coverage to responding fast and accurately.
+
+Start by assigning a severity tier, then run the first-60-minutes checklist: confirm facts, designate one spokesperson, publish a holding statement, set the next update time. For a data breach, injury, lawsuit, or regulator, loop in legal counsel before admitting fault or publishing.
+
+**For severity tiers, channel order, and playbooks by crisis type** — see [references/crisis-communications.md](references/crisis-communications.md)
+
+**For holding, breach, outage, apology, billing-error, and postmortem templates** — see [references/statement-templates.md](references/statement-templates.md)
 
 ---
 
@@ -132,6 +146,9 @@ Combine: recent product milestones + active news cycles + any data you've collec
 ### "What's my story angle?" / "How do I get press with no news?"
 Go to [story-angles.md](references/story-angles.md). Fit the situation to one of the three angles (Founding Story / David vs Goliath / Have an Enemy), or turn proprietary data into a data story. Remember: a milestone alone isn't a story — milestone *with narrative* is.
 
+### "Write a press release for our launch"
+Go to [press-releases.md](references/press-releases.md). Check the release is worth it, draft it in the standard structure, post it on the newsroom page, then pick distribution by goal and budget. Pitch journalists separately.
+
 ### "Respond to this HARO query"
 Go to [press-platforms.md](references/press-platforms.md), use the response template, keep it under 200 words.
 
@@ -140,3 +157,6 @@ Go to [podcast-guest-prep.md](references/podcast-guest-prep.md): research the sh
 
 ### "Build my press page"
 Use the checklist above. Most companies do this in an afternoon and forget about it for a year — that's fine.
+
+### "Get us more backlinks"
+PR earns the highest-ceiling links but takes the most effort. For reclamation, partner pages, best-X lists, and the rest of a link program, use the **link-building** skill and treat PR as one of its tactics.

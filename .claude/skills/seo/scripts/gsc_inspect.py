@@ -3,7 +3,7 @@
 Google Search Console URL Inspection API helper.
 
 Inspects URLs for indexing status, canonical selection, crawl info,
-mobile usability, and rich results. Supports single URL and batch mode.
+and rich results. (The API's mobileUsabilityResult is deprecated.) Supports single URL and batch mode.
 
 Usage:
     python gsc_inspect.py https://example.com/page --site-url sc-domain:example.com
@@ -28,10 +28,12 @@ except ImportError:
 
 try:
     from google_auth import get_oauth_credentials, load_config, validate_url
+    from google_properties import resolve_site_property
 except ImportError:
     import os
     sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
     from google_auth import get_oauth_credentials, load_config, validate_url
+    from google_properties import resolve_site_property
 
 GSC_SCOPES = ["https://www.googleapis.com/auth/webmasters.readonly"]
 
@@ -67,7 +69,7 @@ def inspect_url(
 
     Returns:
         Dictionary with inspection results including index status,
-        crawl info, canonical, mobile usability, and rich results.
+        crawl info, canonical, and rich results.
     """
     result = {
         "url": inspection_url,
@@ -142,10 +144,12 @@ def inspect_url(
         if idx.get("googleCanonical") and idx.get("userCanonical") else None,
     }
 
-    # Mobile usability (deprecated April 2023 but may still return data)
+    # mobileUsabilityResult is deprecated in the API (Google retired the Mobile
+    # Usability report in December 2023); pass it through, flagged, if present.
     mu = ir.get("mobileUsabilityResult", {})
     if mu:
         result["mobile_usability"] = {
+            "deprecated": True,
             "verdict": mu.get("verdict"),
             "issues": [
                 {"type": issue.get("issueType"), "message": issue.get("message")}
@@ -189,11 +193,13 @@ def batch_inspect(
         language_code: Language code.
 
     Returns:
-        Dictionary with results list and summary.
+        Dictionary with attempted total, requested_total, results and summary.
     """
+    urls = [url.strip() for url in urls if url.strip()]
     result = {
         "property": site_url,
-        "total": len(urls),
+        "requested_total": len(urls),
+        "total": 0,
         "results": [],
         "summary": {
             "pass": 0,
@@ -211,11 +217,8 @@ def batch_inspect(
         )
         urls = urls[:DAILY_LIMIT]
 
+    result["total"] = len(urls)
     for i, url in enumerate(urls):
-        url = url.strip()
-        if not url:
-            continue
-
         print(f"Inspecting [{i + 1}/{len(urls)}]: {url}", file=sys.stderr)
 
         inspection = inspect_url(url, site_url, language_code)
@@ -243,9 +246,14 @@ def main():
         description="Google Search Console URL Inspection API helper"
     )
     parser.add_argument("url", nargs="?", help="URL to inspect")
-    parser.add_argument(
+    property_group = parser.add_mutually_exclusive_group()
+    property_group.add_argument(
         "--site-url", "-s",
-        help="GSC property (e.g., sc-domain:example.com). Uses default from config if not specified.",
+        help="Explicit GSC property (e.g., sc-domain:example.com).",
+    )
+    property_group.add_argument(
+        "--domain",
+        help="Audited site domain/URL; resolves its sites entry and refuses another site's default.",
     )
     parser.add_argument(
         "--batch", "-b",
@@ -261,13 +269,28 @@ def main():
 
     args = parser.parse_args()
 
-    # Resolve site URL
+    # Resolve the property against the requested site's domain when possible.
+    # An empty flag value (an unset shell variable, say) is an error, not "unset".
+    for flag, value in (("--site-url", args.site_url), ("--domain", args.domain)):
+        if value is not None and not value.strip():
+            print(f"Error: {flag} was given an empty value.", file=sys.stderr)
+            sys.exit(1)
     site_url = args.site_url
-    if not site_url:
+    if args.batch and args.site_url is None and args.domain is None:
+        parser.error("--batch requires --site-url or --domain to identify the site's property")
+    if site_url is None:
         config = load_config()
-        site_url = config.get("default_property")
+        domain = args.domain if args.domain is not None else args.url
+        if domain:
+            try:
+                site_url = resolve_site_property(config, "gsc", domain)
+            except ValueError as error:
+                print(f"Error: {error}", file=sys.stderr)
+                sys.exit(1)
+        else:
+            site_url = config.get("default_property")
     if not site_url:
-        print("Error: No site URL specified. Use --site-url or set default_property in config.", file=sys.stderr)
+        print("Error: No site URL specified. Use --site-url, --domain, or set default_property in config.", file=sys.stderr)
         sys.exit(1)
 
     if args.batch:
