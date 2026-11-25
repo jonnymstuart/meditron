@@ -10,7 +10,7 @@ There is no Meditron client data in this file: no figures, contacts, passcodes o
 
 ## 1. Set up the new project
 
-1. **One repo per client.** Create a new private GitHub repo, for example `jonnymstuart/almacet-seo`. Don't work in the Meditron repo. Separate repos keep client data, rules and budgets apart, and keep each chat short.
+1. **One repo per client.** Create a new private GitHub repo, for example `jonnymstuart/almased-seo`. Don't work in the Meditron repo. Separate repos keep client data, rules and budgets apart, and keep each chat short.
 2. **Start a new Claude Code session** on the new repo.
 3. **Attach the Meditron repo read-only** so the new session can copy the kit. Ask Claude: "add the repo jonnymstuart/meditron with read access". Copy files across. Never push to Meditron from the new session.
 4. **Copy the kit** listed in section 2 (one commit: "Copy the SEO kit from the Meditron project").
