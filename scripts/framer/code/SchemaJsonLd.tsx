@@ -10,6 +10,8 @@ interface SchemaJsonLdProps {
     image?: { src: string; alt?: string }
     author: string
     datePublished: string
+    faqQ1?: string; faqA1?: string; faqQ2?: string; faqA2?: string; faqQ3?: string; faqA3?: string
+    faqQ4?: string; faqA4?: string; faqQ5?: string; faqA5?: string; faqQ6?: string; faqA6?: string
     style?: React.CSSProperties
 }
 
@@ -84,6 +86,20 @@ export default function SchemaJsonLd(props: SchemaJsonLdProps) {
             url,
         })
     }
+    // One FAQPage for the whole page (product template: FAQ Question/Answer Text 1–6). The FAQ rows on that template
+    // have their own per-row JSON-LD switched off, so Google sees one FAQPage instead of six.
+    const clean = (t?: string) => String(t || "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()
+    const faqs = [1, 2, 3, 4, 5, 6]
+        .map((i) => [clean((props as any)[`faqQ${i}`]), clean((props as any)[`faqA${i}`])])
+        .filter(([q, a]) => q && a)
+    if (faqs.length) {
+        graph.push({
+            "@type": "FAQPage",
+            "@id": url + "#faq",
+            inLanguage,
+            mainEntity: faqs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })),
+        })
+    }
     const json = JSON.stringify({ "@context": "https://schema.org", "@graph": graph })
     return (
         <div style={{ position: "relative", width: 1, height: 1, overflow: "hidden", opacity: 0, pointerEvents: "none" }} aria-hidden="true">
@@ -102,4 +118,10 @@ addPropertyControls(SchemaJsonLd, {
     image: { type: ControlType.ResponsiveImage, title: "Image" },
     author: { type: ControlType.String, title: "Author", defaultValue: "", hidden: (p) => p.kind !== "article" },
     datePublished: { type: ControlType.Date, title: "Published", hidden: (p) => p.kind !== "article" },
+    ...Object.fromEntries(
+        [1, 2, 3, 4, 5, 6].flatMap((i) => [
+            [`faqQ${i}`, { type: ControlType.String, title: `FAQ Q${i}`, defaultValue: "", hidden: (p: any) => p.kind === "article" }],
+            [`faqA${i}`, { type: ControlType.String, title: `FAQ A${i}`, displayTextArea: true, defaultValue: "", hidden: (p: any) => p.kind === "article" }],
+        ])
+    ),
 })

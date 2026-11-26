@@ -8,6 +8,7 @@ interface FAQItemProps {
     answerRich?: React.ReactNode
     group: string
     defaultOpen: boolean
+    emitSchema?: boolean
     textColor: string
     lineColor: string
     questionFont: any
@@ -30,6 +31,7 @@ export default function FAQItem(props: FAQItemProps) {
         answerRich,
         group = "faq",
         defaultOpen = false,
+        emitSchema = true,
         textColor = "rgb(16, 44, 71)",
         lineColor = "rgba(16, 44, 71, 0.2)",
         questionFont,
@@ -67,7 +69,8 @@ export default function FAQItem(props: FAQItemProps) {
     const showOpen = isStatic ? defaultOpen : open
     // One FAQPage block per row: rows are independent CMS items, so the page-level list cannot be assembled here.
     const plainAnswer = plain.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim()
-    const schema = question && plainAnswer && !rich
+    // emitSchema is off where a page-level FAQPage carries the same rows (product template, via SchemaJsonLd).
+    const schema = emitSchema && question && plainAnswer && !rich
         ? JSON.stringify({ "@context": "https://schema.org", "@type": "FAQPage", mainEntity: [{ "@type": "Question", name: question, acceptedAnswer: { "@type": "Answer", text: plainAnswer } }] })
         : ""
 
@@ -143,6 +146,7 @@ addPropertyControls(FAQItem, {
     answer: { type: ControlType.String, title: "Answer", displayTextArea: true, defaultValue: "" },
     group: { type: ControlType.String, title: "Group", defaultValue: "faq", description: "Rows with the same group close each other." },
     defaultOpen: { type: ControlType.Boolean, title: "Open", defaultValue: false },
+    emitSchema: { type: ControlType.Boolean, title: "FAQ schema", defaultValue: true, description: "Off where the page emits one FAQPage for all rows." },
     textColor: { type: ControlType.Color, title: "Text", defaultValue: "rgb(16, 44, 71)" },
     lineColor: { type: ControlType.Color, title: "Line", defaultValue: "rgba(16, 44, 71, 0.2)" },
     questionFont: { type: ControlType.Font, title: "Question font", controls: "extended", defaultFontType: "sans-serif", defaultValue: { fontFamily: "Graphik Trial", fontWeight: 500, fontSize: 20, lineHeight: "1.4em" } },
